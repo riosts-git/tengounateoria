@@ -2,7 +2,7 @@
 title: Lo que quedó fuera de foco
 date: 2026-05-05
 description: Una serie sobre lo que la atención deja atrás.
-categoria: consciencia
+categoria: Apuntes sobre la Intuición
 tags: [imagen, atención]
 alt: Fotografía con el centro desenfocado y los bordes nítidos
 ---
