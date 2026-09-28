@@ -1,0 +1,25 @@
+/* Página de ensayo: cabecera centrada, datos pequeños y botones anterior/siguiente */
+.post.ensayo{text-align:center}
+.post.ensayo .cover{margin:0 auto 34px}
+.post.ensayo .cover img{display:block;width:100%;height:auto;max-height:420px;object-fit:cover;border-radius:22px;box-shadow:var(--sh)}
+.post.ensayo .post-cat{font-size:14px;margin:0 0 14px}
+.post.ensayo h1{font-size:clamp(32px,7vw,52px);line-height:1.1;margin:0}
+.post.ensayo .subtitulo{max-width:30em;margin:30px auto 32px;font-size:clamp(17px,3.6vw,21px);line-height:1.5;color:var(--soft)}
+.post.ensayo h1 + .tiny{margin-top:24px}
+.post.ensayo .tiny{color:var(--soft);font-size:11.5px;line-height:1.7}
+.post.ensayo .tiny p{margin:0}
+.post.ensayo .tiny .lectura{font-size:12.5px;margin-bottom:8px}
+.post.ensayo .del-libro{margin:14px 0 0;font-size:13px;color:var(--soft)}
+.post.ensayo .del-libro a{color:var(--gold-deep)}
+.post.ensayo .prose{text-align:left;margin-top:40px}
+.post.ensayo .post-tags{justify-content:center}
+
+.pn{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:48px;text-align:left}
+.pn a{display:flex;flex-direction:column;gap:4px;padding:16px 18px;border:1px solid var(--line);border-radius:16px;
+  background:var(--side);transition:transform .5s var(--spring),border-color .3s,box-shadow .4s}
+.pn a:hover,.pn a:focus-visible{transform:translateY(-3px);border-color:var(--gold);box-shadow:var(--sh)}
+.pn small{font-size:12px;color:var(--gold-deep)}
+.pn strong{font-size:15px;line-height:1.35;font-weight:600}
+.pn .prev{grid-column:1}
+.pn .next{grid-column:2;text-align:right}
+@media (max-width:560px){.pn{grid-template-columns:1fr}.pn .prev,.pn .next{grid-column:auto}}
