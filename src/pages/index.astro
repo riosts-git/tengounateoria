@@ -1,0 +1,43 @@
+---
+import Base from '../layouts/Base.astro';
+import Card from '../components/Card.astro';
+import { getPosts } from '../lib/posts';
+import { SITE } from '../config';
+const posts = await getPosts();
+const jsonLd = { '@context': 'https://schema.org', '@type': 'WebSite', name: SITE.title, description: SITE.description, inLanguage: 'es' };
+---
+<Base jsonLd={jsonLd}>
+  <div class="grid">
+    {posts.map((p, i) => <Card post={p} i={i} />)}
+  </div>
+</Base>
+<script>
+  // Filtro por tema o etiqueta en la home (los enlaces también funcionan sin JS: /?cat=...)
+  const $ = (s: string) => [...document.querySelectorAll<HTMLElement>(s)];
+  const cards = $('.card'), chips = $('.chip[data-cat]'), tags = $('.tag[data-tag]');
+  function apply(animate = true) {
+    const q = new URLSearchParams(location.search);
+    const cat = q.get('cat'), tag = q.get('tag');
+    chips.forEach((c) => c.classList.toggle('active', !tag && (cat || 'todas') === c.dataset.cat));
+    tags.forEach((t) => t.classList.toggle('active', tag === t.dataset.tag));
+    let n = 0;
+    cards.forEach((c) => {
+      const show = (!cat || c.dataset.cat === cat) && (!tag || c.dataset.tags!.split('|').includes(tag));
+      c.hidden = !show;
+      if (show) {
+        c.style.setProperty('--i', String(n++));
+        if (animate) { c.style.animation = 'none'; void c.offsetWidth; c.style.animation = ''; }
+      }
+    });
+  }
+  document.addEventListener('click', (e) => {
+    const a = (e.target as HTMLElement).closest<HTMLElement>('.chip[data-cat], .tag[data-tag]');
+    if (!a) return;
+    e.preventDefault();
+    const q = a.dataset.tag ? `?tag=${a.dataset.tag}` : a.dataset.cat === 'todas' ? '' : `?cat=${a.dataset.cat}`;
+    history.pushState({}, '', location.pathname + q);
+    apply();
+  });
+  addEventListener('popstate', () => apply());
+  apply(false);
+</script>
