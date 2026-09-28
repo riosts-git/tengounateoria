@@ -11,6 +11,7 @@ libro: intuicion
 orden: 1
 tags: [intuición, lenguaje, personal]
 # imagen: /img/mi-obsesion-por-las-palabras.jpg
+draft: false
 ---
 
 —¿Podés dejar de ser tan inmadura? —me gritó Mamá.
