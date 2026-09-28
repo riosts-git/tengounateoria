@@ -2,7 +2,7 @@ export const SITE = {
   title: 'Tengo una Teoría',
   tagline: 'ensayos, libros e imágenes',
   description: 'Ensayos, libros e imágenes sobre intuición, emociones arquetípicas, el árbol de arquetipos y consciencia.',
-  author: 'TU NOMBRE', // cámbialo: aparece en los datos estructurados (SEO)
+  author: 'Selene Rios', // cámbialo: aparece en los datos estructurados (SEO)
 };
 export const CATS = ['intuición', 'emociones arquetípicas', 'el árbol de arquetipos', 'consciencia'] as const;
 export const DIR = { ensayo: 'ensayos', libro: 'libros', foto: 'fotos' } as const;
