@@ -12,13 +12,14 @@ const jsonLd = { '@context': 'https://schema.org', '@type': 'WebSite', name: SIT
   </div>
 </Base>
 <script>
-  // Filtro por tema o etiqueta en la home (los enlaces también funcionan sin JS: /?cat=...)
+  // Filtro por tema o etiqueta en la home
   const $ = (s: string) => [...document.querySelectorAll<HTMLElement>(s)];
   const cards = $('.card'), chips = $('.chip[data-cat]'), tags = $('.tag[data-tag]');
   function apply(animate = true) {
     const q = new URLSearchParams(location.search);
     const cat = q.get('cat'), tag = q.get('tag');
-    chips.forEach((c) => c.classList.toggle('active', !tag && (cat || 'todas') === c.dataset.cat));
+    const cur = cat || (chips.length === 1 ? chips[0].dataset.cat : 'todas');
+    chips.forEach((c) => c.classList.toggle('active', !tag && cur === c.dataset.cat));
     tags.forEach((t) => t.classList.toggle('active', tag === t.dataset.tag));
     let n = 0;
     cards.forEach((c) => {

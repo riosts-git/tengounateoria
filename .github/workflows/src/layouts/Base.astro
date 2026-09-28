@@ -3,14 +3,11 @@ import '../styles/global.css';
 import { SITE, CATS, slugify, u } from '../config';
 import { getPosts } from '../lib/posts';
 
-const { title = SITE.title, description = SITE.description, image, type = 'website', jsonLd } = Astro.props;
+const { title = SITE.title, description = SITE.description, type = 'website', jsonLd } = Astro.props;
 const posts = await getPosts();
 const tags = [...new Set(posts.flatMap((p) => p.tags))].sort();
 const full = title === SITE.title ? title : `${title} · ${SITE.title}`;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
-const img = image ? new URL(image, Astro.site).href : undefined;
-const path = Astro.url.pathname;
-const navs = [['Inicio', u('')], ['Ensayos', u('ensayos/')], ['Libros', u('libros/')], ['Fotos', u('fotos/')]];
 ---
 <!doctype html>
 <html lang="es">
@@ -29,28 +26,20 @@ const navs = [['Inicio', u('')], ['Ensayos', u('ensayos/')], ['Libros', u('libro
   <meta property="og:url" content={canonical} />
   <meta property="og:site_name" content={SITE.title} />
   <meta property="og:locale" content="es_ES" />
-  {img && <meta property="og:image" content={img} />}
-  <meta name="twitter:card" content={img ? 'summary_large_image' : 'summary'} />
+  <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content={full} />
   <meta name="twitter:description" content={description} />
-  {img && <meta name="twitter:image" content={img} />}
   {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;700&family=Courier+Prime:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;700&family=Courier+Prime:wght@400;700&family=Inter:wght@400;500;600&family=Newsreader:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
 </head>
 <body>
   <aside class="sidebar">
     <a href={u('')} class="brand"><h1>{SITE.title}</h1></a>
     <span class="tagline">{SITE.tagline}</span>
-    <nav class="filters" aria-label="Secciones">
-      {navs.map(([label, href]) => (
-        <a class:list={['chip', { active: href === u('') ? path === href : path.startsWith(href) }]} href={href}>{label}</a>
-      ))}
-    </nav>
-    <hr class="divider" />
     <nav class="filters" aria-label="Temas">
-      <a class="chip" data-cat="todas" href={u('')}>todas</a>
+      {CATS.length > 1 && <a class="chip" data-cat="todas" href={u('')}>todas</a>}
       {CATS.map((c) => <a class="chip" data-cat={slugify(c)} href={u(`?cat=${slugify(c)}`)}>{c}</a>)}
     </nav>
     <hr class="divider" />
@@ -63,6 +52,9 @@ const navs = [['Inicio', u('')], ['Ensayos', u('ensayos/')], ['Libros', u('libro
     <div class="footer-inner">
       <h4>Gracias por leer</h4>
       <p>Aquí voy dejando lo que pienso, a medida que lo pienso. <a href={u('rss.xml')}>RSS</a></p>
+      <a class="substack" href={SITE.substack} target="_blank" rel="noopener me" aria-label="Tengo una Teoría en Substack" title="Substack">
+        <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" fill="currentColor"><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/></svg>
+      </a>
     </div>
   </footer>
 </body>
