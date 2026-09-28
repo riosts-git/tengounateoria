@@ -2,6 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Card from '../../components/Card.astro';
+import '../../styles/ensayo.css';
 import { SITE, u, slugify } from '../../config';
 import { getPosts } from '../../lib/posts';
 
@@ -23,6 +24,8 @@ const heads = {
   libro: ['Libros', 'Recopilaciones de ensayos, en orden.'],
   foto: ['Fotos', 'Imágenes con su descripción.'],
 };
+// Texto que se muestra sobre el título de un ensayo. Si una categoría no está aquí, se muestra su nombre.
+const ETIQUETAS = { 'intuición': 'Apuntes sobre la Intuición' };
 ---
 {!entry && (
   <Base title={heads[kind][0]} description={heads[kind][1]}>
@@ -37,46 +40,72 @@ const heads = {
 {entry && await (async () => {
   const d = entry.data;
   const { Content } = await render(entry);
-  const fecha = d.date.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+  const fmt = (x) => x.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+  const fecha = fmt(d.date);
+  const actualizado = fmt(d.actualizado ?? d.date);
+  const minutos = Math.max(1, Math.round((entry.body ?? '').split(/\s+/).filter(Boolean).length / 200));
+  const etiqueta = ETIQUETAS[d.categoria] ?? d.categoria;
   const ensayos = kind !== 'foto' ? await getCollection('ensayos', pub) : [];
   const byOrden = (a, b) => (a.data.orden ?? 0) - (b.data.orden ?? 0);
   const libro = kind === 'ensayo' && d.libro ? (await getCollection('libros', pub)).find((l) => l.id === d.libro) : undefined;
-  const sibs = libro ? ensayos.filter((e) => e.data.libro === d.libro).sort(byOrden) : [];
-  const at = sibs.findIndex((s) => s.id === entry.id);
-  const prev = sibs[at - 1], next = sibs[at + 1];
+  // Anterior/siguiente: dentro de su libro si lo tiene; si no, entre todos los ensayos por fecha.
+  const serie = kind !== 'ensayo' ? [] : libro
+    ? ensayos.filter((e) => e.data.libro === d.libro).sort(byOrden)
+    : [...ensayos].sort((a, b) => +a.data.date - +b.data.date);
+  const at = serie.findIndex((s) => s.id === entry.id);
+  const prev = at > 0 ? serie[at - 1] : undefined;
+  const next = at >= 0 ? serie[at + 1] : undefined;
   const parts = kind === 'libro' ? ensayos.filter((e) => e.data.libro === entry.id).sort(byOrden) : [];
   const author = { '@type': 'Person', name: SITE.author };
   const url = new URL(Astro.url.pathname, Astro.site).href;
   const photo = d.image ? u(d.image) : undefined;
+  const modified = d.actualizado ? { dateModified: d.actualizado.toISOString() } : {};
   const jsonLd =
-    kind === 'ensayo' ? { '@context': 'https://schema.org', '@type': 'Article', headline: d.title, description: d.description, datePublished: d.date.toISOString(), author, inLanguage: 'es', mainEntityOfPage: url, ...(libro && { isPartOf: { '@type': 'Book', name: libro.data.title } }) }
+    kind === 'ensayo' ? { '@context': 'https://schema.org', '@type': 'Article', headline: d.title, description: d.description, datePublished: d.date.toISOString(), ...modified, author, inLanguage: 'es', mainEntityOfPage: url, ...(photo && { image: new URL(photo, Astro.site).href }), ...(libro && { isPartOf: { '@type': 'Book', name: libro.data.title } }) }
     : kind === 'libro' ? { '@context': 'https://schema.org', '@type': 'Book', name: d.title, description: d.description, datePublished: d.date.toISOString(), author, inLanguage: 'es', hasPart: parts.map((p) => ({ '@type': 'Article', headline: p.data.title })) }
     : { '@context': 'https://schema.org', '@type': 'ImageObject', name: d.title, description: d.description, datePublished: d.date.toISOString(), author, ...(photo && { contentUrl: new URL(photo, Astro.site).href }) };
+  const tags = d.tags.length > 0 && <div class="post-tags">{d.tags.map((t) => <a class="tag" href={u(`?tag=${slugify(t)}`)}>{t}</a>)}</div>;
   return (
     <Base title={d.title} description={d.description} type="article" image={photo} jsonLd={jsonLd}>
-      <article class="post">
-        <p class="post-cat"><a href={u(`?cat=${slugify(d.categoria)}`)}>{d.categoria}</a></p>
-        <h1>{d.title}</h1>
-        <p class="meta"><time datetime={d.date.toISOString()}>{fecha}</time></p>
-        {kind === 'ensayo' && libro && <p class="meta">Del libro <a href={u(`libros/${libro.id}/`)}>{libro.data.title}</a></p>}
-        {kind === 'foto' && (photo ? <img class="photo" src={photo} alt={d.alt ?? d.title} /> : <div class="photo ph"></div>)}
-        <div class="prose"><Content /></div>
-        {kind === 'libro' && parts.length > 0 && (
-          <>
-            <h2 class="toc-title">Índice</h2>
-            <ol class="toc">
-              {parts.map((p) => <li><a href={u(`ensayos/${p.id}/`)}>{p.data.title}</a><span>{p.data.description}</span></li>)}
-            </ol>
-          </>
-        )}
-        {d.tags.length > 0 && <div class="post-tags">{d.tags.map((t) => <a class="tag" href={u(`?tag=${slugify(t)}`)}>{t}</a>)}</div>}
-        {(prev || next) && (
-          <nav class="pager" aria-label="Capítulos del libro">
-            {prev ? <a href={u(`ensayos/${prev.id}/`)}>Anterior: {prev.data.title}</a> : <span />}
-            {next ? <a href={u(`ensayos/${next.id}/`)}>Siguiente: {next.data.title}</a> : <span />}
-          </nav>
-        )}
-      </article>
+      {kind === 'ensayo' ? (
+        <article class="post ensayo">
+          {photo && <figure class="cover"><img src={photo} alt={d.alt ?? d.title} /></figure>}
+          <p class="post-cat"><a href={u(`?cat=${slugify(d.categoria)}`)}>{etiqueta}</a></p>
+          <h1>{d.title}</h1>
+          {d.subtitulo && <p class="subtitulo">{d.subtitulo}</p>}
+          <div class="tiny">
+            <p class="lectura">{minutos} min de lectura</p>
+            {d.version && <p>Borrador: {d.version}</p>}
+            <p>Última actualización: {actualizado}</p>
+          </div>
+          {libro && <p class="del-libro">Del libro <a href={u(`libros/${libro.id}/`)}>{libro.data.title}</a></p>}
+          <div class="prose"><Content /></div>
+          {tags}
+          {(prev || next) && (
+            <nav class="pn" aria-label="Otros ensayos">
+              {prev && <a class="prev" href={u(`ensayos/${prev.id}/`)}><small>Anterior</small><strong>{prev.data.title}</strong></a>}
+              {next && <a class="next" href={u(`ensayos/${next.id}/`)}><small>Siguiente</small><strong>{next.data.title}</strong></a>}
+            </nav>
+          )}
+        </article>
+      ) : (
+        <article class="post">
+          <p class="post-cat"><a href={u(`?cat=${slugify(d.categoria)}`)}>{d.categoria}</a></p>
+          <h1>{d.title}</h1>
+          <p class="meta"><time datetime={d.date.toISOString()}>{fecha}</time></p>
+          {kind === 'foto' && (photo ? <img class="photo" src={photo} alt={d.alt ?? d.title} /> : <div class="photo ph"></div>)}
+          <div class="prose"><Content /></div>
+          {kind === 'libro' && parts.length > 0 && (
+            <>
+              <h2 class="toc-title">Índice</h2>
+              <ol class="toc">
+                {parts.map((p) => <li><a href={u(`ensayos/${p.id}/`)}>{p.data.title}</a><span>{p.data.description}</span></li>)}
+              </ol>
+            </>
+          )}
+          {tags}
+        </article>
+      )}
     </Base>
   );
 })()}
