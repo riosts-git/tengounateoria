@@ -8,7 +8,7 @@ orden: 2
 description: "De la diosa Psique al enképhalos: la historia de tres palabras —psique, mente y cerebro— y del lugar donde creemos que ocurre lo que sentimos y pensamos."
 categoria: Apuntes sobre la Intuición
 tags: [mente, cerebro, etimología, historia]
-draft: true
+draft: false
 ---
 
 Psique era tan hermosa que los hombres dejaron de rendir culto a Afrodita para admirarla a ella. Y, vaya sorpresa, a la diosa no le cayó nada bien.
