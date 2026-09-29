@@ -14,8 +14,6 @@ draft: false
 >
 > — Axioma atribuido a María la Judía[^maria]
 
-## La obsesión por el patrón
-
 Durante siglos, la humanidad estuvo obsesionada con encontrar secretos arcanos (del latín *arcanum*: lo que se guarda en un cofre cerrado). Es decir, el secreto secreto.
 
 Pensadores, místicos y científicos de todas las épocas se desvivieron por encontrar una gramática sagrada que permitiera descifrar el orden oculto del mundo. Los sólidos platónicos, la geometría de Pitágoras y su *tetraktys*, que ordenaba el cosmos en diez puntos, la proporción áurea, la sucesión de Fibonacci, el hombre de Vitruvio: el mismo impulso reaparece una y otra vez. Encontrar la razón oculta que subyace a toda forma viva. Es una antorcha que se fueron pasando los grandes rastreadores de patrones de la historia.

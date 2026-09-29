@@ -4,7 +4,7 @@ subtitulo: "Cómo recuperar una intuición: cuerpo, pausa y atención."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
-orden: 11
+orden: 10
 description: "Cómo recuperar una intuición: cuerpo, pausa y atención."
 categoria: Apuntes sobre la Intuición
 tags: [intuición, cuerpo]

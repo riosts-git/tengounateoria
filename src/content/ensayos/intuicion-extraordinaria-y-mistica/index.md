@@ -4,7 +4,7 @@ subtitulo: "Intuición extraordinaria y mística: premoniciones, sueños y miste
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
-orden: 10
+orden: 9
 description: "Intuición extraordinaria y mística: premoniciones, sueños y misterio."
 categoria: Apuntes sobre la Intuición
 tags: [intuición, mística]
