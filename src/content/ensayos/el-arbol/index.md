@@ -10,8 +10,6 @@ categoria: El Árbol de Arquetipos
 tags: [arquetipos, símbolos]
 draft: false
 ---
-## Un símbolo universal
-
 Llegó el momento que todos esperábamos: vamos a hablar de árboles.
 
 Quizá no suene apasionante. Pero ¿a quién le puede caer mal un árbol?

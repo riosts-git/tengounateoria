@@ -10,8 +10,6 @@ categoria: El Árbol de Arquetipos
 tags: [arquetipos, tradiciones]
 draft: false
 ---
-## Un libro moderno
-
 El *Kybalion* se publicó en 1908, firmado por «Tres Iniciados». Se presenta como la enseñanza de Hermes Trismegisto, una figura legendaria que fusiona al dios griego Hermes con el egipcio Thot. Pero es un libro moderno: una síntesis esotérica de principios del siglo XX.
 
 Lo había leído hace tiempo. Y como soy muy seguidora de William Walker Atkinson, a quien suele atribuírsele, ojeé y escuché algunos de sus otros libros, que firmaba con distintos seudónimos. Creo que es posible que sea suyo.

@@ -10,8 +10,6 @@ categoria: El Árbol de Arquetipos
 tags: [arquetipos, arte]
 draft: false
 ---
-## Dos procesos
-
 Trabajé toda mi vida como diseñadora, y siempre trabajé con dos procesos: uno divergente y otro convergente. Uno creativo y otro de edición. Uno de expansión y otro de contracción.
 
 Funcionaba como un reloj de arena. Primero había que decidir una idea, una tesis. Después, a partir de esa idea, crear muchas opciones. Al final, elegir una y pulirla.

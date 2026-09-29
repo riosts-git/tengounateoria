@@ -10,8 +10,6 @@ categoria: El Árbol de Arquetipos
 tags: [arquetipos, mitología]
 draft: false
 ---
-## La señora Gloria
-
 Seguí explorando la diferencia entre Hod y el nodo 8, y se me vino a la cabeza el himno. No me culpen.
 
 Ser argentino implica estar a las siete de la mañana, con frío, en el patio del colegio, cantando el himno:

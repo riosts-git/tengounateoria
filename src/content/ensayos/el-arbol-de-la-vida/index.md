@@ -10,8 +10,6 @@ categoria: El Árbol de Arquetipos
 tags: [arquetipos, tradiciones]
 draft: false
 ---
-## Historia
-
 **La Cábala** es la tradición mística judía. Su origen exacto es incierto. Hay dos relatos:
 
 - **El histórico.** Gershom Scholem, fundador del estudio académico de la Cábala, la sitúa en la Europa de los siglos XII y XIII. Sus textos fundamentales son el *Séfer Yetzirá* (*Libro de la Formación*, escrito probablemente entre los siglos III y VI), que describe la creación a partir de diez números y las veintidós letras del alfabeto hebreo; el *Séfer ha-Bahir* (*Libro de la Claridad*, sur de Francia, fines del siglo XII), donde las diez *sefirot* aparecen como emanaciones divinas; y el *Zóhar* (*Libro del Esplendor*, Castilla, hacia 1280), atribuido a Moisés de León.

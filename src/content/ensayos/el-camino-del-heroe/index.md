@@ -10,8 +10,6 @@ categoria: El Árbol de Arquetipos
 tags: [arquetipos, narrativa]
 draft: false
 ---
-## Un solo viaje
-
 En 1949, el mitólogo Joseph Campbell publicó *El héroe de las mil caras*. Después de comparar mitos y leyendas de todo el mundo, propuso que todas contaban, en el fondo, la misma historia: el **monomito**, o camino del héroe. Una heroína o un héroe[^genero] deja su mundo, enfrenta pruebas, se transforma y vuelve cambiado.
 
 Desde entonces, ese viaje se contó de muchas maneras:

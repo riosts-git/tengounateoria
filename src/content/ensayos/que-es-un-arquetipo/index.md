@@ -10,8 +10,6 @@ categoria: Emociones Arquetípicas
 tags: [emociones, arquetipos]
 draft: false
 ---
-## Emociones arquetípicas y el sesgo prototípico de la mente
-
 En caso de encontrarse el lector en medio de un debate acalorado y sin escapatoria, se recomienda introducir, en algún momento de la charla, el término *arquetipo* o *prototipo*.
 
 Esto generará un caos espontáneo que le dará tiempo para escabullirse al balcón o encerrarse en la cocina hasta que todos se hayan ido.

@@ -10,8 +10,6 @@ categoria: El Árbol de Arquetipos
 tags: [arquetipos, tradiciones]
 draft: false
 ---
-## El libro de las mutaciones
-
 El *I Ching* es uno de los libros más antiguos de China. Su nombre se traduce como *Libro de las mutaciones*, o de los cambios, y durante siglos se usó para consultar el momento presente y leer hacia dónde se mueve una situación.
 
 Su estructura nace de una idea muy simple: una unidad que se divide en dos, y cada parte que vuelve a dividirse en dos.
