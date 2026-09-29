@@ -1,7 +1,7 @@
 /* Página de ensayo, pensada para leer:
    columna de ~66 caracteres, texto de 18-19px con interlineado 1.7,
    Poppins solo en títulos, Inter en todo el texto, un solo color de acento (--olive, el del cuaderno). */
-.post.ensayo{max-width:31rem;--txt:#34302B}
+.post.ensayo{max-width:40rem;--txt:#34302B}
 @media (prefers-color-scheme:dark){.post.ensayo{--txt:#E6DFD3}}
 
 /* barra de progreso de lectura (solo navegadores con scroll-driven animations) */
