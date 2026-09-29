@@ -20,7 +20,7 @@ a{color:inherit;text-decoration:none}
 
 /* MENÚ */
 .sidebar{position:fixed;top:0;left:0;bottom:0;width:280px;z-index:20;background:var(--side);
-  border-right:1px solid var(--line);overflow-y:auto;padding:calc(env(safe-area-inset-top,0px) + 36px) 28px 32px}
+  border-right:1px solid var(--line);overflow-y:auto;padding:calc(env(safe-area-inset-top,0px) + 36px) 48px 32px 28px}
 .brand{display:inline-block}
 .sidebar h1{font-family:'Poppins',sans-serif;font-weight:700;font-size:36px;line-height:1;
   letter-spacing:-.01em;margin:0 0 8px;text-transform:uppercase}
