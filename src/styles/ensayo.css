@@ -67,6 +67,9 @@
 .ensayo .prose td:first-child{color:var(--ink);font-weight:500}
 .ensayo .prose td strong{font-weight:600}
 
+/* imágenes y diagramas SVG: nunca más anchos que la columna */
+.ensayo .prose img{display:block;max-width:100%;height:auto;margin:2.2em auto;border-radius:14px}
+
 /* diagramas en texto (el árbol) */
 .ensayo .prose pre{margin:2em 0;padding:20px 22px;border-radius:10px;background:var(--side);border:1px solid var(--line);
   overflow-x:auto;font-family:ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;font-size:12.5px;line-height:1.55;color:var(--ink)}
