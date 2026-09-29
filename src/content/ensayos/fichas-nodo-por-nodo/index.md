@@ -91,7 +91,7 @@ En la experiencia, la inhibición no suele llegar después del deseo: lo interru
 | Ensayo | El nodo 3 |
 | --- | --- |
 | La arquitectura | Inhibición: *¿Me produce aversión?* |
-| Las emociones | La aversión |
+| Las emociones | La aversión o el asco |
 | La Cábala | Biná, el entendimiento |
 | El ciclo de la vida | La ley: el primer límite, el primer «no» |
 | La lengua | El adjetivo: la valencia negativa |
