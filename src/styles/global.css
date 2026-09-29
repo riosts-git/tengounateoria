@@ -35,7 +35,7 @@ a{color:inherit;text-decoration:none}
   [data-c="emociones-arquetipicas"]{--acc:#D79BBB}
   [data-c="el-arbol-de-arquetipos"]{--acc:#E8877A}
 }
-.chip{position:relative;display:block;font-size:15px;font-weight:600;line-height:1.25;padding:8px 0;color:var(--ink);
+.chip{position:relative;display:block;font-family:'Poppins',sans-serif;font-size:15px;font-weight:600;line-height:1.25;padding:8px 0;color:var(--ink);
   transition:color .4s var(--glide),transform .5s var(--spring)}
 .chip:hover{color:var(--acc,var(--gold-deep));transform:translateX(4px)}
 .chip.active{color:var(--acc,var(--gold-deep))}
