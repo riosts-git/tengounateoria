@@ -54,7 +54,6 @@ Pero cuando Santaolalla eligió la palabra *misterio*, abrió otra puerta. Parec
 | El ciclo de la vida | Nacer |
 | La lengua | *Yo soy* |
 | El camino del héroe | El mundo ordinario, la llamada |
-| El mentor | El niño sabio |
 | La creatividad | El desafío |
 | El *I Ching* | El *Taiji*, la unidad |
 | El budismo | La atención (su veneno: la ignorancia) |
@@ -77,7 +76,6 @@ Cuando el deseo no puede soltar, se vuelve apego, uno de los tres venenos del bu
 | El ciclo de la vida | La nutrición |
 | La lengua | El adjetivo: la valencia positiva |
 | El camino del héroe | La llamada: el deseo de ir |
-| El mentor | El estudioso, que conoce el deseo |
 | La creatividad | Lo que me gusta |
 | El *I Ching* | El yang |
 | El budismo | El deseo (su veneno: el apego); las hijas de Mara |
@@ -100,7 +98,6 @@ En la experiencia, la inhibición no suele llegar después del deseo: lo interru
 | El ciclo de la vida | La ley: el primer límite, el primer «no» |
 | La lengua | El adjetivo: la valencia negativa |
 | El camino del héroe | El rechazo de la llamada |
-| El mentor | El orador, que distingue la mentira |
 | La creatividad | Lo que no me gusta |
 | El *I Ching* | El yin |
 | El budismo | La aversión; las hijas de Mara |
@@ -123,7 +120,6 @@ Es también el lugar del poder: quien activa, dirige o determina la acción de o
 | El ciclo de la vida | Los aliados |
 | La lengua | El verbo: la acción |
 | El camino del héroe | Las pruebas y los aliados |
-| El mentor | El guerrero |
 | La creatividad | Lo que puedo |
 | El *I Ching* | El yang menor y el mayor: la primavera y el verano |
 | El budismo | La ira que el ejército de Mara intenta despertar |
@@ -146,7 +142,6 @@ Cuando la contracción se vuelve costumbre, el estado de ánimo se sesga hacia e
 | El ciclo de la vida | Los enemigos |
 | La lengua | El verbo: la acción que no se da |
 | El camino del héroe | Los enemigos; acercarse a la cueva |
-| El mentor | El asceta, que sabe renunciar |
 | La creatividad | Lo que no puedo |
 | El *I Ching* | El yin menor y el mayor: el otoño y el invierno |
 | El budismo | El miedo que el ejército de Mara intenta despertar |
@@ -169,7 +164,6 @@ Conflicto no es destrucción: es transformación, mutación. La mezcla de lo int
 | El ciclo de la vida | La unión |
 | La lengua | El objeto directo |
 | El camino del héroe | La gran prueba; el punto medio |
-| El mentor | El mago, que señala el deseo o se deja llevar por él |
 | La creatividad | La tesis; el boceto |
 | El *I Ching* | La mutación: las líneas que cambian |
 | El budismo | Tocar la tierra: la transformación bajo la higuera |
@@ -191,7 +185,6 @@ No es un premio: es información. Y como toda información, depende de la expect
 | La Cábala | Nétsaj, la victoria |
 | El ciclo de la vida | Lo que se gana |
 | El camino del héroe | La recompensa |
-| El mentor | El sabio que fue héroe |
 | La creatividad | Lo que funciona: lo que se deja |
 | El *I Ching* | Lo auspicioso |
 | El budismo | Los frutos del karma virtuoso |
@@ -213,7 +206,6 @@ En la Cábala, este nodo se llama Hod, que suele traducirse como «esplendor» u
 | La Cábala | Hod, el esplendor, el honor |
 | El ciclo de la vida | Lo que se pierde |
 | El camino del héroe | El camino de vuelta; la noche oscura |
-| El mentor | El anti-sabio, que aprendió de la derrota |
 | La creatividad | Lo que no funciona: lo que se borra |
 | El *I Ching* | El infortunio |
 | El budismo | Los frutos del karma no virtuoso |
@@ -235,7 +227,6 @@ Es la síntesis de ganar y perder, como un hijo, que viene de su madre y de su p
 | La Cábala | Yesod, el fundamento |
 | El ciclo de la vida | La vejez: la integración |
 | El camino del héroe | La resurrección |
-| El mentor | La heroína o el héroe que se vuelve sabio |
 | La creatividad | La versión final, la obra |
 | El *I Ching* | El nuevo hexagrama |
 | El budismo | El amanecer: el despertar, el nirvana |
@@ -257,7 +248,6 @@ Tiene dos destinos posibles: convertirse en leyenda o ser olvidado. Los griegos 
 | La Cábala | Malkut, el reino |
 | El ciclo de la vida | El legado |
 | El camino del héroe | El regreso con el elixir |
-| El mentor | La sabiduría: lo que el sabio produce |
 | La creatividad | La entrega |
 | El *I Ching* | El regreso al Tao |
 | La gloria | El *kléos*: lo que se oye de uno |
