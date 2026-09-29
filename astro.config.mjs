@@ -8,4 +8,7 @@ export default defineConfig({
   base: '/tengounateoria',
   trailingSlash: 'always',
   integrations: [sitemap()],
+  markdown: {
+    remarkRehype: { footnoteLabel: 'Notas', footnoteBackLabel: 'Volver al texto' },
+  },
 });

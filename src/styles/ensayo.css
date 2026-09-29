@@ -50,6 +50,24 @@
 .ensayo .tag{color:var(--olive);background:color-mix(in srgb,var(--olive) 14%,transparent)}
 .ensayo .tag:hover{background:color-mix(in srgb,var(--olive) 24%,transparent)}
 
+/* tablas */
+.ensayo .prose table{width:100%;border-collapse:collapse;margin:1.6em 0;font-size:.86em;line-height:1.5;display:block;overflow-x:auto}
+.ensayo .prose th,.ensayo .prose td{padding:9px 12px 9px 0;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.ensayo .prose th{font-family:'Poppins',sans-serif;font-weight:600;font-size:.92em;border-bottom:2px solid var(--olive)}
+
+/* diagramas en texto (el árbol) */
+.ensayo .prose pre{margin:1.6em 0;padding:18px 20px;border-radius:12px;background:var(--side);border:1px solid var(--line);
+  overflow-x:auto;font-family:'Courier Prime',ui-monospace,monospace;font-size:13px;line-height:1.5}
+.ensayo .prose pre code{font-family:inherit;background:none}
+.ensayo .prose :not(pre) > code{font-size:.9em;padding:.1em .35em;border-radius:5px;background:var(--gold-pale)}
+
+/* listas y notas al pie */
+.ensayo .prose ul,.ensayo .prose ol{padding-left:1.3em;margin:0 0 1.1em}
+.ensayo .prose li{margin:0 0 .45em}
+.ensayo .prose .footnotes{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-size:.85em;color:var(--soft)}
+.ensayo .prose .footnotes h2{font-size:1em}
+.ensayo .prose sup a{font-size:.8em;text-decoration:none}
+
 /* fecha de actualización y versión, al pie del ensayo */
 .ensayo .actualizado{margin:48px 0 0;padding-top:14px;border-top:1px solid var(--line);
   text-align:center;color:var(--soft);font-size:12.5px}
