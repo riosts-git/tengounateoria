@@ -18,15 +18,13 @@ const jsonLd = { '@context': 'https://schema.org', '@type': 'WebSite', name: SIT
             <p>{c.posts.length === 0 ? 'Próximamente' : c.posts.length === 1 ? '1 ensayo' : `${c.posts.length} ensayos`}</p>
           </header>
           <ol class="essays">
-            {c.posts.map((p) => (
+            {c.posts.map((p, i) => (
               <li data-tags={p.tags.map(slugify).join('|')}>
-                <details>
-                  <summary><span class="t">{p.title}</span></summary>
-                  <div class="body">
-                    {(p.subtitulo ?? p.description) && <p class="sub">{p.subtitulo ?? p.description}</p>}
-                    <a class="leer" href={p.href}>Leer ensayo <span aria-hidden="true">→</span></a>
-                  </div>
-                </details>
+                <a href={p.href}>
+                  <span class="n">{String(i + 1).padStart(2, '0')}</span>
+                  <span class="t">{p.title}</span>
+                  {(p.subtitulo ?? p.description) && <span class="sub">{p.subtitulo ?? p.description}</span>}
+                </a>
               </li>
             ))}
           </ol>

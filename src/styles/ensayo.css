@@ -10,16 +10,16 @@
 }
 
 /* cabecera: centrada, con el título a unos 300px del borde superior */
-.ensayo .head{margin:0 0 64px;padding-top:calc(300px - 52px - 32px);text-align:center}
+.ensayo .head{margin:0 0 64px;padding-top:calc(200px - 52px - 32px);text-align:center}
 .ensayo .head .subtitulo{margin-left:auto;margin-right:auto}
 .ensayo .head .tiny{justify-content:center}
 @media (max-width:860px){.ensayo .head{padding-top:calc(120px - 28px - 32px)}}
 .ensayo .post-cat{margin:0 0 18px;font-size:14px}
 .ensayo .post-cat a{color:var(--olive);font-weight:600}
-.ensayo h1{font-family:'Poppins',sans-serif;font-weight:700;font-size:clamp(38px,8vw,64px);
-  line-height:1;letter-spacing:-.015em;margin:0;text-wrap:balance}
-.ensayo .subtitulo{max-width:27em;margin:26px 0 0;font-family:'Lora',Georgia,serif;font-style:italic;
-  font-size:clamp(19px,3.2vw,24px);line-height:1.45;color:var(--soft)}
+.ensayo h1{font-family:'Poppins',sans-serif;font-weight:700;font-size:clamp(30px,5vw,46px);
+  line-height:1.1;letter-spacing:-.015em;margin:0;text-wrap:balance}
+.ensayo .subtitulo{max-width:30em;margin:20px 0 0;font-family:'Lora',Georgia,serif;font-style:italic;
+  font-size:clamp(16px,2.2vw,19px);line-height:1.5;color:var(--soft)}
 .ensayo .tiny{list-style:none;display:flex;flex-wrap:wrap;gap:4px 24px;margin:34px 0 0;padding:14px 0 0;
   border-top:1px solid var(--line);color:var(--soft);font-size:12.5px;line-height:1.6}
 
@@ -27,13 +27,13 @@
 .ensayo .prose{margin:0;font-family:'Inter',system-ui,sans-serif;font-size:clamp(16px,2vw,17.5px);line-height:1.75;
   hanging-punctuation:first}
 .ensayo .prose p{margin:0 0 1.1em}
-.ensayo .prose > p:first-child{font-size:1.2em;line-height:1.55}
+.ensayo .prose > p:first-child{font-size:1.1em;line-height:1.6}
 .ensayo .prose em{font-style:italic}
 .ensayo .prose strong{font-weight:600;padding:0 .08em;
   background:linear-gradient(transparent 60%,color-mix(in srgb,var(--olive) 24%,transparent) 60%)}
 
 /* subtítulos y separadores */
-.ensayo .prose h2{font-family:'Poppins',sans-serif;font-weight:700;font-size:clamp(27px,4.6vw,36px);
+.ensayo .prose h2{font-family:'Poppins',sans-serif;font-weight:700;font-size:clamp(21px,3vw,27px);
   line-height:1.12;letter-spacing:-.01em;margin:0 0 .75em;text-wrap:balance}
 .ensayo .prose hr{border:0;height:8px;width:60px;margin:72px auto 48px;
   background:radial-gradient(circle,var(--olive) 3px,transparent 3.6px) 0 50%/20px 8px repeat-x}
