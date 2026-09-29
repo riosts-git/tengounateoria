@@ -52,12 +52,18 @@
 .ensayo .prose li::marker{color:var(--olive)}
 
 /* tablas */
-.ensayo .prose table{width:100%;border-collapse:collapse;margin:2em 0;font-size:1em;line-height:1.55;display:block;overflow-x:auto;
-  background:#fff;border-radius:12px;box-shadow:0 1px 2px rgba(60,45,25,.05),0 6px 18px -8px rgba(60,45,25,.14)}
-@media (prefers-color-scheme:dark){.ensayo .prose table{background:var(--side);box-shadow:0 1px 2px rgba(0,0,0,.3)}}
-.ensayo .prose th,.ensayo .prose td{padding:11px 16px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
-.ensayo .prose tr:last-child td{border-bottom:0}
-.ensayo .prose th{font-weight:600;color:var(--ink);border-bottom:1.5px solid var(--olive)}
+.ensayo .prose table{width:100%;border-collapse:separate;border-spacing:0;margin:2.2em 0;padding:6px 8px;
+  font-size:.86em;line-height:1.6;display:block;overflow-x:auto;
+  background:#fff;border-radius:14px;box-shadow:0 0 0 1px rgba(60,45,25,.05),0 8px 24px -14px rgba(60,45,25,.18)}
+@media (prefers-color-scheme:dark){.ensayo .prose table{background:var(--side);box-shadow:0 0 0 1px rgba(255,255,255,.06)}}
+.ensayo .prose th,.ensayo .prose td{padding:14px 18px;text-align:left;vertical-align:top;
+  border-bottom:1px solid rgba(60,45,25,.06)}
+@media (prefers-color-scheme:dark){.ensayo .prose th,.ensayo .prose td{border-bottom-color:rgba(255,255,255,.06)}}
+.ensayo .prose tbody tr:last-child td{border-bottom:0}
+.ensayo .prose th{padding-top:16px;padding-bottom:12px;font-size:.78em;font-weight:600;letter-spacing:.07em;
+  text-transform:uppercase;color:var(--olive);border-bottom:1px solid color-mix(in srgb,var(--olive) 22%,transparent)}
+.ensayo .prose td:first-child{color:var(--ink);font-weight:500}
+.ensayo .prose td strong{font-weight:600}
 
 /* diagramas en texto (el árbol) */
 .ensayo .prose pre{margin:2em 0;padding:20px 22px;border-radius:10px;background:var(--side);border:1px solid var(--line);
