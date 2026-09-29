@@ -25,7 +25,7 @@ Nacer, crecer, reproducirse y morir. El ciclo de la vida de una mujer u hombre[^
 - **7 y 8. Lo que se gana y lo que se pierde.** Toda unión tiene su resultado y su costo. Lo que nace y lo que se entrega para que nazca.
 - **9. La integración.** La vejez: el momento de reunir lo ganado y lo perdido en una nueva base. No una mezcla que diluye, sino lo que queda constituido después de haber vivido.
 - **10. El legado.** Lo que sale de nuestra vida y pasa a pertenecerle al mundo: los hijos ya grandes, la obra, la cultura, lo que otros recuerdan. Es lo que queda después de la muerte, y puede convertirse en el punto de partida de otras vidas.
-- **X. La experiencia.** Lo que traemos antes de empezar (los genes, la familia, la cultura en la que nacemos) y todo lo que vamos viviendo. Atraviesa todas las etapas. Define con qué sensibilidad registramos el mundo al nacer y con qué recursos enfrentamos cada cambio.
+- **X. La experiencia.** Incluye todas nuestras memorias, experiencias y conocimientos. Atraviesa todas las etapas. Define con qué sensibilidad registramos el mundo y con qué recursos enfrentamos cada cambio.
 
 ## Las etapas
 
