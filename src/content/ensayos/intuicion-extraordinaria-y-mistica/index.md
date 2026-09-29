@@ -2,39 +2,35 @@
 title: "¿Existe una intuición extraordinaria?"
 subtitulo: "Intuición extraordinaria y mística: premoniciones, sueños y misterio."
 date: 2026-09-29
-actualizado: 2026-09-29
-version: v1
+actualizado: 2026-09-30
+version: v2
 orden: 9
 description: "Intuición extraordinaria y mística: premoniciones, sueños y misterio."
 categoria: Apuntes sobre la Intuición
 tags: [intuición, mística]
 draft: false
 ---
-Cuando les contaba a conocidos que estaba escribiendo este libro, la reacción era casi siempre la misma: asociaban la intuición, de inmediato, con algo místico. Y a medida que hablábamos, notaba que usaban como sinónimos cosas que no lo eran: mezclaban un presentimiento cualquiera con una premonición, una corazonada con un mensaje del universo, la experiencia con la videncia.
+Mis amigos me hablaban de cosas extraordinarias: pálpitos, adivinos, sensaciones, energías. Así que me pareció oportuno ordenar un poco lo que fui descubriendo.
 
-Me pareció necesario, entonces, separar al menos tres cosas que solemos nombrar con la misma palabra.
+La intuición, como la vengo entendiendo, es un proceso cognitivo de la mente: usa la información de nuestra memoria para predecir y responder en forma de emoción. Y tiene un recorrido: empieza con la precorazonada, donde ya hay sensaciones imperceptibles; sigue con la corazonada, y termina en la conceptualización, cuando podemos ponerla en palabras.
 
-## La intuición cotidiana
-
-La primera es la que venimos describiendo en este libro: un mecanismo cognitivo, atencional y emocional que aprende regularidades y las usa para anticipar. La mayoría de nuestras corazonadas cotidianas entran ahí.
+Pero hay dos casos que parecen escaparse de esa descripción, y me gustaría verlos en detalle.
 
 ## La intuición extraordinaria
 
-La segunda es la que le pasaba a Joy Milne: personas con una sensibilidad perceptiva fuera de lo común, que no reconocen la fuente de sus propias percepciones.
+Tomemos como ejemplo a Joy Milne. Joy olía el Parkinson años antes de que llegara un diagnóstico. Lo notó primero en su marido, y después en una sala entera de pacientes, sin saber que estaba oliendo nada en particular. Para ella, simplemente «se sabía». Cuando un investigador de la Universidad de Edimburgo la puso a prueba con doce camisetas —seis de personas con Parkinson y seis sin él—, identificó las seis. Además señaló una séptima como sospechosa, y su dueño recibió el diagnóstico tiempo después. Con los años se encontró una base química real: moléculas presentes en el sebo de la piel que ella detectaba sin traducirlas conscientemente a información.
 
-Joy olía el Parkinson años antes de que llegara un diagnóstico. Lo notó primero en su marido, y después en una sala entera de pacientes, sin saber que estaba oliendo nada en particular. Para ella, simplemente «se sabía». Cuando un investigador de la Universidad de Edimburgo la puso a prueba con doce camisetas —seis de personas con Parkinson y seis sin él—, identificó las seis. Además señaló una séptima como sospechosa, y su dueño recibió el diagnóstico tiempo después. Con los años se encontró una base química real: moléculas presentes en el sebo de la piel que ella detectaba sin traducirlas conscientemente a información.
-
-Quizá haya más gente así de lo que pensamos: personas muy sensibles a una señal —olfativa, visual, corporal— que nunca llegaron a registrar como señal, porque siempre estuvo ahí. No es un don. Es percepción sin traducción consciente.
+Personas así existen y están estudiadas. Algunas saben que tienen ese talento y otras no. Lo que las distingue no es un mecanismo distinto, sino una sensibilidad mayor: es muy posible que buena parte de la información que reciben, de forma consciente o inconsciente, sea imperceptible para la mayoría.
 
 ## La intuición mística
 
-La tercera es la que casi todos mis conocidos daban por sentada como la única: la idea de que existe una vía para acceder a información que no pasa por los sentidos ni por el razonamiento habitual. Bajo esta etiqueta entran prácticas muy distintas entre sí —el tarot, la astrología, la canalización, la radiestesia, la interpretación de sueños, la comunicación con guías o espíritus—, que comparten esa misma promesa de fondo.
+Después están los otros casos: personas que dicen comunicarse con espíritus, canalizar información del akasha, comunicarse telepáticamente o usar otros métodos. Aquí lo que no podemos probar científicamente es que esa información viaje, que sea percibida por los sentidos, que se entienda y que funcione de forma predictiva y fiable.
 
-No hace falta resolver aquí si alguna de ellas funciona. Aunque lo hiciera, esa información —viniera de donde viniera— tendría que pasar por la misma mente que procesa cualquier otra cosa: se volvería sensación, imagen o presentimiento, sin que nadie viera el recorrido completo. El mecanismo que la convierte en certeza sería el mismo que venimos describiendo en todo el libro. Lo único que cambiaría sería el origen de la señal.
+Sin embargo, supongamos que sí es posible: que alguien puede recibir e interpretar correctamente una energía que está más allá del tiempo y el espacio. Aun así, es muy probable que para percibir esa señal e interpretarla usara los mismos mecanismos que cualquier intuición. Lo único que cambiaría es el tipo de información que recibe, no el sistema con el que la procesa y la recupera.
 
 ## La misma pregunta
 
-La pregunta, en los tres casos, sigue siendo la misma: ¿es fiable como mecanismo predictivo? Y, como vimos en el capítulo anterior, esa pregunta no se responde según el origen de la corazonada, sino según si la pusimos a prueba.
+En los dos casos, la pregunta sigue siendo la misma: ¿es fiable como mecanismo predictivo? Y no se responde según el origen de la corazonada, sino según si la pusimos a prueba.
 
 ---
 
