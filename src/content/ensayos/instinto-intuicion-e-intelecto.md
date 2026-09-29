@@ -1,6 +1,6 @@
 ---
 title: Tengo una teoría sobre el instinto, la intuición y el intelecto
-subtitulo: "La mayoría de la literatura de Occidente utiliza una tríada para comprender la mente. ¿Qué es el instinto, la intuición y el intelecto?"
+subtitulo: "Instinto, intuición e intelecto: ¿son tres mentes distintas o tres velocidades de la misma? ¿Y si la razón y la emoción no fueran enemigas?"
 date: 2026-09-28
 actualizado: 2026-09-28
 version: v1

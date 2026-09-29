@@ -9,8 +9,11 @@
   @keyframes leer{to{transform:scaleX(1)}}
 }
 
-/* cabecera */
-.ensayo .head{margin:0 0 64px}
+/* cabecera: centrada, con el título a unos 300px del borde superior */
+.ensayo .head{margin:0 0 64px;padding-top:calc(300px - 52px - 32px);text-align:center}
+.ensayo .head .subtitulo{margin-left:auto;margin-right:auto}
+.ensayo .head .tiny{justify-content:center}
+@media (max-width:860px){.ensayo .head{padding-top:calc(120px - 28px - 32px)}}
 .ensayo .post-cat{margin:0 0 18px;font-size:14px}
 .ensayo .post-cat a{color:var(--olive);font-weight:600}
 .ensayo h1{font-family:'Familjen Grotesk',sans-serif;font-weight:700;font-size:clamp(38px,8vw,64px);

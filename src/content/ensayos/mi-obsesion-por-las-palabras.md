@@ -1,6 +1,6 @@
 ---
 title: Mi obsesión por las palabras
-subtitulo: "Una discusión sobre la palabra «inmadura» y el comienzo de una búsqueda por saber qué es, en realidad, la intuición."
+subtitulo: "«Hacele caso a tu intuición», «seguí tu instinto», «confiá en tus corazonadas». ¿Qué es, en realidad, lo que nos dicen? ¿Qué es la intuición?"
 date: 2026-05-02
 actualizado: 2026-09-28
 version: v1

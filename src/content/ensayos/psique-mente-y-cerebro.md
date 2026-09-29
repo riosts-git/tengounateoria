@@ -1,6 +1,6 @@
 ---
 title: Psique, Mente y Cerebro
-subtitulo: "Cómo una palabra griega pasó del alma a la ciencia, y por qué la mente sigue siendo tan difícil de estudiar."
+subtitulo: "¿Dónde ocurre lo que sentimos y pensamos? ¿En el alma, en la mente o en el cerebro? ¿Y por qué usamos las tres palabras como si fueran lo mismo?"
 date: 2026-09-28
 actualizado: 2026-09-28
 version: v1
