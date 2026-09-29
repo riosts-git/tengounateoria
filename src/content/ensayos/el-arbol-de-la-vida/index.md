@@ -52,11 +52,11 @@ La correspondencia de posiciones es casi exacta: diez puntos fijos, organizados 
 | **Biná** (בינה) | Entendimiento | Lo que recibe el destello de Jojmá, lo desarrolla y le da forma. Es la «madre». | 3 · Inhibición | **Coincide** en la posición (el pilar del rigor), pero no en el sentido: la tradición la entiende como comprensión, no como rechazo. |
 | **Jesed** (חסד) | Bondad, misericordia | El amor que se da sin límite; la expansión. | 4 · Expansión | **Coincide**. Nuestro modelo le quita la carga moral: expansión, no bondad. |
 | **Guevurá** (גבורה) | Fuerza, rigor | El límite, el juicio (*din*): lo que contiene y restringe la expansión de Jesed. | 5 · Contracción | **Coincide** en la función de límite. La tradición habla de fuerza y juicio; nosotros, de contracción. |
-| **Tiféret** (תפארת) | Belleza, armonía | El equilibrio entre Jesed y Guevurá: la compasión. | 6 · Conflicto | **Difiere.** La tradición nombra el equilibrio ya alcanzado; nosotros, el choque que lo hace necesario. Son dos momentos del mismo punto: la llegada y la ruptura. *A revisar.* |
+| **Tiféret** (תפארת) | Belleza, armonía | El equilibrio entre Jesed y Guevurá: la compasión. | 6 · Conflicto | **Coincide.** La tradición nombra el equilibrio ya alcanzado; nosotros, el choque que lo hace necesario. Son dos momentos del mismo punto: la llegada y la ruptura. |
 | **Netzaj** (נצח) | Victoria, eternidad | La persistencia, la victoria. | 7 · Resultado positivo | **Coincide**: ganar. |
-| **Hod** (הוד) | Esplendor, gloria | Forma pareja con Netzaj; en algunas lecturas, el honor. | 8 · Resultado negativo | **Difiere, y es lo más interesante.** Ver la sección siguiente. *A revisar.* |
+| **Hod** (הוד) | Esplendor, gloria | Forma pareja con Netzaj; en algunas lecturas, el honor. | 8 · Resultado negativo | **Coincide, y es lo más interesante.** Ver la sección siguiente. |
 | **Yesod** (יסוד) | Fundamento | El canal que reúne todo lo anterior y lo transmite a Malkut. Se asocia con la generación. | 9 · Integración | **Coincide** casi literalmente: el fundamento. |
-| **Malkut** (מלכות) | Reino | La presencia divina en el mundo (la *Shejiná*): la existencia concreta. | 10 · Trascendencia | **Difiere.** La tradición pone aquí lo material; nosotros ponemos lo material en el 6 y dejamos el 10 para lo que trasciende. *A revisar.* |
+| **Malkut** (מלכות) | Reino | La presencia divina en el mundo (la *Shejiná*): la existencia concreta. | 10 · Trascendencia | **Coincide.** La tradición pone aquí lo material; nosotros ponemos lo material en el 6 y dejamos el 10 para lo que trasciende. |
 | **Daat** (דעת) | Conocimiento | No siempre se cuenta entre las diez. Es la unión de Jojmá y Biná. | X · Memoria | **Coincide** en su lugar especial, fuera de la secuencia. Ver «El árbol del conocimiento». |
 
 ## Victoria y honor
@@ -109,8 +109,6 @@ Nuestro árbol mantiene la misma lateralidad que la Cábala (la activación a la
 **Diferencias:**
 - La Cábala describe cómo lo divino se manifiesta en el mundo; nuestro árbol, cómo un organismo procesa su experiencia.
 - La Cábala usa términos cargados de moral y teología (misericordia, rigor, juicio). Nuestro árbol usa términos funcionales.
-- Tres posiciones se separan del sentido tradicional: Tiféret (armonía frente a conflicto), Hod (esplendor u honor frente a resultado negativo) y Malkut (lo material frente a la trascendencia).
-
 ## Conclusión
 
 La coincidencia fue eso: una coincidencia. No partí de la Cábala ni intenté reproducirla. Llegué a una forma casi idéntica siguiendo las necesidades de un modelo de emociones.
