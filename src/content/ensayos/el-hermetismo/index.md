@@ -1,11 +1,11 @@
 ---
-title: "El Árbol de Arquetipos y el hermetismo"
-subtitulo: "¿Como es arriba, es abajo? ¿Cómo se mueve el árbol?"
+title: "¿Como es arriba, es abajo?"
+subtitulo: "El hermetismo: el Kybalion, la matriz y el patrón."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
 orden: 14
-description: "¿Como es arriba, es abajo? ¿Cómo se mueve el árbol?"
+description: "El hermetismo: el Kybalion, la matriz y el patrón."
 categoria: El Árbol de Arquetipos
 tags: [arquetipos, tradiciones]
 draft: false

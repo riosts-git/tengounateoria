@@ -1,11 +1,11 @@
 ---
-title: "Fichas: el árbol, nodo por nodo"
-subtitulo: "¿Qué es cada nodo visto desde todas las tradiciones?"
+title: "¿Qué es cada nodo?"
+subtitulo: "Fichas: el árbol, nodo por nodo."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
 orden: 15
-description: "¿Qué es cada nodo visto desde todas las tradiciones?"
+description: "Fichas: el árbol, nodo por nodo."
 categoria: El Árbol de Arquetipos
 tags: [arquetipos, modelos]
 draft: false

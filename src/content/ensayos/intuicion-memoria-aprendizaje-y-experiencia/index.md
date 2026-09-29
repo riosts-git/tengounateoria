@@ -1,11 +1,11 @@
 ---
-title: "Intuición: memoria, aprendizaje y experiencia"
-subtitulo: "¿Cómo aprendemos algo que no sabemos que sabemos? ¿Es la experiencia solo acumular recuerdos?"
+title: "¿Cómo aprendemos sin darnos cuenta?"
+subtitulo: "Memoria, aprendizaje y experiencia: predecir, equivocarse y corregir."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
 orden: 7
-description: "¿Cómo aprendemos algo que no sabemos que sabemos? ¿Es la experiencia solo acumular recuerdos?"
+description: "Memoria, aprendizaje y experiencia: predecir, equivocarse y corregir."
 categoria: Apuntes sobre la Intuición
 tags: [intuición, memoria]
 draft: false

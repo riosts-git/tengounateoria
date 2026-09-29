@@ -1,11 +1,11 @@
 ---
-title: "¿Qué es un arquetipo?"
-subtitulo: "¿Por qué llamamos «miedo» a experiencias tan distintas como el pánico, el pavor o el susto? ¿Qué tienen en común?"
+title: "¿Qué es una emoción arquetípica?"
+subtitulo: "Arquetipo y prototipo: las palabras con que nombramos lo que sentimos."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
 orden: 3
-description: "¿Por qué llamamos «miedo» a experiencias tan distintas como el pánico, el pavor o el susto? ¿Qué tienen en común?"
+description: "Arquetipo y prototipo: las palabras con que nombramos lo que sentimos."
 categoria: Emociones Arquetípicas
 tags: [emociones, arquetipos]
 draft: false

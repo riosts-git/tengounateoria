@@ -1,11 +1,11 @@
 ---
-title: "Intuición extraordinaria y mística"
-subtitulo: "¿Qué pasa con las premoniciones, los sueños y las experiencias místicas? ¿Hasta dónde llega lo que podemos explicar?"
+title: "¿Existe una intuición extraordinaria?"
+subtitulo: "Intuición extraordinaria y mística: premoniciones, sueños y misterio."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
 orden: 10
-description: "¿Qué pasa con las premoniciones, los sueños y las experiencias místicas? ¿Hasta dónde llega lo que podemos explicar?"
+description: "Intuición extraordinaria y mística: premoniciones, sueños y misterio."
 categoria: Apuntes sobre la Intuición
 tags: [intuición, mística]
 draft: false

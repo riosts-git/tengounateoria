@@ -1,11 +1,11 @@
 ---
-title: "El Árbol de Arquetipos y el I Ching"
-subtitulo: "¿Qué le preguntamos al azar? ¿Qué nos responde?"
+title: "¿Qué le preguntamos al azar?"
+subtitulo: "El I Ching: yin, yang y mutación."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
 orden: 11
-description: "¿Qué le preguntamos al azar? ¿Qué nos responde?"
+description: "El I Ching: yin, yang y mutación."
 categoria: El Árbol de Arquetipos
 tags: [arquetipos, tradiciones]
 draft: false

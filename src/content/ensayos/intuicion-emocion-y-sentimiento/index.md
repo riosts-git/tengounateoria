@@ -1,11 +1,11 @@
 ---
-title: "Intuición: emoción y sentimiento"
-subtitulo: "¿Qué es una emoción, y en qué se diferencia de un sentimiento? ¿Cuántas emociones existen, en realidad?"
+title: "¿Qué diferencia una emoción de un sentimiento?"
+subtitulo: "Emoción y sentimiento: cuerpo, sensación e interpretación."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
 orden: 5
-description: "¿Qué es una emoción, y en qué se diferencia de un sentimiento? ¿Cuántas emociones existen, en realidad?"
+description: "Emoción y sentimiento: cuerpo, sensación e interpretación."
 categoria: Apuntes sobre la Intuición
 tags: [intuición, emociones]
 draft: false

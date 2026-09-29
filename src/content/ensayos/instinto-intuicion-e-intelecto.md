@@ -1,11 +1,11 @@
 ---
-title: Tengo una teoría sobre el instinto, la intuición y el intelecto
-subtitulo: "Instinto, intuición e intelecto: ¿son tres mentes distintas o tres velocidades de la misma? ¿Y si la razón y la emoción no fueran enemigas?"
+title: "¿Qué es la mente?"
+subtitulo: "Instinto, intuición e intelecto: un modelo de impulsos, percepción e interpretación."
 date: 2026-09-28
 actualizado: 2026-09-28
 version: v1
 orden: 3
-description: "Instinto, intuición e intelecto: una tríada que se repite a lo largo de la historia para explicar cómo reaccionamos, sentimos y decidimos, y por qué razón y emoción no son enemigas."
+description: "Instinto, intuición e intelecto: un modelo de impulsos, percepción e interpretación."
 categoria: Apuntes sobre la Intuición
 tags: [intuición, instinto, intelecto, modelos, mente]
 draft: false

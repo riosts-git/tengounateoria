@@ -1,11 +1,11 @@
 ---
-title: "El mapa de las emociones"
-subtitulo: "¿Se pueden ordenar todas las emociones en un solo mapa? ¿Y qué nos dice de cada una?"
+title: "¿Se pueden ordenar las emociones?"
+subtitulo: "El mapa de las emociones: dos preguntas y cuatro movimientos."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
 orden: 9
-description: "¿Se pueden ordenar todas las emociones en un solo mapa? ¿Y qué nos dice de cada una?"
+description: "El mapa de las emociones: dos preguntas y cuatro movimientos."
 categoria: Emociones Arquetípicas
 tags: [emociones, modelos]
 draft: false

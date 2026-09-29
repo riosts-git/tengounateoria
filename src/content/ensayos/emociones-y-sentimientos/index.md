@@ -1,11 +1,11 @@
 ---
-title: "Emociones y sentimientos"
-subtitulo: "¿Por qué dos personas sienten cosas distintas ante lo mismo? ¿Qué historia le contamos a nuestras emociones?"
+title: "¿Por qué sentimos distinto ante lo mismo?"
+subtitulo: "Emociones y sentimientos: expectativa, interpretación y responsabilidad."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
 orden: 6
-description: "¿Por qué dos personas sienten cosas distintas ante lo mismo? ¿Qué historia le contamos a nuestras emociones?"
+description: "Emociones y sentimientos: expectativa, interpretación y responsabilidad."
 categoria: Emociones Arquetípicas
 tags: [emociones, sentimientos]
 draft: false

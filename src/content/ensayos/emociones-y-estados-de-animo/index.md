@@ -1,11 +1,11 @@
 ---
-title: "Emociones y estados de ánimo"
-subtitulo: "¿Qué pasa cuando una emoción se vuelve costumbre? ¿Es la depresión exceso de tristeza? ¿Y la ansiedad?"
+title: "¿Qué pasa cuando una emoción se queda?"
+subtitulo: "Emociones y estados de ánimo: sesgos, depresión y ansiedad."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
 orden: 7
-description: "¿Qué pasa cuando una emoción se vuelve costumbre? ¿Es la depresión exceso de tristeza? ¿Y la ansiedad?"
+description: "Emociones y estados de ánimo: sesgos, depresión y ansiedad."
 categoria: Emociones Arquetípicas
 tags: [emociones, estados de ánimo]
 draft: false

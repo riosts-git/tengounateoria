@@ -1,11 +1,11 @@
 ---
-title: "Qué es un arquetipo"
-subtitulo: "¿Son lo mismo un rey, un comandante y un pastor? ¿Qué es un arquetipo y qué un prototipo?"
+title: "¿Qué es un arquetipo?"
+subtitulo: "Arquetipo, símbolo y prototipo: fuerza, forma y relación."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
 orden: 2
-description: "¿Son lo mismo un rey, un comandante y un pastor? ¿Qué es un arquetipo y qué un prototipo?"
+description: "Arquetipo, símbolo y prototipo: fuerza, forma y relación."
 categoria: El Árbol de Arquetipos
 tags: [arquetipos]
 draft: false

@@ -1,11 +1,11 @@
 ---
-title: "El Árbol de Arquetipos y la gloria"
-subtitulo: "¿Por qué juramos «con gloria morir»? ¿Qué queda cuando ya no estamos?"
+title: "¿Qué queda cuando ya no estamos?"
+subtitulo: "La gloria: honor, legado y olvido."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
 orden: 12
-description: "¿Por qué juramos «con gloria morir»? ¿Qué queda cuando ya no estamos?"
+description: "La gloria: honor, legado y olvido."
 categoria: El Árbol de Arquetipos
 tags: [arquetipos, mitología]
 draft: false

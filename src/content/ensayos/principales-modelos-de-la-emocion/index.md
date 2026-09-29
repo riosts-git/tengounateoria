@@ -1,11 +1,11 @@
 ---
-title: "Principales modelos de la emoción"
-subtitulo: "¿Cuántas emociones básicas hay? ¿Por qué cada teoría da una lista distinta, y en qué coinciden?"
+title: "¿Cuántas emociones hay?"
+subtitulo: "Principales modelos de la emoción: Ekman, Plutchik, Panksepp y otras listas."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
 orden: 2
-description: "¿Cuántas emociones básicas hay? ¿Por qué cada teoría da una lista distinta, y en qué coinciden?"
+description: "Principales modelos de la emoción: Ekman, Plutchik, Panksepp y otras listas."
 categoria: Emociones Arquetípicas
 tags: [emociones, modelos]
 draft: false

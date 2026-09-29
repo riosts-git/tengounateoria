@@ -1,11 +1,11 @@
 ---
-title: "El arco emocional"
-subtitulo: "¿Toda emoción sigue el mismo recorrido? ¿Qué pasa cuando un arco queda abierto, o se queda sin energía?"
+title: "¿Qué recorrido hace una emoción?"
+subtitulo: "El arco emocional: estado, intensidad, valencia y proyección."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
 orden: 4
-description: "¿Toda emoción sigue el mismo recorrido? ¿Qué pasa cuando un arco queda abierto, o se queda sin energía?"
+description: "El arco emocional: estado, intensidad, valencia y proyección."
 categoria: Emociones Arquetípicas
 tags: [emociones, modelos]
 draft: false

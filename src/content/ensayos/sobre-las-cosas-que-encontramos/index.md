@@ -1,11 +1,11 @@
 ---
-title: "Sobre las cosas que encontramos sin saber que las estábamos buscando"
-subtitulo: "¿Por qué un mapa de las emociones se parece al Árbol de la Vida? ¿Coincidencia?"
+title: "¿Por qué mi mapa se parecía al Árbol de la Vida?"
+subtitulo: "Sobre las cosas que encontramos sin buscarlas: coincidencias, Cábala y el origen del árbol."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
 orden: 1
-description: "¿Por qué un mapa de las emociones se parece al Árbol de la Vida? ¿Coincidencia?"
+description: "Sobre las cosas que encontramos sin buscarlas: coincidencias, Cábala y el origen del árbol."
 categoria: El Árbol de Arquetipos
 tags: [arquetipos, personal]
 draft: false

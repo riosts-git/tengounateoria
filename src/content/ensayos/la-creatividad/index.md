@@ -1,11 +1,11 @@
 ---
-title: "El Árbol de Arquetipos y la creatividad"
-subtitulo: "¿Por qué cuesta tanto recortar? ¿Qué nos gusta hacer y qué podemos?"
+title: "¿Por qué cuesta tanto crear?"
+subtitulo: "La creatividad: el Doble Diamante, el gusto y el talento."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
 orden: 10
-description: "¿Por qué cuesta tanto recortar? ¿Qué nos gusta hacer y qué podemos?"
+description: "La creatividad: el Doble Diamante, el gusto y el talento."
 categoria: El Árbol de Arquetipos
 tags: [arquetipos, arte]
 draft: false

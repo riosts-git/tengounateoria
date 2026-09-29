@@ -1,11 +1,11 @@
 ---
-title: "Emociones y géneros culturales"
-subtitulo: "¿Por qué elegimos una película de terror, una comedia o un drama? ¿Qué emoción vamos a buscar?"
+title: "¿Por qué elegimos sufrir en el cine?"
+subtitulo: "Emociones y géneros culturales: comedia, tragedia, terror y acción."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
 orden: 8
-description: "¿Por qué elegimos una película de terror, una comedia o un drama? ¿Qué emoción vamos a buscar?"
+description: "Emociones y géneros culturales: comedia, tragedia, terror y acción."
 categoria: Emociones Arquetípicas
 tags: [emociones, narrativa]
 draft: false

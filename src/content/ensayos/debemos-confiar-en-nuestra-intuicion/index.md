@@ -1,11 +1,11 @@
 ---
 title: "¿Debemos confiar en nuestra intuición?"
-subtitulo: "Si a veces acierta y a veces nos engaña, ¿cuándo vale la pena escucharla?"
+subtitulo: "Intuición y confianza: Kahneman, Klein y la experiencia."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
 orden: 9
-description: "Si a veces acierta y a veces nos engaña, ¿cuándo vale la pena escucharla?"
+description: "Intuición y confianza: Kahneman, Klein y la experiencia."
 categoria: Apuntes sobre la Intuición
 tags: [intuición, sesgos]
 draft: false

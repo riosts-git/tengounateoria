@@ -1,11 +1,11 @@
 ---
-title: "El Árbol de Arquetipos y las emociones"
-subtitulo: "¿Qué es cada emoción en el árbol? ¿Y qué son los tres venenos?"
+title: "¿Dónde está cada emoción en el árbol?"
+subtitulo: "El árbol y las emociones: nodos, sesgos y los tres venenos."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
 orden: 6
-description: "¿Qué es cada emoción en el árbol? ¿Y qué son los tres venenos?"
+description: "El árbol y las emociones: nodos, sesgos y los tres venenos."
 categoria: El Árbol de Arquetipos
 tags: [arquetipos, emociones]
 draft: false

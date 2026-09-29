@@ -1,11 +1,11 @@
 ---
-title: "Intuición: atención, intención y estímulos"
-subtitulo: "¿Qué hace que algo nos llame la atención? ¿Vemos lo que hay, o lo que estamos buscando?"
+title: "¿Qué nos llama la atención?"
+subtitulo: "Atención, intención y estímulos: qué registramos del mundo, y por qué."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
 orden: 6
-description: "¿Qué hace que algo nos llame la atención? ¿Vemos lo que hay, o lo que estamos buscando?"
+description: "Atención, intención y estímulos: qué registramos del mundo, y por qué."
 categoria: Apuntes sobre la Intuición
 tags: [intuición, atención]
 draft: false

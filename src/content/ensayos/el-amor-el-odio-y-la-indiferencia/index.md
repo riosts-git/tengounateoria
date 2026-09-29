@@ -1,11 +1,11 @@
 ---
-title: "El amor, el odio y la indiferencia"
-subtitulo: "¿Qué une al amor y al odio? ¿Y por qué la indiferencia duele más que los dos?"
+title: "¿Por qué duele la indiferencia?"
+subtitulo: "El amor, el odio y la indiferencia: vínculos, apego y aversión."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
 orden: 10
-description: "¿Qué une al amor y al odio? ¿Y por qué la indiferencia duele más que los dos?"
+description: "El amor, el odio y la indiferencia: vínculos, apego y aversión."
 categoria: Emociones Arquetípicas
 tags: [emociones, sentimientos]
 draft: false

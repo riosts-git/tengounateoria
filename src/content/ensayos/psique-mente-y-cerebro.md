@@ -1,11 +1,11 @@
 ---
-title: Psique, Mente y Cerebro
-subtitulo: "¿Dónde ocurre lo que sentimos y pensamos? ¿En el alma, en la mente o en el cerebro? ¿Y por qué usamos las tres palabras como si fueran lo mismo?"
+title: "¿De dónde viene lo que sentimos?"
+subtitulo: "Psique, mente y cerebro: dónde sucede la experiencia."
 date: 2026-09-28
 actualizado: 2026-09-28
 version: v1
 orden: 2
-description: "De la diosa Psique al enképhalos: la historia de tres palabras —psique, mente y cerebro— y del lugar donde creemos que ocurre lo que sentimos y pensamos."
+description: "Psique, mente y cerebro: dónde sucede la experiencia."
 categoria: Apuntes sobre la Intuición
 tags: [mente, cerebro, etimología, historia]
 draft: false

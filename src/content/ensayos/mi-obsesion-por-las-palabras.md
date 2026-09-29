@@ -1,11 +1,11 @@
 ---
-title: Mi obsesión por las palabras
-subtitulo: "«Hacele caso a tu intuición», «seguí tu instinto», «confiá en tus corazonadas». ¿Qué es, en realidad, lo que nos dicen? ¿Qué es la intuición?"
+title: "¿Qué es la intuición?"
+subtitulo: "Mi obsesión por las palabras: inmadurez, intuición y el problema de la ambigüedad."
 date: 2026-05-02
 actualizado: 2026-09-28
 version: v1
 orden: 1
-description: "Una discusión con mi madre sobre la palabra «inmadura» y el comienzo de una búsqueda: qué es, en realidad, la intuición."
+description: "Mi obsesión por las palabras: inmadurez, intuición y el problema de la ambigüedad."
 categoria: Apuntes sobre la Intuición
 tags: [intuición, lenguaje, personal]
 draft: false

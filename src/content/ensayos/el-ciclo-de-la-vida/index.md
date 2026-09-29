@@ -1,11 +1,11 @@
 ---
-title: "El Árbol de Arquetipos y el ciclo de la vida"
-subtitulo: "¿Se puede leer una vida entera como un árbol?"
+title: "¿Se puede leer una vida como un árbol?"
+subtitulo: "El ciclo de la vida: nacer, crecer, unirse y dejar algo."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
 orden: 7
-description: "¿Se puede leer una vida entera como un árbol?"
+description: "El ciclo de la vida: nacer, crecer, unirse y dejar algo."
 categoria: El Árbol de Arquetipos
 tags: [arquetipos]
 draft: false

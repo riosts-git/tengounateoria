@@ -1,11 +1,11 @@
 ---
-title: "Por qué entender las emociones"
-subtitulo: "¿Para qué sirven las emociones? ¿Y si no fueran ni buenas ni malas?"
+title: "¿Para qué sirven las emociones?"
+subtitulo: "Por qué entender las emociones: cuerpo, predicción y supervivencia."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
 orden: 1
-description: "¿Para qué sirven las emociones? ¿Y si no fueran ni buenas ni malas?"
+description: "Por qué entender las emociones: cuerpo, predicción y supervivencia."
 categoria: Emociones Arquetípicas
 tags: [emociones]
 draft: false

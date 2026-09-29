@@ -1,11 +1,11 @@
 ---
-title: "El Árbol de Arquetipos y el Árbol de la Vida"
-subtitulo: "¿En qué coincide con la Cábala? ¿Y en qué se separa?"
+title: "¿Qué dice la Cábala?"
+subtitulo: "El Árbol de la Vida: sefirot, coincidencias y diferencias."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
 orden: 5
-description: "¿En qué coincide con la Cábala? ¿Y en qué se separa?"
+description: "El Árbol de la Vida: sefirot, coincidencias y diferencias."
 categoria: El Árbol de Arquetipos
 tags: [arquetipos, tradiciones]
 draft: false

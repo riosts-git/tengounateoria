@@ -1,11 +1,11 @@
 ---
-title: "Intuición y sesgo"
-subtitulo: "¿Cuándo una corazonada es un aviso, y cuándo un prejuicio? ¿Cómo distinguir una intuición de un sesgo?"
+title: "¿Cuándo la intuición se equivoca?"
+subtitulo: "Intuición y sesgo: la vía rápida, los prejuicios y el error."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
 orden: 8
-description: "¿Cuándo una corazonada es un aviso, y cuándo un prejuicio? ¿Cómo distinguir una intuición de un sesgo?"
+description: "Intuición y sesgo: la vía rápida, los prejuicios y el error."
 categoria: Apuntes sobre la Intuición
 tags: [intuición, sesgos]
 draft: false

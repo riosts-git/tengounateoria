@@ -1,11 +1,11 @@
 ---
-title: "Epílogo: el fruto de la experiencia"
-subtitulo: "¿Para qué distinguimos lo bueno de lo malo? ¿Qué fruto nos deja?"
+title: "¿Qué fruto nos deja la experiencia?"
+subtitulo: "El fruto de la experiencia: distinguir, predecir y aprender."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
 orden: 16
-description: "¿Para qué distinguimos lo bueno de lo malo? ¿Qué fruto nos deja?"
+description: "El fruto de la experiencia: distinguir, predecir y aprender."
 categoria: El Árbol de Arquetipos
 tags: [arquetipos, personal]
 draft: false

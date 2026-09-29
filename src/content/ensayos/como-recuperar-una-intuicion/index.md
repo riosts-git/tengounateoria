@@ -1,11 +1,11 @@
 ---
-title: "Cómo recuperar una intuición"
-subtitulo: "¿Se puede volver a escuchar una intuición que dejamos de oír? ¿Por dónde empezar?"
+title: "¿Cómo se recupera una intuición?"
+subtitulo: "Cómo recuperar una intuición: cuerpo, pausa y atención."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
 orden: 11
-description: "¿Se puede volver a escuchar una intuición que dejamos de oír? ¿Por dónde empezar?"
+description: "Cómo recuperar una intuición: cuerpo, pausa y atención."
 categoria: Apuntes sobre la Intuición
 tags: [intuición, cuerpo]
 draft: false

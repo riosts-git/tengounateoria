@@ -1,11 +1,11 @@
 ---
-title: "El Árbol de Arquetipos y la lengua española"
-subtitulo: "¿Es lo mismo ser que estar? ¿Puede una oración ser un mapa?"
+title: "¿Es lo mismo ser que estar?"
+subtitulo: "La lengua española: sujeto, predicado y emoción."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
 orden: 8
-description: "¿Es lo mismo ser que estar? ¿Puede una oración ser un mapa?"
+description: "La lengua española: sujeto, predicado y emoción."
 categoria: El Árbol de Arquetipos
 tags: [arquetipos, lenguaje]
 draft: false

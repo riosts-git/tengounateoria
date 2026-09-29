@@ -1,11 +1,11 @@
 ---
-title: "El Árbol de Arquetipos y el budismo"
-subtitulo: "¿Qué pasó bajo el árbol Bodhi? ¿Y si el enemigo estuviera adentro?"
+title: "¿Qué pasó bajo el árbol Bodhi?"
+subtitulo: "El budismo: Mara, los tres venenos y el nirvana."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
 orden: 13
-description: "¿Qué pasó bajo el árbol Bodhi? ¿Y si el enemigo estuviera adentro?"
+description: "El budismo: Mara, los tres venenos y el nirvana."
 categoria: El Árbol de Arquetipos
 tags: [arquetipos, tradiciones]
 draft: false

@@ -1,11 +1,11 @@
 ---
-title: "Anatomía de la intuición"
-subtitulo: "¿Puede el cuerpo saber algo antes que nosotros? ¿Cuándo aparece una corazonada, y cuánto tarda la mente en entenderla?"
+title: "¿El cuerpo lo sabe antes que nosotros?"
+subtitulo: "Anatomía de la intuición: corazonadas, cuerpo y el experimento de las cartas."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
 orden: 4
-description: "¿Puede el cuerpo saber algo antes que nosotros? ¿Cuándo aparece una corazonada, y cuánto tarda la mente en entenderla?"
+description: "Anatomía de la intuición: corazonadas, cuerpo y el experimento de las cartas."
 categoria: Apuntes sobre la Intuición
 tags: [intuición, cuerpo]
 draft: false

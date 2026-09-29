@@ -1,11 +1,11 @@
 ---
-title: "El árbol"
-subtitulo: "¿Por qué tantas culturas explicaron el mundo con un árbol? ¿Y qué hace ahí la serpiente?"
+title: "¿Por qué un árbol?"
+subtitulo: "El árbol: símbolos, serpientes y culturas."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
 orden: 3
-description: "¿Por qué tantas culturas explicaron el mundo con un árbol? ¿Y qué hace ahí la serpiente?"
+description: "El árbol: símbolos, serpientes y culturas."
 categoria: El Árbol de Arquetipos
 tags: [arquetipos, símbolos]
 draft: false

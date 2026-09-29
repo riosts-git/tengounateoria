@@ -1,11 +1,11 @@
 ---
-title: "La arquitectura del Árbol de Arquetipos"
-subtitulo: "¿Qué es un nodo, un eje, un nivel, un plano? ¿Cómo es el árbol sin tradición?"
+title: "¿Cómo es el Árbol de Arquetipos?"
+subtitulo: "La arquitectura del árbol: nodos, ejes, niveles y planos."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
 orden: 4
-description: "¿Qué es un nodo, un eje, un nivel, un plano? ¿Cómo es el árbol sin tradición?"
+description: "La arquitectura del árbol: nodos, ejes, niveles y planos."
 categoria: El Árbol de Arquetipos
 tags: [arquetipos, modelos]
 draft: false

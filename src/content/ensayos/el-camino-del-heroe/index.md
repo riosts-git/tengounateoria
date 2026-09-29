@@ -1,11 +1,11 @@
 ---
-title: "El Árbol de Arquetipos y el camino del héroe"
-subtitulo: "¿Todas las historias cuentan el mismo viaje? ¿Quién es el mentor?"
+title: "¿Todas las historias son el mismo viaje?"
+subtitulo: "El camino del héroe: Campbell, Vogler y el mentor."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
 orden: 9
-description: "¿Todas las historias cuentan el mismo viaje? ¿Quién es el mentor?"
+description: "El camino del héroe: Campbell, Vogler y el mentor."
 categoria: El Árbol de Arquetipos
 tags: [arquetipos, narrativa]
 draft: false

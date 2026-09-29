@@ -1,11 +1,11 @@
 ---
-title: "Las emociones arquetípicas"
-subtitulo: "¿Qué emociones aparecen cuando el cuerpo se pregunta si desea algo y si puede conseguirlo?"
+title: "¿Cuáles son las emociones básicas?"
+subtitulo: "Las emociones arquetípicas: nueve emociones, arcos abiertos y baja energía."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
 orden: 5
-description: "¿Qué emociones aparecen cuando el cuerpo se pregunta si desea algo y si puede conseguirlo?"
+description: "Las emociones arquetípicas: nueve emociones, arcos abiertos y baja energía."
 categoria: Emociones Arquetípicas
 tags: [emociones, arquetipos]
 draft: false

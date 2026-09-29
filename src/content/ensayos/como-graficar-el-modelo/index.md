@@ -1,11 +1,11 @@
 ---
-title: "Cómo graficar el modelo"
-subtitulo: "¿Cómo se dibuja una emoción? ¿Y qué descubrí al intentarlo?"
+title: "¿Cómo se dibuja una emoción?"
+subtitulo: "Cómo graficar el modelo: diagramas, árboles y el Árbol de la Vida."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
 orden: 11
-description: "¿Cómo se dibuja una emoción? ¿Y qué descubrí al intentarlo?"
+description: "Cómo graficar el modelo: diagramas, árboles y el Árbol de la Vida."
 categoria: Emociones Arquetípicas
 tags: [emociones, modelos]
 draft: false
