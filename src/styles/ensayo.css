@@ -95,7 +95,8 @@
 @media (max-width:560px){.pn{grid-template-columns:1fr}.pn .prev,.pn .next{grid-column:auto}}
 
 /* fecha de actualización y versión, al pie */
-.ensayo .actualizado{margin:40px 0 0;text-align:center;color:var(--soft);font-size:12.5px}
+.ensayo .actualizado{margin:28px 0 0;text-align:center;color:var(--soft);font-size:12.5px}
+.ensayo .actualizado + .post-tags{margin-top:16px}
 
 /* Acento de cada cuaderno */
 .ensayo[data-cat="emociones-arquetipicas"]{--olive:#7A2E57}

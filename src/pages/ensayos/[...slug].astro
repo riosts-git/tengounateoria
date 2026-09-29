@@ -49,6 +49,7 @@ const jsonLd = {
       </ul>
     </header>
     <div class="prose"><Content /></div>
+    <p class="actualizado">Última actualización: {actualizado}{d.version && <> | {d.version}</>}</p>
     {d.tags.length > 0 && (
       <div class="post-tags">{d.tags.map((t) => <a class="tag" href={u(`?tag=${slugify(t)}`)}>{t}</a>)}</div>
     )}
@@ -58,6 +59,5 @@ const jsonLd = {
         {next && <a class="next" href={u(`ensayos/${next.id}/`)}><small>Siguiente</small><strong>{next.data.title}</strong></a>}
       </nav>
     )}
-    <p class="actualizado">Última actualización: {actualizado}{d.version && <> | {d.version}</>}</p>
   </article>
 </Base>
