@@ -5,7 +5,8 @@ import { getPosts } from '../lib/posts';
 
 const { title = SITE.title, description = SITE.description, type = 'website', jsonLd } = Astro.props;
 const posts = await getPosts();
-const tags = [...new Set(posts.flatMap((p) => p.tags))].sort();
+const tags = [...new Set(posts.flatMap((p) => p.tags))].sort((a, b) => a.localeCompare(b, 'es'));
+const cuantos = (t: string) => posts.filter((p) => p.tags.includes(t)).length;
 const full = title === SITE.title ? title : `${title} · ${SITE.title}`;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 ---
@@ -43,7 +44,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
     </nav>
     <hr class="divider" />
     <div class="tags-row">
-      {tags.map((t) => <a class="tag" data-tag={slugify(t)} href={u(`?tag=${slugify(t)}`)}>{t}</a>)}
+      {tags.map((t) => <a class="tag" data-tag={slugify(t)} href={u(`?tag=${slugify(t)}`)}>{t}<span class="tag-n">{cuantos(t)}</span></a>)}
     </div>
   </aside>
   <main><slot /></main>
