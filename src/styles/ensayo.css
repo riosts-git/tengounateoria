@@ -18,7 +18,7 @@
 .ensayo .post-cat a{color:var(--olive);font-weight:600}
 .ensayo h1{font-family:'Poppins',sans-serif;font-weight:700;font-size:clamp(30px,5vw,46px);
   line-height:1.1;letter-spacing:-.015em;margin:0;text-wrap:balance}
-.ensayo .subtitulo{max-width:30em;margin:20px 0 0;font-family:'Lora',Georgia,serif;font-style:italic;
+.ensayo .subtitulo{max-width:30em;margin:20px 0 0;font-family:'Lato',system-ui,sans-serif;font-style:italic;
   font-size:clamp(16px,2.2vw,19px);line-height:1.5;color:var(--soft)}
 .ensayo .tiny{list-style:none;display:flex;flex-wrap:wrap;gap:4px 24px;margin:34px 0 0;padding:14px 0 0;
   border-top:1px solid var(--line);color:var(--soft);font-size:12.5px;line-height:1.6}
