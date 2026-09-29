@@ -3,6 +3,7 @@ import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import '../../styles/ensayo.css';
 import { SITE, u, slugify } from '../../config';
+import { byOrden } from '../../lib/posts';
 
 export async function getStaticPaths() {
   const entries = await getCollection('ensayos', ({ data }) => !data.draft);
@@ -17,8 +18,8 @@ const fmt = (x: Date) => x.toLocaleDateString('es-ES', { year: 'numeric', month:
 const actualizado = fmt(d.actualizado ?? d.date);
 const minutos = Math.max(1, Math.round((entry.body ?? '').split(/\s+/).filter(Boolean).length / 200));
 
-// Anterior / siguiente por fecha
-const serie = [...all].sort((a, b) => +a.data.date - +b.data.date);
+// Anterior / siguiente dentro de la misma categoría, en orden de lectura
+const serie = all.filter((s) => s.data.categoria === d.categoria).sort((a, b) => byOrden(a.data, b.data));
 const at = serie.findIndex((s) => s.id === entry.id);
 const prev = at > 0 ? serie[at - 1] : undefined;
 const next = at >= 0 ? serie[at + 1] : undefined;
@@ -40,7 +41,7 @@ const jsonLd = {
   <div class="progress" aria-hidden="true"></div>
   <article class="post ensayo" data-cat={slugify(d.categoria)}>
     <header class="head">
-      <p class="post-cat"><a href={u(`?cat=${slugify(d.categoria)}`)}>{d.categoria}</a></p>
+      <p class="post-cat"><a href={`${u('')}#${slugify(d.categoria)}`}>{d.categoria}</a></p>
       <h1>{d.title}</h1>
       {d.subtitulo && <p class="subtitulo">{d.subtitulo}</p>}
       <ul class="tiny">

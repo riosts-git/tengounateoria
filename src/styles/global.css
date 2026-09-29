@@ -26,12 +26,21 @@ a{color:inherit;text-decoration:none}
   letter-spacing:-.01em;margin:0 0 8px;text-transform:uppercase}
 .tagline{display:block;color:var(--soft);font-size:13px;margin:0 0 26px}
 .filters{display:flex;flex-direction:column;align-items:flex-start;gap:2px}
-.chip{position:relative;display:block;font-size:14px;padding:7px 0;color:var(--soft);
+/* Colores de cada cuaderno: --c1/--c2 tapa de la moleskine, --acc acento */
+[data-c="apuntes-sobre-la-intuicion"]{--c1:#77835A;--c2:#5A6541;--acc:#5A6541}
+[data-c="emociones-arquetipicas"]{--c1:#7A3358;--c2:#3E1830;--acc:#7A2E57}
+[data-c="el-arbol-de-arquetipos"]{--c1:#C24A38;--c2:#8C2A1E;--acc:#A33A2B}
+@media (prefers-color-scheme:dark){
+  [data-c="apuntes-sobre-la-intuicion"]{--acc:#A9B784}
+  [data-c="emociones-arquetipicas"]{--acc:#D79BBB}
+  [data-c="el-arbol-de-arquetipos"]{--acc:#E8877A}
+}
+.chip{position:relative;display:block;font-size:15px;font-weight:600;line-height:1.25;padding:8px 0;color:var(--ink);
   transition:color .4s var(--glide),transform .5s var(--spring)}
-.chip::after{content:"";position:absolute;left:0;right:0;bottom:4px;height:1px;background:var(--gold);
+.chip::after{content:"";position:absolute;left:0;right:0;bottom:5px;height:2px;background:var(--acc,var(--gold));
   transform:scaleX(0);transform-origin:left;transition:transform .5s var(--spring)}
-.chip:hover{color:var(--gold-deep);transform:translateX(4px)}
-.chip.active{color:var(--gold-deep);font-weight:600}
+.chip:hover{color:var(--acc,var(--gold-deep));transform:translateX(4px)}
+.chip.active{color:var(--acc,var(--gold-deep))}
 .chip.active::after{transform:scaleX(1)}
 .divider{border:0;border-top:1px solid var(--line);margin:22px 0}
 .tags-row{display:flex;flex-wrap:wrap;gap:6px}
@@ -40,26 +49,49 @@ a{color:inherit;text-decoration:none}
 .tag:hover{transform:translateY(-2px) scale(1.06)}
 .tag.active{background:var(--gold);color:#fff}
 
-/* HOME: una tarjeta por fila — moleskine 1/3, texto 2/3 */
+/* HOME: una moleskine por cuaderno (1/3) y la lista de sus ensayos (2/3) */
 main{margin-left:280px;padding:52px 28px 20px;display:flex;justify-content:center;min-height:70vh}
-.grid{display:flex;flex-direction:column;gap:clamp(36px,6vw,64px);max-width:780px;width:100%}
-.card{display:grid;grid-template-columns:1fr 2fr;gap:clamp(18px,4.5vw,48px);align-items:center;
-  animation:rise .9s var(--spring) both;animation-delay:calc(var(--i)*80ms)}
-.card[hidden]{display:none}
+.cats{max-width:860px;width:100%;display:flex;flex-direction:column;gap:clamp(56px,9vw,96px)}
+.cat{display:grid;grid-template-columns:1fr 2fr;gap:clamp(18px,4.5vw,52px);align-items:start;
+  animation:rise .9s var(--spring) both}
+.cat[hidden]{display:none}
 @keyframes rise{from{opacity:0;transform:translateY(30px) scale(.96)}to{opacity:1;transform:none}}
-.thumb{display:flex;align-items:center;justify-content:center;width:100%;padding:14px 10px;perspective:900px;aspect-ratio:3/4}
-.card-text{min-width:0}
-.card-title{margin:0;font-family:'Familjen Grotesk',sans-serif;font-weight:700;font-size:clamp(26px,4.6vw,46px);
-  line-height:1.05;letter-spacing:-.01em;display:inline;
-  background:linear-gradient(var(--olive),var(--olive)) 0 100%/0 2px no-repeat;transition:background-size .6s var(--glide),color .3s}
-.card:hover .card-title,.card:focus-visible .card-title{background-size:100% 2px;color:var(--olive)}
-.card-sub{margin:16px 0 0;max-width:30em;font-family:'Newsreader',Georgia,serif;font-style:italic;
-  font-size:clamp(16px,2.3vw,20px);line-height:1.5;color:var(--soft)}
+.cat-thumb{position:sticky;top:calc(env(safe-area-inset-top,0px) + 28px);aspect-ratio:3/4;display:flex;
+  align-items:center;justify-content:center;padding:6px 10px;perspective:900px}
+.cat-head{padding-bottom:18px;border-bottom:2px solid var(--acc)}
+.cat-head h2{margin:0;font-family:'Familjen Grotesk',sans-serif;font-weight:700;font-size:clamp(28px,4.8vw,46px);
+  line-height:1.05;letter-spacing:-.01em}
+.cat-head p{margin:10px 0 0;font-size:13px;color:var(--soft)}
+
+/* lista de ensayos: el título se abre y muestra el subtítulo */
+.essays{margin:0;padding:0;list-style:none;counter-reset:e}
+.essays li{counter-increment:e;border-bottom:1px solid var(--line)}
+.essays li[hidden]{display:none}
+.essays summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:2.2em 1fr 1.4em;align-items:baseline;gap:6px;padding:18px 0}
+.essays summary::-webkit-details-marker{display:none}
+.essays summary::before{content:counter(e,decimal-leading-zero);font-size:12px;font-weight:600;color:var(--acc);font-variant-numeric:tabular-nums}
+.essays .t{font-family:'Familjen Grotesk',sans-serif;font-weight:600;font-size:clamp(19px,2.8vw,26px);line-height:1.2;
+  letter-spacing:-.005em;justify-self:start;padding-bottom:2px;
+  background:linear-gradient(var(--acc),var(--acc)) 0 100%/0 2px no-repeat;transition:background-size .5s var(--glide)}
+.essays summary:hover .t,.essays summary:focus-visible .t{background-size:100% 2px}
+.essays summary::after{content:"";justify-self:end;align-self:center;width:8px;height:8px;
+  border-right:2px solid var(--soft);border-bottom:2px solid var(--soft);
+  transform:rotate(45deg) translateY(-2px);transition:transform .45s var(--spring),border-color .3s}
+.essays summary:hover::after{border-color:var(--acc)}
+.essays details[open] summary::after{transform:rotate(-135deg) translate(-2px,-2px);border-color:var(--acc)}
+.essays .body{padding:0 1.4em 22px calc(2.2em + 6px)}
+.essays details[open] .body{animation:open .5s var(--glide)}
+@keyframes open{from{opacity:0;transform:translateY(-8px)}}
+.essays .sub{margin:0;max-width:32em;font-family:'Newsreader',Georgia,serif;font-style:italic;
+  font-size:clamp(16px,2.2vw,19px);line-height:1.5;color:var(--soft)}
+.leer{display:inline-block;margin-top:12px;font-size:13px;font-weight:600;color:var(--acc)}
+.leer span{display:inline-block;transition:transform .4s var(--spring)}
+.leer:hover span{transform:translateX(5px)}
 
 /* moleskine */
 .notebook{position:relative;width:78%;height:90%;transform-origin:25% 60%;transform-style:preserve-3d;
-  transition:transform .8s var(--spring);--c1:var(--c-int);--c2:var(--c-int2)}
-.card:hover .notebook,.card:focus-visible .notebook{transform:rotateY(-24deg) rotateX(5deg) translateY(-8px)}
+  transition:transform .8s var(--spring)}
+.cat:hover .notebook{transform:rotateY(-20deg) rotateX(4deg) translateY(-6px)}
 .pages{position:absolute;top:3%;bottom:3%;right:-5%;width:10%;border-radius:0 2px 2px 0;
   background:repeating-linear-gradient(#fff 0 2px,#e9e3da 2px 3px);box-shadow:1px 2px 4px rgba(70,50,20,.18)}
 .cover{position:absolute;inset:0;border-radius:3px 8px 8px 3px;overflow:hidden;
@@ -98,12 +130,18 @@ footer a{color:var(--gold-deep)}
   .chip{white-space:nowrap;font-size:12.5px;padding:6px 12px;border-radius:100px;background:var(--gold-pale)}
   .chip::after{display:none}
   .chip:hover{transform:none}
-  .chip.active{background:var(--gold);color:#fff}
+  .chip.active{background:var(--acc,var(--gold));color:#fff}
   .divider{display:none}
   .tags-row{flex-wrap:nowrap;overflow-x:auto;margin-top:8px;scrollbar-width:none}
   .tag{white-space:nowrap}
   main,footer{margin-left:0}
   main{padding:28px 18px 10px}
 }
-@media (max-width:640px){.tagline{display:none}.thumb{padding:6px 0}}
+@media (max-width:640px){.tagline{display:none}}
+@media (max-width:560px){
+  .cat{grid-template-columns:96px 1fr;gap:16px}
+  .cat-thumb{padding:0}
+  .essays summary{grid-template-columns:1.9em 1fr 1.2em}
+  .essays .body{padding-left:calc(1.9em + 6px)}
+}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition-duration:.01ms!important}}

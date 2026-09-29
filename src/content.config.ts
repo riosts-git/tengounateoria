@@ -10,6 +10,7 @@ const ensayos = defineCollection({
     date: z.coerce.date(),
     actualizado: z.coerce.date().optional(), // "Última actualización"
     version: z.coerce.string().optional(), // ej. v1
+    orden: z.number().optional(), // posición dentro de su categoría (home y anterior/siguiente)
     description: z.string(), // SEO / RSS
     categoria: z.enum(CATS),
     tags: z.array(z.string()).default([]),

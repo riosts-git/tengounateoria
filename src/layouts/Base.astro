@@ -39,8 +39,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
     <a href={u('')} class="brand"><h1>{SITE.title}</h1></a>
     <span class="tagline">{SITE.tagline}</span>
     <nav class="filters" aria-label="Temas">
-      {CATS.length > 1 && <a class="chip" data-cat="todas" href={u('')}>todas</a>}
-      {CATS.map((c) => <a class="chip" data-cat={slugify(c)} href={u(`?cat=${slugify(c)}`)}>{c}</a>)}
+      {CATS.map((c) => <a class="chip" data-c={slugify(c)} href={`${u('')}#${slugify(c)}`}>{c}</a>)}
     </nav>
     <hr class="divider" />
     <div class="tags-row">

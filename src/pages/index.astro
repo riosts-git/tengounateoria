@@ -1,44 +1,76 @@
 ---
 import Base from '../layouts/Base.astro';
-import Card from '../components/Card.astro';
-import { getPosts } from '../lib/posts';
-import { SITE } from '../config';
-const posts = await getPosts();
+import { getPostsByCat } from '../lib/posts';
+import { SITE, slugify } from '../config';
+const cats = await getPostsByCat();
 const jsonLd = { '@context': 'https://schema.org', '@type': 'WebSite', name: SITE.title, description: SITE.description, inLanguage: 'es' };
 ---
 <Base jsonLd={jsonLd}>
-  <div class="grid">
-    {posts.map((p, i) => <Card post={p} i={i} />)}
+  <div class="cats">
+    {cats.map((c) => (
+      <section class="cat" id={slugify(c.name)} data-c={slugify(c.name)}>
+        <div class="cat-thumb" aria-hidden="true">
+          <div class="notebook"><div class="pages"></div><div class="cover"><div class="elastic"></div></div></div>
+        </div>
+        <div>
+          <header class="cat-head">
+            <h2>{c.name}</h2>
+            <p>{c.posts.length === 0 ? 'Próximamente' : c.posts.length === 1 ? '1 ensayo' : `${c.posts.length} ensayos`}</p>
+          </header>
+          <ol class="essays">
+            {c.posts.map((p) => (
+              <li data-tags={p.tags.map(slugify).join('|')}>
+                <details>
+                  <summary><span class="t">{p.title}</span></summary>
+                  <div class="body">
+                    {(p.subtitulo ?? p.description) && <p class="sub">{p.subtitulo ?? p.description}</p>}
+                    <a class="leer" href={p.href}>Leer ensayo <span aria-hidden="true">→</span></a>
+                  </div>
+                </details>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+    ))}
   </div>
 </Base>
 <script>
-  // Filtro por tema o etiqueta en la home
   const $ = (s: string) => [...document.querySelectorAll<HTMLElement>(s)];
-  const cards = $('.card'), chips = $('.chip[data-cat]'), tags = $('.tag[data-tag]');
-  function apply(animate = true) {
-    const q = new URLSearchParams(location.search);
-    const cat = q.get('cat'), tag = q.get('tag');
-    const cur = cat || (chips.length === 1 ? chips[0].dataset.cat : 'todas');
-    chips.forEach((c) => c.classList.toggle('active', !tag && cur === c.dataset.cat));
+  const chips = $('.chip[data-c]'), tags = $('.tag[data-tag]'), cats = $('.cat');
+
+  // El menú marca la moleskine que está a la vista
+  const io = new IntersectionObserver(
+    (es) => es.forEach((e) => {
+      if (e.isIntersecting) chips.forEach((c) => c.classList.toggle('active', c.dataset.c === (e.target as HTMLElement).dataset.c));
+    }),
+    { rootMargin: '-30% 0px -60% 0px' },
+  );
+  cats.forEach((s) => io.observe(s));
+
+  // Filtro por etiqueta (?tag=...): deja solo los ensayos con esa etiqueta
+  function apply() {
+    const tag = new URLSearchParams(location.search).get('tag');
     tags.forEach((t) => t.classList.toggle('active', tag === t.dataset.tag));
-    let n = 0;
-    cards.forEach((c) => {
-      const show = (!cat || c.dataset.cat === cat) && (!tag || c.dataset.tags!.split('|').includes(tag));
-      c.hidden = !show;
-      if (show) {
-        c.style.setProperty('--i', String(n++));
-        if (animate) { c.style.animation = 'none'; void c.offsetWidth; c.style.animation = ''; }
-      }
+    cats.forEach((cat) => {
+      const items = [...cat.querySelectorAll<HTMLElement>('li[data-tags]')];
+      let n = 0;
+      items.forEach((li) => {
+        const show = !tag || li.dataset.tags!.split('|').includes(tag);
+        li.hidden = !show;
+        if (show) n++;
+      });
+      cat.hidden = !!tag && n === 0;
     });
   }
   document.addEventListener('click', (e) => {
-    const a = (e.target as HTMLElement).closest<HTMLElement>('.chip[data-cat], .tag[data-tag]');
+    const a = (e.target as HTMLElement).closest<HTMLElement>('.tag[data-tag]');
     if (!a) return;
     e.preventDefault();
-    const q = a.dataset.tag ? `?tag=${a.dataset.tag}` : a.dataset.cat === 'todas' ? '' : `?cat=${a.dataset.cat}`;
-    history.pushState({}, '', location.pathname + q);
+    const same = new URLSearchParams(location.search).get('tag') === a.dataset.tag;
+    history.pushState({}, '', location.pathname + (same ? '' : `?tag=${a.dataset.tag}`));
     apply();
   });
-  addEventListener('popstate', () => apply());
-  apply(false);
+  addEventListener('popstate', apply);
+  apply();
 </script>

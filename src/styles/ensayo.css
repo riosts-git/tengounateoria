@@ -57,3 +57,11 @@
 .pn .prev{grid-column:1}
 .pn .next{grid-column:2;text-align:right}
 @media (max-width:560px){.pn{grid-template-columns:1fr}.pn .prev,.pn .next{grid-column:auto}}
+
+/* Acento de cada cuaderno en la página del ensayo */
+.ensayo[data-cat="emociones-arquetipicas"]{--olive:#7A2E57}
+.ensayo[data-cat="el-arbol-de-arquetipos"]{--olive:#A33A2B}
+@media (prefers-color-scheme:dark){
+  .ensayo[data-cat="emociones-arquetipicas"]{--olive:#D79BBB}
+  .ensayo[data-cat="el-arbol-de-arquetipos"]{--olive:#E8877A}
+}

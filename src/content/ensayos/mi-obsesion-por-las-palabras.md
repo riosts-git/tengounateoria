@@ -4,6 +4,7 @@ subtitulo: "Una discusión sobre la palabra «inmadura» y el comienzo de una b�
 date: 2026-05-02
 actualizado: 2026-09-28
 version: v1
+orden: 1
 description: "Una discusión con mi madre sobre la palabra «inmadura» y el comienzo de una búsqueda: qué es, en realidad, la intuición."
 categoria: Apuntes sobre la Intuición
 tags: [intuición, lenguaje, personal]
