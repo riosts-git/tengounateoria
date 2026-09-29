@@ -54,23 +54,31 @@ main{margin-left:280px;padding:52px 28px 20px;display:flex;justify-content:cente
   animation:rise .9s var(--spring) both}
 .cat[hidden]{display:none}
 @keyframes rise{from{opacity:0;transform:translateY(30px) scale(.96)}to{opacity:1;transform:none}}
-.cat-thumb{position:sticky;top:calc(env(safe-area-inset-top,0px) + 28px);aspect-ratio:3/4;display:flex;
-  align-items:center;justify-content:center;padding:6px 10px;perspective:900px}
-.cat-head{padding-bottom:14px;border-bottom:1.5px solid var(--acc)}
-.cat-head h2{margin:0;font-family:'Poppins',sans-serif;font-weight:600;font-size:clamp(22px,2.8vw,28px);
-  line-height:1.15;letter-spacing:-.015em}
-.cat-head p{margin:6px 0 0;font-size:12.5px;color:var(--soft)}
+/* columna izquierda: la moleskine y, debajo, el nombre del cuaderno alineado a la derecha */
+.cat-side{position:sticky;top:calc(env(safe-area-inset-top,0px) + 28px);text-align:right}
+.cat-thumb{aspect-ratio:3/4;display:flex;align-items:center;justify-content:center;padding:6px 10px;perspective:900px}
+.cat-head{margin-top:6px}
+.cat-head h2{margin:0;font-family:'Poppins',sans-serif;font-weight:600;font-size:clamp(26px,3.2vw,36px);
+  line-height:1.08;letter-spacing:-.02em;color:var(--acc);text-wrap:balance}
+.cat-head p{margin:8px 0 0;font-size:12.5px;color:var(--soft)}
 
-/* lista de ensayos: cada título abre su ensayo */
+/* lista de ensayos: sin líneas; cada bloque se desplaza al pasar el mouse y vuelve despacio (efecto escalera) */
 .essays{margin:0;padding:0;list-style:none}
-.essays li{border-bottom:1px solid var(--line)}
 .essays li[hidden]{display:none}
-.essays a{display:grid;grid-template-columns:2.2em 1fr;column-gap:6px;padding:15px 0;transition:color .3s}
-.essays .n{grid-column:1;grid-row:1;font-size:12px;font-weight:600;color:var(--acc);
-  font-variant-numeric:tabular-nums;padding-top:.35em}
+.essays a{display:grid;grid-template-columns:2.2em 1fr;column-gap:6px;padding:13px 0;
+  color:color-mix(in srgb,var(--ink) 62%,var(--bg));
+  transition:transform 1.1s cubic-bezier(.22,1,.36,1),color .9s ease}
+.essays a:hover,.essays a:focus-visible{transform:translateX(18px);color:var(--ink);
+  transition:transform .35s cubic-bezier(.22,1,.36,1),color .25s ease}
+.essays .n{grid-column:1;grid-row:1;font-size:12px;font-weight:600;color:var(--acc);opacity:.7;
+  font-variant-numeric:tabular-nums;padding-top:.35em;transition:opacity .6s}
+.essays a:hover .n{opacity:1}
 .essays .t{grid-column:2;font-family:'Poppins',sans-serif;font-weight:500;font-size:clamp(16px,1.8vw,17.5px);line-height:1.35;letter-spacing:-.005em}
-.essays .sub{grid-column:2;margin:4px 0 0;max-width:36em;font-size:14px;line-height:1.5;color:var(--soft)}
+.essays .sub{grid-column:2;margin:3px 0 0;max-width:36em;font-size:14px;line-height:1.5;
+  color:color-mix(in srgb,var(--soft) 80%,var(--bg))}
 .essays a:hover .t,.essays a:focus-visible .t{color:var(--acc)}
+.essays a:hover .sub{color:var(--soft)}
+@media (prefers-reduced-motion:reduce){.essays a:hover{transform:none}}
 
 /* moleskine */
 .notebook{position:relative;width:66%;height:78%;transform-origin:25% 60%;transform-style:preserve-3d;
@@ -121,8 +129,10 @@ footer a{color:var(--gold-deep)}
 }
 @media (max-width:640px){.tagline{display:none}}
 @media (max-width:560px){
-  .cat{grid-template-columns:96px 1fr;gap:16px}
-  .cat-thumb{padding:0}
+  .cat{grid-template-columns:1fr;gap:18px}
+  .cat-side{position:static;display:flex;align-items:center;gap:16px;text-align:left}
+  .cat-thumb{width:84px;flex:none;padding:0}
+  .cat-head{margin:0}
   .essays a{grid-template-columns:1.9em 1fr}
 }
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition-duration:.01ms!important}}

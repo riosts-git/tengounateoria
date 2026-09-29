@@ -9,14 +9,16 @@ const jsonLd = { '@context': 'https://schema.org', '@type': 'WebSite', name: SIT
   <div class="cats">
     {cats.map((c) => (
       <section class="cat" id={slugify(c.name)} data-c={slugify(c.name)}>
-        <div class="cat-thumb" aria-hidden="true">
-          <div class="notebook"><div class="pages"></div><div class="cover"><div class="elastic"></div></div></div>
-        </div>
-        <div>
+        <div class="cat-side">
+          <div class="cat-thumb" aria-hidden="true">
+            <div class="notebook"><div class="pages"></div><div class="cover"><div class="elastic"></div></div></div>
+          </div>
           <header class="cat-head">
             <h2>{c.name}</h2>
             <p>{c.posts.length === 0 ? 'Próximamente' : c.posts.length === 1 ? '1 ensayo' : `${c.posts.length} ensayos`}</p>
           </header>
+        </div>
+        <div>
           <ol class="essays">
             {c.posts.map((p, i) => (
               <li data-tags={p.tags.map(slugify).join('|')}>
