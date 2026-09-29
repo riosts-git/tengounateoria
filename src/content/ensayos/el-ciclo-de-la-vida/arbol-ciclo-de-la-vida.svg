@@ -43,7 +43,7 @@
 
   <rect class="bg" y="-30" width="1180" height="960"/>
 
-  <!-- Planos (franjas): los límites pasan por la mitad de la herencia, la unión y la integración -->
+  <!-- Planos (franjas): los límites pasan por la mitad de la experiencia, la unión y la integración -->
   <rect class="band" x="20" y="95" width="1140" height="240"/>
   <rect class="band alt" x="20" y="335" width="1140" height="165"/>
   <rect class="band" x="20" y="500" width="1140" height="185"/>

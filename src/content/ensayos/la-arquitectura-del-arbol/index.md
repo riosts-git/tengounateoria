@@ -87,13 +87,13 @@ Leído de arriba hacia abajo, el árbol tiene siete niveles. Cada uno reúne una
 
 | Nivel | Nombre | Nodos | Pregunta | Etapa de la vida |
 | --- | --- | --- | --- | --- |
-| 1 | Atención | 1 | ¿Qué está ocurriendo, y con qué intensidad? | Nacimiento |
-| 2 | Sensibilidad | 2 y 3 | ¿Qué valor tiene esto? | Infancia |
+| 1 | Atención | 1 | ¿Qué está ocurriendo, y con qué intensidad? | Infancia |
+| 2 | Sensibilidad | 2 y 3 | ¿Qué valor tiene esto? | Niñez |
 | 3 | Motricidad | 4 y 5 | ¿Qué puedo hacer? | Adolescencia |
-| 4 | Conflicto | 6 | ¿Qué pasa cuando lo interno se encuentra con la realidad? | Reproducción |
+| 4 | Conflicto | 6 | ¿Qué pasa cuando lo interno se encuentra con la realidad? | Juventud |
 | 5 | Estado | 7 y 8 | ¿Qué produjo la acción? | Adultez |
 | 6 | Integración | 9 | ¿Qué queda después de la experiencia? | Vejez |
-| 7 | Trascendencia | 10 | ¿Qué deja lo ocurrido en el mundo? | Después de la muerte |
+| 7 | Trascendencia | 10 | ¿Qué deja lo ocurrido en el mundo? | Después de muerto |
 
 ## Los cuatro planos
 

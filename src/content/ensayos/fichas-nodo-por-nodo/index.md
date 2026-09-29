@@ -51,7 +51,7 @@ Pero cuando Santaolalla eligió la palabra *misterio*, abrió otra puerta. Parec
 | La arquitectura | Registro: *¿Qué es esto?* |
 | Las emociones | El asombro |
 | La Cábala | Kéter, la corona |
-| El ciclo de la vida | Nacer |
+| El ciclo de la vida | La niña o el niño |
 | La lengua | *Yo soy* |
 | El camino del héroe | El mundo ordinario, la llamada |
 | La creatividad | El desafío |
@@ -72,7 +72,7 @@ Cuando el deseo no puede soltar, se vuelve apego, uno de los tres venenos del bu
 | La arquitectura | Activación: *¿Lo deseo?* |
 | Las emociones | El deseo |
 | La Cábala | Jojmá, la sabiduría |
-| El ciclo de la vida | La nutrición |
+| El ciclo de la vida | Lo que me gusta: los deseos y el placer |
 | La lengua | El adjetivo: la valencia positiva |
 | El camino del héroe | La llamada: el deseo de ir |
 | La creatividad | Lo que me gusta |
@@ -93,7 +93,7 @@ En la experiencia, la inhibición no suele llegar después del deseo: lo interru
 | La arquitectura | Inhibición: *¿Me produce aversión?* |
 | Las emociones | La aversión o el asco |
 | La Cábala | Biná, el entendimiento |
-| El ciclo de la vida | La ley: el primer límite, el primer «no» |
+| El ciclo de la vida | Lo que no me gusta: los peligros y los obstáculos |
 | La lengua | El adjetivo: la valencia negativa |
 | El camino del héroe | El rechazo de la llamada |
 | La creatividad | Lo que no me gusta |
@@ -114,7 +114,7 @@ Es también el lugar del poder: quien activa, dirige o determina la acción de o
 | La arquitectura | Expansión: *¿Puedo?* |
 | Las emociones | La motivación y la ira |
 | La Cábala | Jésed, la bondad |
-| El ciclo de la vida | Los aliados |
+| El ciclo de la vida | Lo que puedo: los aliados |
 | La lengua | El verbo: la acción |
 | El camino del héroe | Las pruebas y los aliados |
 | La creatividad | Lo que puedo |
@@ -135,7 +135,7 @@ Cuando la contracción se vuelve costumbre, el estado de ánimo se sesga hacia e
 | La arquitectura | Contracción: *¿No puedo?* |
 | Las emociones | La desmotivación y el miedo |
 | La Cábala | Guevurá, el rigor |
-| El ciclo de la vida | Los enemigos |
+| El ciclo de la vida | Lo que no puedo: los enemigos |
 | La lengua | El verbo: la acción que no se da |
 | El camino del héroe | Los enemigos; acercarse a la cueva |
 | La creatividad | Lo que no puedo |
@@ -258,7 +258,7 @@ En la Cábala es Daat, el conocimiento: el árbol de la experiencia de lo bueno 
 | La arquitectura | Memoria: *¿Qué sé ya?* |
 | Las emociones | La memoria: la red de todo lo vivido |
 | La Cábala | Daat, el conocimiento |
-| El ciclo de la vida | La herencia |
+| El ciclo de la vida | La experiencia |
 | El camino del héroe | El mentor |
 | La creatividad | El repertorio |
 | El budismo | El árbol Bodhi, al que Buda agradece: el conocimiento, la experiencia |
