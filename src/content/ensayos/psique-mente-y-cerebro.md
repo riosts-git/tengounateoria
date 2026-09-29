@@ -1,5 +1,5 @@
 ---
-title: "¿De dónde viene lo que sentimos?"
+title: "¿De dónde viene lo que *sentimos*?"
 subtitulo: "Psique, mente y cerebro: dónde sucede la experiencia."
 date: 2026-09-28
 actualizado: 2026-09-28

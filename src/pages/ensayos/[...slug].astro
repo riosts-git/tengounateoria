@@ -2,7 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import '../../styles/ensayo.css';
-import { SITE, u, slugify } from '../../config';
+import { SITE, u, slugify, tituloHTML, tituloPlano } from '../../config';
 import { byOrden } from '../../lib/posts';
 
 export async function getStaticPaths() {
@@ -28,7 +28,7 @@ const url = new URL(Astro.url.pathname, Astro.site).href;
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: d.title,
+  headline: tituloPlano(d.title),
   description: d.description,
   datePublished: d.date.toISOString(),
   ...(d.actualizado && { dateModified: d.actualizado.toISOString() }),
@@ -37,12 +37,12 @@ const jsonLd = {
   mainEntityOfPage: url,
 };
 ---
-<Base title={d.title} description={d.description} type="article" jsonLd={jsonLd}>
+<Base title={tituloPlano(d.title)} description={d.description} type="article" jsonLd={jsonLd}>
   <div class="progress" aria-hidden="true"></div>
   <article class="post ensayo" data-cat={slugify(d.categoria)}>
     <header class="head">
       <p class="post-cat"><a href={`${u('')}#${slugify(d.categoria)}`}>{d.categoria}</a></p>
-      <h1>{d.title}</h1>
+      <h1 set:html={tituloHTML(d.title)} />
       {d.subtitulo && <p class="subtitulo">{d.subtitulo}</p>}
       <ul class="tiny">
         <li>{minutos} min de lectura</li>
@@ -55,8 +55,8 @@ const jsonLd = {
     )}
     {(prev || next) && (
       <nav class="pn" aria-label="Otros ensayos">
-        {prev && <a class="prev" href={u(`ensayos/${prev.id}/`)}><small>Anterior</small><strong>{prev.data.title}</strong></a>}
-        {next && <a class="next" href={u(`ensayos/${next.id}/`)}><small>Siguiente</small><strong>{next.data.title}</strong></a>}
+        {prev && <a class="prev" href={u(`ensayos/${prev.id}/`)}><small>Anterior</small><strong>{tituloPlano(prev.data.title)}</strong></a>}
+        {next && <a class="next" href={u(`ensayos/${next.id}/`)}><small>Siguiente</small><strong>{tituloPlano(next.data.title)}</strong></a>}
       </nav>
     )}
   </article>

@@ -1,7 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import { getPostsByCat } from '../lib/posts';
-import { SITE, slugify } from '../config';
+import { SITE, slugify, tituloHTML } from '../config';
 const cats = await getPostsByCat();
 const jsonLd = { '@context': 'https://schema.org', '@type': 'WebSite', name: SITE.title, description: SITE.description, inLanguage: 'es' };
 ---
@@ -24,7 +24,7 @@ const jsonLd = { '@context': 'https://schema.org', '@type': 'WebSite', name: SIT
               <li data-tags={p.tags.map(slugify).join('|')}>
                 <a href={p.href}>
                   <span class="n">{String(i + 1).padStart(2, '0')}</span>
-                  <span class="t">{p.title}</span>
+                  <span class="t" set:html={tituloHTML(p.title)} />
                   {(p.subtitulo ?? p.description) && <span class="sub">{p.subtitulo ?? p.description}</span>}
                 </a>
               </li>

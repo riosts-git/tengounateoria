@@ -77,6 +77,9 @@ main{margin-left:280px;padding:52px 28px 20px;display:flex;justify-content:cente
 .essays .sub{grid-column:2;margin:3px 0 0;max-width:36em;font-size:14px;line-height:1.5;
   color:color-mix(in srgb,var(--soft) 80%,var(--bg))}
 .essays a:hover .t,.essays a:focus-visible .t{color:var(--acc)}
+/* palabra destacada del título: negrita y subrayado en el color del cuaderno */
+.essays .destacada{font-weight:600;text-decoration:underline;text-decoration-color:var(--acc);
+  text-decoration-thickness:2px;text-underline-offset:4px}
 .essays a:hover .sub{color:var(--soft)}
 @media (prefers-reduced-motion:reduce){.essays a:hover{transform:none}}
 
