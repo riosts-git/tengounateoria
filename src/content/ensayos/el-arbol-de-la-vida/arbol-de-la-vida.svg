@@ -77,22 +77,6 @@
   <text class="plano" x="40" y="720">ASIÁ</text>
   <text class="etapa" x="40" y="739">El mundo de la acción.</text>
 
-  <!-- Los siete niveles (nombres provisorios: las sefirot de cada nivel) -->
-  <text class="nivel" x="880" y="146">Nivel 1</text>
-  <text class="nivelsub" x="880" y="162">Kéter</text>
-  <text class="nivel" x="880" y="246">Nivel 2</text>
-  <text class="nivelsub" x="880" y="262">Jojmá y Biná</text>
-  <text class="nivel" x="880" y="416">Nivel 3</text>
-  <text class="nivelsub" x="880" y="432">Jesed y Guevurá</text>
-  <text class="nivel" x="880" y="476">Nivel 4</text>
-  <text class="nivelsub" x="880" y="492">Tiféret</text>
-  <text class="nivel" x="880" y="596">Nivel 5</text>
-  <text class="nivelsub" x="880" y="612">Netzaj y Hod</text>
-  <text class="nivel" x="880" y="661">Nivel 6</text>
-  <text class="nivelsub" x="880" y="677">Yesod</text>
-  <text class="nivel" x="880" y="786">Nivel 7</text>
-  <text class="nivelsub" x="880" y="802">Malkut</text>
-
   <!-- Senderos (los 22) -->
   <g class="path">
     <line x1="630" y1="150" x2="790" y2="250"/>
