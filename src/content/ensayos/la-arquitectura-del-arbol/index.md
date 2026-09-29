@@ -99,12 +99,12 @@ Leído de arriba hacia abajo, el árbol tiene siete niveles. Cada uno reúne una
 
 Los planos son como los actos de una obra.
 
-| Plano | Nodos | Qué ocurre | Proceso dominante |
-| --- | --- | --- | --- |
-| **I** | 1 a 3 | Registro y primera valoración. | Instinto |
-| **II** | 4 a 6 | Proyección y encuentro con la realidad. | Intuición |
-| **III** | 7 a 9 | Resultado e integración. | Integración |
-| **IV** | 10 | Lo integrado sale del sistema y pasa al mundo. | Trascendencia |
+| Plano | Nodos | Qué ocurre |
+| --- | --- | --- |
+| **I** | 1 a 3 | Registro y primera valoración. |
+| **II** | 4 a 6 | Proyección y encuentro con la realidad. |
+| **III** | 7 a 9 | Resultado e integración. |
+| **IV** | 10 | Lo integrado sale del sistema y pasa al mundo. |
 
 El recorrido no es solo de arriba hacia abajo: también puede subir. Los planos se conectan por senderos, no por un único sentido.
 
