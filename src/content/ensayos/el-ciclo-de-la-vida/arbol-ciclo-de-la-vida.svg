@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -30 1180 960" role="img" aria-labelledby="t d" font-family="Poppins, Inter, system-ui, sans-serif">
+  <title id="t">El ciclo de la vida en el Árbol de Arquetipos</title>
+  <desc id="d">Las etapas de la vida en los diez nodos y la experiencia (X): la niña o el niño, lo que me gusta y lo que no, lo que puedo y lo que no puedo, la unión, lo que se gana y lo que se pierde, la integración y el legado, con los cuatro planos, los siete niveles y el recorrido del 1 al 10 resaltado.</desc>
+  <!-- Formato base: el del camino del héroe. Paleta gris dorada; el recorrido va en gris oscuro. -->
+  <style>
+    svg{--acento:#A33A2B;--fondo:#FAF8F4}
+    .bg{fill:var(--fondo)}
+    .band{fill:#E9DFCB;opacity:.45}
+    .band.alt{opacity:0}
+    .sep{stroke:#B5A68A;stroke-opacity:.45;stroke-dasharray:3 5}
+    .guide{stroke:#B5A68A;stroke-opacity:.35;stroke-dasharray:2 6}
+    .path{stroke:#C8BA9E;stroke-width:2;fill:none}
+    .viaje{stroke:#4A4337;stroke-width:4.5;fill:none;stroke-linejoin:round;stroke-linecap:round}
+    .flecha{stroke:#9C8A66;stroke-width:2;fill:none}
+    .punta{fill:#9C8A66}
+    .node{fill:#FFFFFF;stroke:#B5A68A;stroke-width:1.8}
+    .node.x{stroke-dasharray:5 4}
+    .t{fill:#4A4337;font-size:11.5px;font-weight:600;text-anchor:middle}
+    .s{fill:#7E7464;font-size:9.5px;font-style:italic;text-anchor:middle;font-family:Inter, system-ui, sans-serif}
+    .n{fill:#9C8A66;font-size:10.5px;font-weight:500;text-anchor:middle;font-family:Inter, system-ui, sans-serif}
+    .nuevo{fill:#9C8A66;font-size:12px;font-weight:600;text-anchor:middle;font-family:Inter, system-ui, sans-serif}
+    .titulo{fill:#4A4337;font-size:24px;font-weight:600;text-anchor:middle;letter-spacing:-.01em}
+    .eje{fill:#6E6555;font-size:13px;font-weight:600;text-anchor:middle;letter-spacing:.08em}
+    .plano{fill:#8F7A55;font-size:13px;font-weight:600;letter-spacing:.08em}
+    .etapa{fill:#9C9180;font-size:11px;font-family:Inter, system-ui, sans-serif}
+    .nivel{fill:#6E6555;font-size:11.5px;font-weight:600;font-family:Inter, system-ui, sans-serif}
+    .nivelsub{fill:#9C9180;font-size:11px;font-family:Inter, system-ui, sans-serif}
+    @media (prefers-color-scheme:dark){
+      svg{--acento:#E8877A;--fondo:#1E1B18}
+      .band{fill:#3A3226;opacity:.5}
+      .sep,.guide{stroke:#8C7F68}
+      .path{stroke:#5E5444}
+      .viaje{stroke:#D9D0C0}
+      .node{fill:#242019;stroke:#8C7F68}
+      .t,.titulo{fill:#EDE7DD}
+      .n,.nuevo,.plano{fill:#C9AE7C}
+      .flecha{stroke:#C9AE7C}
+      .punta{fill:#C9AE7C}
+      .eje,.nivel{fill:#D9D0C0}
+      .etapa,.nivelsub,.s{fill:#A39A8C}
+    }
+  </style>
+
+  <rect class="bg" y="-30" width="1180" height="960"/>
+
+  <!-- Planos (franjas): los límites pasan por la mitad de la herencia, la unión y la integración -->
+  <rect class="band" x="20" y="95" width="1140" height="240"/>
+  <rect class="band alt" x="20" y="335" width="1140" height="165"/>
+  <rect class="band" x="20" y="500" width="1140" height="185"/>
+  <rect class="band alt" x="20" y="685" width="1140" height="235"/>
+  <line class="sep" x1="20" y1="335" x2="1160" y2="335"/>
+  <line class="sep" x1="20" y1="500" x2="1160" y2="500"/>
+  <line class="sep" x1="20" y1="685" x2="1160" y2="685"/>
+
+  <!-- Ejes -->
+  <line class="guide" x1="470" y1="80" x2="470" y2="920"/>
+  <line class="guide" x1="630" y1="80" x2="630" y2="920"/>
+  <line class="guide" x1="790" y1="80" x2="790" y2="920"/>
+
+  <!-- Título y ejes -->
+  <text class="titulo" x="630" y="12">El ciclo de la vida</text>
+  <text class="eje" x="470" y="66">EJE −</text>
+  <text class="eje" x="630" y="66">EJE 0</text>
+  <text class="eje" x="790" y="66">EJE +</text>
+
+  <!-- Planos: los actos de la vida -->
+  <text class="plano" x="40" y="130">PLANO I · NACER</text>
+
+  <text class="plano" x="40" y="370">PLANO II · CRECER Y UNIRSE</text>
+
+  <text class="plano" x="40" y="535">PLANO III · MADURAR</text>
+
+  <text class="plano" x="40" y="720">PLANO IV · TRASCENDER</text>
+
+  <!-- Niveles: la etapa y su pregunta -->
+  <text class="nivel" x="880" y="147">Nivel 1 · Infancia</text>
+  <text class="nivelsub" x="880" y="163">¿Qué es esto?</text>
+  <text class="nivel" x="880" y="247">Nivel 2 · Niñez</text>
+  <text class="nivelsub" x="880" y="263">¿Qué me hace bien y qué me hace daño?</text>
+  <text class="nivel" x="880" y="417">Nivel 3 · Adolescencia</text>
+  <text class="nivelsub" x="880" y="433">¿Qué puedo hacer, y con quién?</text>
+  <text class="nivel" x="880" y="497">Nivel 4 · Juventud</text>
+  <text class="nivelsub" x="880" y="513">¿Con quién me uno para crear algo nuevo?</text>
+  <text class="nivel" x="880" y="597">Nivel 5 · Adultez</text>
+  <text class="nivelsub" x="880" y="613">¿Qué gané y qué perdí?</text>
+  <text class="nivel" x="880" y="682">Nivel 6 · Vejez</text>
+  <text class="nivelsub" x="880" y="698">¿Qué aprendí?</text>
+  <text class="nivel" x="880" y="787">Nivel 7 · Después de muerto</text>
+  <text class="nivelsub" x="880" y="803">¿Qué dejo?</text>
+
+  <!-- Senderos (los 22 del Árbol de la Vida) -->
+  <g class="path">
+    <line x1="630" y1="150" x2="790" y2="250"/>
+    <line x1="630" y1="150" x2="470" y2="250"/>
+    <line x1="630" y1="150" x2="630" y2="500"/>
+    <line x1="790" y1="250" x2="470" y2="250"/>
+    <line x1="790" y1="250" x2="790" y2="420"/>
+    <line x1="790" y1="250" x2="630" y2="500"/>
+    <line x1="470" y1="250" x2="470" y2="420"/>
+    <line x1="470" y1="250" x2="630" y2="500"/>
+    <line x1="790" y1="420" x2="470" y2="420"/>
+    <line x1="790" y1="420" x2="630" y2="500"/>
+    <line x1="790" y1="420" x2="790" y2="600"/>
+    <line x1="470" y1="420" x2="630" y2="500"/>
+    <line x1="470" y1="420" x2="470" y2="600"/>
+    <line x1="630" y1="500" x2="790" y2="600"/>
+    <line x1="630" y1="500" x2="470" y2="600"/>
+    <line x1="630" y1="500" x2="630" y2="685"/>
+    <line x1="790" y1="600" x2="470" y2="600"/>
+    <line x1="790" y1="600" x2="630" y2="685"/>
+    <line x1="790" y1="600" x2="630" y2="790"/>
+    <line x1="470" y1="600" x2="630" y2="685"/>
+    <line x1="470" y1="600" x2="630" y2="790"/>
+    <line x1="630" y1="685" x2="630" y2="790"/>
+  </g>
+
+  <!-- El recorrido de la vida: 1 → 10 -->
+  <polyline class="viaje" points="630,150 790,250 470,250 790,420 470,420 630,500 790,600 470,600 630,685 630,790"/>
+
+  <!-- 10 → el 1 de otra vida -->
+  <line class="flecha" x1="630" y1="838" x2="630" y2="872"/>
+  <path class="punta" d="M623 870 L637 870 L630 882 Z"/>
+  <text class="nuevo" x="630" y="902">el [1] de otra vida</text>
+
+  <!-- Nodos: la etapa y, debajo, el número -->
+  <g>
+    <circle class="node" cx="630" cy="150" r="48"/>
+    <text class="t" x="630" y="152">Niña o niño</text><text class="n" x="630" y="170">[1]</text>
+
+    <circle class="node" cx="790" cy="250" r="48"/>
+    <text class="t" x="790" y="233">Lo que</text><text class="t" x="790" y="247">me gusta</text><text class="s" x="790" y="262">deseos y placer</text><text class="n" x="790" y="280">[2]</text>
+
+    <circle class="node" cx="470" cy="250" r="48"/>
+    <text class="t" x="470" y="228">Lo que no</text><text class="t" x="470" y="242">me gusta</text><text class="s" x="470" y="256">peligros y</text><text class="s" x="470" y="268">obstáculos</text><text class="n" x="470" y="285">[3]</text>
+
+    <circle class="node x" cx="630" cy="335" r="38"/>
+    <text class="t" x="630" y="337">Experiencia</text><text class="n" x="630" y="354">[X]</text>
+
+    <circle class="node" cx="790" cy="420" r="48"/>
+    <text class="t" x="790" y="403">Lo que</text><text class="t" x="790" y="417">puedo</text><text class="s" x="790" y="432">aliados</text><text class="n" x="790" y="450">[4]</text>
+
+    <circle class="node" cx="470" cy="420" r="48"/>
+    <text class="t" x="470" y="403">Lo que</text><text class="t" x="470" y="417">no puedo</text><text class="s" x="470" y="432">enemigos</text><text class="n" x="470" y="450">[5]</text>
+
+    <circle class="node" cx="630" cy="500" r="48"/>
+    <text class="t" x="630" y="502">Unión</text><text class="n" x="630" y="520">[6]</text>
+
+    <circle class="node" cx="790" cy="600" r="48"/>
+    <text class="t" x="790" y="592">Lo que</text><text class="t" x="790" y="606">se gana</text><text class="n" x="790" y="624">[7]</text>
+
+    <circle class="node" cx="470" cy="600" r="48"/>
+    <text class="t" x="470" y="592">Lo que</text><text class="t" x="470" y="606">se pierde</text><text class="n" x="470" y="624">[8]</text>
+
+    <circle class="node" cx="630" cy="685" r="48"/>
+    <text class="t" x="630" y="687">La integración</text><text class="n" x="630" y="705">[9]</text>
+
+    <circle class="node" cx="630" cy="790" r="48"/>
+    <text class="t" x="630" y="792">El legado</text><text class="n" x="630" y="810">[10]</text>
+  </g>
+</svg>
