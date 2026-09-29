@@ -62,10 +62,21 @@
 .ensayo .prose pre code{font-family:inherit;background:none}
 .ensayo .prose :not(pre) > code{font-size:.88em;padding:.1em .35em;border-radius:5px;background:var(--gold-pale)}
 
-/* notas al pie */
+/* llamadas a notas */
 .ensayo .prose sup a{font-size:.75em;text-decoration:none;font-weight:600}
-.ensayo .prose .footnotes{margin-top:3.4em;padding-top:1.4em;border-top:1px solid var(--line);font-size:.82em;line-height:1.6;color:var(--soft)}
-.ensayo .prose .footnotes h2{font-size:.8rem;margin:0 0 1em;letter-spacing:.09em;text-transform:uppercase;color:var(--soft)}
+
+/* recuadros finales: Notas y Para seguir explorando */
+.ensayo .prose .caja{margin:14px 0 0;padding:18px 22px 6px;border:1px solid var(--line);border-radius:14px;
+  background:var(--side);font-size:13.5px;line-height:1.6;color:var(--soft)}
+.ensayo .prose .caja:first-of-type,.ensayo .prose > :not(.caja) + .caja{margin-top:3.2em}
+.ensayo .prose .caja h2{font-family:'Inter',system-ui,sans-serif;font-size:11.5px;font-weight:600;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--soft);margin:0 0 12px;position:static;width:auto;height:auto;clip:auto;overflow:visible}
+.ensayo .prose .caja p{margin:0 0 12px}
+.ensayo .prose .caja ol,.ensayo .prose .caja ul{margin:0 0 12px;padding-left:1.2em}
+.ensayo .prose .caja li{margin:0 0 8px}
+.ensayo .prose .caja li::marker{color:var(--soft)}
+.ensayo .prose .caja strong{color:var(--txt);font-weight:600}
+.ensayo .prose .caja a{color:var(--olive)}
 
 /* etiquetas */
 .ensayo .post-tags{margin-top:3.4em;justify-content:center}
