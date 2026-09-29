@@ -46,8 +46,6 @@ const jsonLd = {
       {d.subtitulo && <p class="subtitulo">{d.subtitulo}</p>}
       <ul class="tiny">
         <li>{minutos} min de lectura</li>
-        {d.version && <li>{d.version}</li>}
-        <li>Última actualización: {actualizado}</li>
       </ul>
     </header>
     <div class="prose"><Content /></div>
@@ -60,5 +58,6 @@ const jsonLd = {
         {next && <a class="next" href={u(`ensayos/${next.id}/`)}><small>Siguiente</small><strong>{next.data.title}</strong></a>}
       </nav>
     )}
+    <p class="actualizado">Última actualización: {actualizado}{d.version && <> | {d.version}</>}</p>
   </article>
 </Base>

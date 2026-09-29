@@ -50,6 +50,10 @@
 .ensayo .tag{color:var(--olive);background:color-mix(in srgb,var(--olive) 14%,transparent)}
 .ensayo .tag:hover{background:color-mix(in srgb,var(--olive) 24%,transparent)}
 
+/* fecha de actualización y versión, al pie del ensayo */
+.ensayo .actualizado{margin:48px 0 0;padding-top:14px;border-top:1px solid var(--line);
+  text-align:center;color:var(--soft);font-size:12.5px}
+
 /* anterior / siguiente */
 .pn{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:56px;text-align:left}
 .pn a{display:flex;flex-direction:column;gap:4px;padding:16px 18px;border:1px solid var(--line);border-radius:16px;
