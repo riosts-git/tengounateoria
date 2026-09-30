@@ -1,5 +1,5 @@
 ---
-title: "¿Qué es la *intuición*?"
+title: "¿Qué es la intuición?"
 subtitulo: "Mi obsesión por las palabras: inmadurez, intuición y el problema de la ambigüedad."
 date: 2026-05-02
 actualizado: 2026-09-28

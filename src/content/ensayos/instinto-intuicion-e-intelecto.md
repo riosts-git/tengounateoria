@@ -1,5 +1,5 @@
 ---
-title: "¿Qué es la *mente*?"
+title: "¿Qué es la mente?"
 subtitulo: "Instinto, intuición e intelecto: un modelo de impulsos, percepción e interpretación."
 date: 2026-09-28
 actualizado: 2026-09-28
