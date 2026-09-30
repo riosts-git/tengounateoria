@@ -34,6 +34,8 @@ Aristóteles ya decía que una historia tiene principio, medio y fin, unidos por
 | III (nodos 7-9) | Desenlace | El triunfo, la pérdida y la transformación. |
 | IV (nodo 10) | Regreso | La heroína o el héroe vuelve y cambia su mundo. |
 
+![El camino del héroe en el Árbol de Arquetipos: los actos, los umbrales y el recorrido del 1 al 10](arbol-heroe.svg)
+
 ## Nodo por nodo
 
 | Nodo | En el árbol | Vogler | *¡Salva el gato!* |

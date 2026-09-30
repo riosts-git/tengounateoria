@@ -17,22 +17,7 @@ Estos apuntes presentan el árbol completo, por fuera de cualquier tradición, p
 
 Diez nodos y uno transversal, ordenados en tres ejes, siete niveles y cuatro planos.
 
-```
-                     EJE −                 EJE 0                 EJE +
-                 (contracción)           (centro)             (expansión)
-
-PLANO I    Nivel 1                    [1] REGISTRO
-           Nivel 2   [3] INHIBICIÓN                        [2] ACTIVACIÓN
-                                      [X] MEMORIA
-PLANO II   Nivel 3   [5] CONTRACCIÓN                       [4] EXPANSIÓN
-           Nivel 4                    [6] CONFLICTO
-PLANO III  Nivel 5   [8] RESULTADO −                       [7] RESULTADO +
-           Nivel 6                    [9] INTEGRACIÓN
-PLANO IV   Nivel 7                    [10] TRASCENDENCIA
-                                            │
-                                            ▼
-                                       nuevo [1]
-```
+![El Árbol de Arquetipos: diez nodos y la memoria en tres ejes, cuatro planos y siete niveles](arbol.svg)
 
 Los nombres son funcionales y neutros, elegidos a propósito por fuera de cualquier tradición.
 

@@ -1,8 +1,8 @@
 /* Página de ensayo, pensada para leer:
    columna de ~66 caracteres, texto de 18-19px con interlineado 1.7,
-   Poppins solo en títulos, Inter en todo el texto, un solo color de acento (--olive, el del cuaderno). */
-.post.ensayo{max-width:40rem;--txt:#34302B}
-@media (prefers-color-scheme:dark){.post.ensayo{--txt:#E6DFD3}}
+   DM Sans en títulos y texto, Fira Mono en los datos, Caveat en el subtítulo, un solo color de acento (--olive, el del cuaderno). */
+.post.ensayo{max-width:40rem;--txt:#2A2928}
+@media (prefers-color-scheme:dark){.post.ensayo{--txt:#DEDBD5}}
 
 /* barra de progreso de lectura (solo navegadores con scroll-driven animations) */
 .progress{display:none}
@@ -15,19 +15,19 @@
 /* cabecera centrada, con el título a unos 200px del borde superior */
 .ensayo .head{margin:0 0 56px;padding-top:calc(200px - 52px - 30px);text-align:center}
 @media (max-width:860px){.ensayo .head{padding-top:calc(110px - 28px - 30px)}}
-.ensayo .post-cat{margin:0 0 16px;font-size:12px;font-weight:600;letter-spacing:.09em;text-transform:uppercase}
+.ensayo .post-cat{margin:0 0 16px;font-size:11.5px;font-weight:400;letter-spacing:.07em;text-transform:uppercase}
 .ensayo .post-cat a{color:var(--olive)}
-.ensayo .post-parte{color:var(--soft);font-weight:500}
-.ensayo h1{font-family:'Poppins',sans-serif;font-weight:600;font-size:clamp(30px,4.4vw,42px);
-  line-height:1.15;letter-spacing:-.02em;margin:0 auto;max-width:18em;text-wrap:balance}
+.ensayo .post-parte{color:var(--soft)}
+.ensayo h1{font-family:var(--f-sans);font-weight:700;font-size:clamp(32px,4.8vw,46px);
+  line-height:1.1;letter-spacing:-.025em;margin:0 auto;max-width:18em;text-wrap:balance}
 .ensayo h1 .destacada{font-weight:700}
-.ensayo .subtitulo{max-width:32em;margin:18px auto 0;font-family:'Inter',system-ui,sans-serif;font-weight:400;
-  font-size:clamp(16.5px,2vw,18.5px);line-height:1.55;color:var(--soft);text-wrap:pretty}
+.ensayo .subtitulo{max-width:26em;margin:16px auto 0;font-family:var(--f-mano);font-weight:500;
+  font-size:clamp(22px,2.6vw,26px);line-height:1.3;color:var(--soft);text-wrap:pretty}
 .ensayo .tiny{list-style:none;display:flex;justify-content:center;margin:22px 0 0;padding:0;
-  color:var(--soft);font-size:13px}
+  color:var(--soft);font-family:var(--f-mono);font-size:12px}
 
 /* texto */
-.ensayo .prose{font-family:'Inter',system-ui,sans-serif;font-size:calc(clamp(17px,1.9vw,18.5px) * .84);line-height:1.72;
+.ensayo .prose{font-family:var(--f-sans);font-size:calc(clamp(17px,1.9vw,18.5px) * .84);line-height:1.72;
   color:var(--txt);letter-spacing:-.003em;text-wrap:pretty;hanging-punctuation:first}
 .ensayo .prose p{margin:0 0 1.25em}
 .ensayo .prose em{font-style:italic}
@@ -35,10 +35,10 @@
 .ensayo .prose a{color:var(--olive);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
 
 /* títulos de sección: marcadores discretos, centrados y finos */
-.ensayo .prose h2{font-family:'Poppins',sans-serif;font-weight:400;font-size:1.05em;
+.ensayo .prose h2{font-family:var(--f-mono);font-weight:400;font-size:.9em;
   line-height:1.4;letter-spacing:.01em;color:color-mix(in srgb,var(--soft) 85%,var(--bg));
   text-align:center;margin:2.8em 0 1.1em;text-wrap:balance}
-.ensayo .prose h3{font-family:'Poppins',sans-serif;font-weight:600;font-size:1.05em;line-height:1.35;
+.ensayo .prose h3{font-family:var(--f-sans);font-weight:700;font-size:1.05em;line-height:1.35;
   color:var(--ink);margin:2em 0 .5em}
 .ensayo .prose > h2:first-child,.ensayo .prose > h3:first-child{margin-top:0}
 
@@ -57,13 +57,13 @@
 /* tablas */
 .ensayo .prose table{width:100%;border-collapse:separate;border-spacing:0;margin:2.2em 0;padding:6px 8px;
   font-size:.86em;line-height:1.6;display:block;overflow-x:auto;
-  background:#fff;border-radius:14px;box-shadow:0 0 0 1px rgba(60,45,25,.05),0 8px 24px -14px rgba(60,45,25,.18)}
-@media (prefers-color-scheme:dark){.ensayo .prose table{background:var(--side);box-shadow:0 0 0 1px rgba(255,255,255,.06)}}
+  background:#F4F3F0;border-radius:14px;box-shadow:0 0 0 1px rgba(0,0,0,.05),0 8px 24px -14px rgba(0,0,0,.18)}
+@media (prefers-color-scheme:dark){.ensayo .prose table{background:#232222;box-shadow:0 0 0 1px rgba(255,255,255,.06)}}
 .ensayo .prose th,.ensayo .prose td{padding:14px 18px;text-align:left;vertical-align:top;
-  border-bottom:1px solid rgba(60,45,25,.06)}
+  border-bottom:1px solid rgba(0,0,0,.07)}
 @media (prefers-color-scheme:dark){.ensayo .prose th,.ensayo .prose td{border-bottom-color:rgba(255,255,255,.06)}}
 .ensayo .prose tbody tr:last-child td{border-bottom:0}
-.ensayo .prose th{padding-top:16px;padding-bottom:12px;font-size:.78em;font-weight:600;letter-spacing:.07em;
+.ensayo .prose th{padding-top:16px;padding-bottom:12px;font-family:var(--f-mono);font-size:.74em;font-weight:400;letter-spacing:.06em;
   text-transform:uppercase;color:var(--olive);border-bottom:1px solid color-mix(in srgb,var(--olive) 22%,transparent)}
 .ensayo .prose td:first-child{color:var(--ink);font-weight:500}
 .ensayo .prose td strong{font-weight:600}
@@ -72,8 +72,8 @@
 .ensayo .prose img{display:block;max-width:100%;height:auto;margin:2.2em auto;border-radius:14px}
 
 /* diagramas en texto (el árbol) */
-.ensayo .prose pre{margin:2em 0;padding:20px 22px;border-radius:10px;background:var(--side);border:1px solid var(--line);
-  overflow-x:auto;font-family:ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;font-size:12.5px;line-height:1.55;color:var(--ink)}
+.ensayo .prose pre{margin:2em 0;padding:20px 22px;border-radius:10px;background:var(--gold-pale);border:1px solid var(--line);
+  overflow-x:auto;font-family:var(--f-mono);font-size:12.5px;line-height:1.55;color:var(--ink)}
 .ensayo .prose pre code{font-family:inherit;background:none}
 .ensayo .prose :not(pre) > code{font-size:.88em;padding:.1em .35em;border-radius:5px;background:var(--gold-pale)}
 
@@ -82,9 +82,9 @@
 
 /* recuadros finales: Notas y Para seguir explorando */
 .ensayo .prose .caja{margin:14px 0 0;padding:18px 22px 6px;border:1px solid var(--line);border-radius:14px;
-  background:var(--side);font-size:13.5px;line-height:1.6;color:var(--soft)}
+  background:transparent;font-size:13.5px;line-height:1.6;color:var(--soft)}
 .ensayo .prose .caja:first-of-type,.ensayo .prose > :not(.caja) + .caja{margin-top:3.2em}
-.ensayo .prose .caja h2{font-family:'Inter',system-ui,sans-serif;font-size:11.5px;font-weight:600;letter-spacing:.09em;
+.ensayo .prose .caja h2{font-family:var(--f-mono);font-size:11px;font-weight:400;letter-spacing:.08em;
   text-transform:uppercase;color:var(--soft);margin:0 0 12px;position:static;width:auto;height:auto;clip:auto;overflow:visible}
 .ensayo .prose .caja p{margin:0 0 12px}
 .ensayo .prose .caja ol,.ensayo .prose .caja ul{margin:0 0 12px;padding-left:1.2em}
@@ -96,30 +96,30 @@
 /* etiquetas */
 .ensayo .post-tags{margin-top:3.4em;justify-content:center;align-items:baseline;gap:6px 14px}
 .ensayo .post-tags .temas-t{margin:0}
-.ensayo .tag{display:inline;padding:0;font-size:13.5px;color:var(--olive);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.ensayo .tag{display:inline;padding:0;font-size:12.5px;color:var(--olive);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
 .ensayo .tag:hover{transform:none;color:var(--ink)}
 
 /* anterior / siguiente */
 .pn{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:40px;text-align:left}
 .pn a{display:flex;flex-direction:column;gap:4px;padding:16px 18px;border:1px solid var(--line);border-radius:12px;
   transition:border-color .3s,background .3s}
-.pn a:hover,.pn a:focus-visible{border-color:var(--olive);background:var(--side)}
-.pn small{font-size:11.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--olive)}
-.pn strong{font-family:'Poppins',sans-serif;font-size:15px;line-height:1.35;font-weight:500}
+.pn a:hover,.pn a:focus-visible{border-color:var(--olive);background:var(--gold-pale)}
+.pn small{font-family:var(--f-mono);font-size:11px;font-weight:400;letter-spacing:.07em;text-transform:uppercase;color:var(--olive)}
+.pn strong{font-family:var(--f-sans);font-size:15px;line-height:1.35;font-weight:700}
 .pn .prev{grid-column:1}
 .pn .next{grid-column:2;text-align:right}
 @media (max-width:560px){.pn{grid-template-columns:1fr}.pn .prev,.pn .next{grid-column:auto}}
 
 /* fecha de actualización y versión, al pie */
-.ensayo .actualizado{margin:28px 0 0;text-align:center;color:var(--soft);font-size:12.5px}
+.ensayo .actualizado{margin:28px 0 0;text-align:center;color:var(--soft);font-family:var(--f-mono);font-size:11.5px}
 .ensayo .actualizado + .post-tags{margin-top:16px}
 
 /* Acento de cada cuaderno */
 .ensayo[data-cat="emociones-arquetipicas"]{--olive:#7A2E57}
 .ensayo[data-cat="el-arbol-de-arquetipos"]{--olive:#A33A2B}
-.ensayo[data-cat="ideas-sueltas"]{--olive:#8A6A2F}
+.ensayo[data-cat="ideas-sueltas"]{--olive:#1A1919}
 @media (prefers-color-scheme:dark){
   .ensayo[data-cat="emociones-arquetipicas"]{--olive:#D79BBB}
   .ensayo[data-cat="el-arbol-de-arquetipos"]{--olive:#E8877A}
-  .ensayo[data-cat="ideas-sueltas"]{--olive:#D0A55A}
+  .ensayo[data-cat="ideas-sueltas"]{--olive:#EAE8E3}
 }
