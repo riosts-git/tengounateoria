@@ -3,7 +3,7 @@ title: "Sorpresa, curiosidad y expectativa"
 date: 2026-09-30
 actualizado: 2026-09-30
 version: v1
-orden: 19
+orden: 17
 description: "El arco positivo abierto: sorpresa, curiosidad, expectativa y humor."
 categoria: Emociones Arquetípicas
 tags: [emociones, narrativa]

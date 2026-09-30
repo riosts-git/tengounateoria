@@ -3,7 +3,7 @@ title: "Susto, sospecha y suspenso"
 date: 2026-09-30
 actualizado: 2026-09-30
 version: v1
-orden: 20
+orden: 18
 description: "El arco negativo abierto: susto, sospecha y suspenso."
 categoria: Emociones Arquetípicas
 tags: [emociones, narrativa]
