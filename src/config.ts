@@ -6,7 +6,7 @@ export const SITE = {
   substack: 'https://substack.com/@tengounateoria',
 };
 // Cada categoría es una moleskine en la home. Para sumar una: agrégala aquí y dale color en global.css ([data-c="..."])
-export const CATS = ['Apuntes sobre la Intuición', 'Emociones Arquetípicas', 'El Árbol de Arquetipos'] as const;
+export const CATS = ['Apuntes sobre la Intuición', 'Emociones Arquetípicas', 'El Árbol de Arquetipos', 'Ideas sueltas'] as const;
 // Una línea que presenta cada parte de un cuaderno (se muestra en la home, bajo el nombre de la parte).
 export const PARTES: Record<string, string> = {
   'Las palabras y la mente': 'Qué entendemos por intuición, mente y psique, y el modelo de los tres niveles.',

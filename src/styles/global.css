@@ -30,10 +30,12 @@ a{color:inherit;text-decoration:none}
 [data-c="apuntes-sobre-la-intuicion"]{--c1:#77835A;--c2:#5A6541;--acc:#5A6541}
 [data-c="emociones-arquetipicas"]{--c1:#7A3358;--c2:#3E1830;--acc:#7A2E57}
 [data-c="el-arbol-de-arquetipos"]{--c1:#C24A38;--c2:#8C2A1E;--acc:#A33A2B}
+[data-c="ideas-sueltas"]{--c1:#B8914A;--c2:#8A6A2F;--acc:#8A6A2F}
 @media (prefers-color-scheme:dark){
   [data-c="apuntes-sobre-la-intuicion"]{--acc:#A9B784}
   [data-c="emociones-arquetipicas"]{--acc:#D79BBB}
   [data-c="el-arbol-de-arquetipos"]{--acc:#E8877A}
+  [data-c="ideas-sueltas"]{--acc:#D0A55A}
 }
 .chip{position:relative;display:block;font-family:'Poppins',sans-serif;font-size:14.5px;font-weight:500;line-height:1.3;padding:7px 0;color:var(--ink);
   transition:color .4s var(--glide),transform .5s var(--spring)}
@@ -46,15 +48,19 @@ a{color:inherit;text-decoration:none}
 .libro > summary:hover{transform:none}
 .flecha{flex:none;color:var(--soft);transition:transform .3s var(--glide)}
 .libro[open] > summary .flecha{transform:rotate(90deg);color:var(--acc)}
-.nav-ensayos{list-style:none;margin:2px 0 10px;padding:0 0 0 17px;border-left:1px solid var(--line);margin-left:4px}
-.nav-ensayos a{display:block;padding:4px 0 4px 12px;font-size:12.5px;line-height:1.4;color:var(--soft);
-  transition:color .25s}
+/* dentro de cada cuaderno, sus partes; cada parte se despliega en sus ensayos */
+.nav-partes{margin:2px 0 10px 4px;padding-left:10px;border-left:1px solid var(--line)}
+.nav-parte > summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:7px;padding:5px 0;
+  font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;line-height:1.35;
+  color:color-mix(in srgb,var(--acc) 75%,var(--side));transition:color .25s}
+.nav-parte > summary::-webkit-details-marker{display:none}
+.nav-parte > summary:hover{color:var(--acc)}
+.nav-parte[open] > summary .flecha{transform:rotate(90deg);color:var(--acc)}
+.nav-ensayos{list-style:none;margin:0 0 6px;padding:0 0 0 15px}
+.nav-sueltos{margin:2px 0 10px 4px;padding-left:10px;border-left:1px solid var(--line)}
+.nav-ensayos a{display:block;padding:4px 0;font-size:12.5px;line-height:1.4;color:var(--soft);transition:color .25s}
 .nav-ensayos a:hover,.nav-ensayos a[aria-current]{color:var(--acc,var(--ink))}
 .nav-ensayos a[aria-current]{font-weight:600}
-/* cada parte del cuaderno dentro del menú */
-.nav-parte{margin:12px 0 2px 12px;font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
-  color:color-mix(in srgb,var(--acc) 75%,var(--side))}
-.nav-parte:first-child{margin-top:6px}
 .divider{border:0;border-top:1px solid var(--line);margin:22px 0}
 .tags-row{display:flex;flex-wrap:wrap;gap:6px}
 .tag{display:inline-block;font-size:11px;color:var(--gold-deep);background:var(--gold-pale);
@@ -147,7 +153,7 @@ footer a{color:var(--gold-deep)}
   .chip:hover{transform:none}
   .chip.active{background:var(--acc,var(--gold));color:#fff}
   .libro{width:auto}
-  .flecha,.nav-ensayos{display:none}
+  .flecha,.nav-partes,.nav-sueltos{display:none}
   .divider{display:none}
   .tags-row{flex-wrap:nowrap;overflow-x:auto;margin-top:8px;scrollbar-width:none}
   .tag{white-space:nowrap}

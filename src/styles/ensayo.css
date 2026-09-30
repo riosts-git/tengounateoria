@@ -116,7 +116,9 @@
 /* Acento de cada cuaderno */
 .ensayo[data-cat="emociones-arquetipicas"]{--olive:#7A2E57}
 .ensayo[data-cat="el-arbol-de-arquetipos"]{--olive:#A33A2B}
+.ensayo[data-cat="ideas-sueltas"]{--olive:#8A6A2F}
 @media (prefers-color-scheme:dark){
   .ensayo[data-cat="emociones-arquetipicas"]{--olive:#D79BBB}
   .ensayo[data-cat="el-arbol-de-arquetipos"]{--olive:#E8877A}
+  .ensayo[data-cat="ideas-sueltas"]{--olive:#D0A55A}
 }
