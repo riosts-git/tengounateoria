@@ -49,6 +49,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
   <aside class="sidebar">
     <a href={u('')} class="brand"><h1>{SITE.title}</h1></a>
     <span class="tagline">{SITE.tagline}</span>
+    <a class="chip sobre" href={u('sobre-este-sitio/')} aria-current={aqui === u('sobre-este-sitio/') ? 'page' : undefined}>Sobre este sitio</a>
     <nav class="filters" aria-label="Cuadernos">
       {libros.map((c) => (
         <details class="libro" data-c={slugify(c.name)} open={c.posts.some((p) => p.href === aqui)}>

@@ -41,6 +41,9 @@ a{color:inherit;text-decoration:none}
   transition:color .4s var(--glide),transform .5s var(--spring)}
 .chip:hover{color:var(--acc,var(--gold-deep));transform:translateX(4px)}
 .chip.active{color:var(--acc,var(--gold-deep))}
+/* «Sobre este sitio», antes de los cuadernos */
+.chip.sobre{margin:0 0 10px 17px}
+.chip.sobre[aria-current]{color:var(--gold-deep)}
 /* cada cuaderno se despliega en sus ensayos; la flecha gira hacia abajo cuando está abierto */
 .libro{width:100%}
 .libro > summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:8px}
@@ -155,6 +158,7 @@ footer a{color:var(--gold-deep)}
   .chip:hover{transform:none}
   .chip.active{background:var(--acc,var(--gold));color:#fff}
   .libro{width:auto}
+  .chip.sobre{margin:10px 0 0;display:inline-block}
   .flecha,.nav-partes,.nav-sueltos{display:none}
   .divider{display:none}
   .temas-t{display:none}

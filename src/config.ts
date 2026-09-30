@@ -2,7 +2,7 @@ export const SITE = {
   title: 'Tengo una Teoría',
   tagline: 'Apuntes sobre arquetipos, intuición, emociones, símbolos, mitología, neurociencia y arte',
   description: 'Ensayos sobre intuición, arquetipos, emociones y consciencia.',
-  author: 'Selene Rios', // cámbialo: aparece en los datos estructurados (SEO)
+  author: 'Tatiana Ríos', // aparece en los datos estructurados (SEO)
   substack: 'https://substack.com/@tengounateoria',
 };
 // Cada categoría es una moleskine en la home. Para sumar una: agrégala aquí y dale color en global.css ([data-c="..."])
