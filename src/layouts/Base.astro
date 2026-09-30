@@ -49,7 +49,10 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
             {c.name}
           </summary>
           <ol class="nav-ensayos">
-            {c.posts.map((p) => <li><a href={p.href} aria-current={p.href === aqui ? 'page' : undefined}>{tituloPlano(p.title)}</a></li>)}
+            {c.posts.map((p, i) => [
+              p.parte && p.parte !== c.posts[i - 1]?.parte && <li class="nav-parte">{p.parte}</li>,
+              <li><a href={p.href} aria-current={p.href === aqui ? 'page' : undefined}>{tituloPlano(p.title)}</a></li>,
+            ])}
           </ol>
         </details>
       ))}

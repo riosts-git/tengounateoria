@@ -51,6 +51,10 @@ a{color:inherit;text-decoration:none}
   transition:color .25s}
 .nav-ensayos a:hover,.nav-ensayos a[aria-current]{color:var(--acc,var(--ink))}
 .nav-ensayos a[aria-current]{font-weight:600}
+/* cada parte del cuaderno dentro del menú */
+.nav-parte{margin:12px 0 2px 12px;font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+  color:color-mix(in srgb,var(--acc) 75%,var(--side))}
+.nav-parte:first-child{margin-top:6px}
 .divider{border:0;border-top:1px solid var(--line);margin:22px 0}
 .tags-row{display:flex;flex-wrap:wrap;gap:6px}
 .tag{display:inline-block;font-size:11px;color:var(--gold-deep);background:var(--gold-pale);
