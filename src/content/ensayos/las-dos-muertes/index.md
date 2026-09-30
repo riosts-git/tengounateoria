@@ -10,9 +10,7 @@ draft: false
 ---
 Dicen que se muere dos veces. Primero muere el cuerpo. Después, cuando nadie nos recuerda.
 
-Hay quienes cuentan tres. Entre el cuerpo y el olvido ponen otra: el funeral.
-
-Tres muertes. Y cada una tiene su propia pregunta.
+Algunas culturas cuentan tres: entre el cuerpo y el olvido ponen el funeral, el ritual que marca el pasaje de la primera muerte a la segunda.
 
 ## La primera muerte
 
@@ -26,9 +24,9 @@ Las religiones imaginaron esos pensamientos con alas. Morir en paz es irse rodea
 
 Y el karma tiene una regla simple: el que siembra odio cosecha odio. Solo en vida podemos cambiar lo que sembramos. Una vez muertos, quedamos a la deriva de los símbolos y de la historia.
 
-## La segunda muerte
+## El pasaje
 
-La segunda es el funeral. Los vivos se despiden, y el muerto pasa a otra forma.
+Entre una muerte y otra está el funeral. Los vivos se despiden, y el muerto pasa a otra forma.
 
 En el árbol de arquetipos que vengo armando, ese paso tiene un lugar: el nodo 9, el de la resurrección. No es volver a la vida de antes. Es renacer en una nueva vida, en una nueva forma.
 
@@ -40,9 +38,9 @@ De chica me parecía una locura. De grande descubrí que era casi literal. Lo qu
 
 La vida después de la vida es una vida simbólica.
 
-## La tercera muerte
+## La segunda muerte
 
-La tercera es el olvido. La definitiva.
+La segunda es el olvido. La definitiva.
 
 La palabra viene del latín *oblitus*, participio de *oblivisci*: perder la memoria de algo. Ser olvidado es dejar de ser parte de Daat, el conocimiento en la Cábala: la experiencia de la vida.
 
@@ -50,7 +48,7 @@ En México lo saben bien. Para el Día de Muertos, las familias arman ofrendas c
 
 *Coco* se lo contó al mundo entero. En la película, los muertos siguen existiendo del otro lado mientras alguien los recuerde de este. Cuando ya nadie se acuerda de vos, desaparecés. Ahí sí, para siempre.
 
-La primera muerte no se puede evitar. La tercera, quizás sí: depende de que alguien siga pronunciando tu nombre.
+La primera muerte no se puede evitar. La segunda, quizás sí: depende de que alguien siga pronunciando tu nombre.
 
 
 ---
