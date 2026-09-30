@@ -76,21 +76,15 @@ Si un mismo movimiento se repite, deja de responder a lo que pasa y empieza a de
 
 ## Los tres venenos
 
-El budismo habla de tres venenos: la ignorancia, el apego y la aversión. Son los tres primeros nodos del árbol en desequilibrio:
-
-- **La ignorancia (nodo 1)** es no poder conocer por estar sesgado ante la información nueva. No hay peor ciego que el que no quiere ver.
-- **El apego (nodo 2)** es el deseo que no puede soltar.
-- **La aversión (nodo 3)** es el rechazo que se generaliza.
+El budismo habla de tres venenos, la ignorancia, el apego y la aversión, que coinciden con los tres primeros nodos del árbol en desequilibrio. Lo desarrollo en el ensayo sobre el budismo.
 
 Por eso tantas tradiciones y autores, como el poeta Rumi, invitan a vivir de otra manera, y cada invitación apunta a una zona del árbol:
 
 | Vivir con… | Dónde está en el árbol |
 | --- | --- |
 | **Asombro** | El nodo 1: la atención abierta. |
-| **Curiosidad** | Entre los nodos 1 y 2: asombro con tendencia positiva. |
-| **Sorpresa** | Entre los nodos 1 y 4: una mezcla de asombro y expectativa. |
+| **Sorpresa** | Entre los nodos 1 y 2: un asombro que ya se inclina hacia lo positivo. |
+| **Curiosidad** | Entre los nodos 2 y 3: la búsqueda de información, con tendencia positiva. |
 | **Una actitud positiva** | Los nodos 2 y 4: expectativa y motivación. |
 
-En síntesis, el budismo propone la senda del medio: evitar las intensidades y dirigir siempre la atención hacia el descubrimiento y hacia un arco positivo.
-
-Y tiene sentido. Al enfocarnos en el asombro (nodo 1) o en los nodos positivos, evitamos los sesgos en general y compensamos los que nos inclinan hacia lo negativo.
+La senda del medio budista propone algo parecido: vivir en un constante asombro, en el nodo 1, con cierta tendencia al optimismo. Al enfocarnos en el asombro o en los nodos positivos, evitamos los sesgos en general y compensamos los que nos inclinan hacia lo negativo.

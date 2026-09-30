@@ -31,57 +31,40 @@ Con el tiempo, sobre todo desde el Renacimiento, el Árbol se relacionó con la 
 
 La correspondencia de posiciones es casi exacta: diez puntos fijos, organizados en tres columnas y en varios niveles, más uno que es invisible y está conectado a todo y a todos. Suele ubicarse entre los nodos 1 a 6, aunque se conecta igual con el resto del sistema. En la Cábala es Daat; en nuestro árbol, la memoria. En los dos casos, no forma parte de la secuencia principal, pero condiciona todo el recorrido.
 
+## Las sefirot
+
+| Nº | Hebreo | En español | Significado literal |
+| --- | --- | --- | --- |
+| 1 | כֶּתֶר | Kéter | «Corona» (*Crown*) |
+| 2 | חָכְמָה | Jojmá, Hojmá | «Sabiduría» (*Wisdom*) |
+| 3 | בִּינָה | Biná | «Inteligencia» (*Intelligence*) |
+| 4 | חֶסֶד | Jesed, Jésed | «Misericordia» (*Mercy*) |
+| 5 | גְּבוּרָה | Guevurá, Gueburá | «Justicia», «poder» o «temor» (*Justice, Power, Awe*) |
+| 6 | תִּפְאֶרֶת | Tiféret | «Belleza» (*Beauty*) |
+| 7 | נֶצַח | Netzaj, Nétsaj | «Triunfo» (*Triumph*) |
+| 8 | הוֹד | Hod | «Gloria» (*Glory*) |
+| 9 | יְסוֹד | Yesod | «Fundamento» (*Foundation*) |
+| 10 | מַלְכוּת | Malkut, Maljut | «Reino» (*Kingdom*) |
+
+Los significados son los de la *Jewish Encyclopedia*.[^je]
+
+[^je]: Isaac Broydé y el consejo editorial, «Sefirot, the Ten», *Jewish Encyclopedia*, vol. 11, Nueva York, 1906, pp. 154-155. La traducción al español es mía.
+
 ## Sefirá por sefirá
 
-| Sefirá | Significado | En la tradición | En nuestro árbol | Lectura |
-| --- | --- | --- | --- | --- |
-| **Kéter** (כתר) | Corona | La voluntad primordial, apenas diferenciada del *Ein Sof*. Se asocia con el nombre divino *Ehyeh* («Yo soy»). | 1 · Registro | **Coincide** en la posición: el punto de entrada, anterior a toda valoración. La tradición habla de una voluntad divina; nosotros, del estímulo que aparece. |
-| **Jojmá** (חכמה) | Sabiduría | El primer destello, el punto inicial de la creación. En la Cábala luriánica es el «padre». | 2 · Activación | **Coincide** en la función: el impulso que se abre hacia afuera. |
-| **Biná** (בינה) | Entendimiento | Lo que recibe el destello de Jojmá, lo desarrolla y le da forma. Es la «madre». | 3 · Inhibición | **Coincide** en la posición (el pilar del rigor), pero no en el sentido: la tradición la entiende como comprensión, no como rechazo. |
-| **Jesed** (חסד) | Bondad, misericordia | El amor que se da sin límite; la expansión. | 4 · Expansión | **Coincide**. Nuestro modelo le quita la carga moral: expansión, no bondad. |
-| **Guevurá** (גבורה) | Fuerza, rigor | El límite, el juicio (*din*): lo que contiene y restringe la expansión de Jesed. | 5 · Contracción | **Coincide** en la función de límite. La tradición habla de fuerza y juicio; nosotros, de contracción. |
-| **Tiféret** (תפארת) | Belleza, armonía | El equilibrio entre Jesed y Guevurá: la compasión. | 6 · Conflicto | **Coincide.** La tradición nombra el equilibrio ya alcanzado; nosotros, el choque que lo hace necesario. Son dos momentos del mismo punto: la llegada y la ruptura. |
-| **Netzaj** (נצח) | Victoria, eternidad | La persistencia, la victoria. | 7 · Resultado positivo | **Coincide**: ganar. |
-| **Hod** (הוד) | Esplendor, gloria | Forma pareja con Netzaj; en algunas lecturas, el honor. | 8 · Resultado negativo | **Coincide, y es lo más interesante.** Ver la sección siguiente. |
-| **Yesod** (יסוד) | Fundamento | El canal que reúne todo lo anterior y lo transmite a Malkut. Se asocia con la generación. | 9 · Integración | **Coincide** casi literalmente: el fundamento. |
-| **Malkut** (מלכות) | Reino | La presencia divina en el mundo (la *Shejiná*): la existencia concreta. | 10 · Trascendencia | **Coincide.** La tradición pone aquí lo material; nosotros ponemos lo material en el 6 y dejamos el 10 para lo que trasciende. |
-| **Daat** (דעת) | Conocimiento | No siempre se cuenta entre las diez. Es la unión de Jojmá y Biná. | X · Memoria | **Coincide** en su lugar especial, fuera de la secuencia. Ver «El árbol del conocimiento». |
-
-## Las sefirot en las fuentes
-
-Las traducciones cambian según la obra. Estas son las de tres obras de referencia:
-
-| Sefirá | Hebreo | *Britannica* | *Oxford Reference* | *Jewish Encyclopedia* (1906) |
-| --- | --- | --- | --- | --- |
-| **Kéter** | כֶּתֶר | Corona suprema (*keter ʿelyon*) | Corona | Corona |
-| **Jojmá** | חָכְמָה | Sabiduría | Sabiduría | Sabiduría |
-| **Biná** | בִּינָה | Inteligencia | Entendimiento | Inteligencia |
-| **Jesed** | חֶסֶד | Amor | Bondad amorosa | Misericordia, grandeza |
-| **Guevurá** | גְּבוּרָה | Poder | Poder o juicio | Justicia, poder, temor |
-| **Tiféret** | תִּפְאֶרֶת | Belleza | Belleza | Belleza |
-| **Netzaj** | נֶצַח | Eternidad | Victoria | Triunfo |
-| **Hod** | הוֹד | Majestad | Esplendor | Gloria |
-| **Yesod** | יְסוֹד | Fundamento | Fundamento | Fundamento |
-| **Malkut** | מַלְכוּת | Realeza | Soberanía | Reino |
-
-*Britannica* las define como las diez emanaciones, o potencias, por las que Dios creador se manifiesta. El concepto aparece por primera vez en el *Séfer Yetzirá* como «diez números ideales», y la Cábala posterior lo desarrolló como las diez etapas de la emanación desde el *Ein Sof*.
-
-La *Jewish Encyclopedia* las describe en tres tríadas: el mundo del pensamiento (Kéter, Jojmá y Biná), el mundo del alma (Jesed, Guevurá y Tiféret) y el mundo de lo corpóreo (Netzaj, Hod y Yesod). Malkut queda aparte, como la décima. Cada una corresponde, además, a una parte del cuerpo:
-
-| Sefirá | Tríada | Cómo la describe | Cuerpo |
-| --- | --- | --- | --- |
-| **Kéter** | Pensamiento | La primera sefirá emanada de la luz infinita del *Ein Sof*. También se la llama «el Anciano», «el Punto Primordial», «la Cabeza Blanca» o «Yo soy». | La cabeza |
-| **Jojmá** | Pensamiento | Emana de Kéter. Es la potencia masculina o activa: el Padre. | El cerebro |
-| **Biná** | Pensamiento | Procede de Jojmá. Es la potencia femenina o pasiva: la Madre. | El corazón |
-| **Jesed** | Alma | Nace de la unión del Padre y la Madre. Es una potencia activa o masculina. También se la llama «Grandeza». | El brazo derecho |
-| **Guevurá** | Alma | Forma pareja con Jesed. Es una potencia femenina o pasiva. También se la llama «Poder» o «Temor». | El brazo izquierdo |
-| **Tiféret** | Alma | Procede de la combinación de Jesed y Guevurá. | El pecho |
-| **Netzaj** | Lo corpóreo | Procede de Tiféret. Es una potencia masculina o activa. | La pierna derecha |
-| **Hod** | Lo corpóreo | Nace de Netzaj. Es una potencia femenina o pasiva. | La pierna izquierda |
-| **Yesod** | Lo corpóreo | Procede de la unión de Netzaj y Hod. | Los genitales |
-| **Malkut** | — | «La suma de la actividad permanente e inmanente de las demás sefirot». | El cuerpo entero |
-
-Daat (דַּעַת), el conocimiento, no figura como sefirá en ninguna de las tres. Otras fuentes la describen como el punto donde las demás se unen, y cuentan que en algunas listas reemplaza a Kéter.
+| Sefirá | En nuestro árbol | Lectura |
+| --- | --- | --- |
+| **Kéter** | 1 · Registro | **Coincide** en la posición: el punto de entrada, anterior a toda valoración. La tradición habla de una voluntad divina; nosotros, del estímulo que aparece. |
+| **Jojmá** | 2 · Activación | **Coincide** en la función: el impulso que se abre hacia afuera. |
+| **Biná** | 3 · Inhibición | **Coincide** en la posición (el pilar del rigor), pero no en el sentido: la tradición la entiende como comprensión, no como rechazo. |
+| **Jesed** | 4 · Expansión | **Coincide**. Nuestro modelo le quita la carga moral: expansión, no bondad. |
+| **Guevurá** | 5 · Contracción | **Coincide** en la función de límite. La tradición habla de fuerza y juicio; nosotros, de contracción. |
+| **Tiféret** | 6 · Conflicto | **Coincide.** La tradición nombra el equilibrio ya alcanzado; nosotros, el choque que lo hace necesario. Son dos momentos del mismo punto: la llegada y la ruptura. |
+| **Netzaj** | 7 · Resultado positivo | **Coincide**: ganar. |
+| **Hod** | 8 · Resultado negativo | **Coincide, y es lo más interesante.** Ver la sección siguiente. |
+| **Yesod** | 9 · Integración | **Coincide** casi literalmente: el fundamento. |
+| **Malkut** | 10 · Trascendencia | **Coincide.** La tradición pone aquí lo material; nosotros ponemos lo material en el 6 y dejamos el 10 para lo que trasciende. |
+| **Daat** | X · Memoria | **Coincide** en su lugar especial, fuera de la secuencia. Ver «El árbol del conocimiento». |
 
 ## Victoria y honor
 
@@ -161,10 +144,6 @@ Además, como el Árbol de la Vida fue estudiado y comparado con casi todo (la a
 - **Ver si es compatible:** el jasidismo, en especial la escuela Jabad (siglo XVIII en adelante), lee las sefirot como facultades del alma humana. Las tres superiores (Jojmá, Biná y Daat) serían el intelecto, y las siete inferiores, las *midot*: los atributos emocionales. Es una lectura psicológica del árbol, muy cercana a la nuestra, y respalda la idea de que se aplica a muchos niveles.
 - **Para explorar:** los *partzufim* de la Cábala de Isaac Luria (siglo XVI), donde Jojmá y Biná aparecen como *Abba* e *Imma*, padre y madre.
 - **Para verificar:** la «flor de la vida», una figura de la geometría sagrada hecha de círculos entrelazados, como un bosque de árboles conectados. Su asociación con el árbol de la Cábala es sobre todo de la Nueva Era (siglo XX), aunque en dibujos antiguos también se unían varios árboles de forma fractal (por ejemplo, los cuatro mundos de la Cábala dibujados como árboles superpuestos; verificar desde cuándo).
-- **Para verificar:** «Sefirot», *Encyclopaedia Britannica*. Fuente de la definición general y de la primera columna de traducciones.
-- **Para verificar:** «Sefirot», *Oxford Reference*. Fuente de la segunda columna de traducciones.
-- **Para verificar:** Isaac Broydé y el consejo editorial, «Sefirot, the Ten», *Jewish Encyclopedia* (1906). Fuente de la tercera columna, de las tríadas y de las correspondencias con el cuerpo. Es una obra antigua: conviene contrastarla con Scholem.
-- **Para verificar:** Daat como punto de unión de las sefirot, y su lugar en lugar de Kéter en algunas listas. Lo describen *Wikipedia* y *Sefaria*, no las tres obras citadas.
 - **Para verificar:** el *tzimtzum* en la Cábala de Isaac Luria (siglo XVI).
 - **Para verificar:** la relación entre el exceso de *din* (rigor) y la *sitra ajra* en el *Zóhar*.
 - **Para explorar:** Elliot R. Wolfson, sobre el género en la Cábala.

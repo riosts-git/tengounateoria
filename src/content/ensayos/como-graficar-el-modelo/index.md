@@ -10,15 +10,18 @@ categoria: Emociones Arquetípicas
 tags: [emociones, modelos]
 draft: false
 ---
-Terminé el modelo y apareció una última pregunta: ¿cómo representarlo gráficamente?
-
-Parece una pregunta menor, de diseño. No lo fue. Cada dibujo que probaba decía algo distinto sobre las emociones, y el último terminó diciendo algo que yo todavía no sabía.
 
 ---
 
+## 
+
+Mientras avanzaba con el modelo, apuntaba en mis cuadernos una serie de gráficos y  mapas que me permitían unir los conceptos que investigaba. Pero al intentar explicarle el sistema a amigos y allegados, tuve qué enfrentarme a la pregunta: ¿cómo lo represento gráficamente?
+
+Si ud -al igual que yo- desconoce el maravilloso mundo de las tablas y gráfos podría caer en el gravísimo error de creer que graficar el modelo iba a ser una tarea más. Pero no. Cada sistema dejaba entrever ciertas características del modelo y no otras, haciendolo más fácil, claro o inaxesible, dependiendo de la elección.
+
 ## Primer intento: las bifurcaciones
 
-La primera forma fue la más intuitiva: una estructura que se bifurca. Una unidad que se divide en dos, cada una de esas dos que se divide otra vez en dos, y así sucesivamente. El asombro se abre en activación o inhibición; cada una de ellas, en expansión o contracción; y cada una de las cuatro emociones resultantes, en un resultado positivo o negativo.
+Comencé con una estructura que se bifurca. Una unidad que se divide en dos, cada una de esas dos que se divide otra vez en dos, y así sucesivamente. El asombro se abre en activación o inhibición; cada una de ellas, en expansión o contracción; y cada una de las cuatro emociones resultantes, en un resultado positivo o negativo.
 
 ```
                                ASOMBRO (intensidad)
@@ -35,12 +38,16 @@ La primera forma fue la más intuitiva: una estructura que se bifurca. Una unida
  alegría tristeza  alegría tristeza            alegría tristeza  alegría tristeza
 ```
 
-Uno en dos, dos en cuatro, cuatro en ocho. Es la misma lógica con la que el *I Ching* despliega el universo a partir de una unidad, y durante un tiempo me pareció perfecta.
+Uno en dos, dos en cuatro, cuatro en ocho. Es la misma lógica con la que el *I Ching* despliega el universo a partir de una unidad y luego la va dividiendo en dos ejes.
 
 Pero tenía tres problemas:
 
-- **Crecía sin fin.** Cada nivel duplicaba al anterior, y la alegría y la tristeza aparecían cuatro veces, como si fueran ocho emociones distintas y no dos.
-- **Escondía las equivalencias.** La expansión de la motivación y la expansión de la ira quedaban en ramas separadas, como si no tuvieran nada que ver, cuando son la misma fuerza en dos arcos distintos.
+- **Crecía sin fin.** Cada nivel duplicaba al anterior, y la alegría y la tristeza aparecían cuatro veces, como si fueran ocho emociones distintas y no dos. Y si bien es distinta la alegría que surge tras haber sentido miedo o ira, a los fines arquetípicos no necesitabamos tanto detalle, sino más bien una gráfica que volviera al estado inicial, pero esta vez desde el nuevo valor.
+
+- **Escondía las equivalencias.** Cuando lo dibujaba me preocupaba que se perfiera la referencias ira-miedo e ira-motivación o y desmotivación-miedo. Es decir que ira y miedo, son reacciones opuestas dentro de un arco negativo. Pero ira y motivación o desmotivación y miedo, comparten la proyección motora: actuando o inhibiendo la acción.
+  
+   la motivación y la expansión de la ira quedaban en ramas separadas, como si no tuvieran nada que ver, cuando son la misma fuerza en dos arcos distintos.
+
 - **No volvía.** Un arco termina en un nuevo estado, y ese estado es el punto de partida del siguiente. En las bifurcaciones, cada camino se alejaba para siempre del centro.
 
 Las variables del modelo no funcionan como una fila de puertas, donde cada una tiene una sola salida. Se relacionan entre sí, se influyen y pueden actuar al mismo tiempo. Necesitaba un dibujo en el que los caminos pudieran separarse y volver a juntarse.
@@ -84,11 +91,11 @@ Esta segunda forma no solo era más fiel al modelo. Mostraba, de un solo vistazo
 
 **Primero, las equivalencias.** Cada fila horizontal es una misma variable con sus dos polos, y cada columna es una misma dirección:
 
-| Variable | Columna de la inhibición | Columna de la activación |
-| --- | --- | --- |
-| **Valencia** (sensible) | Aversión | Deseo |
-| **Proyección** (motora) | Desmotivación, miedo | Motivación, ira |
-| **Estado** | Tristeza | Alegría |
+| Variable                | Columna de la inhibición | Columna de la activación |
+| ----------------------- | ------------------------ | ------------------------ |
+| **Valencia** (sensible) | Aversión                 | Deseo                    |
+| **Proyección** (motora) | Desmotivación, miedo     | Motivación, ira          |
+| **Estado**              | Tristeza                 | Alegría                  |
 
 Las líneas cruzadas son los arcos: el deseo que termina en desmotivación, la aversión que se vuelve ira. Así se ve que la ira y la motivación son la misma expansión en dos arcos distintos, y el miedo y la desmotivación, la misma contracción.
 
@@ -96,12 +103,12 @@ Las líneas cruzadas son los arcos: el deseo que termina en desmotivación, la a
 
 **Tercero, las agrupaciones:**
 
-| Grupo | Qué reúne | Qué ocurre |
-| --- | --- | --- |
-| **Instinto** | La primera tríada: asombro, activación e inhibición. | Se registra el estímulo y aparece la primera valencia: ¿lo deseo o me produce aversión? |
-| **Intuición** | Las cinco primeras: la tríada más la expansión y la contracción. | La experiencia confirma la valencia y proyecta una respuesta: ¿puedo o no puedo? |
-| **Manifestación** | El conflicto. | La emoción deja de ser una idea y una energía que corre por la mente: sale del cuerpo, se vuelve acto y se encuentra con la realidad. |
-| **Estado** | Alegría y tristeza. | El resultado se compara con la expectativa, y el estado se altera. |
+| Grupo             | Qué reúne                                                        | Qué ocurre                                                                                                                            |
+| ----------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| **Instinto**      | La primera tríada: asombro, activación e inhibición.             | Se registra el estímulo y aparece la primera valencia: ¿lo deseo o me produce aversión?                                               |
+| **Intuición**     | Las cinco primeras: la tríada más la expansión y la contracción. | La experiencia confirma la valencia y proyecta una respuesta: ¿puedo o no puedo?                                                      |
+| **Manifestación** | El conflicto.                                                    | La emoción deja de ser una idea y una energía que corre por la mente: sale del cuerpo, se vuelve acto y se encuentra con la realidad. |
+| **Estado**        | Alegría y tristeza.                                              | El resultado se compara con la expectativa, y el estado se altera.                                                                    |
 
 Instinto, intuición, manifestación y nuevo estado: el mismo recorrido que sigue la intuición, ahora dibujado.
 

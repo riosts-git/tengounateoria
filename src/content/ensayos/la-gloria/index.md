@@ -70,19 +70,6 @@ El nodo 10 tiene dos destinos posibles: convertirse en leyenda o ser olvidado.
 
 Dicen que se muere más de una vez: primero muere el cuerpo, y después, cuando nadie nos recuerda. La gloria es la forma que encontramos de postergar esa segunda muerte.
 
-## El nodo 10 en cada ensayo
-
-| Ensayo | El nodo 10 |
-| --- | --- |
-| La Cábala | Malkut, el reino |
-| Las emociones | El sentimiento: la ley aprendida |
-| El ciclo de la vida | El legado |
-| El camino del héroe | El regreso con el elixir |
-| La creatividad | La entrega |
-| El *I Ching* | El regreso al Tao |
-| El budismo | La enseñanza: la rueda del dharma |
-| El himno | La gloria |
-
 [^aquiles]: Homero, *Ilíada*, canto I (la pelea por el botín) y canto IX (la elección de Aquiles).
 
 ---
@@ -96,4 +83,4 @@ Dicen que se muere más de una vez: primero muere el cuerpo, y después, cuando 
 - **Para explorar:** los *Textos de los sarcófagos* y el *Libro de los muertos* egipcios.
 - **Ver si es compatible:** el *ren*, el nombre, en el antiguo Egipto. Se creía que mientras un nombre se siguiera pronunciando, esa persona seguía viviendo, y que borrarlo era una segunda muerte. Encaja con «leyenda u olvido».
 - **Para verificar:** la etimología de «gloria». La raíz indoeuropea *\*kleu-* («oír») es segura para el griego *kléos*, pero no para el latín *gloria*, cuyo origen es discutido.
-- **Para verificar:** las traducciones de Hod («esplendor», «majestad», «honor») y su vínculo con Nétsaj, «victoria».
+- **Para verificar:** las traducciones de Hod («esplendor», «majestad», «honor») y su vínculo con Netzaj, «victoria».

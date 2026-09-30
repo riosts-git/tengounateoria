@@ -78,7 +78,7 @@ Buda resumió su enseñanza en cuatro verdades: existe el sufrimiento; su origen
 
 El árbol, por sí solo, no juzga: describe un ciclo. El budismo agrega una posición moral. ¿Es esa posición la búsqueda de una vida sin sufrimiento?
 
-Si es así, su propuesta tiene sentido desde el árbol: ir por la senda del medio, evitar las intensidades y dirigir la atención hacia el descubrimiento y hacia un arco positivo. Así se evitan los sesgos en general, y se compensan los que nos inclinan hacia lo negativo.
+Si es así, su propuesta tiene sentido desde el árbol: el verdadero camino del medio no consiste en elegir lo positivo sobre lo negativo, sino en abandonar ambos mundos, el del deseo y el de la aversión. Pero no se puede vivir en el nirvana: Buda vuelve al mundo ya sin apego a lo material, aunque todavía lo necesita. Se trata, entonces, de vivir en un constante asombro, en el nodo 1, con cierta tendencia al optimismo.
 
 [^nibbana]: *Saṃyutta Nikāya* 38.1 (*Jambukhādaka Sutta*): Sāriputta define el nibbāna como «la destrucción del deseo, la destrucción de la aversión, la destrucción de la ignorancia».
 

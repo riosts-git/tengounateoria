@@ -40,6 +40,8 @@ El saber popular tiene un correlato muy arraigado de esta apuesta: la gente posi
 
 Sin embargo, las sabidurías ancestrales, sobre todo las orientales, indican otra cosa: que el verdadero camino del medio no consiste en elegir lo positivo sobre lo negativo, sino en abandonar ambos mundos, el del deseo y el de la aversión. Volver al nodo 1, una y otra vez. Integrar incluso uno de los miedos más grandes de la humanidad: el miedo al otro, a lo desconocido, a la muerte.
 
+Aunque también nos explican que no se puede vivir en el nirvana: Buda vuelve al mundo ya sin apego a lo material, pero todavía necesitándolo. Por eso podríamos decir que se trata de vivir en un constante asombro, en el nodo 1, pero con cierta tendencia al optimismo.
+
 ### El misterio
 
 Pero cuando Santaolalla eligió la palabra *misterio*, abrió otra puerta. Parecida al asombro, pero distinta. Entender los misterios de la vida no es quedarse en suspenso: es buscar el conocimiento desde el amor y la fantasía, no desde la voluntad de posesión. Es querer entender los ciclos de las hormigas en estado de meditación: la contemplación del mundo y de su belleza.
@@ -113,7 +115,7 @@ Es también el lugar del poder: quien activa, dirige o determina la acción de o
 | --- | --- |
 | La arquitectura | Expansión: *¿Puedo?* |
 | Las emociones | La motivación y la ira |
-| La Cábala | Jésed, la bondad |
+| La Cábala | Jesed, la bondad |
 | El ciclo de la vida | Lo que puedo: los aliados |
 | La lengua | El verbo: la acción |
 | El camino del héroe | Las pruebas y los aliados |
@@ -176,7 +178,7 @@ No es un premio: es información. Y como toda información, depende de la expect
 | --- | --- |
 | La arquitectura | Resultado positivo: *¿Salió como esperaba, o mejor?* |
 | Las emociones | La alegría |
-| La Cábala | Nétsaj, la victoria |
+| La Cábala | Netzaj, la victoria |
 | El ciclo de la vida | Lo que se gana |
 | El camino del héroe | La recompensa |
 | La creatividad | Lo que funciona: lo que se deja |
