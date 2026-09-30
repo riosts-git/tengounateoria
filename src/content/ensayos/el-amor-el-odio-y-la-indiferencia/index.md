@@ -1,10 +1,10 @@
 ---
-title: "Amor y odio"
+title: "Amor, odio e indiferencia"
 subtitulo: "El amor, el odio y la indiferencia: vínculos, apego y aversión."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
-orden: 8
+orden: 21
 description: "El amor, el odio y la indiferencia: vínculos, apego y aversión."
 categoria: Emociones Arquetípicas
 tags: [emociones, sentimientos]

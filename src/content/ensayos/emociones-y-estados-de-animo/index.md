@@ -1,10 +1,10 @@
 ---
-title: "¿Qué pasa cuando una emoción se queda?"
+title: "De la emoción al estado de ánimo"
 subtitulo: "Emociones y estados de ánimo: sesgos, depresión y ansiedad."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
-orden: 9
+orden: 8
 description: "Emociones y estados de ánimo: sesgos, depresión y ansiedad."
 categoria: Emociones Arquetípicas
 tags: [emociones, estados de ánimo]

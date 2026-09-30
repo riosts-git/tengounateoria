@@ -1,5 +1,5 @@
 ---
-title: "¿Por qué sentimos distinto ante lo mismo?"
+title: "Emoción o sentimiento"
 subtitulo: "Emociones y sentimientos: expectativa, interpretación y responsabilidad."
 date: 2026-09-29
 actualizado: 2026-09-29

@@ -1,10 +1,10 @@
 ---
-title: "¿Por qué elegimos sufrir en el cine?"
+title: "La emoción en los géneros literarios y el cine"
 subtitulo: "Emociones y géneros culturales: comedia, tragedia, terror y acción."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
-orden: 10
+orden: 9
 description: "Emociones y géneros culturales: comedia, tragedia, terror y acción."
 categoria: Emociones Arquetípicas
 tags: [emociones, narrativa]
