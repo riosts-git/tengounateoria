@@ -7,7 +7,7 @@ version: v1
 orden: 3
 description: "Instinto, intuición e intelecto: un modelo de impulsos, percepción e interpretación."
 categoria: Apuntes sobre la Intuición
-tags: [intuición, instinto, intelecto, modelos, mente]
+tags: [Mente y cuerpo, Modelos]
 draft: false
 parte: "Las palabras y la mente"
 ---

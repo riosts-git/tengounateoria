@@ -7,7 +7,7 @@ version: v1
 orden: 4
 description: "La arquitectura del árbol: nodos, ejes, niveles y planos."
 categoria: El Árbol de Arquetipos
-tags: [arquetipos, modelos]
+tags: [Modelos]
 draft: false
 parte: "El árbol"
 ---

@@ -7,7 +7,7 @@ version: v1
 orden: 10
 description: "La gloria: honor, legado y olvido."
 categoria: El Árbol de Arquetipos
-tags: [arquetipos, mitología]
+tags: [Mitos y religiones, Historias y cine]
 draft: false
 parte: "El árbol en la experiencia"
 ---

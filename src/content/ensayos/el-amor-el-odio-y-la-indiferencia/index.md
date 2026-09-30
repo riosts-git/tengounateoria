@@ -7,7 +7,7 @@ version: v1
 orden: 19
 description: "El amor, el odio y la indiferencia: vínculos, apego y aversión."
 categoria: Emociones Arquetípicas
-tags: [emociones, sentimientos]
+tags: [Emociones]
 draft: false
 parte: "Las emociones"
 ---

@@ -7,7 +7,7 @@ version: v1
 orden: 8
 description: "El camino del héroe: Campbell, Vogler y el mentor."
 categoria: El Árbol de Arquetipos
-tags: [arquetipos, narrativa]
+tags: [Historias y cine, Mitos y religiones]
 draft: false
 parte: "El árbol en la experiencia"
 ---

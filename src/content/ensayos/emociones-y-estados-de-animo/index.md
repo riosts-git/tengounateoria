@@ -7,7 +7,7 @@ version: v1
 orden: 8
 description: "Emociones y estados de ánimo: sesgos, depresión y ansiedad."
 categoria: Emociones Arquetípicas
-tags: [emociones, estados de ánimo]
+tags: [Emociones]
 draft: false
 parte: "Las emociones"
 ---

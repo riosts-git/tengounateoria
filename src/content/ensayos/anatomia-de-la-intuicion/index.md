@@ -7,7 +7,7 @@ version: v1
 orden: 4
 description: "Anatomía de la intuición: corazonadas, cuerpo y el experimento de las cartas."
 categoria: Apuntes sobre la Intuición
-tags: [intuición, cuerpo]
+tags: [Mente y cuerpo]
 draft: false
 parte: "Cómo funciona la intuición"
 ---

@@ -7,7 +7,7 @@ version: v1
 orden: 1
 description: "Sobre las cosas que encontramos sin buscarlas: coincidencias, Cábala y el origen del árbol."
 categoria: El Árbol de Arquetipos
-tags: [arquetipos, personal]
+tags: [Modelos, Mitos y religiones]
 draft: false
 parte: "El árbol"
 ---

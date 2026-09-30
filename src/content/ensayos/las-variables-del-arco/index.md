@@ -7,7 +7,7 @@ version: v1
 orden: 4
 description: "Las variables del arco: estado, intensidad, valencia y proyección."
 categoria: Emociones Arquetípicas
-tags: [emociones, modelos, cuerpo]
+tags: [Emociones, Mente y cuerpo]
 draft: false
 parte: "El arco"
 ---

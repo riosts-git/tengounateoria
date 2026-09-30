@@ -7,7 +7,7 @@ version: v1
 orden: 12
 description: "El I Ching: yin, yang y mutación."
 categoria: El Árbol de Arquetipos
-tags: [arquetipos, tradiciones]
+tags: [Mitos y religiones]
 draft: false
 parte: "El árbol en las tradiciones"
 ---

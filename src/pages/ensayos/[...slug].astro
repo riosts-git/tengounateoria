@@ -51,7 +51,7 @@ const jsonLd = {
     <div class="prose"><Content /></div>
     <p class="actualizado">Última actualización: {actualizado}{d.version && <> | {d.version}</>}</p>
     {d.tags.length > 0 && (
-      <div class="post-tags">{d.tags.map((t) => <a class="tag" href={u(`?tag=${slugify(t)}`)}>{t}</a>)}</div>
+      <div class="post-tags"><span class="temas-t">Temas</span>{d.tags.map((t) => <a class="tag" href={u(`?tag=${slugify(t)}`)}>{t}</a>)}</div>
     )}
     {(prev || next) && (
       <nav class="pn" aria-label="Otros ensayos">

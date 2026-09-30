@@ -7,7 +7,7 @@ version: v1
 orden: 9
 description: "La creatividad: el Doble Diamante, el gusto y el talento."
 categoria: El Árbol de Arquetipos
-tags: [arquetipos, arte]
+tags: [Arte y creación]
 draft: false
 parte: "El árbol en la experiencia"
 ---

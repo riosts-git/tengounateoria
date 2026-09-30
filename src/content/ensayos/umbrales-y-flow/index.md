@@ -5,7 +5,7 @@ actualizado: 2026-10-01
 version: v1
 description: "El principio de Ricitos de Oro: el umbral donde los sistemas funcionan."
 categoria: Ideas sueltas
-tags: [atención, umbrales]
+tags: [Mente y cuerpo, Arte y creación]
 draft: false
 ---
 Hay un principio que aparece en disciplinas que aparentemente no tienen nada que ver entre sí, y siempre me llamó la atención que nadie le diera el peso que merece. Se llama, informalmente, el principio de Goldilocks. Viene del cuento infantil de Ricitos de Oro y los tres osos: la niña entra a la casa, prueba la sopa de cada oso, y elige la que no está ni muy caliente ni muy fría. Prueba las camas, y elige la que no es ni muy dura ni muy blanda. Lo que parecía un cuento sobre una intrusa hambrienta es, en realidad, una metáfora muy precisa sobre los umbrales.

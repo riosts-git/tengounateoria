@@ -5,7 +5,7 @@ actualizado: 2026-10-01
 version: v1
 description: "Prometeo: el fuego, el orden y la información."
 categoria: Ideas sueltas
-tags: [mitología, información]
+tags: [Mitos y religiones]
 draft: false
 ---
 El titán aguarda a que el carro del sol alcance su punto más alto. Con un movimiento rápido, acerca el tallo seco de una cañaheja al fuego divino, captura la brasa incandescente y se desliza sigilosamente hacia el plano de los mortales. En ese instante de audacia, registrado por Hesíodo en su *Teogonía*, ocurre la transgresión que nos define como especie. Sin embargo, el crimen de Prometeo fue en realidad un acto de rescate de emergencia. Su hermano Epimeteo —cuyo nombre significa «el que piensa después»— había sido el encargado de distribuir las cualidades naturales entre todas las criaturas. Pero Epimeteo gastó torpemente todos los dones en el reino animal: dio garras al león, alas al águila, velocidad al caballo y pelaje grueso al oso. Al ser humano lo dejó desnudo, indefenso y desarmado ante la naturaleza.

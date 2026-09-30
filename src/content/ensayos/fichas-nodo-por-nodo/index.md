@@ -7,7 +7,7 @@ version: v1
 orden: 15
 description: "Fichas: el árbol, nodo por nodo."
 categoria: El Árbol de Arquetipos
-tags: [arquetipos, modelos]
+tags: [Modelos]
 draft: false
 parte: "Nodo por nodo"
 ---

@@ -5,7 +5,7 @@ actualizado: 2026-09-30
 version: v1
 description: "La carta sin nombre y la Templanza: el olvido y la gloria eterna."
 categoria: Ideas sueltas
-tags: [tarot, mitología]
+tags: [Mitos y religiones]
 draft: false
 ---
 En el tarot hay una carta que no tiene nombre. Es la XIII. Casi todos la llaman la Muerte.

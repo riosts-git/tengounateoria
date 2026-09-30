@@ -6,7 +6,7 @@ version: v1
 orden: 13
 description: "El deseo: acercarnos a lo que nos hace bien."
 categoria: Emociones Arquetípicas
-tags: [emociones]
+tags: [Emociones]
 draft: false
 parte: "Las emociones"
 ---

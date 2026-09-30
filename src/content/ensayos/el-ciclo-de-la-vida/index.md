@@ -7,7 +7,7 @@ version: v1
 orden: 6
 description: "El ciclo de la vida: nacer, crecer, unirse y dejar algo."
 categoria: El Árbol de Arquetipos
-tags: [arquetipos]
+tags: [Modelos]
 draft: false
 parte: "El árbol en la experiencia"
 ---

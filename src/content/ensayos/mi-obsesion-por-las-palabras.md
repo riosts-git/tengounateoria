@@ -7,7 +7,7 @@ version: v1
 orden: 1
 description: "Mi obsesión por las palabras: inmadurez, intuición y el problema de la ambigüedad."
 categoria: Apuntes sobre la Intuición
-tags: [intuición, lenguaje, personal]
+tags: [Palabras]
 draft: false
 parte: "Las palabras y la mente"
 ---

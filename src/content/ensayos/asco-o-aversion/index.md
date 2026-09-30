@@ -6,7 +6,7 @@ version: v1
 orden: 14
 description: "La aversión: alejarnos de lo que nos daña."
 categoria: Emociones Arquetípicas
-tags: [emociones]
+tags: [Emociones]
 draft: false
 parte: "Las emociones"
 ---

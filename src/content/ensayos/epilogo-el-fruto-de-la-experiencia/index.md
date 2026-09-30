@@ -7,7 +7,7 @@ version: v1
 orden: 16
 description: "El fruto de la experiencia: distinguir, predecir y aprender."
 categoria: El Árbol de Arquetipos
-tags: [arquetipos, personal]
+tags: [Modelos]
 draft: false
 parte: "Nodo por nodo"
 ---

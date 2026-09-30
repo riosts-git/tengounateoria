@@ -7,7 +7,7 @@ version: v2
 orden: 10
 description: "Intuición extraordinaria y mística: premoniciones, sueños y misterio."
 categoria: Apuntes sobre la Intuición
-tags: [intuición, mística]
+tags: [Mente y cuerpo, Mitos y religiones]
 draft: false
 parte: "¿Podemos confiar en ella?"
 ---

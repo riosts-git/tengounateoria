@@ -7,7 +7,7 @@ version: v1
 orden: 2
 description: "Principales modelos de la emoción: Ekman, Plutchik, Panksepp y otras listas."
 categoria: Emociones Arquetípicas
-tags: [emociones, modelos]
+tags: [Emociones, Modelos]
 draft: false
 parte: "El arco"
 ---

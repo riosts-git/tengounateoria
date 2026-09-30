@@ -7,7 +7,7 @@ version: v1
 orden: 9
 description: "Intuición y confianza: Kahneman, Klein y la experiencia."
 categoria: Apuntes sobre la Intuición
-tags: [intuición, sesgos]
+tags: [Mente y cuerpo, Mitos y religiones]
 draft: false
 parte: "¿Podemos confiar en ella?"
 ---

@@ -5,7 +5,7 @@ actualizado: 2026-10-01
 version: v1
 description: "Beneficios y maleficios: hacer el bien, hacer el mal y la ley de compensación."
 categoria: Ideas sueltas
-tags: [etimología, lenguaje]
+tags: [Palabras, Mitos y religiones]
 draft: false
 ---
 Rara vez reparamos en el antagonismo evidente de estos dos términos. Su etimología los delata: vienen del latín *bene* y *male* (bien y mal) más *facere* (hacer). Beneficio es la acción de hacer el bien. Maleficio es la acción de hacer el mal.

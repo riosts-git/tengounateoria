@@ -5,7 +5,7 @@ actualizado: 2026-10-01
 version: v1
 description: "Caos, cosmos y observador: el antes y el después de la mirada."
 categoria: Ideas sueltas
-tags: [mitología, etimología]
+tags: [Mitos y religiones, Palabras]
 draft: false
 ---
 «Orden y desorden, bien y mal, cosmos y caos, parecen dualidad inseparable de nuestro existir en un universo cambiante y sin reposo». Al tropezar con esta frase en un diario de gran difusión, es fácil dejarse llevar por su ritmo poético y darla por buena. A fin de cuentas, describe con elegancia esa perenne sensación de que la realidad está partida en dos. Sin embargo, al examinarla con lupa, el enunciado comete un profundo error conceptual: asume que el caos y el cosmos operan como extremos opuestos de una misma balanza. Pero la realidad es otra. El caos y el cosmos no son polares, ni se encuentran en la misma dimensión. Su relación no es de oposición, sino de transformación, y el puente indispensable entre ambos es la aparición de un observador.

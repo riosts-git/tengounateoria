@@ -7,7 +7,7 @@ version: v1
 orden: 20
 description: "Cómo graficar el modelo: diagramas, árboles y el Árbol de la Vida."
 categoria: Emociones Arquetípicas
-tags: [emociones, modelos]
+tags: [Modelos]
 draft: false
 parte: "Las emociones"
 ---

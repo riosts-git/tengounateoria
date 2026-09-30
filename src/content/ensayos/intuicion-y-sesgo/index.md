@@ -7,7 +7,7 @@ version: v1
 orden: 8
 description: "Intuición y sesgo: la vía rápida, los prejuicios y el error."
 categoria: Apuntes sobre la Intuición
-tags: [intuición, sesgos]
+tags: [Mente y cuerpo]
 draft: false
 parte: "¿Podemos confiar en ella?"
 ---

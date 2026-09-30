@@ -7,7 +7,7 @@ version: v1
 orden: 7
 description: "Emociones y sentimientos: expectativa, interpretación y responsabilidad."
 categoria: Emociones Arquetípicas
-tags: [emociones, sentimientos]
+tags: [Emociones]
 draft: false
 parte: "Las emociones"
 ---

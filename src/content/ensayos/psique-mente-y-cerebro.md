@@ -7,7 +7,7 @@ version: v1
 orden: 2
 description: "Psique, mente y cerebro: dónde sucede la experiencia."
 categoria: Apuntes sobre la Intuición
-tags: [mente, cerebro, etimología, historia]
+tags: [Mente y cuerpo, Palabras]
 draft: false
 parte: "Las palabras y la mente"
 ---

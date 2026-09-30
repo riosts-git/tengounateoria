@@ -7,7 +7,7 @@ version: v1
 orden: 10
 description: "El mapa de las emociones: dos preguntas y cuatro movimientos."
 categoria: Emociones Arquetípicas
-tags: [emociones, modelos]
+tags: [Emociones, Modelos]
 draft: false
 parte: "Las emociones"
 ---

@@ -6,7 +6,7 @@ version: v1
 orden: 18
 description: "El arco negativo abierto: susto, sospecha y suspenso."
 categoria: Emociones Arquetípicas
-tags: [emociones, narrativa]
+tags: [Emociones, Historias y cine]
 draft: false
 parte: "Las emociones"
 ---

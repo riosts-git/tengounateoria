@@ -6,7 +6,7 @@ version: v1
 orden: 11
 description: "La alegría y la tristeza: las emociones de estado."
 categoria: Emociones Arquetípicas
-tags: [emociones, estados de ánimo]
+tags: [Emociones]
 draft: false
 parte: "Las emociones"
 ---

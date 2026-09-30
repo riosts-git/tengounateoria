@@ -94,9 +94,10 @@
 .ensayo .prose .caja a{color:var(--olive)}
 
 /* etiquetas */
-.ensayo .post-tags{margin-top:3.4em;justify-content:center}
-.ensayo .tag{color:var(--olive);background:color-mix(in srgb,var(--olive) 11%,transparent)}
-.ensayo .tag:hover{background:color-mix(in srgb,var(--olive) 20%,transparent)}
+.ensayo .post-tags{margin-top:3.4em;justify-content:center;align-items:baseline;gap:6px 14px}
+.ensayo .post-tags .temas-t{margin:0}
+.ensayo .tag{display:inline;padding:0;font-size:13.5px;color:var(--olive);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.ensayo .tag:hover{transform:none;color:var(--ink)}
 
 /* anterior / siguiente */
 .pn{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:40px;text-align:left}

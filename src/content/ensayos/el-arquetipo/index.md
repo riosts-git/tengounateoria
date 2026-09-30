@@ -7,7 +7,7 @@ version: v1
 orden: 2
 description: "Arquetipo, símbolo y prototipo: fuerza, forma y relación."
 categoria: El Árbol de Arquetipos
-tags: [arquetipos]
+tags: [Modelos]
 draft: false
 parte: "El árbol"
 ---

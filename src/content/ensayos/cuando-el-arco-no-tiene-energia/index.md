@@ -7,7 +7,7 @@ version: v1
 orden: 5
 description: "Cuando el arco no tiene energía: apatía, anhedonia y aburrimiento."
 categoria: Emociones Arquetípicas
-tags: [emociones, estados de ánimo]
+tags: [Emociones, Mente y cuerpo]
 draft: false
 parte: "El arco"
 ---

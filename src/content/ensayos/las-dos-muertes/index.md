@@ -5,7 +5,7 @@ actualizado: 2026-09-30
 version: v1
 description: "Las dos muertes: el cuerpo, el funeral y el olvido."
 categoria: Ideas sueltas
-tags: [muerte, mitología]
+tags: [Mitos y religiones]
 draft: false
 ---
 Dicen que se muere dos veces. Primero muere el cuerpo. Después, cuando nadie nos recuerda.

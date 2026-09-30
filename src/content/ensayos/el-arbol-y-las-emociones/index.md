@@ -7,7 +7,7 @@ version: v1
 orden: 5
 description: "El árbol y las emociones: nodos, sesgos y los tres venenos."
 categoria: El Árbol de Arquetipos
-tags: [arquetipos, emociones]
+tags: [Emociones, Modelos]
 draft: false
 parte: "El árbol en la experiencia"
 ---

@@ -7,7 +7,7 @@ version: v1
 orden: 1
 description: "Por qué entender las emociones: cuerpo, predicción y supervivencia."
 categoria: Emociones Arquetípicas
-tags: [emociones]
+tags: [Emociones]
 draft: false
 parte: "El arco"
 ---

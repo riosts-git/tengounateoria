@@ -7,7 +7,7 @@ version: v1
 orden: 7
 description: "La lengua española: sujeto, predicado y emoción."
 categoria: El Árbol de Arquetipos
-tags: [arquetipos, lenguaje]
+tags: [Palabras]
 draft: false
 parte: "El árbol en la experiencia"
 ---

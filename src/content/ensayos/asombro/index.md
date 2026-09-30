@@ -6,7 +6,7 @@ version: v1
 orden: 12
 description: "El asombro: la atención abierta ante lo nuevo."
 categoria: Emociones Arquetípicas
-tags: [emociones, etimología]
+tags: [Emociones, Palabras]
 draft: false
 parte: "Las emociones"
 ---

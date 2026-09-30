@@ -7,7 +7,7 @@ version: v1
 orden: 3
 description: "El arco emocional: principio, medio y fin, el arco abierto y Odiseo."
 categoria: Emociones Arquetípicas
-tags: [emociones, modelos]
+tags: [Emociones, Historias y cine]
 draft: false
 parte: "El arco"
 ---

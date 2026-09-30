@@ -7,7 +7,7 @@ version: v1
 orden: 11
 description: "El Árbol de la Vida: sefirot, coincidencias y diferencias."
 categoria: El Árbol de Arquetipos
-tags: [arquetipos, tradiciones]
+tags: [Mitos y religiones]
 draft: false
 parte: "El árbol en las tradiciones"
 ---

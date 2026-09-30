@@ -5,7 +5,7 @@ actualizado: 2026-10-01
 version: v1
 description: "La consciencia como sujeto y la emoción como predicado."
 categoria: Ideas sueltas
-tags: [consciencia, lenguaje]
+tags: [Palabras]
 draft: false
 ---
 La consciencia es el sujeto, y la emoción, el predicado. Por eso una consciencia aislada, que ha sido olvidada (una idea que se perdió, una lengua muerta, un sistema de creencias sociales o individuales), muere primero en el reino físico (la muerte del sabio, el silencio del profeta, la quema de libros, la caza de brujas, el genocidio) y después en el reino sensible: las ideas que esas voces promovían, su cosmovisión entera.

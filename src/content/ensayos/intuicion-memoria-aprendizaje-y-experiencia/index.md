@@ -7,7 +7,7 @@ version: v1
 orden: 7
 description: "Memoria, aprendizaje y experiencia: predecir, equivocarse y corregir."
 categoria: Apuntes sobre la Intuición
-tags: [intuición, memoria]
+tags: [Mente y cuerpo]
 draft: false
 parte: "Cómo funciona la intuición"
 ---

@@ -6,7 +6,7 @@ version: v1
 orden: 15
 description: "La motivación y la desmotivación: lo quiero, ¿y puedo?"
 categoria: Emociones Arquetípicas
-tags: [emociones]
+tags: [Emociones]
 draft: false
 parte: "Las emociones"
 ---

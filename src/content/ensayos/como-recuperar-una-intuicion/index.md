@@ -7,7 +7,7 @@ version: v1
 orden: 11
 description: "Cómo recuperar una intuición: cuerpo, pausa y atención."
 categoria: Apuntes sobre la Intuición
-tags: [intuición, cuerpo]
+tags: [Mente y cuerpo]
 draft: true
 parte: "¿Podemos confiar en ella?"
 ---

@@ -7,7 +7,7 @@ version: v1
 orden: 5
 description: "Emoción y sentimiento: cuerpo, sensación e interpretación."
 categoria: Apuntes sobre la Intuición
-tags: [intuición, emociones]
+tags: [Mente y cuerpo, Emociones]
 draft: false
 parte: "Cómo funciona la intuición"
 ---

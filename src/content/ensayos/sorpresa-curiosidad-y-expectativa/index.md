@@ -6,7 +6,7 @@ version: v1
 orden: 17
 description: "El arco positivo abierto: sorpresa, curiosidad, expectativa y humor."
 categoria: Emociones Arquetípicas
-tags: [emociones, narrativa]
+tags: [Emociones, Historias y cine]
 draft: false
 parte: "Las emociones"
 ---

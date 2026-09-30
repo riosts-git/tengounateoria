@@ -6,7 +6,7 @@ version: v1
 orden: 16
 description: "La ira y el miedo: defender un límite o protegernos."
 categoria: Emociones Arquetípicas
-tags: [emociones]
+tags: [Emociones]
 draft: false
 parte: "Las emociones"
 ---

@@ -7,7 +7,7 @@ version: v1
 orden: 13
 description: "El budismo: Mara, los tres venenos y el nirvana."
 categoria: El Árbol de Arquetipos
-tags: [arquetipos, tradiciones]
+tags: [Mitos y religiones]
 draft: false
 parte: "El árbol en las tradiciones"
 ---

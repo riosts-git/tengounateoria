@@ -7,7 +7,7 @@ version: v1
 orden: 6
 description: "Arquetipo y prototipo: las palabras con que nombramos lo que sentimos."
 categoria: Emociones Arquetípicas
-tags: [emociones, arquetipos]
+tags: [Emociones, Modelos]
 draft: false
 parte: "Las emociones"
 ---

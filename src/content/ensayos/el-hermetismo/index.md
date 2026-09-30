@@ -7,7 +7,7 @@ version: v1
 orden: 14
 description: "El hermetismo: el Kybalion, la matriz y el patrón."
 categoria: El Árbol de Arquetipos
-tags: [arquetipos, tradiciones]
+tags: [Mitos y religiones]
 draft: false
 parte: "El árbol en las tradiciones"
 ---

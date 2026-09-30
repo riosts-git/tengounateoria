@@ -7,7 +7,7 @@ version: v1
 orden: 6
 description: "Atención, intención y estímulos: qué registramos del mundo, y por qué."
 categoria: Apuntes sobre la Intuición
-tags: [intuición, atención]
+tags: [Mente y cuerpo]
 draft: false
 parte: "Cómo funciona la intuición"
 ---

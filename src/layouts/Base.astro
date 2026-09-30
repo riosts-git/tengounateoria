@@ -78,6 +78,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
       ))}
     </nav>
     <hr class="divider" />
+    <p class="temas-t">Temas</p>
     <div class="tags-row">
       {tags.map((t) => <a class="tag" data-tag={slugify(t)} href={u(`?tag=${slugify(t)}`)}>{t}<span class="tag-n">{cuantos(t)}</span></a>)}
     </div>

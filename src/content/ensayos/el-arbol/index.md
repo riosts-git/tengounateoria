@@ -7,7 +7,7 @@ version: v1
 orden: 3
 description: "El árbol: símbolos, serpientes y culturas."
 categoria: El Árbol de Arquetipos
-tags: [arquetipos, símbolos]
+tags: [Mitos y religiones]
 draft: false
 parte: "El árbol"
 ---
