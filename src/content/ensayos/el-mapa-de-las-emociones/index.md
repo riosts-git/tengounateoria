@@ -4,7 +4,7 @@ subtitulo: "El mapa de las emociones: dos preguntas y cuatro movimientos."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
-orden: 10
+orden: 11
 description: "El mapa de las emociones: dos preguntas y cuatro movimientos."
 categoria: Emociones Arquetípicas
 tags: [emociones, modelos]

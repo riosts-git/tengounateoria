@@ -4,7 +4,7 @@ subtitulo: "El amor, el odio y la indiferencia: vínculos, apego y aversión."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
-orden: 7
+orden: 8
 description: "El amor, el odio y la indiferencia: vínculos, apego y aversión."
 categoria: Emociones Arquetípicas
 tags: [emociones, sentimientos]

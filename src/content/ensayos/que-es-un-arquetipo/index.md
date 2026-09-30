@@ -4,7 +4,7 @@ subtitulo: "Arquetipo y prototipo: las palabras con que nombramos lo que sentimo
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
-orden: 5
+orden: 6
 description: "Arquetipo y prototipo: las palabras con que nombramos lo que sentimos."
 categoria: Emociones Arquetípicas
 tags: [emociones, arquetipos]

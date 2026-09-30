@@ -4,7 +4,7 @@ subtitulo: "Emociones y sentimientos: expectativa, interpretación y responsabil
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
-orden: 6
+orden: 7
 description: "Emociones y sentimientos: expectativa, interpretación y responsabilidad."
 categoria: Emociones Arquetípicas
 tags: [emociones, sentimientos]
