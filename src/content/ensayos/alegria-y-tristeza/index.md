@@ -12,49 +12,29 @@ parte: "Las emociones"
 ---
 Son las dos emociones más representativas: las que se nos vienen a la cabeza cuando alguien pregunta «¿cómo estás?». El yin y el yang del modelo, dos extremos de una misma respuesta. Casi todos los sistemas terminan reduciéndose a esta pregunta binaria: bien o mal.
 
-El estado es a la vez el punto de partida y el de llegada. Cada arco termina en un nuevo estado, que comparamos con el de partida y con la expectativa que teníamos sobre el resultado. Por eso llamamos **emociones de estado** a las dos que lo nombran.
+El estado es a la vez el punto de partida y el de llegada. Cada arco termina en un nuevo estado, que comparamos con el de partida y con la expectativa que teníamos sobre el resultado. Por eso llamamos **emociones de estado** a las dos que lo nombran. Una vez que actuamos, la emoción sale del cuerpo y se encuentra con la realidad. El resultado se compara con lo que esperábamos, y el estado cambia.
 
 ## Alegría
 
-> *«Estoy bien, o mejor que antes».*
-
-- **Variables:** el estado resultante confirma o supera la expectativa.
-- **Cómo se siente:** bienestar, ligereza, ganas de compartir.
-- **Familia de palabras:** felicidad, contento, satisfacción, gozo, júbilo, euforia.
+Cuando el resultado confirma o supera lo que esperábamos, aparece la alegría. El cuerpo se relaja y se abre: hay ligereza, bienestar, ganas de compartir. La nombramos felicidad, contento, satisfacción, gozo, júbilo o euforia.
 
 La **alegría** es, quizás, el término con más consenso de todo el campo de estudio de las emociones. Casi todas las teorías le reservan un lugar, aunque discrepen en casi todo lo demás.
 
 Es la emoción que le da forma a la comedia. El protagonista quiere algo, encuentra obstáculos, y el relato se cierra con la recuperación de un equilibrio: una boda, un reencuentro, un problema resuelto. La alegría rara vez necesita explicación: es, casi por definición, la ausencia de todo lo demás.
 
-Una vez que actuamos, la emoción sale del cuerpo y se encuentra con la realidad. El resultado se compara con lo que esperábamos, y el estado cambia.
+Su función es decirnos «esto funcionó, repetilo»: es la señal de que una configuración sirvió. Su virtud es el optimismo, el entusiasmo vital, el disfrute y el vínculo con los demás.
 
-**Qué hace el cuerpo:** se relaja y se abre. Hay ligereza, bienestar, ganas de compartir.
-
-**Para qué sirve:** para decirnos «esto funcionó, repetilo». Es la señal de que una configuración sirvió.
-
-**A favor:** optimismo, entusiasmo vital, disfrute, vínculo con los demás.
-
-**En contra:** cuando la búsqueda del placer se vuelve el criterio dominante, lo que empezó como recompensa se convierte en algo que necesitamos producir una y otra vez. Ahí aparece el hedonismo.
+Descompensada, cuando la búsqueda del placer se vuelve el criterio dominante, lo que empezó como recompensa se convierte en algo que necesitamos producir una y otra vez. Ahí aparece el hedonismo.
 
 ## Tristeza
 
-> *«Estoy mal, o peor que antes».*
-
-- **Variables:** el estado resultante queda por debajo de la expectativa.
-- **Cómo se siente:** pesadez, vacío, ganas de retirarse.
-- **Familia de palabras:** pena, pesar, desánimo, abatimiento, desconsuelo.
+Cuando el resultado queda por debajo de lo que esperábamos, aparece la tristeza. El cuerpo se vuelve pesado y lento: baja el ritmo, se retira, se recoge. La nombramos pena, pesar, desánimo, abatimiento o desconsuelo.
 
 Si la alegría le pertenece a la comedia, la **tristeza** le pertenece a la tragedia: la misma estructura narrativa, resuelta en sentido contrario. El protagonista también quiere algo y también actúa para conseguirlo, pero las fuerzas que se le oponen resultan demasiado grandes. La historia avanza hacia una pérdida que ya no puede repararse.
 
-Solemos confundirla con la depresión, pero quizá la raíz de la depresión esté en otro lugar.
+Su función es frenar, reconocer que algo cambió y reorganizar prioridades. La tristeza nos obliga a detenernos justo cuando seguir igual ya no tiene sentido. Su virtud es la introspección, el recogimiento, la posibilidad de procesar una pérdida.
 
-**Qué hace el cuerpo:** se vuelve pesado y lento. Baja el ritmo, se retira, se recoge.
-
-**Para qué sirve:** para frenar, reconocer que algo cambió y reorganizar prioridades. La tristeza nos obliga a detenernos justo cuando seguir igual ya no tiene sentido.
-
-**A favor:** introspección, recogimiento, la posibilidad de procesar una pérdida.
-
-**En contra:** cuando permanece en el centro de la experiencia, empieza a condicionar también lo que todavía no ocurrió: el pasado pesa más, el futuro pierde atractivo. Ahí aparecen la melancolía y el retraimiento.
+Descompensada, cuando permanece en el centro de la experiencia, empieza a condicionar también lo que todavía no ocurrió: el pasado pesa más, el futuro pierde atractivo. Ahí aparecen la melancolía y el retraimiento. Solemos confundirla con la depresión, pero quizá la raíz de la depresión esté en otro lugar.
 
 Ni la alegría ni la tristeza son un premio ni un castigo. Son la lectura que el cuerpo hace de cómo quedó después del recorrido. Sentir tristeza no es haber fallado; es información.
 

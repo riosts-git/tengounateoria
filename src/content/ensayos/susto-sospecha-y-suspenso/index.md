@@ -10,19 +10,13 @@ tags: [emociones, narrativa]
 draft: false
 parte: "Las emociones"
 ---
-> *«Hay algo que podría salir mal».*
-
 Cuando el arco abierto es negativo, la espera también tiene tres nombres: **susto**, cuando lo inesperado se vuelve amenaza; **sospecha**, cuando falta información, pero la orientación ya es negativa; **suspenso**, cuando la amenaza sigue ahí y todavía no sabemos cómo termina.
 
 El susto es un asombro que ya se inclina hacia lo negativo, con intensidad alta: el otro prototipo del arco abierto. Si la amenaza se confirma y no nos sentimos capaces de responder, el arco desemboca en miedo.
 
-**Qué hace el cuerpo:** se queda en guardia. No se expande ni se contrae del todo: espera, buscando señales.
+Mientras espera, el cuerpo se queda en guardia. No se expande ni se contrae del todo: espera, buscando señales. Sirve para estar listos si el peligro se confirma. Su virtud es la atención elevada, la preparación ante lo incierto.
 
-**Para qué sirve:** para estar listos si el peligro se confirma.
-
-**A favor:** atención elevada, preparación ante lo incierto.
-
-**En contra:** un cuerpo que espera no descansa. Muchos arcos abiertos a la vez agotan, aunque ninguno sea intenso. Y un arco negativo que nunca se resuelve, ni para proyectarnos ni para contraernos, es lo que llamamos ansiedad.
+Descompensado, un cuerpo que espera no descansa. Muchos arcos abiertos a la vez agotan, aunque ninguno sea intenso. Y un arco negativo que nunca se resuelve, ni para proyectarnos ni para contraernos, es lo que llamamos ansiedad.
 
 ## El peligro
 

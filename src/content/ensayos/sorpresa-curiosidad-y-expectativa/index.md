@@ -10,19 +10,13 @@ tags: [emociones, narrativa]
 draft: false
 parte: "Las emociones"
 ---
-> *«Hay algo que todavía no sé».*
-
 No todos los arcos se cierran enseguida. A veces falta información, y el cuerpo se queda esperando. Cuando el arco es positivo, esa espera tiene tres nombres según la etapa: **sorpresa**, cuando algo rompe lo esperado; **curiosidad**, cuando buscamos más información; **expectativa**, cuando ya sabemos lo que queremos, pero todavía no podemos actuar.
 
 La sorpresa es un asombro que ya se inclina hacia lo positivo. Tiene intensidad alta y un arco positivo, lo que la convierte en el prototipo de las emociones del arco abierto. La expectativa, por su parte, no es una variable independiente, sino la anticipación del estado resultante respecto del estado actual.
 
-**Qué hace el cuerpo:** se queda preparado, inclinado hacia adelante, atento a cualquier señal.
+Mientras espera, el cuerpo se queda preparado, inclinado hacia adelante, atento a cualquier señal. Sirve para anticipar: la expectativa pone parte del placer en el futuro, y disfrutamos no solo de lo que ocurre, sino de lo que imaginamos que va a ocurrir. Su virtud es el optimismo, la ilusión, la capacidad de proyectarnos.
 
-**Para qué sirve:** para anticipar. La expectativa pone parte del placer en el futuro: disfrutamos no solo de lo que ocurre, sino de lo que imaginamos que va a ocurrir.
-
-**A favor:** optimismo, ilusión, capacidad de proyectarnos.
-
-**En contra:** cuando lo que esperamos se vuelve más importante que lo que ocurre, llega la frustración. Si la ansiedad tiene una versión «buena», es esta: un exceso de expectativa.
+Descompensada, cuando lo que esperamos se vuelve más importante que lo que ocurre, llega la frustración. Si la ansiedad tiene una versión «buena», es esta: un exceso de expectativa.
 
 ## El humor
 
