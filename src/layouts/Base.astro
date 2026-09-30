@@ -1,12 +1,14 @@
 ---
 import '../styles/global.css';
-import { SITE, CATS, slugify, u } from '../config';
-import { getPosts } from '../lib/posts';
+import { SITE, slugify, tituloPlano, u } from '../config';
+import { getPosts, getPostsByCat } from '../lib/posts';
 
 const { title = SITE.title, description = SITE.description, type = 'website', jsonLd } = Astro.props;
 const posts = await getPosts();
 const tags = [...new Set(posts.flatMap((p) => p.tags))].sort((a, b) => a.localeCompare(b, 'es'));
 const cuantos = (t: string) => posts.filter((p) => p.tags.includes(t)).length;
+const libros = await getPostsByCat();
+const aqui = Astro.url.pathname.replace(/\/?$/, '/');
 const full = title === SITE.title ? title : `${title} · ${SITE.title}`;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 ---
@@ -39,8 +41,18 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
   <aside class="sidebar">
     <a href={u('')} class="brand"><h1>{SITE.title}</h1></a>
     <span class="tagline">{SITE.tagline}</span>
-    <nav class="filters" aria-label="Temas">
-      {CATS.map((c) => <a class="chip" data-c={slugify(c)} href={`${u('')}#${slugify(c)}`}>{c}</a>)}
+    <nav class="filters" aria-label="Cuadernos">
+      {libros.map((c) => (
+        <details class="libro" data-c={slugify(c.name)} open={c.posts.some((p) => p.href === aqui)}>
+          <summary class="chip" data-c={slugify(c.name)} data-href={`${u('')}#${slugify(c.name)}`}>
+            <svg class="flecha" viewBox="0 0 10 10" width="9" height="9" aria-hidden="true"><path d="M3 1.5 6.5 5 3 8.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            {c.name}
+          </summary>
+          <ol class="nav-ensayos">
+            {c.posts.map((p) => <li><a href={p.href} aria-current={p.href === aqui ? 'page' : undefined}>{tituloPlano(p.title)}</a></li>)}
+          </ol>
+        </details>
+      ))}
     </nav>
     <hr class="divider" />
     <div class="tags-row">
@@ -48,6 +60,12 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
     </div>
   </aside>
   <main><slot /></main>
+  <script>
+    // En el celular el menú es una fila de botones: tocar un cuaderno lleva a su moleskine en vez de desplegarlo.
+    document.querySelectorAll<HTMLElement>('.libro > summary').forEach((s) => s.addEventListener('click', (e) => {
+      if (matchMedia('(max-width: 860px)').matches) { e.preventDefault(); location.href = s.dataset.href!; }
+    }));
+  </script>
   <footer>
     <div class="footer-inner">
       <h4>Gracias por leer</h4>
