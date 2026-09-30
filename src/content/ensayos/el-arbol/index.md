@@ -9,6 +9,7 @@ description: "El árbol: símbolos, serpientes y culturas."
 categoria: El Árbol de Arquetipos
 tags: [arquetipos, símbolos]
 draft: false
+parte: "El árbol"
 ---
 Llegó el momento que todos esperábamos: vamos a hablar de árboles.
 

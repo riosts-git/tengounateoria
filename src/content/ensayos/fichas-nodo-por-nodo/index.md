@@ -9,6 +9,7 @@ description: "Fichas: el árbol, nodo por nodo."
 categoria: El Árbol de Arquetipos
 tags: [arquetipos, modelos]
 draft: false
+parte: "Nodo por nodo"
 ---
 El árbol puede leerse desde muchas tradiciones y disciplinas: la Cábala, las emociones, el ciclo de la vida, la lengua, el camino del héroe, la creatividad, el budismo. Si cada una de esas lecturas es una columna, estas fichas son la lectura fila por fila: qué es cada nodo cuando lo miramos desde todos los ángulos a la vez.
 

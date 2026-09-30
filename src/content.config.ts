@@ -11,6 +11,7 @@ const ensayos = defineCollection({
     actualizado: z.coerce.date().optional(), // "Última actualización"
     version: z.coerce.string().optional(), // ej. v1
     orden: z.number().optional(), // posición dentro de su categoría (home y anterior/siguiente)
+    parte: z.string().optional(), // parte del cuaderno (subtítulo en la home)
     description: z.string(), // SEO / RSS
     categoria: z.enum(CATS),
     tags: z.array(z.string()).default([]),

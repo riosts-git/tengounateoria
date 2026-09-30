@@ -17,6 +17,7 @@
 @media (max-width:860px){.ensayo .head{padding-top:calc(110px - 28px - 30px)}}
 .ensayo .post-cat{margin:0 0 16px;font-size:12px;font-weight:600;letter-spacing:.09em;text-transform:uppercase}
 .ensayo .post-cat a{color:var(--olive)}
+.ensayo .post-parte{color:var(--soft);font-weight:500}
 .ensayo h1{font-family:'Poppins',sans-serif;font-weight:600;font-size:clamp(30px,4.4vw,42px);
   line-height:1.15;letter-spacing:-.02em;margin:0 auto;max-width:18em;text-wrap:balance}
 .ensayo h1 .destacada{font-weight:700}

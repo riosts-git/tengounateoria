@@ -4,11 +4,12 @@ subtitulo: "El camino del héroe: Campbell, Vogler y el mentor."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
-orden: 9
+orden: 8
 description: "El camino del héroe: Campbell, Vogler y el mentor."
 categoria: El Árbol de Arquetipos
 tags: [arquetipos, narrativa]
 draft: false
+parte: "El árbol en la experiencia"
 ---
 En 1949, el mitólogo Joseph Campbell publicó *El héroe de las mil caras*. Después de comparar mitos y leyendas de todo el mundo, propuso que todas contaban, en el fondo, la misma historia: el **monomito**, o camino del héroe. Una heroína o un héroe[^genero] deja su mundo, enfrenta pruebas, se transforma y vuelve cambiado.
 

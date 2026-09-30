@@ -4,11 +4,12 @@ subtitulo: "La gloria: honor, legado y olvido."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
-orden: 12
+orden: 10
 description: "La gloria: honor, legado y olvido."
 categoria: El Árbol de Arquetipos
 tags: [arquetipos, mitología]
 draft: false
+parte: "El árbol en la experiencia"
 ---
 Seguí explorando la diferencia entre Hod y el nodo 8, y se me vino a la cabeza el himno. No me culpen.
 

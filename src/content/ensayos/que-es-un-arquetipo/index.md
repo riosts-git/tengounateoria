@@ -4,11 +4,12 @@ subtitulo: "Arquetipo y prototipo: las palabras con que nombramos lo que sentimo
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
-orden: 3
+orden: 5
 description: "Arquetipo y prototipo: las palabras con que nombramos lo que sentimos."
 categoria: Emociones Arquetípicas
 tags: [emociones, arquetipos]
 draft: false
+parte: "Las emociones"
 ---
 En caso de encontrarse el lector en medio de un debate acalorado y sin escapatoria, se recomienda introducir, en algún momento de la charla, el término *arquetipo* o *prototipo*.
 

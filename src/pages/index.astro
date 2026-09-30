@@ -20,15 +20,16 @@ const jsonLd = { '@context': 'https://schema.org', '@type': 'WebSite', name: SIT
         </div>
         <div>
           <ol class="essays">
-            {c.posts.map((p, i) => (
+            {c.posts.map((p, i) => [
+              p.parte && p.parte !== c.posts[i - 1]?.parte && <li class="parte">{p.parte}</li>,
               <li data-tags={p.tags.map(slugify).join('|')}>
                 <a href={p.href}>
                   <span class="n">{String(i + 1).padStart(2, '0')}</span>
                   <span class="t" set:html={tituloHTML(p.title)} />
                   {(p.subtitulo ?? p.description) && <span class="sub">{p.subtitulo ?? p.description}</span>}
                 </a>
-              </li>
-            ))}
+              </li>,
+            ])}
           </ol>
         </div>
       </section>
@@ -61,6 +62,12 @@ const jsonLd = { '@context': 'https://schema.org', '@type': 'WebSite', name: SIT
         if (show) n++;
       });
       cat.hidden = !!tag && n === 0;
+      // el nombre de una parte se oculta si no queda ningún ensayo suyo a la vista
+      cat.querySelectorAll<HTMLElement>('li.parte').forEach((h) => {
+        let el = h.nextElementSibling as HTMLElement | null, visible = false;
+        while (el && !el.classList.contains('parte')) { if (!el.hidden) visible = true; el = el.nextElementSibling as HTMLElement | null; }
+        h.hidden = !visible;
+      });
     });
   }
   document.addEventListener('click', (e) => {

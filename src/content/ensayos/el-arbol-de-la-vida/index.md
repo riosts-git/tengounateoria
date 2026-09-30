@@ -4,11 +4,12 @@ subtitulo: "El Árbol de la Vida: sefirot, coincidencias y diferencias."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
-orden: 5
+orden: 11
 description: "El Árbol de la Vida: sefirot, coincidencias y diferencias."
 categoria: El Árbol de Arquetipos
 tags: [arquetipos, tradiciones]
 draft: false
+parte: "El árbol en las tradiciones"
 ---
 **La Cábala** es la tradición mística judía. Su origen exacto es incierto. Hay dos relatos:
 

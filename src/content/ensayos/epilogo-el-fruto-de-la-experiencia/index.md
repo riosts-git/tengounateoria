@@ -9,6 +9,7 @@ description: "El fruto de la experiencia: distinguir, predecir y aprender."
 categoria: El Árbol de Arquetipos
 tags: [arquetipos, personal]
 draft: false
+parte: "Nodo por nodo"
 ---
 Desde que me dediqué a escribir todas estas teorías y pensamientos, me enfrenté a una paradoja: querer seguir pensando, descubriendo, aprendiendo, y querer comunicarlo a los cuatro vientos. Para que más personas exploren estas coincidencias, y porque me molesta mucho que algunos pensadores y mal llamados sabios tuerzan el desconocimiento para vender libros y cursos ontológicos.
 

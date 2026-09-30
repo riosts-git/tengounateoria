@@ -9,6 +9,7 @@ description: "Mi obsesión por las palabras: inmadurez, intuición y el problema
 categoria: Apuntes sobre la Intuición
 tags: [intuición, lenguaje, personal]
 draft: false
+parte: "Las palabras y la mente"
 ---
 
 —¿Podés dejar de ser tan inmadura? —me gritó Mamá.

@@ -9,6 +9,7 @@ description: "Anatomía de la intuición: corazonadas, cuerpo y el experimento d
 categoria: Apuntes sobre la Intuición
 tags: [intuición, cuerpo]
 draft: false
+parte: "Cómo funciona la intuición"
 ---
 
 

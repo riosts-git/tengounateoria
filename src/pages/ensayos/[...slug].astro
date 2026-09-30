@@ -41,7 +41,7 @@ const jsonLd = {
   <div class="progress" aria-hidden="true"></div>
   <article class="post ensayo" data-cat={slugify(d.categoria)}>
     <header class="head">
-      <p class="post-cat"><a href={`${u('')}#${slugify(d.categoria)}`}>{d.categoria}</a></p>
+      <p class="post-cat"><a href={`${u('')}#${slugify(d.categoria)}`}>{d.categoria}</a>{d.parte && <span class="post-parte"> · {d.parte}</span>}</p>
       <h1 set:html={tituloHTML(d.title)} />
       {d.subtitulo && <p class="subtitulo">{d.subtitulo}</p>}
       <ul class="tiny">

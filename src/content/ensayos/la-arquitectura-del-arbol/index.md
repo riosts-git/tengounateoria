@@ -9,6 +9,7 @@ description: "La arquitectura del árbol: nodos, ejes, niveles y planos."
 categoria: El Árbol de Arquetipos
 tags: [arquetipos, modelos]
 draft: false
+parte: "El árbol"
 ---
 Estos apuntes presentan el árbol completo, por fuera de cualquier tradición, para poder consultarlo.
 

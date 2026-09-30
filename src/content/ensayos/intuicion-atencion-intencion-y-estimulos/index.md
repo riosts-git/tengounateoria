@@ -9,6 +9,7 @@ description: "Atención, intención y estímulos: qué registramos del mundo, y 
 categoria: Apuntes sobre la Intuición
 tags: [intuición, atención]
 draft: false
+parte: "Cómo funciona la intuición"
 ---
 «Donde va la atención, va la energía», reza el dicho popular. Y para entender qué tan real es esta afirmación, habría que ver qué sucede cuando prestamos atención.
 

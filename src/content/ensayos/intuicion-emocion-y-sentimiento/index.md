@@ -9,6 +9,7 @@ description: "Emoción y sentimiento: cuerpo, sensación e interpretación."
 categoria: Apuntes sobre la Intuición
 tags: [intuición, emociones]
 draft: false
+parte: "Cómo funciona la intuición"
 ---
 Me encontré con la siguiente ~~historia de terror~~ fábula. Creo que es una fábula:
 

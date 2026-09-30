@@ -4,11 +4,12 @@ subtitulo: "El ciclo de la vida: nacer, crecer, unirse y dejar algo."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
-orden: 7
+orden: 6
 description: "El ciclo de la vida: nacer, crecer, unirse y dejar algo."
 categoria: El Árbol de Arquetipos
 tags: [arquetipos]
 draft: false
+parte: "El árbol en la experiencia"
 ---
 Nacer, crecer, reproducirse y morir. El ciclo de la vida de una mujer u hombre[^genero] puede leerse también en el árbol, no como una cronología medida en años, sino como una secuencia de etapas: cada una resuelve una pregunta y abre la siguiente.
 

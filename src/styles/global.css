@@ -65,6 +65,10 @@ main{margin-left:280px;padding:52px 28px 20px;display:flex;justify-content:cente
 /* lista de ensayos: sin líneas; cada bloque se desplaza al pasar el mouse y vuelve despacio (efecto escalera) */
 .essays{margin:0;padding:0;list-style:none}
 .essays li[hidden]{display:none}
+/* nombre de cada parte del cuaderno, como un marcador discreto */
+.essays .parte{margin:26px 0 2px;padding-left:calc(2.2em + 6px);font-size:11.5px;font-weight:600;letter-spacing:.09em;
+  text-transform:uppercase;color:color-mix(in srgb,var(--acc) 70%,var(--bg))}
+.essays .parte:first-child{margin-top:4px}
 .essays a{display:grid;grid-template-columns:2.2em 1fr;column-gap:6px;padding:13px 0;
   color:color-mix(in srgb,var(--ink) 62%,var(--bg));
   transition:transform 1.1s cubic-bezier(.22,1,.36,1),color .9s ease}

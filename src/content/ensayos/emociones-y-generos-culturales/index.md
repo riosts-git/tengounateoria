@@ -9,6 +9,7 @@ description: "Emociones y géneros culturales: comedia, tragedia, terror y acci�
 categoria: Emociones Arquetípicas
 tags: [emociones, narrativa]
 draft: false
+parte: "Las emociones"
 ---
 —¿Querés ver una película?
 

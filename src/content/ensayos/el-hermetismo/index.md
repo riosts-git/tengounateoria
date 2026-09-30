@@ -9,6 +9,7 @@ description: "El hermetismo: el Kybalion, la matriz y el patrón."
 categoria: El Árbol de Arquetipos
 tags: [arquetipos, tradiciones]
 draft: false
+parte: "El árbol en las tradiciones"
 ---
 El *Kybalion* se publicó en 1908, firmado por «Tres Iniciados». Se presenta como la enseñanza de Hermes Trismegisto, una figura legendaria que fusiona al dios griego Hermes con el egipcio Thot. Pero es un libro moderno: una síntesis esotérica de principios del siglo XX.
 

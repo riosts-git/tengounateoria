@@ -4,11 +4,12 @@ subtitulo: "El árbol y las emociones: nodos, sesgos y los tres venenos."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
-orden: 6
+orden: 5
 description: "El árbol y las emociones: nodos, sesgos y los tres venenos."
 categoria: El Árbol de Arquetipos
 tags: [arquetipos, emociones]
 draft: false
+parte: "El árbol en la experiencia"
 ---
 El árbol nació para ordenar las emociones. Estos apuntes vuelven a ese punto de partida: el modelo de emociones leído nodo por nodo.
 

@@ -9,6 +9,7 @@ description: "Por qué entender las emociones: cuerpo, predicción y supervivenc
 categoria: Emociones Arquetípicas
 tags: [emociones]
 draft: false
+parte: "El arco"
 ---
 > «¿Qué es, pues, el tiempo? Si nadie me lo pregunta, lo sé; pero si quiero explicárselo al que me lo pregunta, no lo sé».
 >

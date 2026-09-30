@@ -9,6 +9,7 @@ description: "Emociones y estados de ánimo: sesgos, depresión y ansiedad."
 categoria: Emociones Arquetípicas
 tags: [emociones, estados de ánimo]
 draft: false
+parte: "Las emociones"
 ---
 El parte médico decía «ansiedad», pero la médica usaba dos palabras a la vez: ansiedad y depresión. No como sinónimos, sino como dos primas que pasan las tardes juntas.
 

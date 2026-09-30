@@ -9,6 +9,7 @@ description: "Cómo graficar el modelo: diagramas, árboles y el Árbol de la Vi
 categoria: Emociones Arquetípicas
 tags: [emociones, modelos]
 draft: false
+parte: "Las emociones"
 ---
 
 ---

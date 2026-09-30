@@ -9,6 +9,7 @@ description: "Principales modelos de la emoción: Ekman, Plutchik, Panksepp y ot
 categoria: Emociones Arquetípicas
 tags: [emociones, modelos]
 draft: false
+parte: "El arco"
 ---
 Fui con amigos y sus hijos al cine.
 

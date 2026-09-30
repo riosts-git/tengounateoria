@@ -9,6 +9,7 @@ description: "El budismo: Mara, los tres venenos y el nirvana."
 categoria: El Árbol de Arquetipos
 tags: [arquetipos, tradiciones]
 draft: false
+parte: "El árbol en las tradiciones"
 ---
 El budismo siempre me interesó, así que ya conocía la senda del medio. Pero cuando me puse a investigar encontré varias similitudes que ayudan a entender el árbol.
 

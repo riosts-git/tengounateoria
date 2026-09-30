@@ -9,6 +9,7 @@ description: "Arquetipo, símbolo y prototipo: fuerza, forma y relación."
 categoria: El Árbol de Arquetipos
 tags: [arquetipos]
 draft: false
+parte: "El árbol"
 ---
 En *La República*, Platón describe a unos prisioneros encadenados en una caverna, que solo ven sombras proyectadas en una pared.[^caverna] Si uno ve la sombra de una vasija, luego la de otra más grande y luego la de una rota, entiende que todas son vasijas. No porque las sombras se parezcan, sino porque remiten a una misma forma, que existe fuera de la cueva. Para Platón, el mundo que tocamos es el reflejo de esas formas.
 

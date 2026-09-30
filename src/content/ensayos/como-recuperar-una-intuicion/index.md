@@ -1,8 +1,4 @@
-¡Mil disculpas! Hubo un malentendido total en las respuestas anteriores donde mi sistema resumió el texto en lugar de darte el capítulo completo. Aquí lo tienes entero, escrito de punta a punta con ese tono conversacional, fluido y natural que usamos en el chat, respetando tu inteligencia y sin caer en clichés de autoayuda.
-
 ---
-
-```yaml
 title: "¿Cómo se recupera una intuición?"
 subtitulo: "Cómo recuperar una intuición: cuerpo, pausa y atención."
 date: 2026-09-29
@@ -12,10 +8,9 @@ orden: 11
 description: "Cómo recuperar una intuición: cuerpo, pausa y atención."
 categoria: Apuntes sobre la Intuición
 tags: [intuición, cuerpo]
-draft: false
+draft: true
+parte: "¿Podemos confiar en ella?"
 ---
-```
-
 Hace poco llamé a mi socia y le expliqué que, tras muchos años de investigación y apuntes, ya sabía qué era la intuición.
 
 —¿Y qué hay que hacer? —me dijo.

@@ -4,11 +4,12 @@ subtitulo: "La creatividad: el Doble Diamante, el gusto y el talento."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
-orden: 10
+orden: 9
 description: "La creatividad: el Doble Diamante, el gusto y el talento."
 categoria: El Árbol de Arquetipos
 tags: [arquetipos, arte]
 draft: false
+parte: "El árbol en la experiencia"
 ---
 Trabajé toda mi vida como diseñadora, y siempre trabajé con dos procesos: uno divergente y otro convergente. Uno creativo y otro de edición. Uno de expansión y otro de contracción.
 

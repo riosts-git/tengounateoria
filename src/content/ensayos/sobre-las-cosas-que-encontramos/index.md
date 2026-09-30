@@ -9,6 +9,7 @@ description: "Sobre las cosas que encontramos sin buscarlas: coincidencias, Cáb
 categoria: El Árbol de Arquetipos
 tags: [arquetipos, personal]
 draft: false
+parte: "El árbol"
 ---
 > «Uno se convierte en dos, dos se convierten en tres, y del tercero sale el uno como cuarto».
 >

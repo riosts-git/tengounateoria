@@ -9,6 +9,7 @@ description: "Psique, mente y cerebro: dónde sucede la experiencia."
 categoria: Apuntes sobre la Intuición
 tags: [mente, cerebro, etimología, historia]
 draft: false
+parte: "Las palabras y la mente"
 ---
 
 Psique era tan hermosa que los hombres dejaron de rendir culto a Afrodita para admirarla a ella. Y, vaya sorpresa, a la diosa no le cayó nada bien.

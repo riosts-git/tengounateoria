@@ -4,11 +4,12 @@ subtitulo: "Intuición extraordinaria y mística: premoniciones, sueños y miste
 date: 2026-09-29
 actualizado: 2026-09-30
 version: v2
-orden: 9
+orden: 10
 description: "Intuición extraordinaria y mística: premoniciones, sueños y misterio."
 categoria: Apuntes sobre la Intuición
 tags: [intuición, mística]
 draft: false
+parte: "¿Podemos confiar en ella?"
 ---
 Mis amigos me hablaban de cosas extraordinarias: pálpitos, adivinos, sensaciones, energías. Así que me pareció oportuno ordenar un poco lo que fui descubriendo.
 

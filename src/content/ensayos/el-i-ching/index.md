@@ -4,11 +4,12 @@ subtitulo: "El I Ching: yin, yang y mutación."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
-orden: 11
+orden: 12
 description: "El I Ching: yin, yang y mutación."
 categoria: El Árbol de Arquetipos
 tags: [arquetipos, tradiciones]
 draft: false
+parte: "El árbol en las tradiciones"
 ---
 El *I Ching* es uno de los libros más antiguos de China. Su nombre se traduce como *Libro de las mutaciones*, o de los cambios, y durante siglos se usó para consultar el momento presente y leer hacia dónde se mueve una situación.
 

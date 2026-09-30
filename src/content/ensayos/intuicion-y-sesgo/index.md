@@ -9,6 +9,7 @@ description: "Intuición y sesgo: la vía rápida, los prejuicios y el error."
 categoria: Apuntes sobre la Intuición
 tags: [intuición, sesgos]
 draft: false
+parte: "¿Podemos confiar en ella?"
 ---
 Mi tía iba en el metro y un joven se le sentó al lado.
 

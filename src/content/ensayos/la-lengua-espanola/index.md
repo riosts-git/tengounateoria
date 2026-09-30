@@ -4,11 +4,12 @@ subtitulo: "La lengua española: sujeto, predicado y emoción."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
-orden: 8
+orden: 7
 description: "La lengua española: sujeto, predicado y emoción."
 categoria: El Árbol de Arquetipos
 tags: [arquetipos, lenguaje]
 draft: false
+parte: "El árbol en la experiencia"
 ---
 No conozco otras lenguas lo suficiente como para opinar sobre ellas. Pero en español, al menos, hay coincidencias entre la gramática y el árbol que me parecen demasiado interesantes para dejarlas pasar.
 

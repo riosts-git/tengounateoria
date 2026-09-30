@@ -4,11 +4,12 @@ subtitulo: "El amor, el odio y la indiferencia: vínculos, apego y aversión."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
-orden: 10
+orden: 9
 description: "El amor, el odio y la indiferencia: vínculos, apego y aversión."
 categoria: Emociones Arquetípicas
 tags: [emociones, sentimientos]
 draft: false
+parte: "Las emociones"
 ---
 El amor y el odio son sentimientos que me gustaría analizar en detalle. No los incluí entre las emociones arquetípicas porque la mayoría de los modelos que abogan por un análisis científico de las emociones tampoco los incluyen.
 

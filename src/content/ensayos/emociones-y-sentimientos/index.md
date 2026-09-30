@@ -9,6 +9,7 @@ description: "Emociones y sentimientos: expectativa, interpretación y responsab
 categoria: Emociones Arquetípicas
 tags: [emociones, sentimientos]
 draft: false
+parte: "Las emociones"
 ---
 Cuando empecé a estudiar las emociones, me di cuenta de algo curioso. A la hora de dividir los sentimientos, la pregunta que más ordenaba no era qué sentíamos, sino a quién hacíamos responsable de lo que había pasado.
 

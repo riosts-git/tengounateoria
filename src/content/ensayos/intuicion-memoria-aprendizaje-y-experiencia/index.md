@@ -9,6 +9,7 @@ description: "Memoria, aprendizaje y experiencia: predecir, equivocarse y correg
 categoria: Apuntes sobre la Intuición
 tags: [intuición, memoria]
 draft: false
+parte: "Cómo funciona la intuición"
 ---
 Cuenta Borges que Ireneo Funes es un joven uruguayo que, al quedar paralítico tras un accidente a caballo, adquiere una memoria perfecta.[^funes]
 

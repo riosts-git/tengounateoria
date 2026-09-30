@@ -9,6 +9,7 @@ description: "Instinto, intuición e intelecto: un modelo de impulsos, percepci�
 categoria: Apuntes sobre la Intuición
 tags: [intuición, instinto, intelecto, modelos, mente]
 draft: false
+parte: "Las palabras y la mente"
 ---
 
 *Dejé atrás la avenida; solo me faltaban unas cuadras para llegar a casa. Era de noche y caminaba entretenida, pensando cómo estructurar este apunte, hasta que un estruendo violento descarriló mi tren mental.*
