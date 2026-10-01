@@ -1,0 +1,41 @@
+---
+// Página de cada cuaderno: la lista de sus partes y ensayos (sin menú lateral: la página ya es el índice).
+import Base from '../../layouts/Base.astro';
+import { getPostsByCat } from '../../lib/posts';
+import { LIBROS, PARTES, slugify, tituloHTML } from '../../config';
+
+export async function getStaticPaths() {
+  const cats = await getPostsByCat();
+  return LIBROS.map((l) => ({ params: { libro: l.slug }, props: { cat: l.cat, posts: cats.find((c) => c.name === l.cat)?.posts ?? [] } }));
+}
+const { cat, posts } = Astro.props;
+---
+<Base title={cat} description={`${cat}: ${posts.length} ensayos.`} libro={cat}>
+  <section class="cat libro-pag" data-c={slugify(cat)}>
+    <header class="libro-head">
+      <div class="cat-thumb" aria-hidden="true">
+        <div class="notebook"><div class="pages"></div><div class="cover"><div class="elastic"></div></div></div>
+      </div>
+      <div>
+        <h1>{cat}</h1>
+        <p>{posts.length} ensayos</p>
+      </div>
+    </header>
+    <ol class="essays">
+      {posts.map((p, i) => [
+        p.parte && p.parte !== posts[i - 1]?.parte && (
+          <li class="parte">
+            <span class="parte-t">{p.parte}</span>
+            {PARTES[p.parte] && <span class="parte-d">{PARTES[p.parte]}</span>}
+          </li>
+        ),
+        <li>
+          <a href={p.href}>
+            <span class="n">{String(i + 1).padStart(2, '0')}</span>
+            <span class="t" set:html={tituloHTML(p.title)} />
+          </a>
+        </li>,
+      ])}
+    </ol>
+  </section>
+</Base>

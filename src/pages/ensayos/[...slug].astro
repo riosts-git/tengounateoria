@@ -1,28 +1,35 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import MenuLibro from '../../components/MenuLibro.astro';
 import '../../styles/ensayo.css';
-import { SITE, u, slugify, tituloHTML, tituloPlano } from '../../config';
-import { byOrden } from '../../lib/posts';
+import { SITE, u, slugify, tituloHTML, tituloPlano, libroDe } from '../../config';
+import { datos, getPostsByCat } from '../../lib/posts';
 
 export async function getStaticPaths() {
   const entries = await getCollection('ensayos', ({ data }) => !data.draft);
-  return entries.map((entry) => ({ params: { slug: entry.id }, props: { entry, all: entries } }));
+  return entries.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
 }
 
-const { entry, all } = Astro.props;
-const d = entry.data;
+const { entry } = Astro.props;
+const d = datos(entry); // el encabezado más el cuaderno y el orden, que salen de la carpeta y del número del archivo
 const { Content } = await render(entry);
 
 const fmt = (x: Date) => x.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
 const actualizado = fmt(d.actualizado ?? d.date);
 const minutos = Math.max(1, Math.round((entry.body ?? '').split(/\s+/).filter(Boolean).length / 200));
 
-// Anterior / siguiente dentro de la misma categoría, en orden de lectura
-const serie = all.filter((s) => s.data.categoria === d.categoria).sort((a, b) => byOrden(a.data, b.data));
-const at = serie.findIndex((s) => s.id === entry.id);
-const prev = at > 0 ? serie[at - 1] : undefined;
-const next = at >= 0 ? serie[at + 1] : undefined;
+// Los ensayos del mismo cuaderno, en orden de lectura: para el menú lateral y para anterior / siguiente
+const delCuaderno = (await getPostsByCat()).find((c) => c.name === d.categoria)?.posts ?? [];
+const at = delCuaderno.findIndex((p) => p.id === entry.id);
+const prev = at > 0 ? delCuaderno[at - 1] : undefined;
+const next = at >= 0 ? delCuaderno[at + 1] : undefined;
+// El nombre del cuaderno lleva a su página
+const libro = libroDe(d.categoria);
+const hrefCat = libro ? u(`cuadernos/${libro.slug}/`) : u('#ideas-sueltas');
+// Lectura continua: al llegar al final, el siguiente ensayo del cuaderno se carga debajo (cuadernos con continua: true en config.ts)
+const continua = !!libro?.continua;
+const aqui = u(`ensayos/${entry.id}/`);
 
 const url = new URL(Astro.url.pathname, Astro.site).href;
 const jsonLd = {
@@ -37,11 +44,13 @@ const jsonLd = {
   mainEntityOfPage: url,
 };
 ---
-<Base title={tituloPlano(d.title)} description={d.description} type="article" jsonLd={jsonLd}>
+<Base title={tituloPlano(d.title)} description={d.description} type="article" jsonLd={jsonLd} libro={d.categoria}>
   <div class="progress" aria-hidden="true"></div>
-  <article class="post ensayo" data-cat={slugify(d.categoria)}>
+  <div class="con-menu">
+  <div class="lectura" data-continua={continua ? '1' : undefined}>
+  <article class="post ensayo" data-cat={slugify(d.categoria)} data-href={aqui} data-titulo={tituloPlano(d.title)} data-siguiente={next?.href} data-numero={at + 1}>
     <header class="head">
-      <p class="post-cat"><a href={`${u('')}#${slugify(d.categoria)}`}>{d.categoria}</a>{d.parte && <span class="post-parte"> · {d.parte}</span>}</p>
+      <p class="post-cat"><a href={hrefCat}>{d.categoria}</a>{d.parte && <span class="post-parte"> · {d.parte}</span>}</p>
       <h1 set:html={tituloHTML(d.title)} />
       {d.subtitulo && <p class="subtitulo">{d.subtitulo}</p>}
       <ul class="tiny">
@@ -49,15 +58,32 @@ const jsonLd = {
       </ul>
     </header>
     <div class="prose"><Content /></div>
-    <p class="actualizado">Última actualización: {actualizado}{d.version && <> | {d.version}</>}</p>
-    {d.tags.length > 0 && (
-      <div class="post-tags"><span class="temas-t">Temas</span>{d.tags.map((t) => <a class="tag" href={u(`?tag=${slugify(t)}`)}>{t}</a>)}</div>
-    )}
-    {(prev || next) && (
-      <nav class="pn" aria-label="Otros ensayos">
-        {prev && <a class="prev" href={u(`ensayos/${prev.id}/`)}><small>Anterior</small><strong>{tituloPlano(prev.data.title)}</strong></a>}
-        {next && <a class="next" href={u(`ensayos/${next.id}/`)}><small>Siguiente</small><strong>{tituloPlano(next.data.title)}</strong></a>}
-      </nav>
-    )}
+    <!-- Fin del ensayo: una línea con un hueco al medio y una caja con, de un lado, Notas y Para seguir explorando
+         (el script las trae desde el final del texto) y, del otro, la fecha y los temas. Después, el botón para seguir leyendo -->
+    <footer class="post-fin">
+      <hr class="fin-linea" />
+      <div class="fin-caja">
+        <div class="fin-izq"></div>
+        <div class="fin-der">
+          <p class="actualizado">Última actualización: {actualizado}{d.version && <> · {d.version}</>}</p>
+          {d.tags.length > 0 && (
+            <div class="post-tags">{d.tags.map((t) => <a class="tag" href={u(`temas/${slugify(t)}/`)}>{t}</a>)}</div>
+          )}
+        </div>
+      </div>
+      {next && (
+        <nav class="pn" aria-label="Seguir leyendo">
+          <a class="next" href={next.href}>
+            <small>Siguiente apunte</small>
+            <strong>{tituloPlano(next.title)}</strong>
+            <svg class="pn-flecha" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 4v15M5 12l7 7 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </nav>
+      )}
+    </footer>
   </article>
+  </div>
+  <MenuLibro cat={d.categoria} posts={delCuaderno} aqui={aqui} abierto={continua} />
+  </div>
 </Base>
+<script src="../../scripts/lectura.ts"></script>

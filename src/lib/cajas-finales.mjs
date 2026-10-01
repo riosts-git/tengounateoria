@@ -38,7 +38,31 @@ export default function cajasFinales() {
       notas.properties.className = [...clases(notas), 'caja'];
     }
 
-    if (notas) hijos.push(notas);
-    if (explorar) hijos.push(explorar);
+    // Cada recuadro va plegado: un renglón con su nombre y cuántas entradas tiene, que se despliega al tocarlo
+    if (notas) hijos.push(plegable('Notas', notas));
+    if (explorar) hijos.push(plegable('Para seguir explorando', explorar));
+  };
+}
+
+const contarItems = (n) => (n.type === 'element' && n.tagName === 'li' ? 1 : 0) + (n.children || []).reduce((s, h) => s + contarItems(h), 0);
+
+function plegable(nombre, caja) {
+  const n = contarItems(caja);
+  return {
+    type: 'element',
+    tagName: 'details',
+    properties: { className: ['plegable'] },
+    children: [
+      {
+        type: 'element',
+        tagName: 'summary',
+        properties: {},
+        children: [
+          { type: 'element', tagName: 'span', properties: { className: ['plegable-t'] }, children: [{ type: 'text', value: nombre }] },
+          ...(n ? [{ type: 'element', tagName: 'span', properties: { className: ['plegable-n'] }, children: [{ type: 'text', value: `(${n})` }] }] : []),
+        ],
+      },
+      caja,
+    ],
   };
 }

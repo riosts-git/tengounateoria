@@ -12,9 +12,9 @@
   @keyframes leer{to{transform:scaleX(1)}}
 }
 
-/* cabecera centrada, con el título a unos 200px del borde superior */
-.ensayo .head{margin:0 0 56px;padding-top:calc(200px - 52px - 30px);text-align:center}
-@media (max-width:860px){.ensayo .head{padding-top:calc(110px - 28px - 30px)}}
+/* cabecera centrada, con aire debajo del menú superior */
+.ensayo .head{margin:0 0 56px;padding-top:40px;text-align:center}
+@media (max-width:700px){.ensayo .head{padding-top:16px}}
 .ensayo .post-cat{margin:0 0 16px;font-size:11.5px;font-weight:400;letter-spacing:.07em;text-transform:uppercase}
 .ensayo .post-cat a{color:var(--olive)}
 .ensayo .post-parte{color:var(--soft)}
@@ -54,65 +54,172 @@
 .ensayo .prose li{margin:0 0 .5em}
 .ensayo .prose li::marker{color:var(--olive)}
 
-/* tablas */
-.ensayo .prose table{width:100%;border-collapse:separate;border-spacing:0;margin:2.2em 0;padding:6px 8px;
-  font-size:.86em;line-height:1.6;display:block;overflow-x:auto;
-  background:#F4F3F0;border-radius:14px;box-shadow:0 0 0 1px rgba(0,0,0,.05),0 8px 24px -14px rgba(0,0,0,.18)}
-@media (prefers-color-scheme:dark){.ensayo .prose table{background:#232222;box-shadow:0 0 0 1px rgba(255,255,255,.06)}}
-.ensayo .prose th,.ensayo .prose td{padding:14px 18px;text-align:left;vertical-align:top;
-  border-bottom:1px solid rgba(0,0,0,.07)}
-@media (prefers-color-scheme:dark){.ensayo .prose th,.ensayo .prose td{border-bottom-color:rgba(255,255,255,.06)}}
+/* tablas: como las pizarras, pero integradas al texto (sin fondo, sin sombra, sin girar).
+   Encabezados en mono con una línea firme; filas y columnas con líneas punteadas; la primera columna en negrita;
+   las celdas cortas (clase «corto», la pone pizarra.mjs) a mano y los textos largos en letra normal */
+.ensayo .prose table{width:100%;border-collapse:collapse;margin:2.4em 0;font-size:.88em;line-height:1.5;display:block;overflow-x:auto}
+.ensayo .prose th,.ensayo .prose td{padding:11px 14px;text-align:left;vertical-align:top;border-bottom:1.5px dashed color-mix(in srgb,var(--ink) 14%,transparent)}
+.ensayo .prose th + th,.ensayo .prose td + td{border-left:1.5px dashed color-mix(in srgb,var(--ink) 11%,transparent)}
+.ensayo .prose th{padding-top:4px;padding-bottom:9px;font-family:var(--f-mono);font-size:.78em;font-weight:400;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--soft);border-bottom:1.5px solid color-mix(in srgb,var(--ink) 22%,transparent);vertical-align:bottom}
 .ensayo .prose tbody tr:last-child td{border-bottom:0}
-.ensayo .prose th{padding-top:16px;padding-bottom:12px;font-family:var(--f-mono);font-size:.74em;font-weight:400;letter-spacing:.06em;
-  text-transform:uppercase;color:var(--olive);border-bottom:1px solid color-mix(in srgb,var(--olive) 22%,transparent)}
-.ensayo .prose td:first-child{color:var(--ink);font-weight:500}
+.ensayo .prose td{color:var(--txt)}
+.ensayo .prose td:first-child{font-family:var(--f-sans);font-weight:700;color:var(--ink)}
+.ensayo .prose td.corto:not(:first-child){font-family:var(--f-mano);font-size:1.45em;line-height:1.15;color:var(--ink)}
 .ensayo .prose td strong{font-weight:600}
+
+/* PIZARRA: «> [!pizarra]» en Obsidian. Una hoja de papel centrada, como las fichas de la home, con letra manuscrita */
+.ensayo .prose .pizarra{position:relative;width:fit-content;max-width:100%;margin:2.6em auto;padding:26px 30px 22px;
+  background:#FBFAF8;color:#1A1919;border-radius:2px;transform:rotate(-.6deg);
+  box-shadow:0 1px 2px rgba(0,0,0,.07),0 16px 30px -18px rgba(0,0,0,.35);font-family:var(--f-mano);font-size:22px;line-height:1.25}
+.ensayo .prose .pizarra::before{content:'';position:absolute;inset:8px;border:1px solid rgba(26,25,25,.22);pointer-events:none}
+.ensayo .prose .pizarra figcaption{margin:0 0 12px;padding-bottom:10px;text-align:center;font-family:var(--f-sans);font-weight:700;font-size:19px;
+  letter-spacing:-.01em;border-bottom:1.5px dashed rgba(26,25,25,.35)}
+.ensayo .prose .pizarra p{margin:0 0 .6em}
+.ensayo .prose .pizarra p:last-child{margin:0}
+.ensayo .prose .pizarra table{margin:0;padding:0;background:none;box-shadow:none;border-radius:0;font-size:1em;line-height:1.25;display:table}
+.ensayo .prose .pizarra th,.ensayo .prose .pizarra td{padding:8px 14px;border:0;border-bottom:1.5px dashed rgba(26,25,25,.28);text-align:center;font-weight:500;color:#1A1919}
+.ensayo .prose .pizarra th{font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#6E6C68;border-bottom:1.5px solid rgba(26,25,25,.45)}
+.ensayo .prose .pizarra td:first-child,.ensayo .prose .pizarra th:first-child{text-align:right;font-family:var(--f-sans);font-size:15px;font-weight:700;color:#1A1919}
+.ensayo .prose .pizarra td:not(:first-child)+td,.ensayo .prose .pizarra th:not(:first-child)+th{border-left:1.5px dashed rgba(26,25,25,.18)}
+.ensayo .prose .pizarra tbody tr:last-child td{border-bottom:0}
+@media (prefers-color-scheme:dark){.ensayo .prose .pizarra{background:#2E2D2B;color:#EAE8E3}
+  .ensayo .prose .pizarra::before{border-color:rgba(234,232,227,.2)}
+  .ensayo .prose .pizarra th,.ensayo .prose .pizarra td,.ensayo .prose .pizarra td:first-child,.ensayo .prose .pizarra th:first-child{color:#EAE8E3;border-color:rgba(234,232,227,.25)}}
+@media (max-width:560px){.ensayo .prose .pizarra{padding:20px 14px 16px;font-size:18px;transform:none}
+  .ensayo .prose .pizarra table{display:block;overflow-x:auto}
+  .ensayo .prose .pizarra th,.ensayo .prose .pizarra td{padding:6px 8px}}
+
+/* variante gris piedra, inclinada para el otro lado */
+.ensayo .prose .pizarra-gris{background:#E3E1DC;transform:rotate(.9deg)}
+@media (prefers-color-scheme:dark){.ensayo .prose .pizarra-gris{background:#3A3937}}
+/* variante oscura: papel gris carbón con letra clara, inclinada hacia el otro lado */
+.ensayo .prose .pizarra-oscuro{background:#262524;color:#EAE8E3;transform:rotate(-1.2deg)}
+.ensayo .prose .pizarra-oscuro::before{border-color:rgba(234,232,227,.22)}
+.ensayo .prose .pizarra-oscuro figcaption{border-bottom-color:rgba(234,232,227,.35)}
+@media (prefers-color-scheme:dark){.ensayo .prose .pizarra-oscuro{background:#EAE8E3;color:#1A1919}
+  .ensayo .prose .pizarra-oscuro::before{border-color:rgba(26,25,25,.22)}
+  .ensayo .prose .pizarra-oscuro figcaption{border-bottom-color:rgba(26,25,25,.35)}}
+@media (max-width:560px){.ensayo .prose .pizarra-oscuro{transform:none}}
+/* esquemas dibujados dentro de la pizarra: SVG en línea, con la letra manuscrita del sitio y trazos a mano */
+.ensayo .prose .pizarra:has(svg){width:min(660px,100%)}
+.ensayo .prose .pizarra svg{display:block;width:100%;height:auto;color:currentColor;overflow:visible}
+.ensayo .prose .pizarra svg text{font-family:var(--f-mano);fill:currentColor}
+.ensayo .prose .pizarra svg .anillo{fill:#FBFAF8}
+.ensayo .prose .pizarra-gris svg .anillo{fill:#E3E1DC}
+.ensayo .prose .pizarra-oscuro svg .anillo{fill:#262524}
+@media (prefers-color-scheme:dark){.ensayo .prose .pizarra svg .anillo{fill:#2E2D2B}.ensayo .prose .pizarra-gris svg .anillo{fill:#3A3937}.ensayo .prose .pizarra-oscuro svg .anillo{fill:#EAE8E3}}
+.ensayo .prose .pizarra svg .trazo{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+@media (max-width:560px){.ensayo .prose .pizarra-gris{transform:none}}
+
+/* FICHA DE DEFINICIÓN: «> [!definicion] Término» en Obsidian. Una tira de papel crudo: el término a un lado y la definición al otro */
+.ensayo .prose .definicion{position:relative;width:min(560px,92%);margin:2.4em auto;padding:20px 26px 22px;
+  display:grid;grid-template-columns:auto 1fr;column-gap:22px;align-items:center;
+  background:#F1EEE6;color:#1A1919;border-radius:2px;transform:rotate(-.8deg);
+  box-shadow:0 1px 2px rgba(0,0,0,.07),0 14px 26px -16px rgba(0,0,0,.35)}
+.ensayo .prose .definicion::before{content:'';position:absolute;inset:7px;border:1px solid rgba(26,25,25,.22);pointer-events:none}
+.ensayo .prose .definicion .def-k{grid-column:1 / -1;justify-self:start;margin-bottom:10px;padding:3px 9px;border:1px solid rgba(26,25,25,.35);border-radius:100px;
+  font-family:var(--f-mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#6E6C68}
+.ensayo .prose .definicion .def-termino{padding-right:22px;border-right:1.5px dashed rgba(26,25,25,.35)}
+.ensayo .prose .definicion .def-t{font-family:var(--f-sans);font-weight:700;font-size:30px;line-height:1;letter-spacing:-.02em}
+.ensayo .prose .definicion .def-e{margin-top:6px;max-width:15em;font-family:var(--f-mono);font-size:11.5px;line-height:1.45;color:#6E6C68}
+.ensayo .prose .definicion .def-e p{margin:0}
+.ensayo .prose .definicion .def-d{font-family:var(--f-mano);font-size:23px;line-height:1.22}
+.ensayo .prose .definicion .def-d p{margin:0}
+.ensayo .prose .definicion .def-d strong{font-weight:700;color:inherit}
+/* las fichas seguidas alternan la inclinación, para que no parezcan copiadas */
+.ensayo .prose .definicion:nth-of-type(even){transform:rotate(.9deg)}
+/* variante invertida: la definición a la izquierda y el término a la derecha */
+.ensayo .prose .definicion-invertida{grid-template-columns:1fr auto;transform:rotate(1.1deg)}
+.ensayo .prose .definicion-invertida .def-k{justify-self:end}
+.ensayo .prose .definicion-invertida .def-termino{grid-column:2;grid-row:2;padding:0 0 0 22px;border-right:0;border-left:1.5px dashed rgba(26,25,25,.35);text-align:right}
+.ensayo .prose .definicion-invertida .def-e{margin-left:auto}
+.ensayo .prose .definicion-invertida .def-d{grid-column:1;grid-row:2}
+/* variante derecha: la ficha corrida hacia el margen derecho, más angosta y más inclinada */
+.ensayo .prose .definicion-derecha{width:min(500px,92%);margin-left:auto;margin-right:-12px;transform:rotate(-1.6deg)}
+@media (prefers-color-scheme:dark){.ensayo .prose .definicion{background:#43413D;color:#EAE8E3}
+  .ensayo .prose .definicion::before{border-color:rgba(234,232,227,.2)}
+  .ensayo .prose .definicion .def-k,.ensayo .prose .definicion .def-e{color:#B4B1AB;border-color:rgba(234,232,227,.35)}
+  .ensayo .prose .definicion .def-termino{border-color:rgba(234,232,227,.35)}}
+@media (max-width:560px){
+  .ensayo .prose .definicion,.ensayo .prose .definicion-invertida,.ensayo .prose .definicion:nth-of-type(even){grid-template-columns:1fr;transform:none;width:100%;margin-left:0;margin-right:0}
+  .ensayo .prose .definicion .def-termino,.ensayo .prose .definicion-invertida .def-termino{grid-column:1;grid-row:auto;padding:0 0 12px;margin-bottom:12px;border:0;border-bottom:1.5px dashed rgba(26,25,25,.35);text-align:left}
+  .ensayo .prose .definicion-invertida .def-d{grid-column:1;grid-row:auto}
+  .ensayo .prose .definicion-invertida .def-k{justify-self:start}
+  .ensayo .prose .definicion-invertida .def-e{margin-left:0}}
 
 /* imágenes y diagramas SVG: nunca más anchos que la columna */
 .ensayo .prose img{display:block;max-width:100%;height:auto;margin:2.2em auto;border-radius:14px}
+/* pie de imagen: el texto en cursiva que va pegado debajo de la imagen, en el mismo párrafo */
+.ensayo .prose p:has(> img){margin:2.2em 0;text-align:center;font-family:var(--f-mono);font-size:11.5px;line-height:1.5;color:var(--soft)}
+.ensayo .prose p:has(> img) img{margin:0 auto 10px;width:auto;max-height:min(70vh,620px)}
+.ensayo .prose p:has(> img) br{display:none}
+.ensayo .prose p:has(> img) em{font-style:italic}
 
-/* diagramas en texto (el árbol) */
-.ensayo .prose pre{margin:2em 0;padding:20px 22px;border-radius:10px;background:var(--gold-pale);border:1px solid var(--line);
-  overflow-x:auto;font-family:var(--f-mono);font-size:12.5px;line-height:1.55;color:var(--ink)}
-.ensayo .prose pre code{font-family:inherit;background:none}
+/* esquemas en texto (los bloques de código): sin fondo, una línea punteada clarita a la izquierda,
+   la letra mono del sitio inclinada y en gris oscuro, para que parezcan anotados a mano */
+.ensayo .prose pre{margin:2em 0;padding:6px 0 6px 20px;background:transparent;border:0;border-left:1.5px dashed color-mix(in srgb,var(--ink) 18%,transparent);
+  border-radius:0;overflow-x:auto;font-family:var(--f-mono);font-style:italic;font-size:12.5px;line-height:1.7;color:color-mix(in srgb,var(--ink) 82%,var(--bg));
+  scrollbar-width:thin;scrollbar-color:color-mix(in srgb,var(--ink) 18%,transparent) transparent}
+.ensayo .prose pre code{font-family:inherit;font-style:inherit;background:none}
 .ensayo .prose :not(pre) > code{font-size:.88em;padding:.1em .35em;border-radius:5px;background:var(--gold-pale)}
 
 /* llamadas a notas */
 .ensayo .prose sup a{font-size:.75em;text-decoration:none;font-weight:600}
 
-/* recuadros finales: Notas y Para seguir explorando */
-.ensayo .prose .caja{margin:14px 0 0;padding:18px 22px 6px;border:1px solid var(--line);border-radius:14px;
-  background:transparent;font-size:13.5px;line-height:1.6;color:var(--soft)}
-.ensayo .prose .caja:first-of-type,.ensayo .prose > :not(.caja) + .caja{margin-top:3.2em}
-.ensayo .prose .caja h2{font-family:var(--f-mono);font-size:11px;font-weight:400;letter-spacing:.08em;
-  text-transform:uppercase;color:var(--soft);margin:0 0 12px;position:static;width:auto;height:auto;clip:auto;overflow:visible}
-.ensayo .prose .caja p{margin:0 0 12px}
-.ensayo .prose .caja ol,.ensayo .prose .caja ul{margin:0 0 12px;padding-left:1.2em}
-.ensayo .prose .caja li{margin:0 0 8px}
-.ensayo .prose .caja li::marker{color:var(--soft)}
-.ensayo .prose .caja strong{color:var(--txt);font-weight:600}
-.ensayo .prose .caja a{color:var(--olive)}
+/* recuadros finales: Notas y Para seguir explorando, sobre un fondo más oscuro */
+.ensayo .caja{margin:12px 0 0;padding:22px 26px 10px;border:0;border-radius:16px;
+  background:#DDDAD4;font-size:13.5px;line-height:1.65;color:#4A4845}
+@media (prefers-color-scheme:dark){.ensayo .caja{background:#2A2928;color:#B4B1AB}}
+.ensayo .caja:first-of-type,.ensayo .prose > :not(.caja) + .caja{margin-top:3.6em}
+/* recuadros plegados: un renglón con el nombre y la cantidad de entradas; al tocarlo se despliega el recuadro */
+.ensayo .prose > :not(.plegable) + .plegable{margin-top:3.6em}
+.ensayo .plegable > summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:9px;padding:9px 16px 9px 14px;
+  border-radius:100px;background:#DDDAD4;font-family:var(--f-mono);font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--ink);
+  transition:background .25s}
+.ensayo .plegable > summary::-webkit-details-marker{display:none}
+.ensayo .plegable > summary::before{content:'';width:6px;height:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;
+  transform:rotate(-45deg);transition:transform .25s}
+.ensayo .plegable[open] > summary::before{transform:rotate(45deg) translate(-1px,-1px)}
+.ensayo .plegable > summary:hover{background:#D2CFC8}
+.ensayo .plegable-n{color:var(--soft)}
+.ensayo .plegable > .caja{margin-top:8px}
+.ensayo .plegable > .caja > h2{display:none}
+@media (prefers-color-scheme:dark){.ensayo .plegable > summary{background:#2A2928}.ensayo .plegable > summary:hover{background:#34332F}}
+.ensayo .caja h2{font-family:var(--f-mono);font-size:11px;font-weight:400;letter-spacing:.08em;
+  text-transform:uppercase;text-align:left;color:var(--ink);margin:0 0 14px;position:static;width:auto;height:auto;clip:auto;overflow:visible}
+.ensayo .caja p{margin:0 0 12px}
+.ensayo .caja > p:first-of-type em{color:color-mix(in srgb,currentColor 80%,transparent)}
+.ensayo .caja ol,.ensayo .caja ul{margin:0 0 12px;padding-left:1.2em}
+.ensayo .caja li{margin:0 0 8px}
+.ensayo .caja li::marker{color:var(--olive)}
+.ensayo .caja strong{color:var(--ink);font-weight:600}
+.ensayo .caja a{color:var(--olive)}
 
-/* etiquetas */
-.ensayo .post-tags{margin-top:3.4em;justify-content:center;align-items:baseline;gap:6px 14px}
-.ensayo .post-tags .temas-t{margin:0}
-.ensayo .tag{display:inline;padding:0;font-size:12.5px;color:var(--olive);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
-.ensayo .tag:hover{transform:none;color:var(--ink)}
+/* FIN DEL ENSAYO */
+.post-fin{margin-top:64px}
+/* la línea que cierra el texto: dos tramos con un hueco al medio */
+.fin-linea{height:1px;border:0;margin:0 0 26px;
+  background:linear-gradient(90deg,var(--ink) 0 calc(50% - 22px),transparent calc(50% - 22px) calc(50% + 22px),var(--ink) calc(50% + 22px));
+  opacity:.35}
+/* en una fila: la fecha a la izquierda y los temas a la derecha */
+.fin-meta{display:flex;align-items:center;justify-content:space-between;gap:14px 24px;flex-wrap:wrap}
+.ensayo .actualizado{margin:0;color:var(--soft);font-family:var(--f-mono);font-size:11.5px}
+.ensayo .post-tags{margin:0;display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px}
+.ensayo .tag{display:inline-block;padding:5px 13px;border:1px solid color-mix(in srgb,var(--ink) 30%,transparent);border-radius:100px;
+  font-family:var(--f-mono);font-size:12px;line-height:1.2;color:var(--ink);text-decoration:none;transition:background .25s,color .25s,border-color .25s}
+.ensayo .tag:hover,.ensayo .tag:focus-visible{background:var(--ink);border-color:var(--ink);color:var(--bg);transform:none}
 
-/* anterior / siguiente */
-.pn{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:40px;text-align:left}
-.pn a{display:flex;flex-direction:column;gap:4px;padding:16px 18px;border:1px solid var(--line);border-radius:12px;
-  transition:border-color .3s,background .3s}
-.pn a:hover,.pn a:focus-visible{border-color:var(--olive);background:var(--gold-pale)}
-.pn small{font-family:var(--f-mono);font-size:11px;font-weight:400;letter-spacing:.07em;text-transform:uppercase;color:var(--olive)}
-.pn strong{font-family:var(--f-sans);font-size:15px;line-height:1.35;font-weight:700}
-.pn .prev{grid-column:1}
-.pn .next{grid-column:2;text-align:right}
-@media (max-width:560px){.pn{grid-template-columns:1fr}.pn .prev,.pn .next{grid-column:auto}}
-
-/* fecha de actualización y versión, al pie */
-.ensayo .actualizado{margin:28px 0 0;text-align:center;color:var(--soft);font-family:var(--f-mono);font-size:11.5px}
-.ensayo .actualizado + .post-tags{margin-top:16px}
+/* seguir leyendo: un botón grande, de todo el ancho, con una flecha hacia abajo (como «cargar más») */
+.pn{margin-top:34px}
+.pn .next{display:flex;flex-direction:column;align-items:center;gap:6px;width:100%;padding:24px 20px 18px;border-radius:16px;
+  text-align:center;background:var(--ink);color:var(--bg);
+  box-shadow:0 1px 2px rgba(0,0,0,.08),0 14px 28px -16px rgba(0,0,0,.5);transition:transform .5s var(--spring),box-shadow .3s}
+.pn small{font-family:var(--f-mono);font-size:11px;font-weight:400;letter-spacing:.08em;text-transform:uppercase;opacity:.75}
+.pn strong{font-family:var(--f-sans);font-size:20px;line-height:1.25;font-weight:700}
+.pn .pn-flecha{margin-top:6px;animation:bajar 1.8s ease-in-out infinite}
+.pn .next:hover,.pn .next:focus-visible{transform:translateY(-3px);box-shadow:0 2px 4px rgba(0,0,0,.1),0 20px 32px -16px rgba(0,0,0,.55)}
+@keyframes bajar{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}
 
 /* Acento de cada cuaderno */
 .ensayo[data-cat="emociones-arquetipicas"]{--olive:#7A2E57}
@@ -123,3 +230,26 @@
   .ensayo[data-cat="el-arbol-de-arquetipos"]{--olive:#E8877A}
   .ensayo[data-cat="ideas-sueltas"]{--olive:#EAE8E3}
 }
+
+/* LECTURA CONTINUA: entre un ensayo y el siguiente, dos líneas con «Nuevo apunte» en el medio y mucho aire hasta el título */
+.lectura .entre-ensayos{max-width:40rem;margin:110px auto 0;padding:16px 0;text-align:center;
+  border-top:1.5px solid color-mix(in srgb,var(--ink) 35%,transparent);border-bottom:1.5px solid color-mix(in srgb,var(--ink) 35%,transparent);
+  font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
+.lectura .entre-ensayos + .ensayo .head{padding-top:240px}
+@media (max-width:700px){.lectura .entre-ensayos + .ensayo .head{padding-top:140px}}
+
+/* CAJA DEL FINAL: de un lado Notas y Para seguir explorando (plegables), del otro la fecha y los temas */
+.fin-caja{display:grid;grid-template-columns:auto 1fr;gap:18px 28px;align-items:start;padding:20px 22px;
+  border:1px solid var(--line);border-radius:16px}
+.fin-caja:has(.fin-izq:empty){grid-template-columns:1fr}
+.fin-izq:empty{display:none}
+.fin-izq .plegable{margin:0 0 8px}
+.fin-izq .plegable > summary{white-space:nowrap}
+.fin-izq .plegable:last-child{margin-bottom:0}
+.fin-der{display:flex;flex-direction:column;align-items:flex-end;gap:10px;text-align:right}
+.fin-caja:has(.fin-izq:empty) .fin-der{flex-direction:row;justify-content:space-between;align-items:center;text-align:left}
+/* con un recuadro abierto, la caja pasa a una columna para que las notas tengan todo el ancho */
+.fin-caja:has(details[open]){grid-template-columns:1fr}
+.fin-caja:has(details[open]) .fin-der{flex-direction:row;justify-content:space-between;align-items:center;text-align:left;
+  padding-top:14px;border-top:1px solid var(--line)}
+@media (max-width:560px){.fin-caja{grid-template-columns:1fr}.fin-der{align-items:flex-start;text-align:left}}

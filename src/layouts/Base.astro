@@ -1,24 +1,16 @@
 ---
 import '../styles/global.css';
-import { SITE, slugify, tituloPlano, u } from '../config';
-import { getPosts, getPostsByCat } from '../lib/posts';
+import { SITE, LIBROS, u } from '../config';
+import { entradaDe } from '../lib/posts';
 
-const { title = SITE.title, description = SITE.description, type = 'website', jsonLd } = Astro.props;
-const posts = await getPosts();
-const tags = [...new Set(posts.flatMap((p) => p.tags))].sort((a, b) => a.localeCompare(b, 'es'));
-const cuantos = (t: string) => posts.filter((p) => p.tags.includes(t)).length;
-const libros = await getPostsByCat();
+const { title = SITE.title, description = SITE.description, type = 'website', jsonLd, libro } = Astro.props;
 const aqui = Astro.url.pathname.replace(/\/?$/, '/');
-// Agrupa los ensayos de un cuaderno por parte, respetando el orden.
-type P = (typeof posts)[number];
-const partesDe = (ps: P[]) => ps.reduce<{ parte: string; posts: P[] }[]>((acc, p) => {
-  const nombre = p.parte ?? 'Ensayos';
-  const ultimo = acc[acc.length - 1];
-  if (ultimo && ultimo.parte === nombre) ultimo.posts.push(p); else acc.push({ parte: nombre, posts: [p] });
-  return acc;
-}, []);
 const full = title === SITE.title ? title : `${title} · ${SITE.title}`;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
+// El menú superior marca la sección actual: «Sobre mí» o el cuaderno del ensayo que se está leyendo.
+const activo = (href: string, cat?: string) => aqui === href || (!!cat && libro === cat);
+// Cada cuaderno entra por su índice, o por su primer ensayo si se lee de corrido
+const entradas = await Promise.all(LIBROS.map(async (l) => ({ ...l, href: await entradaDe(l) })));
 ---
 <!doctype html>
 <html lang="es">
@@ -46,51 +38,16 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Fira+Mono&family=Caveat:wght@500&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <aside class="sidebar">
-    <a href={u('')} class="brand"><h1>{SITE.title}</h1></a>
-    <span class="tagline">{SITE.tagline}</span>
-    <a class="chip sobre" href={u('sobre-este-sitio/')} aria-current={aqui === u('sobre-este-sitio/') ? 'page' : undefined}>Sobre este sitio</a>
-    <nav class="filters" aria-label="Cuadernos">
-      {libros.map((c) => (
-        <details class="libro" data-c={slugify(c.name)} open={c.posts.some((p) => p.href === aqui)}>
-          <summary class="chip" data-c={slugify(c.name)} data-href={`${u('')}#${slugify(c.name)}`}>
-            <svg class="flecha" viewBox="0 0 10 10" width="9" height="9" aria-hidden="true"><path d="M3 1.5 6.5 5 3 8.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            {c.name}
-          </summary>
-          {!c.posts.some((p) => p.parte) && (
-            <ol class="nav-ensayos nav-sueltos">
-              {c.posts.map((p) => <li><a href={p.href} aria-current={p.href === aqui ? 'page' : undefined}>{tituloPlano(p.title)}</a></li>)}
-            </ol>
-          )}
-          <div class="nav-partes" hidden={!c.posts.some((p) => p.parte)}>
-            {partesDe(c.posts).map((g) => (
-              <details class="nav-parte" open={g.posts.some((p) => p.href === aqui)}>
-                <summary>
-                  <svg class="flecha" viewBox="0 0 10 10" width="8" height="8" aria-hidden="true"><path d="M3 1.5 6.5 5 3 8.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                  {g.parte}
-                </summary>
-                <ol class="nav-ensayos">
-                  {g.posts.map((p) => <li><a href={p.href} aria-current={p.href === aqui ? 'page' : undefined}>{tituloPlano(p.title)}</a></li>)}
-                </ol>
-              </details>
-            ))}
-          </div>
-        </details>
-      ))}
-    </nav>
-    <hr class="divider" />
-    <p class="temas-t">Temas</p>
-    <div class="tags-row">
-      {tags.map((t) => <a class="tag" data-tag={slugify(t)} href={u(`?tag=${slugify(t)}`)}>{t}<span class="tag-n">{cuantos(t)}</span></a>)}
+  <header class="top">
+    <div class="top-in">
+      <a href={u('')} class="brand">{SITE.title}</a>
+      <nav class="top-nav" aria-label="Secciones">
+        <a href={u('sobre-mi/')} aria-current={activo(u('sobre-mi/')) ? 'page' : undefined}>Sobre mí</a>
+        {entradas.map((l) => <a href={l.href} aria-current={activo(u(`cuadernos/${l.slug}/`), l.cat) ? 'page' : undefined}>{l.corto}</a>)}
+      </nav>
     </div>
-  </aside>
+  </header>
   <main><slot /></main>
-  <script>
-    // En el celular el menú es una fila de botones: tocar un cuaderno lleva a su moleskine en vez de desplegarlo.
-    document.querySelectorAll<HTMLElement>('.libro > summary').forEach((s) => s.addEventListener('click', (e) => {
-      if (matchMedia('(max-width: 860px)').matches) { e.preventDefault(); location.href = s.dataset.href!; }
-    }));
-  </script>
   <footer>
     <div class="footer-inner">
       <h4>Gracias por leer</h4>

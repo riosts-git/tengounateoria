@@ -7,6 +7,14 @@ export const SITE = {
 };
 // Cada categoría es una moleskine en la home. Para sumar una: agrégala aquí y dale color en global.css ([data-c="..."])
 export const CATS = ['Apuntes sobre la Intuición', 'Emociones Arquetípicas', 'El Árbol de Arquetipos', 'Ideas sueltas'] as const;
+// Los tres cuadernos: nombre corto para el menú superior y dirección de su página.
+// continua: se lee de corrido (el enlace del cuaderno lleva al primer ensayo y los siguientes se cargan debajo).
+export const LIBROS = [
+  { cat: 'Apuntes sobre la Intuición', corto: 'La Intuición', slug: 'la-intuicion', continua: true },
+  { cat: 'Emociones Arquetípicas', corto: 'Emociones Arquetípicas', slug: 'emociones-arquetipicas', continua: true },
+  { cat: 'El Árbol de Arquetipos', corto: 'El Árbol de Arquetipos', slug: 'el-arbol-de-arquetipos', continua: true },
+] as const;
+export const libroDe = (cat: string) => LIBROS.find((l) => l.cat === cat) as { cat: string; corto: string; slug: string; continua?: boolean } | undefined;
 // Una línea que presenta cada parte de un cuaderno (se muestra en la home, bajo el nombre de la parte).
 export const PARTES: Record<string, string> = {
   'Las palabras y la mente': 'Qué entendemos por intuición, mente y psique, y el modelo de los tres niveles.',

@@ -1,87 +1,49 @@
 ---
 import Base from '../layouts/Base.astro';
-import { getPostsByCat } from '../lib/posts';
-import { SITE, PARTES, slugify, tituloHTML } from '../config';
+import { getPostsByCat, bajada, entradaDe } from '../lib/posts';
+import { SITE, LIBROS, slugify, tituloPlano, u } from '../config';
 const cats = await getPostsByCat();
+const libros = await Promise.all(LIBROS.map(async (l) => ({ ...l, href: await entradaDe(l), posts: cats.find((c) => c.name === l.cat)?.posts ?? [] })));
+const ideas = cats.find((c) => c.name === 'Ideas sueltas')?.posts ?? [];
+// Cada idea suelta es una ficha cuadrada: el tamaño, la inclinación y el papel varían en ciclos distintos para que no se repitan.
+const TAM = [{ s: 236, t: 23 }, { s: 204, t: 20 }, { s: 268, t: 26 }, { s: 218, t: 21 }, { s: 250, t: 24 }];
+const GIRO = [-2.4, 1.7, -0.9, 2.5, -1.7, 1.1, -2.8, 0.6];
+const PAPEL = ['blanco', 'gris', 'crudo', 'claro', 'oscuro', 'piedra'];
 const jsonLd = { '@context': 'https://schema.org', '@type': 'WebSite', name: SITE.title, description: SITE.description, inLanguage: 'es' };
+const cuantos = (n: number) => (n === 1 ? '1 ensayo' : `${n} ensayos`);
 ---
 <Base jsonLd={jsonLd}>
-  <div class="cats">
-    {cats.map((c) => (
-      <section class="cat" id={slugify(c.name)} data-c={slugify(c.name)}>
-        <div class="cat-side">
+  <h1 class="sr-only">{SITE.title}</h1>
+  <div class="home">
+    <section class="libros" aria-label="Cuadernos">
+      {libros.map((l) => (
+        <a class="libro-card" href={l.href} data-c={slugify(l.cat)}>
           <div class="cat-thumb" aria-hidden="true">
             <div class="notebook"><div class="pages"></div><div class="cover"><div class="elastic"></div></div></div>
           </div>
-          <header class="cat-head">
-            <h2>{c.name}</h2>
-            <p>{c.posts.length === 0 ? 'Próximamente' : c.posts.length === 1 ? '1 ensayo' : `${c.posts.length} ensayos`}</p>
-          </header>
-        </div>
-        <div>
-          <ol class="essays">
-            {c.posts.map((p, i) => [
-              p.parte && p.parte !== c.posts[i - 1]?.parte && (
-                <li class="parte">
-                  <span class="parte-t">{p.parte}</span>
-                  {PARTES[p.parte] && <span class="parte-d">{PARTES[p.parte]}</span>}
-                </li>
-              ),
-              <li data-tags={p.tags.map(slugify).join('|')}>
-                <a href={p.href}>
-                  <span class="n">{String(i + 1).padStart(2, '0')}</span>
-                  <span class="t" set:html={tituloHTML(p.title)} />
-                </a>
-              </li>,
-            ])}
-          </ol>
+          <h2>{l.cat}</h2>
+          <p>{cuantos(l.posts.length)}</p>
+        </a>
+      ))}
+    </section>
+
+    {ideas.length > 0 && (
+      <section class="ideas" id="ideas-sueltas" aria-labelledby="ideas-t">
+        <h2 id="ideas-t">Ideas sueltas</h2>
+        <div class="muro">
+          {ideas.map((p, i) => {
+            const { s, t } = TAM[i % TAM.length];
+            return (
+              <a class={`idea papel-${PAPEL[i % PAPEL.length]}`} href={p.href}
+                 style={`--s:${s}px;--t:${t}px;--r:${GIRO[i % GIRO.length]}deg`}>
+                {p.tags.length > 0 && <span class="idea-tags">{p.tags.map((tag) => <span>{tag}</span>)}</span>}
+                <h3>{tituloPlano(p.title)}</h3>
+                <p>{bajada(p)}</p>
+              </a>
+            );
+          })}
         </div>
       </section>
-    ))}
+    )}
   </div>
 </Base>
-<script>
-  const $ = (s: string) => [...document.querySelectorAll<HTMLElement>(s)];
-  const chips = $('.chip[data-c]'), tags = $('.tag[data-tag]'), cats = $('.cat');
-
-  // El menú marca la moleskine que está a la vista
-  const io = new IntersectionObserver(
-    (es) => es.forEach((e) => {
-      if (e.isIntersecting) chips.forEach((c) => c.classList.toggle('active', c.dataset.c === (e.target as HTMLElement).dataset.c));
-    }),
-    { rootMargin: '-30% 0px -60% 0px' },
-  );
-  cats.forEach((s) => io.observe(s));
-
-  // Filtro por etiqueta (?tag=...): deja solo los ensayos con esa etiqueta
-  function apply() {
-    const tag = new URLSearchParams(location.search).get('tag');
-    tags.forEach((t) => t.classList.toggle('active', tag === t.dataset.tag));
-    cats.forEach((cat) => {
-      const items = [...cat.querySelectorAll<HTMLElement>('li[data-tags]')];
-      let n = 0;
-      items.forEach((li) => {
-        const show = !tag || li.dataset.tags!.split('|').includes(tag);
-        li.hidden = !show;
-        if (show) n++;
-      });
-      cat.hidden = !!tag && n === 0;
-      // el nombre de una parte se oculta si no queda ningún ensayo suyo a la vista
-      cat.querySelectorAll<HTMLElement>('li.parte').forEach((h) => {
-        let el = h.nextElementSibling as HTMLElement | null, visible = false;
-        while (el && !el.classList.contains('parte')) { if (!el.hidden) visible = true; el = el.nextElementSibling as HTMLElement | null; }
-        h.hidden = !visible;
-      });
-    });
-  }
-  document.addEventListener('click', (e) => {
-    const a = (e.target as HTMLElement).closest<HTMLElement>('.tag[data-tag]');
-    if (!a) return;
-    e.preventDefault();
-    const same = new URLSearchParams(location.search).get('tag') === a.dataset.tag;
-    history.pushState({}, '', location.pathname + (same ? '' : `?tag=${a.dataset.tag}`));
-    apply();
-  });
-  addEventListener('popstate', apply);
-  apply();
-</script>

@@ -1,0 +1,30 @@
+---
+// Página de cada tema: todos los ensayos que lo tienen, de cualquier cuaderno.
+import Base from '../../layouts/Base.astro';
+import { getPostsByCat } from '../../lib/posts';
+import { slugify, tituloPlano } from '../../config';
+
+export async function getStaticPaths() {
+  const cats = await getPostsByCat();
+  const temas = [...new Set(cats.flatMap((c) => c.posts.flatMap((p) => p.tags)))];
+  return temas.map((tema) => ({
+    params: { tema: slugify(tema) },
+    props: { tema, grupos: cats.map((c) => ({ cat: c.name, posts: c.posts.filter((p) => p.tags.includes(tema)) })).filter((g) => g.posts.length) },
+  }));
+}
+const { tema, grupos } = Astro.props;
+---
+<Base title={tema} description={`Ensayos sobre ${tema.toLowerCase()}.`}>
+  <div class="tema-pag">
+    <p class="tema-k">Tema</p>
+    <h1>{tema}</h1>
+    {grupos.map((g) => (
+      <section data-c={slugify(g.cat)}>
+        <h2>{g.cat}</h2>
+        <ul>
+          {g.posts.map((p) => <li><a href={p.href}>{tituloPlano(p.title)}</a></li>)}
+        </ul>
+      </section>
+    ))}
+  </div>
+</Base>
