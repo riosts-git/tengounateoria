@@ -3,7 +3,7 @@ import { glob } from 'astro/loaders';
 import { CATS } from './config';
 
 const ensayos = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/ensayos' }),
+  loader: glob({ pattern: '**/*.md', base: './contenido/ensayos' }),
   schema: z.object({
     title: z.string(),
     subtitulo: z.string().optional(), // se muestra bajo el título (home y ensayo)

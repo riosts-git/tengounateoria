@@ -1,22 +1,17 @@
 ---
-title: "¿El cuerpo lo sabe antes que nosotros?"
-subtitulo: "Anatomía de la intuición: corazonadas, cuerpo y el experimento de las cartas."
+categoria: Apuntes sobre la Intuición
+parte: Cómo funciona la intuición
+title: Anatomía de la intuición
+subtitulo: corazonadas, cuerpo y el experimento de las cartas.
+description: "Anatomía de la intuición: corazonadas, cuerpo y el experimento de las cartas."
 date: 2026-09-29
 actualizado: 2026-09-29
 version: v1
 orden: 4
-description: "Anatomía de la intuición: corazonadas, cuerpo y el experimento de las cartas."
-categoria: Apuntes sobre la Intuición
-tags: [Mente y cuerpo]
+tags:
+  - Mente y cuerpo
 draft: false
-parte: "Cómo funciona la intuición"
 ---
-
-
----
-
-## 
-
 
 
 *Doblé en la esquina.*
@@ -113,7 +108,6 @@ Quizás mis sentidos arácnidos detectaban cosas que no podía poner en palabras
 
 
 La intuición no es la voz interior. Es lo que sucede debajo: el proceso que le susurra al narrador. 
-
 
 
 Y lo hace a través de cambios físicos, prediciendo el mejor resultado y poniendo en marcha la energía para hacerlo posible. En otras palabras: emocionándose. *Emoción*, del latín *emovere*: el prefijo *ex-* («hacia fuera») y el verbo *movere* («mover»).
