@@ -5,4 +5,4 @@ dist/
 
 # Obsidian: el taller y la configuración personal no se suben a GitHub
 contenido/taller/
-contenido/.obsidian/
+**/.obsidian/
