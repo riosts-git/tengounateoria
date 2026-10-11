@@ -1,0 +1,47 @@
+---
+// Página de una hoja: todas sus micro observaciones seguidas, en el orden de sus archivos.
+// Cada una conserva su título (con enlace a su propia página), su texto y sus notas.
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import '../../styles/ensayo.css';
+import { HOJAS, u, tituloHTML } from '../../config';
+import { datos, byOrden } from '../../lib/posts';
+
+export async function getStaticPaths() {
+  return Object.keys(HOJAS).map((hoja) => ({ params: { hoja } }));
+}
+
+const { hoja } = Astro.params;
+const info = HOJAS[hoja!];
+const entradas = (await getCollection('ensayos', ({ data }) => data.hoja === hoja && (import.meta.env.DEV || !data.draft)))
+  .map((e) => ({ e, d: datos(e) }))
+  .sort((a, b) => byOrden(a.d, b.d));
+const notas = await Promise.all(entradas.map(async ({ e, d }) => ({ id: e.id, d, Content: (await render(e)).Content })));
+---
+<Base title={info.titulo} description={info.bajada}>
+  <article class="post ensayo hoja" data-cat="observaciones">
+    <header class="head">
+      <p class="post-cat"><span class="post-parte">Hoja · {notas.length} notas</span></p>
+      <h1>{info.titulo}</h1>
+      <p class="subtitulo">{info.bajada}</p>
+    </header>
+    {notas.map(({ id, d, Content }, i) => (
+      <section class="micro" id={id}>
+        <p class="micro-n">{String(i + 1).padStart(2, '0')}</p>
+        <h2 class="micro-t"><a href={u(`ensayos/${id}/`)} set:html={tituloHTML(d.title)} /></h2>
+        {d.subtitulo && <p class="micro-sub">{d.subtitulo}</p>}
+        <div class="prose"><Content /></div>
+      </section>
+    ))}
+  </article>
+</Base>
+<script src="../../scripts/papelito.ts"></script>
+
+<style>
+  .micro{padding-top:56px}
+  .micro + .micro{margin-top:64px}
+  .micro-n{margin:0 0 6px;font-family:var(--f-sans);font-weight:600;font-size:12px;letter-spacing:.22em;color:var(--olive)}
+  .micro-t{margin:0;font-family:var(--f-serif,Georgia,serif);font-weight:400;font-size:clamp(30px,4vw,40px);line-height:1.1;color:#3A3836}
+  .micro-t a:hover{color:var(--olive)}
+  .micro-sub{margin:8px 0 28px;font-family:var(--f-serif,Georgia,serif);font-style:italic;font-size:20px;color:var(--soft)}
+</style>

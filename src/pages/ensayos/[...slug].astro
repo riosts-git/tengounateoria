@@ -1,13 +1,14 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
-import MenuLibro from '../../components/MenuLibro.astro';
+import ArbolLineas from '../../components/ArbolLineas.astro';
 import '../../styles/ensayo.css';
-import { SITE, u, slugify, tituloHTML, tituloPlano, libroDe } from '../../config';
+import { SITE, HOJAS, u, slugify, tituloHTML, tituloPlano, libroDe } from '../../config';
 import { datos, getPostsByCat } from '../../lib/posts';
 
 export async function getStaticPaths() {
-  const entries = await getCollection('ensayos', ({ data }) => !data.draft);
+  // En el servidor local también se ven los borradores, para leerlos antes de publicar
+  const entries = await getCollection('ensayos', ({ data }) => import.meta.env.DEV || !data.draft);
   return entries.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
 }
 
@@ -26,10 +27,33 @@ const prev = at > 0 ? delCuaderno[at - 1] : undefined;
 const next = at >= 0 ? delCuaderno[at + 1] : undefined;
 // El nombre del cuaderno lleva a su página
 const libro = libroDe(d.categoria);
-const hrefCat = libro ? u(`cuadernos/${libro.slug}/`) : u('#ideas-sueltas');
+const hrefCat = libro ? u(`cuadernos/${libro.slug}/`) : u('#observaciones');
 // Lectura continua: al llegar al final, el siguiente ensayo del cuaderno se carga debajo (cuadernos con continua: true en config.ts)
 const continua = !!libro?.continua;
 const aqui = u(`ensayos/${entry.id}/`);
+
+// Estilo «libro»: el dibujo de cada capítulo marca lo que trata (nodos, camino, aristas, planos)
+const DIBUJO: Record<string, object> = {
+  'tengo-una-teoria': { camino: [1, 2, 4, 6, 7, 9, 10], x: true },
+  'la-obsesion-por-las-palabras': { nodos: [1], x: true },
+  'tres-predicciones': { nodos: [1, 6, 9], aristas: [[1, 6], [6, 9]] },
+  'la-intuicion': { nodos: ['X', 6], aristas: [[1, 6]] },
+  'las-variables-de-una-emocion': { nodos: [2, 3, 4, 5], aristas: [[2, 3], [4, 5]] },
+  'las-emociones-arquetipicas': { nodos: [1, 2, 3, 4, 5, 6, 7, 8, 9] },
+  'por-que-arquetipicas': { nodos: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], x: true },
+  'el-arco': { camino: [1, 2, 4, 6, 7, 9, 10], planos: ['resultado'] },
+  'los-sentimientos': { nodos: [7, 8, 9, 'X'], aristas: [[7, 8], [7, 9], [8, 9]] },
+  'los-estados-de-animo': { nodos: [3, 5, 8], aristas: [[3, 5], [5, 8]] },
+  'los-generos': { nodos: [2, 3, 4, 5, 7, 8], aristas: [[2, 4], [4, 7], [3, 5], [5, 8]] },
+  'el-arbol': { planos: ['registro', 'encuentro', 'resultado'], x: true },
+  'el-arbol-de-la-vida': { nodos: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'X'] },
+  'el-arbol-las-emociones-y-la-biologia': { nodos: [2, 3, 4, 5], aristas: [[2, 3], [4, 5], [2, 4], [3, 5]] },
+  'el-camino-del-heroe': { nodos: [3, 6, 9], camino: [1, 3, 5, 6, 8, 9, 10] },
+  'la-vida-humana': { nodos: [1, 6, 9, 10], aristas: [[1, 6], [6, 9], [9, 10]] },
+  'la-manifestacion-creativa': { nodos: [6], planos: ['encuentro'] },
+  'otras-disciplinas': { planos: ['registro', 'encuentro'], x: true },
+};
+const dibujo = DIBUJO[entry.id] ?? { planos: ['encuentro'] };
 
 const url = new URL(Astro.url.pathname, Astro.site).href;
 const jsonLd = {
@@ -46,35 +70,26 @@ const jsonLd = {
 ---
 <Base title={tituloPlano(d.title)} description={d.description} type="article" jsonLd={jsonLd} libro={d.categoria}>
   <div class="progress" aria-hidden="true"></div>
-  <div class="con-menu">
   <div class="lectura" data-continua={continua ? '1' : undefined}>
+  <aside class="ilus-cap"></aside>
   <article class="post ensayo" data-cat={slugify(d.categoria)} data-href={aqui} data-titulo={tituloPlano(d.title)} data-siguiente={next?.href} data-numero={at + 1}>
     <header class="head">
-      <p class="post-cat"><a href={hrefCat}>{d.categoria}</a>{d.parte && <span class="post-parte"> · {d.parte}</span>}</p>
+      {d.parte && <p class="post-cat"><span class="post-parte">{d.parte}</span></p>}
+      {d.hoja && HOJAS[d.hoja] && <p class="post-cat"><a href={u(`hojas/${d.hoja}/`)}>De la hoja «{HOJAS[d.hoja].titulo}»</a></p>}
       <h1 set:html={tituloHTML(d.title)} />
       {d.subtitulo && <p class="subtitulo">{d.subtitulo}</p>}
-      <ul class="tiny">
-        <li>{minutos} min de lectura</li>
-      </ul>
     </header>
     <div class="prose"><Content /></div>
-    <!-- Fin del ensayo: una línea con un hueco al medio y una caja con, de un lado, Notas y Para seguir explorando
-         (el script las trae desde el final del texto) y, del otro, la fecha y los temas. Después, el botón para seguir leyendo -->
+    <!-- Fin del ensayo: un solo renglón con una flecha que despliega las notas y las observaciones (el script lo trae desde el final del texto). Después, el botón para seguir leyendo -->
     <footer class="post-fin">
-      <hr class="fin-linea" />
       <div class="fin-caja">
         <div class="fin-izq"></div>
-        <div class="fin-der">
-          <p class="actualizado">Última actualización: {actualizado}{d.version && <> · {d.version}</>}</p>
-          {d.tags.length > 0 && (
-            <div class="post-tags">{d.tags.map((t) => <a class="tag" href={u(`temas/${slugify(t)}/`)}>{t}</a>)}</div>
-          )}
-        </div>
       </div>
       {next && (
         <nav class="pn" aria-label="Seguir leyendo">
           <a class="next" href={next.href}>
-            <small>Siguiente apunte</small>
+            <small>Siguiente</small>
+            <span class="pn-cap">{libro ? `Capítulo ${at + 2}` : 'Siguiente'}</span>
             <strong>{tituloPlano(next.title)}</strong>
             <svg class="pn-flecha" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 4v15M5 12l7 7 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
@@ -83,7 +98,7 @@ const jsonLd = {
     </footer>
   </article>
   </div>
-  <MenuLibro cat={d.categoria} posts={delCuaderno} aqui={aqui} abierto={continua} />
-  </div>
 </Base>
 <script src="../../scripts/lectura.ts"></script>
+<script src="../../scripts/papelito.ts"></script>
+<script src="../../scripts/arbol-fijo.ts"></script>

@@ -4,9 +4,13 @@ import { glob } from 'astro/loaders';
 const ensayos = defineCollection({
   // Una carpeta por cuaderno («1 La Intuición/…») y un archivo numerado por ensayo («01-mi-obsesion-por-las-palabras.md»).
   // La dirección del ensayo es el nombre del archivo sin el número; el cuaderno y el orden salen de la carpeta y del número (ver lib/posts.ts).
-  loader: glob({ pattern: '**/*.md', base: './contenido/ensayos', generateId: ({ entry }) => entry.split('/').pop()!.replace(/\.md$/, '').replace(/^\d+-/, '') }),
+  // Los archivos sueltos que empiezan con «_» en la raíz (notas de trabajo, como un índice copiado desde Obsidian) no son ensayos: se ignoran.
+  loader: glob({ pattern: ['*/**/*.md', '!**/_*.md', '!_borradores/**', '!.obsidian/**'], base: './contenido/ensayos', generateId: ({ entry }) => entry.split('/').pop()!.replace(/\.md$/, '').replace(/^\d+-/, '') }),
   schema: z.object({
     title: z.string(),
+    corto: z.string().optional(), // título corto para el menú superior
+    hoja: z.string().optional(), // hoja (serie de micro observaciones) a la que pertenece: ver HOJAS en config.ts
+    tipo: z.enum(['autores', 'reflexión', 'concepto']).optional(), // tipo de observación
     subtitulo: z.string().optional(), // se muestra bajo el título (home y ensayo)
     date: z.coerce.date(),
     actualizado: z.coerce.date().optional(), // "Última actualización"

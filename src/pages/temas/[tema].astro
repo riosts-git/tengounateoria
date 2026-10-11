@@ -14,12 +14,12 @@ export async function getStaticPaths() {
 }
 const { tema, grupos } = Astro.props;
 ---
-<Base title={tema} description={`Ensayos sobre ${tema.toLowerCase()}.`}>
+<Base title={tema} description={`Apuntes sobre ${tema.toLowerCase()}.`}>
   <div class="tema-pag">
     <p class="tema-k">Tema</p>
     <h1>{tema}</h1>
     {grupos.map((g) => (
-      <section data-c={slugify(g.cat)}>
+      <section id={slugify(g.cat)} data-c={slugify(g.cat)}>
         <h2>{g.cat}</h2>
         <ul>
           {g.posts.map((p) => <li><a href={p.href}>{tituloPlano(p.title)}</a></li>)}

@@ -6,3 +6,6 @@ dist/
 # Obsidian: el taller y la configuración personal no se suben a GitHub
 contenido/taller/
 **/.obsidian/
+
+# La hoja de dibujos se ve solo en local
+public/prueba-embudo.html

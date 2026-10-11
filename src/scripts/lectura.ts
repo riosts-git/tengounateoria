@@ -4,7 +4,7 @@
 // 3. Lectura continua (cuando .lectura[data-continua]): al llegar al final de un ensayo se carga el siguiente debajo,
 //    y la dirección, el título de la pestaña y el menú del cuaderno siguen al ensayo que está en pantalla.
 
-const MAX_ENSAYOS = 4; // después de cuatro seguidos se deja de cargar solo; el botón «Siguiente apunte» siempre carga uno más
+const MAX_EN_PAGINA = 4; // la carga no se detiene: cuando hay más de cuatro ensayos en la página, se descarga el más viejo (que ya quedó arriba)
 
 // --- 1. Notas plegadas -------------------------------------------------------------------------------------------
 function abrirPlegableDe(id: string) {
@@ -30,7 +30,8 @@ function armarFinal(art: ParentNode) {
 document.querySelectorAll<HTMLElement>('article.ensayo').forEach(armarFinal);
 
 // --- 3. Lectura continua -----------------------------------------------------------------------------------------
-const lectura = document.querySelector<HTMLElement>('.lectura[data-continua]');
+// En el estilo «libro» no hay lectura continua: se pasa de capítulo a capítulo con el enlace del final
+const lectura = document.documentElement.dataset.estilo === 'libro' ? null : document.querySelector<HTMLElement>('.lectura[data-continua]');
 if (lectura) {
   const menu = document.querySelector<HTMLElement>('.menu-libro');
   let cargando = false;
@@ -49,7 +50,6 @@ if (lectura) {
     const anterior = ultimo();
     const href = anterior.dataset.siguiente;
     if (cargando || !href) return;
-    if (!forzar && lectura.querySelectorAll('article.ensayo').length >= MAX_ENSAYOS) return;
     cargando = true;
     try {
       const html = await (await fetch(href)).text();
@@ -60,16 +60,36 @@ if (lectura) {
       // un separador entre ensayos: dos líneas y «Nuevo apunte»
       const sep = document.createElement('div');
       sep.className = 'entre-ensayos';
-      sep.innerHTML = '<span>Nuevo apunte</span>';
+      // dos uves dibujadas a mano, una sobre otra, hacia abajo
+      sep.innerHTML = '<svg viewBox="0 0 60 56" width="52" height="48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 8c6 5 12 11 21 18 7-6 13-12 21-17"/><path d="M8 27c7 5 13 11 22 18 8-7 14-12 22-18"/></svg>';
       armarFinal(art);
       // el botón «Siguiente» del ensayo anterior ya no hace falta
       anterior.querySelector('.pn')?.remove();
       lectura.append(sep, document.adoptNode(art));
       observarEnsayo(art);
       observarFinal();
+      descargarViejos();
       if (forzar) sep.scrollIntoView({ behavior: 'smooth', block: 'start' });
     } finally {
       cargando = false;
+    }
+  }
+
+  // Para que la página no se vuelva pesada: se quitan los ensayos más viejos, compensando el desplazamiento para que no salte
+  function descargarViejos() {
+    const arts = [...lectura.querySelectorAll<HTMLElement>('article.ensayo')];
+    while (arts.length > MAX_EN_PAGINA) {
+      const viejo = arts.shift()!;
+      if (viejo.getBoundingClientRect().bottom > 0) break; // si todavía se ve, no se toca
+      const sep = viejo.nextElementSibling?.classList.contains('entre-ensayos') ? viejo.nextElementSibling : null;
+      // se fija la posición del ensayo siguiente antes y después de quitar el viejo, y se corrige la diferencia
+      const ancla = arts[0];
+      const antes = ancla.getBoundingClientRect().top;
+      enPantalla.unobserve(viejo);
+      viejo.remove();
+      sep?.remove();
+      const despues = ancla.getBoundingClientRect().top;
+      if (despues !== antes) window.scrollBy(0, despues - antes);
     }
   }
 
@@ -86,6 +106,10 @@ if (lectura) {
     const href = art.dataset.href!;
     if (location.pathname !== href) history.replaceState(null, '', href);
     document.title = `${art.dataset.titulo} · Tengo una Teoría`;
+    document.querySelectorAll<HTMLAnchorElement>('.sub-lista a').forEach((a) => {
+      if (a.getAttribute('href') === href) a.setAttribute('aria-current', 'page');
+      else a.removeAttribute('aria-current');
+    });
     menu?.querySelectorAll<HTMLAnchorElement>('.nav-ensayos a').forEach((a) => {
       const es = a.getAttribute('href') === href;
       if (es) {

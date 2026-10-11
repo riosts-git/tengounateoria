@@ -10,7 +10,7 @@ export async function getStaticPaths() {
 }
 const { cat, posts } = Astro.props;
 ---
-<Base title={cat} description={`${cat}: ${posts.length} ensayos.`} libro={cat}>
+<Base title={cat} description={`${cat}: ${posts.length} apuntes.`} libro={cat}>
   <section class="cat libro-pag" data-c={slugify(cat)}>
     <header class="libro-head">
       <div class="cat-thumb" aria-hidden="true">
@@ -18,7 +18,7 @@ const { cat, posts } = Astro.props;
       </div>
       <div>
         <h1>{cat}</h1>
-        <p>{posts.length} ensayos</p>
+        <p>{posts.length === 1 ? "1 apunte" : `${posts.length} apuntes`}</p>
       </div>
     </header>
     <ol class="essays">

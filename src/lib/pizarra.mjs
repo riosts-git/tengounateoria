@@ -67,14 +67,22 @@ function recorrer(nodo) {
   }
 }
 
-// En las tablas, las celdas cortas (nombres, números, palabras sueltas) llevan la clase «corto» y se escriben a mano
+// En las tablas, las columnas cortas (nombres, números, palabras sueltas) llevan la clase «corto» y se escriben a mano.
+// Se decide por columna: si una sola celda de la columna es larga, toda la columna va en letra normal.
 const textoDe = (n) => (n.type === 'text' ? n.value : (n.children || []).map(textoDe).join(''));
+const buscar = (n, tag, out = []) => {
+  for (const h of n.children || []) { if (esElemento(h, tag)) out.push(h); else buscar(h, tag, out); }
+  return out;
+};
 function marcarCortas(nodo) {
-  for (const hijo of nodo.children || []) {
-    if (esElemento(hijo, 'td') && textoDe(hijo).trim().length <= 24) {
-      hijo.properties = { ...hijo.properties, className: [...[].concat(hijo.properties?.className || []), 'corto'] };
+  for (const tabla of buscar(nodo, 'table')) {
+    const filas = buscar(tabla, 'tr').map((tr) => (tr.children || []).filter((c) => esElemento(c, 'td')));
+    const columnas = Math.max(0, ...filas.map((f) => f.length));
+    for (let c = 0; c < columnas; c++) {
+      const celdas = filas.map((f) => f[c]).filter(Boolean);
+      if (!celdas.every((td) => textoDe(td).trim().length <= 24)) continue;
+      for (const td of celdas) td.properties = { ...td.properties, className: [...[].concat(td.properties?.className || []), 'corto'] };
     }
-    marcarCortas(hijo);
   }
 }
 

@@ -7,7 +7,7 @@ export const datos = (e: CollectionEntry<'ensayos'>) => {
   const ruta = (e.filePath ?? '').replace(/\\/g, '/');
   const libro = Number(ruta.match(/ensayos\/(\d+)[^/]*\//)?.[1] ?? 0);
   const orden = Number(ruta.split('/').pop()?.match(/^(\d+)-/)?.[1] ?? 999);
-  return { ...e.data, categoria: CATS[libro - 1] ?? 'Ideas sueltas', orden };
+  return { ...e.data, categoria: CATS[libro - 1] ?? 'Observaciones', orden };
 };
 
 export async function getPosts() {
@@ -31,7 +31,7 @@ export type Post = Awaited<ReturnType<typeof getPosts>>[number];
 
 // Agrupa los ensayos de un cuaderno por parte, respetando el orden.
 export const partesDe = (ps: Post[]) => ps.reduce<{ parte: string; posts: Post[] }[]>((acc, p) => {
-  const nombre = p.parte ?? 'Ensayos';
+  const nombre = p.parte ?? 'Apuntes';
   const ultimo = acc[acc.length - 1];
   if (ultimo && ultimo.parte === nombre) ultimo.posts.push(p); else acc.push({ parte: nombre, posts: [p] });
   return acc;

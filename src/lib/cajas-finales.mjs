@@ -38,16 +38,32 @@ export default function cajasFinales() {
       notas.properties.className = [...clases(notas), 'caja'];
     }
 
-    // Cada recuadro va plegado: un renglón con su nombre y cuántas entradas tiene, que se despliega al tocarlo
-    if (notas) hijos.push(plegable('Notas', notas));
-    if (explorar) hijos.push(plegable('Para seguir explorando', explorar));
+    // «Observaciones para construir»: el párrafo en negrita y la lista que lo sigue (y el separador que los precedía)
+    let obs = null;
+    const o = hijos.findIndex((n) => esElemento(n, 'p') && texto(n).trim() === 'Observaciones para construir');
+    if (o >= 0) {
+      const l = hijos.findIndex((n, k) => k > o && esElemento(n, 'ul'));
+      let desde = o;
+      let j = o - 1;
+      while (j >= 0 && hijos[j].type === 'text' && !hijos[j].value.trim()) j--;
+      if (esElemento(hijos[j], 'hr')) desde = j;
+      const lista = l >= 0 ? hijos[l] : null;
+      hijos.splice(desde, (l >= 0 ? l : o) - desde + 1);
+      if (lista) obs = { type: 'element', tagName: 'section', properties: { className: ['caja', 'observaciones'] },
+        children: [{ type: 'element', tagName: 'h2', properties: {}, children: [{ type: 'text', value: 'Observaciones' }] }, lista] };
+    }
+
+    // Una sola señal al final: un renglón con una flecha que despliega las notas y las observaciones
+    const cajas = [notas, obs, explorar].filter(Boolean);
+    if (cajas.length) {
+      const nombre = notas && (obs || explorar) ? 'Notas y observaciones' : notas ? 'Notas' : obs ? 'Observaciones' : 'Para seguir explorando';
+      hijos.push(plegable(nombre, cajas));
+    }
   };
 }
 
-const contarItems = (n) => (n.type === 'element' && n.tagName === 'li' ? 1 : 0) + (n.children || []).reduce((s, h) => s + contarItems(h), 0);
 
-function plegable(nombre, caja) {
-  const n = contarItems(caja);
+function plegable(nombre, cajas) {
   return {
     type: 'element',
     tagName: 'details',
@@ -59,10 +75,9 @@ function plegable(nombre, caja) {
         properties: {},
         children: [
           { type: 'element', tagName: 'span', properties: { className: ['plegable-t'] }, children: [{ type: 'text', value: nombre }] },
-          ...(n ? [{ type: 'element', tagName: 'span', properties: { className: ['plegable-n'] }, children: [{ type: 'text', value: `(${n})` }] }] : []),
         ],
       },
-      caja,
+      ...cajas,
     ],
   };
 }

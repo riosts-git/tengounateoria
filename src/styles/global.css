@@ -1,9 +1,12 @@
+/* Manuscrita: Reenie Beanie al 130 % (se ve chica a igual tamaño que las otras). El rango de pesos evita negritas falsas */
+@font-face{font-family:'Mano';font-style:normal;font-weight:100 900;font-display:swap;size-adjust:130%;
+  src:url(https://fonts.gstatic.com/s/reeniebeanie/v22/z7NSdR76eDkaJKZJFkkjuvWxXPq1qw.woff2) format('woff2')}
 :root{
   /* Paleta gris y negra: fondo de papel gris, tinta casi negra */
   --bg:#EAE8E3; --side:#EAE8E3; --ink:#1A1919; --soft:#6E6C68; --line:rgba(26,25,25,.12);
   --gold:#1A1919; --gold-deep:#1A1919; --gold-pale:#DDDAD4;
   /* Letras: sans para títulos y texto, mono para menú y datos, manuscrita para bajadas */
-  --f-sans:'DM Sans',system-ui,sans-serif; --f-mono:'Fira Mono',ui-monospace,Menlo,Consolas,monospace; --f-mano:'Caveat',cursive;
+  --f-sans:'DM Sans',system-ui,sans-serif; --f-mono:'Fira Mono',ui-monospace,Menlo,Consolas,monospace; --f-mano:'Mano','Reenie Beanie',cursive;
   /* Verde oliva (Intuición) */
   --c-int:#77835A; --c-int2:#5A6541; --olive:#5A6541;
   --spring:cubic-bezier(.34,1.56,.64,1); --glide:cubic-bezier(.22,1,.36,1);
@@ -24,15 +27,17 @@ a{color:inherit;text-decoration:none}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
 /* Colores de cada cuaderno: --c1/--c2 tapa de la moleskine, --acc acento */
+[data-c="tengo-una-teoria"]{--c1:#7A2550;--c2:#3D1230;--acc:#7A2550}
 [data-c="apuntes-sobre-la-intuicion"]{--c1:#77835A;--c2:#5A6541;--acc:#5A6541}
 [data-c="emociones-arquetipicas"]{--c1:#7A3358;--c2:#3E1830;--acc:#7A2E57}
 [data-c="el-arbol-de-arquetipos"]{--c1:#C24A38;--c2:#8C2A1E;--acc:#A33A2B}
-[data-c="ideas-sueltas"]{--c1:#4A4845;--c2:#1A1919;--acc:#1A1919}
+[data-c="observaciones"]{--c1:#4A4845;--c2:#1A1919;--acc:#1A1919}
 @media (prefers-color-scheme:dark){
+  [data-c="tengo-una-teoria"]{--acc:#D98BB4}
   [data-c="apuntes-sobre-la-intuicion"]{--acc:#A9B784}
   [data-c="emociones-arquetipicas"]{--acc:#D79BBB}
   [data-c="el-arbol-de-arquetipos"]{--acc:#E8877A}
-  [data-c="ideas-sueltas"]{--acc:#EAE8E3}
+  [data-c="observaciones"]{--acc:#EAE8E3}
 }
 
 /* MENÚ SUPERIOR: el nombre a la izquierda; «Sobre mí» y los tres cuadernos a la derecha */
@@ -51,7 +56,7 @@ main{padding:52px 28px 20px;min-height:70vh}
 
 /* HOME: los tres cuadernos en tres columnas */
 .home{max-width:1080px;margin:0 auto}
-.libros{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,4vw,56px);align-items:start}
+.libros{display:grid;grid-template-columns:minmax(0,340px);justify-content:center;gap:clamp(20px,4vw,56px);align-items:start}
 .libro-card{display:flex;flex-direction:column;align-items:center;text-align:center;
   animation:rise .9s var(--spring) both}
 .libro-card:nth-child(2){animation-delay:.08s}
@@ -64,7 +69,7 @@ main{padding:52px 28px 20px;min-height:70vh}
 .libro-card:hover .notebook,.libro-card:focus-visible .notebook{transform:rotateY(-20deg) rotateX(4deg) translateY(-6px)}
 @keyframes rise{from{opacity:0;transform:translateY(30px) scale(.96)}to{opacity:1;transform:none}}
 
-/* HOME: ideas sueltas como fichas de papel cuadradas, de distintos tamaños e inclinaciones */
+/* HOME: observaciones como fichas de papel cuadradas, de distintos tamaños e inclinaciones */
 .ideas{margin-top:clamp(80px,12vw,140px)}
 .ideas > h2{margin:0 0 36px;font-family:var(--f-mono);font-weight:400;font-size:13px;
   line-height:1;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);text-align:center}
@@ -227,3 +232,120 @@ body > footer a{color:var(--gold-deep);text-decoration:underline;text-underline-
   .essays a{grid-template-columns:1.9em 1fr}
 }
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition-duration:.01ms!important}}
+/* Portada de la home: título, bajada, botones y un árbol de tres ramas (una por cuaderno) */
+.portada{display:grid;grid-template-columns:1.25fr 1fr;gap:clamp(24px,4vw,56px);align-items:center;margin:clamp(8px,3vw,32px) 0 clamp(56px,8vw,96px)}
+.portada h1{margin:0;font-family:var(--f-sans);font-weight:700;font-size:clamp(46px,8vw,92px);line-height:.98;letter-spacing:-.04em}
+.portada-txt p{max-width:32em;margin:22px 0 0;font-size:clamp(17px,1.8vw,20px);line-height:1.55;color:var(--soft)}
+.botones{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.boton{display:inline-block;padding:11px 20px;border:1.5px solid var(--ink);border-radius:100px;font-family:var(--f-mono);font-size:13px;color:var(--ink);text-decoration:none;transition:background .2s,color .2s}
+.boton.principal{background:var(--ink);color:var(--bg)}
+.boton:hover,.boton:focus-visible{background:var(--olive);border-color:var(--olive);color:var(--bg)}
+.portada-arbol{width:100%;max-width:360px;justify-self:center;height:auto;overflow:visible}
+.portada-arbol .rama{fill:none;stroke:var(--ink);stroke-width:2.5;stroke-linecap:round;opacity:.75}
+.portada-arbol .fruto{fill:var(--c1)}
+.portada-arbol text{font-family:var(--f-mono);font-size:12px;fill:var(--soft)}
+.libro-pregunta{display:block;max-width:17em;margin:10px auto 0;font-size:15px;line-height:1.45;color:var(--soft)}
+.ideas-bajada{max-width:34em;margin:-20px auto 32px;text-align:center;color:var(--soft)}
+.como-leer,.suscribir{max-width:680px;margin:clamp(56px,8vw,96px) auto 0}
+.como-leer{padding:28px 32px;border-radius:14px;background:color-mix(in srgb,var(--ink) 5%,var(--bg))}
+.como-leer h2,.suscribir h2{margin:0 0 12px;font-family:var(--f-sans);font-weight:700;font-size:clamp(24px,3vw,30px);letter-spacing:-.02em}
+.como-leer ol{margin:0;padding-left:1.2em;line-height:1.6}
+.como-leer li{margin:.35em 0}
+.como-leer a{color:inherit}
+.suscribir{text-align:center;margin-bottom:24px}
+.suscribir p{margin:0 auto;max-width:32em;color:var(--soft)}
+.suscribir .botones{justify-content:center}
+@media (max-width:760px){.portada{grid-template-columns:1fr}.portada-arbol{max-width:260px;order:-1}}
+/* Árbol de la portada: se dibuja al cargar; al pasar por un nodo se encienden sus ramas; la X enciende todo */
+.arbolito{--luz:var(--olive);width:100%;max-width:300px;justify-self:center;height:auto;overflow:visible}
+.arbolito .p{stroke:var(--ink);stroke-width:1.6;fill:none;opacity:.3;stroke-dasharray:1;stroke-dashoffset:1;animation:arb-draw 1.4s ease forwards;animation-delay:var(--d);transition:opacity .3s,stroke .3s,stroke-width .3s}
+@keyframes arb-draw{to{stroke-dashoffset:0}}
+.arbolito .n{cursor:pointer;outline:none;transition:opacity .3s}
+.arbolito .a{opacity:0;transform-box:fill-box;transform-origin:center;animation:arb-pop .6s cubic-bezier(.3,1.6,.5,1) forwards;animation-delay:var(--d)}
+@keyframes arb-pop{from{opacity:0;transform:scale(.2)}to{opacity:1;transform:scale(1)}}
+.arbolito .in{transform-box:fill-box;transform-origin:center;transition:transform .3s cubic-bezier(.3,1.6,.5,1)}
+.arbolito .halo{fill:var(--luz);opacity:.08;animation:arb-br 4s ease-in-out infinite;animation-delay:calc(var(--d) + 1.5s)}
+@keyframes arb-br{50%{opacity:.22}}
+.arbolito .core{fill:var(--bg);stroke:var(--ink);stroke-width:2.2;transition:fill .3s,stroke .3s}
+.arbolito.hl .p{opacity:.08}
+.arbolito.hl .p.on{opacity:1;stroke:var(--luz);stroke-width:2.6}
+.arbolito.hl .n{opacity:.3}
+.arbolito.hl .n.on{opacity:1}
+.arbolito .n.on .core{fill:var(--luz);stroke:var(--luz)}
+.arbolito .n.me .in{transform:scale(1.45)}
+.arbolito .n.me .halo{opacity:.35;animation:none}
+.arbolito .n.d .core{stroke-dasharray:4 3;fill:none}
+.arbolito .n.d .halo{opacity:.16}
+.arbolito.all .p{opacity:1;stroke:var(--luz);stroke-width:2.6}
+.arbolito.all .core{fill:var(--luz);stroke:var(--luz)}
+.arbolito.all .halo{opacity:.5;animation:arb-wave 1.8s ease-out infinite;animation-delay:calc(var(--d)*.3)}
+@keyframes arb-wave{0%{opacity:.55}100%{opacity:.06}}
+@media (prefers-reduced-motion:reduce){.arbolito .p,.arbolito .a,.arbolito .halo,.arbolito.all .halo{animation:none;stroke-dashoffset:0;opacity:1}.arbolito .p{opacity:.3}.arbolito .halo{opacity:.12}.arbolito .in{transition:none}}
+@media (max-width:760px){.arbolito{max-width:200px;order:-1}}
+/* Submenú del encabezado: los capítulos de cada cuaderno, con el actual marcado */
+.top-nav{align-items:center}
+.top-nav .sub{position:relative;display:flex;align-items:center;gap:2px}
+.sub-abrir{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;padding:0;border:0;background:none;color:color-mix(in srgb,var(--ink) 60%,var(--bg));cursor:pointer;border-radius:4px}
+.sub-abrir:hover{color:var(--ink)}
+.sub-abrir svg{transition:transform .2s}
+.sub.abierto .sub-abrir svg{transform:rotate(180deg)}
+.sub-lista{position:absolute;top:calc(100% + 10px);right:0;z-index:30;width:min(340px,86vw);max-height:min(60vh,460px);overflow-y:auto;margin:0;padding:10px 6px;
+  list-style:none;counter-reset:cap;background:var(--bg);border:1px solid var(--line);border-radius:12px;box-shadow:var(--sh);
+  opacity:0;visibility:hidden;transform:translateY(-4px);transition:opacity .18s,transform .18s,visibility .18s}
+.sub-lista::before{content:"";position:absolute;top:-12px;left:0;right:0;height:12px}
+.sub:hover .sub-lista,.sub:focus-within .sub-lista,.sub.abierto .sub-lista{opacity:1;visibility:visible;transform:none}
+.sub-lista li{counter-increment:cap}
+.top-nav .sub-lista a{display:flex;gap:10px;padding:7px 10px;border:0;border-radius:8px;font-family:var(--f-sans);font-size:14px;line-height:1.35;color:var(--soft)}
+.top-nav .sub-lista a::before{content:counter(cap);min-width:1.4em;font-family:var(--f-mono);font-size:11px;padding-top:2px;color:var(--soft)}
+.top-nav .sub-lista a:hover{background:color-mix(in srgb,var(--ink) 6%,var(--bg));color:var(--ink)}
+.top-nav .sub-lista a[aria-current]{background:color-mix(in srgb,var(--ink) 9%,var(--bg));color:var(--ink);font-weight:700}
+@media (hover:none){.sub:hover .sub-lista{opacity:0;visibility:hidden}.sub.abierto .sub-lista{opacity:1;visibility:visible}}
+@media (max-width:640px){.sub-lista{position:fixed;top:var(--top);left:12px;right:12px;width:auto;max-height:70vh}}
+
+/* Submenú del libro en gris oscuro (07/10/2026) */
+.sub-lista{background:#2A2928;border-color:#2A2928}
+.top-nav .sub-lista a,.top-nav .sub-lista a::before{color:#B4B1AB}
+.top-nav .sub-lista a:hover{background:#363531;color:#EAE8E3}
+.top-nav .sub-lista a[aria-current]{background:#403E3A;color:#EAE8E3}
+
+/* Pie de página orientado al Substack (07/10/2026) */
+body > footer .pie-txt{font-family:var(--f-sans);font-size:15px;color:var(--soft);margin:0 0 20px}
+body > footer .pie-boton{display:inline-flex;align-items:center;gap:9px;text-decoration:none}
+body > footer .pie-links{margin-top:26px;font-size:11.5px}
+body > footer .pie-links a{color:var(--soft)}
+
+/* HOME (07/10/2026): moleskine grande en la portada; debajo, el árbol (1/3) y las observaciones en fichas horizontales (2/3) */
+.portada{grid-template-columns:1.2fr 1fr}
+.libro-grande{justify-self:center;width:100%;max-width:380px}
+.libro-grande .cat-thumb{width:100%}
+.libro-grande .libro-pregunta{max-width:20em;font-size:16px}
+.abajo{display:grid;grid-template-columns:1fr 2fr;gap:clamp(28px,5vw,72px);align-items:start;margin-top:clamp(40px,6vw,80px)}
+.abajo-arbol{position:sticky;top:90px;display:flex;flex-direction:column;align-items:center}
+.abajo-arbol .arbolito{max-width:260px}
+.arbol-pie{margin:14px 0 0;font-family:var(--f-mano);font-size:24px;color:var(--soft)}
+.abajo .ideas{margin-top:0}
+.abajo .ideas > h2{text-align:left}
+.abajo .ideas-bajada{margin:-20px 0 28px;text-align:left}
+.fichas{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.ficha{display:flex;align-items:center;gap:20px;padding:18px 22px;border-radius:14px;background:#DDDAD4;color:var(--ink);text-decoration:none;
+  transition:transform .4s var(--spring),background .25s}
+.ficha:hover,.ficha:focus-visible{transform:translateX(6px);background:#D2CFC8}
+.ficha-txt{flex:1;min-width:0}
+.ficha h3{margin:8px 0 0;font-family:var(--f-sans);font-weight:700;font-size:20px;line-height:1.2;letter-spacing:-.01em}
+.ficha-bajada{display:block;margin-top:6px;font-family:var(--f-mano);font-size:21px;line-height:1.15;color:var(--soft)}
+.ficha-flecha{font-size:20px;color:var(--soft);transition:transform .3s}
+.ficha:hover .ficha-flecha{transform:translateX(4px);color:var(--ink)}
+@media (prefers-color-scheme:dark){.ficha{background:#2A2928}.ficha:hover{background:#34332F}}
+@media (max-width:760px){
+  .portada{grid-template-columns:1fr}
+  .libro-grande{max-width:260px}
+  .abajo{grid-template-columns:1fr}
+  .abajo-arbol{position:static}
+  .abajo-arbol .arbolito{max-width:200px;order:0}
+}
+/* Fichas: el tema a mano y la bajada en letra normal, más liviana */
+.ficha .idea-tags{gap:4px 12px}
+.ficha .idea-tags span{padding:0;border:0;border-radius:0;background:none;font-family:var(--f-mano);font-size:20px;line-height:1;color:var(--acc,var(--soft))}
+.ficha h3{margin-top:4px}
+.ficha-bajada{font-family:var(--f-sans);font-size:15px;line-height:1.5;margin-top:6px;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
