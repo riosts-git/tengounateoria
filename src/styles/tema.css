@@ -2,8 +2,8 @@
    texto serif grande en azul tinta, etiquetas chiquitas espaciadas y acento violeta fucsia. Va sobre global.css (html[data-tema="prueba"] en Base.astro). */
 html[data-tema="prueba"]{
   --bg:#FAF7F4; --side:#FAF7F4; --ink:#1C2A47; --soft:#748297; --line:rgba(28,42,71,.1);
-  --gold:#1C2A47; --gold-deep:#1C2A47; --gold-pale:#F1ECE8; --olive:#A8277F;
-  --f-serif:'EB Garamond',Georgia,serif;
+  --gold:#1C2A47; --gold-deep:#1C2A47; --gold-pale:#FCEFFF; --olive:#A8277F;
+  --f-serif:'DM Sans',system-ui,sans-serif;
   --sh:0 1px 2px rgba(28,42,71,.06),0 12px 32px -12px rgba(28,42,71,.18);
 }
 @media (prefers-color-scheme:dark){html[data-tema="prueba"]{--bg:#FAF7F4;--ink:#1C2A47;--soft:#748297;--olive:#A8277F;color-scheme:light}}
@@ -94,8 +94,8 @@ html[data-tema="prueba"] .prose .arbol-grande,html[data-tema="prueba"] .prose .m
 /* los colores de los planos en los árboles grandes: violetas y grises */
 html[data-tema="prueba"] .prose svg [fill="#3f8fa6"]{fill:#A8277F}
 html[data-tema="prueba"] .prose svg [stroke="#3f8fa6"]{stroke:#A8277F}
-html[data-tema="prueba"] .prose svg [fill="#d4862f"]{fill:#6F5A7E}
-html[data-tema="prueba"] .prose svg [stroke="#d4862f"]{stroke:#6F5A7E}
+html[data-tema="prueba"] .prose svg [fill="#A8277F"]{fill:#6F5A7E}
+html[data-tema="prueba"] .prose svg [stroke="#A8277F"]{stroke:#6F5A7E}
 html[data-tema="prueba"] .prose svg [fill="#8a6bbf"]{fill:#C77DB0}
 html[data-tema="prueba"] .prose svg [fill="#5f9a52"]{fill:#8A8580}
 
@@ -234,7 +234,7 @@ html[data-tema="prueba"] .ensayo .prose .al-margen.dibujo svg text.m{font-family
 
 /* Cap. 1: una portada. A la izquierda, «Tengo una teoría…» a mano; a la derecha, solo el párrafo y el enlace al cap. 2, centrados en pantalla completa */
 .al-margen.frase-mano p{font-family:var(--f-mano);font-size:clamp(52px,6.4vw,96px);line-height:1;color:var(--ink);text-align:center;margin:0}
-html[data-estilo="libro"] article[data-href$="/tengo-una-teoria/"]{min-height:calc(100vh - 130px);display:flex;flex-direction:column;justify-content:center;box-sizing:border-box;padding-top:40px !important;padding-bottom:40px !important}
+html[data-estilo="libro"] article[data-href$="/tengo-una-teoria/"]{min-height:100vh;display:flex;flex-direction:column;justify-content:center;box-sizing:border-box;padding-top:40px !important;padding-bottom:40px !important}
 html[data-estilo="libro"] article[data-href$="/tengo-una-teoria/"] .head{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 html[data-estilo="libro"] article[data-href$="/tengo-una-teoria/"] .post-fin{margin-top:36px !important;padding-top:0 !important;border:0 !important}
 html[data-estilo="libro"] article[data-href$="/tengo-una-teoria/"] .fin-caja{display:none}
@@ -242,10 +242,10 @@ html[data-estilo="libro"] article[data-href$="/tengo-una-teoria/"] .fin-caja{dis
 /* Cap. 2: «¿Soy una inconsciente?», con «una» e «in» tachados; de «consciente» sale una flecha a un signo de pregunta */
 .al-margen.frase-mano.soy p{text-align:left;line-height:1.1;display:inline-block;font-size:clamp(40px,4.6vw,76px)}
 .al-margen.frase-mano.soy .nw{white-space:nowrap}
-.al-margen.frase-mano.soy s{text-decoration:line-through;text-decoration-color:#E84A5F;text-decoration-thickness:5px}
+.al-margen.frase-mano.soy s{text-decoration:line-through;text-decoration-color:#A8277F;text-decoration-thickness:5px}
 .al-margen.frase-mano.soy .cons{position:relative;display:inline-block}
 .al-margen.frase-mano.soy .flecha-preg{position:absolute;left:38%;top:92%;width:1.5em;height:auto;overflow:visible}
-.al-margen.frase-mano.soy .preg{position:absolute;left:calc(38% + 1.55em);top:calc(92% + .78em);color:#E84A5F;font-size:1.15em;line-height:1}
+.al-margen.frase-mano.soy .preg{position:absolute;left:calc(38% + 1.55em);top:calc(92% + .78em);color:#A8277F;font-size:1.15em;line-height:1}
 .ilus-cap .al-margen.frase-mano.soy{padding-bottom:1.6em}
 
 /* La escena que se transforma (caps. 3 a 5): cada paso se enciende cuando el texto llega a su marca */
@@ -255,3 +255,15 @@ html[data-estilo="libro"] article[data-href$="/tengo-una-teoria/"] .fin-caja{dis
 .al-margen.escena .e.dim{opacity:.3}
 .al-margen.escena .e .luz{transition:fill-opacity .5s}
 .al-margen.escena .e.lit .luz{fill-opacity:.22}
+
+/* Los símbolos del árbol dentro de las tablas */
+.pizarra .sim{display:inline-block;vertical-align:middle;margin-right:6px}
+.pizarra .sim svg{display:block}
+
+/* Tablas largas en el panel: letra más chica para que entren enteras */
+html[data-tema="prueba"] .ilus-cap .pizarra td,html[data-tema="prueba"] .ilus-cap .pizarra td:first-child{font-size:12.5px !important;padding-top:4px !important;padding-bottom:4px !important;line-height:1.25}
+.al-margen.frase-mano.pausa p.sello{display:inline-block;font-family:'Special Elite',var(--f-mono);font-size:clamp(28px,3vw,44px);text-transform:uppercase;letter-spacing:.12em;color:#A8277F;border:4px double #A8277F;border-radius:6px;padding:.15em .5em;transform:rotate(-6deg);opacity:.85;margin:0 0 1em}
+.al-margen.frase-mano.pausa{text-align:center}
+.al-margen.frase-mano.pausa p.aclara{font-family:'Special Elite',var(--f-mono);font-size:clamp(15px,1.25vw,19px);line-height:1.6;text-align:left;max-width:30em;margin:0 auto}
+.al-margen.ilustracion.tarot iframe{display:block;width:100%;aspect-ratio:1100/1520;border:0;background:transparent}
+.ilus-cap .al-margen.ilustracion.tarot iframe{width:auto;height:calc(100vh - 160px);max-width:100%;margin:0 auto}

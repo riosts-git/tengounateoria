@@ -1,0 +1,42 @@
+---
+title: "Conclusión"
+description: "—¿Te acordás de que una vez, hace quince años, me preguntaste qué me decía mi intuición? —¿Eh?… ¿Todo bien, Tati? —¡Sí, claro! Yo te dije que no sabía qué er…"
+date: 2026-10-17
+actualizado: 2026-10-17
+parte: "Conclusión"
+sinTitulo: true
+seccion:
+  etiqueta: "Sección IV"
+  titulo: "Conclusión"
+tags: ["Conclusión"]
+draft: false
+generado: canvas
+---
+
+### Conclusión
+
+—¿Te acordás de que una vez, hace quince años, me preguntaste qué me decía mi intuición?<br> —¿Eh?… ¿Todo bien, Tati?<br> —¡Sí, claro! Yo te dije que no sabía qué era la intuición… ¿Te acordás?<br> —La verdad que no.<br> —Porque no sabíamos si un cliente nos iba a aceptar un trabajo.<br> —¿Y lo aceptó?<br> —No me acuerdo. Pero eso no es lo importante. Lo importante es lo que descubrí… ¿Te cuento?<br> —¿Va a llevar mucho?
+
+Lo primero que me llamó la atención es que la intuición tiene una explicación bastante menos mística de lo que esperaba: es el cuerpo prediciendo con lo que ya vivió, antes de que podamos ponerlo en palabras. Primero reacciona la piel, después aparece la corazonada y, recién al final, la explicación. Por eso puede entrenarse, y por eso también puede estar sesgada.
+
+Eso me llevó a las emociones. Cada predicción abre un arco, y los arcos emocionales dan como resultado fuerzas: <strong>las emociones arquetípicas</strong>. De ellas se desprende el sinfín de palabras que usamos para nombrar las sensaciones físicas, los sentimientos y los estados de ánimo. Comprender la fuerza que hay detrás de cada prototipo, verbal o visual, nos permite despegarnos de su connotación positiva o negativa y observar el proceso anímico completo.
+
+Finalmente, llegué al árbol. El árbol de arquetipos es la versión mayor de esos pequeños arcos: un grafo que nace de la experiencia emocional individual, del arco más pequeño que pude reconstruir. Como todo esquema, simplifica procesos complejos, pero nos permite ordenar lo que sabemos y comprender nuestra experiencia, desde el estímulo hasta el estado resultante. Y como converge con el Árbol de la Vida, nos permite, por comparación y contraste, encontrar nuevas asociaciones con otras estructuras del conocimiento: el viaje del héroe, los géneros narrativos, la vida y tantos otros modelos. Incluso cuando no encajan del todo, nos permite explorar en qué divergen.
+
+### Un mapa para saber dónde estamos
+
+El Árbol de la Vida se usó para mucho más que explicar la creación del cosmos. En la tradición judía funciona como una clave para leer los textos sagrados. Hay quienes lo superponen al cuerpo para pensar la salud, quienes lo usan para meditar, como los chakras en Oriente, y quienes lo llevan a la psicología o a la gestión de proyectos, para ver qué columna está desequilibrada o qué paso se saltó. En todos los casos, el árbol sirve para lo mismo: entender dónde estamos parados y qué fuerza nos falta.
+
+El árbol de arquetipos tiene una relación íntima y clara con nuestro perfil psíquico, y sirve para mirar procesos muy concretos: cómo intuimos y decidimos, cómo se arma una emoción, cómo se vuelve un sentimiento o un estado de ánimo, cómo contamos historias, cómo atravesamos las etapas de una vida y cómo una idea se vuelve obra.
+
+La psique es la construcción abstracta que da como resultado el ánimo. El estado psíquico afecta al estado anímico como el estado de un instrumento afecta a la melodía. Comprender cómo se producen las emociones y qué prototipos lingüísticos y simbólicos las encarnan nos permite también entender cómo se compensan esas fuerzas, y volvernos luthieres de nuestra propia psique.
+
+Hay personas con un buen estado de ánimo, como un instrumento que produce buenas melodías, aunque no sepan cómo está construido. Sin embargo, en una época como la actual, en la que el capital es el premio y nuestra atención la moneda de pago, conocer cómo funcionan los instrumentos propios y colectivos nos permite recuperar&nbsp;<strong>soberanía emocional</strong>: el poder de una consciencia humana independiente para regirse a sí misma y tomar decisiones sin subordinarse a estímulos (y poderes) externos. Dicho de otra forma: usar los estímulos para satisfacer nuestras necesidades biológicas y emocionales, sin permitir que esos estímulos, o quienes los administran, nos usen a nosotros.
+
+Técnicas como el <em>rage bait</em>, el hiperestímulo sensorial y los algoritmos que secuestran nuestra atención son una amenaza externa a nuestra soberanía emocional. Los sesgos, los excesos y, en gran medida, cualquier sistema de valores que coarte nuestras acciones y nos impida llegar a un estado óptimo también pueden representar una pérdida de soberanía, aunque la amenaza sea interna.
+
+Debo confesar que el modelo me sirvió para acercarme a la estructura subyacente de mitos y fenómenos sociales o culturales, y para comprenderla (ya no memorizarla) desde una perspectiva novedosa y, a la vez, muy intuitiva (je).
+
+Y si bien se supone que esta es la conclusión, para mí fue solo el comienzo de un entramado de observaciones, reflexiones y nuevos aprendizajes: frutos del árbol de la experiencia.
+
+Porque, así como el Árbol de la Vida, el del conocimiento da muchos frutos. Madurar es el proceso biológico, mental o emocional por el que un fruto, una persona o una idea alcanzan su pleno desarrollo, su punto óptimo. <em>Maturus</em> proviene de la raíz indoeuropea <em>*mā-</em>, que significaba «bueno» o «en su momento oportuno». Es decir, que el acto creativo se concretó, y el fruto ya está listo para dar comienzo a un nuevo árbol.

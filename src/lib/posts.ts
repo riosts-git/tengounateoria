@@ -1,5 +1,5 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
-import { CATS, u, slugify } from '../config';
+import { CATS, u, slugify, ORDEN_PARTES, OBS_GRUPOS } from '../config';
 
 // El cuaderno y el orden salen de dónde está el archivo: «3 El Árbol de Arquetipos/08-el-camino-del-heroe.md»
 // es el ensayo 8 del tercer cuaderno. Así, mover o renumerar un archivo en Obsidian alcanza para reordenar el sitio.
@@ -7,7 +7,9 @@ export const datos = (e: CollectionEntry<'ensayos'>) => {
   const ruta = (e.filePath ?? '').replace(/\\/g, '/');
   const libro = Number(ruta.match(/ensayos\/(\d+)[^/]*\//)?.[1] ?? 0);
   const orden = Number(ruta.split('/').pop()?.match(/^(\d+)-/)?.[1] ?? 999);
-  return { ...e.data, categoria: CATS[libro - 1] ?? 'Observaciones', orden };
+  const grupo = Object.entries(OBS_GRUPOS).find(([, ids]) => ids.includes(e.id));
+  const parte = grupo?.[0] ?? e.data.parte;
+  return { ...e.data, parte, categoria: CATS[libro - 1] ?? 'Observaciones', orden: grupo ? grupo[1].indexOf(e.id) : orden };
 };
 
 export async function getPosts() {
@@ -18,8 +20,9 @@ export async function getPosts() {
 }
 
 // Orden de lectura dentro de un cuaderno: el número del archivo y, si coincide, la fecha.
-export const byOrden = (a: { orden?: number; date: Date }, b: { orden?: number; date: Date }) =>
-  (a.orden ?? Infinity) - (b.orden ?? Infinity) || +a.date - +b.date;
+const iParte = (p?: string) => { const i = ORDEN_PARTES.indexOf(p ?? ''); return i < 0 ? ORDEN_PARTES.length : i; };
+export const byOrden = (a: { parte?: string; orden?: number; date: Date }, b: { parte?: string; orden?: number; date: Date }) =>
+  iParte(a.parte) - iParte(b.parte) || (a.orden ?? Infinity) - (b.orden ?? Infinity) || +a.date - +b.date;
 
 // Una entrada por cuaderno, en el orden de CATS, con sus ensayos ordenados.
 export async function getPostsByCat() {

@@ -27,7 +27,7 @@
     .nivel{fill:#1A1919;font-size:13px;font-weight:600;letter-spacing:.08em;text-anchor:end}
     .nivelsub{fill:#6E6C68;font-size:12.5px;text-anchor:end;font-family:Inter, system-ui, sans-serif}
     @media (prefers-color-scheme:dark){
-      svg{--acento:#E8877A;--fondo:#1A1919}
+      svg{--acento:#A8277F;--fondo:#1A1919}
       .band{fill:#2A2928;opacity:.8}
       .sep,.guide,.guia-nivel{stroke:#EAE8E3}
       .path{stroke:#4A4845}

@@ -2,8 +2,9 @@
 import '../styles/global.css';
 import '../styles/tema.css';
 import '../styles/tema-libro.css';
+import '../styles/libro.css';
 import { SITE, LIBROS, u } from '../config';
-import { entradaDe, getPostsByCat } from '../lib/posts';
+import { entradaDe, getPostsByCat, partesDe, byOrden } from '../lib/posts';
 import { tituloPlano } from '../config';
 
 const { title = SITE.title, description = SITE.description, type = 'website', jsonLd, libro } = Astro.props;
@@ -14,6 +15,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const activo = (href: string, cat?: string) => aqui === href || (!!cat && libro === cat);
 // Cada cuaderno entra por su índice, o por su primer ensayo si se lee de corrido
 const cats = await getPostsByCat();
+const grupos = partesDe(cats.flatMap((c) => c.posts).sort(byOrden));
 const entradas = await Promise.all(LIBROS.map(async (l) => ({ ...l, href: await entradaDe(l), posts: cats.find((c) => c.name === l.cat)?.posts ?? [] })));
 ---
 <!doctype html>
@@ -40,14 +42,18 @@ const entradas = await Promise.all(LIBROS.map(async (l) => ({ ...l, href: await 
   {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400;1,9..40,700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Fira+Mono&family=Reenie+Beanie&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400;1,9..40,700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Fira+Mono&family=Reenie+Beanie&family=Special+Elite&display=swap" rel="stylesheet" />
 </head>
 <body>
   <div class="riel"><button class="riel-menu" type="button" aria-label="Índice" aria-expanded="false"><span></span></button><a href={u('')}>{SITE.title} · ensayos, apuntes y observaciones</a></div>
   <nav class="indice" aria-label="Índice del libro">
     <p class="ind-t">{entradas[0]?.corto}</p>
-    <ol>{(entradas[0]?.posts ?? []).map((p, i) => <li><a href={p.href} aria-current={aqui === p.href ? 'page' : undefined}><small>Capítulo {i + 1}</small><span>{tituloPlano(p.corto ?? p.title)}</span></a></li>)}</ol>
-    <p class="ind-obs"><a href={u('#observaciones')}>Observaciones →</a></p>
+    {grupos.map((g, k) => (
+      <details class="ind-parte" open={g.posts.some((p) => p.href === aqui)}>
+        <summary>{k + 1}) {g.parte}</summary>
+        <ol>{g.posts.map((p) => <li><a href={p.href} aria-current={aqui === p.href ? 'page' : undefined}><span>{tituloPlano(p.corto ?? p.title)}</span></a></li>)}</ol>
+      </details>
+    ))}
   </nav>
   <div class="redondos"><a href={u('')}>Leer</a><a href={SITE.substack} target="_blank" rel="noopener me">Substack</a></div>
   <header class="top">

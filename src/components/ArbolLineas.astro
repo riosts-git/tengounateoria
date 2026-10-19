@@ -5,7 +5,7 @@
 const { variante = 'capitulo', resalte = {} } = Astro.props;
 const N: Record<string, [number, number]> = { 1: [150, 30], 2: [235, 85], 3: [65, 85], 4: [235, 180], 5: [65, 180], 6: [150, 225], 7: [235, 300], 8: [65, 300], 9: [150, 345], 10: [150, 430], X: [150, 135] };
 const P = [[1,2],[1,3],[1,6],[2,3],[2,4],[2,6],[3,5],[3,6],[4,5],[4,6],[4,7],[5,6],[5,8],[6,7],[6,8],[6,9],[7,8],[7,9],[7,10],[8,9],[8,10],[9,10]];
-const hilos = P.flatMap(([a, b]) => [-3, -2, -1, 0, 1, 2, 3].map((k) => ({ x1: N[a][0] + k * 1.6, y1: N[a][1], x2: N[b][0] - k * 1.6, y2: N[b][1], c: k % 2 ? '#D97757' : '#C15F3C' })));
+const hilos = P.flatMap(([a, b]) => [-3, -2, -1, 0, 1, 2, 3].map((k) => ({ x1: N[a][0] + k * 1.6, y1: N[a][1], x2: N[b][0] - k * 1.6, y2: N[b][1], c: k % 2 ? '#A8277F' : '#A8277F' })));
 const nodos: string[] = (resalte.nodos ?? []).map(String);
 const camino: string[] = (resalte.camino ?? []).map(String);
 const aristas: number[][] = resalte.aristas ?? [];
@@ -17,20 +17,20 @@ const en = (a: number, b: number) => aristas.some(([p, q]) => (p === a && q === 
 {variante === 'hilos' ? (
   <svg viewBox="0 0 300 460" aria-hidden="true">
     {hilos.map((h) => <line x1={h.x1} y1={h.y1} x2={h.x2} y2={h.y2} stroke={h.c} stroke-width=".35" opacity=".55" />)}
-    {[1,2,3,4,5,6,7,8,9,10].map((i) => <circle cx={N[i][0]} cy={N[i][1]} r="3" fill="#C15F3C" />)}
+    {[1,2,3,4,5,6,7,8,9,10].map((i) => <circle cx={N[i][0]} cy={N[i][1]} r="3" fill="#A8277F" />)}
   </svg>
 ) : (
   <svg viewBox="0 0 300 460" role="img" aria-label="El Árbol de Arquetipos">
-    {planos.map((p) => <polygon points={PLANO[p]} fill="#C15F3C" opacity={p === 'resultado' ? '.85' : '.16'} />)}
-    {P.map(([a, b]) => <line x1={N[a][0]} y1={N[a][1]} x2={N[b][0]} y2={N[b][1]} stroke={en(a, b) ? '#C15F3C' : '#D97757'} stroke-width={en(a, b) ? 3 : 1} opacity={en(a, b) ? 1 : .55} />)}
-    {camino.length > 1 && <polyline points={camino.map((i) => N[i].join(',')).join(' ')} fill="none" stroke="#C15F3C" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" />}
-    {verX && <g><circle cx="150" cy="135" r="12" fill={nodos.includes('X') ? '#C15F3C' : '#F6F5F2'} stroke="#C15F3C" stroke-width="1.2" stroke-dasharray="3 3" /><text x="150" y="140" text-anchor="middle" font-family="EB Garamond, serif" font-size="14" fill={nodos.includes('X') ? '#FBFAF8' : '#C15F3C'}>X</text></g>}
+    {planos.map((p) => <polygon points={PLANO[p]} fill="#A8277F" opacity={p === 'resultado' ? '.85' : '.16'} />)}
+    {P.map(([a, b]) => <line x1={N[a][0]} y1={N[a][1]} x2={N[b][0]} y2={N[b][1]} stroke={en(a, b) ? '#A8277F' : '#A8277F'} stroke-width={en(a, b) ? 3 : 1} opacity={en(a, b) ? 1 : .55} />)}
+    {camino.length > 1 && <polyline points={camino.map((i) => N[i].join(',')).join(' ')} fill="none" stroke="#A8277F" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" />}
+    {verX && <g><circle cx="150" cy="135" r="12" fill={nodos.includes('X') ? '#A8277F' : '#FCEFFF'} stroke="#A8277F" stroke-width="1.2" stroke-dasharray="3 3" /><text x="150" y="140" text-anchor="middle" font-family="EB Garamond, serif" font-size="14" fill={nodos.includes('X') ? '#FCFAF9' : '#A8277F'}>X</text></g>}
     {[1,2,3,4,5,6,7,8,9,10].map((i) => {
       const on = nodos.includes(String(i));
       return (
         <g>
-          <circle cx={N[i][0]} cy={N[i][1]} r="15" fill={on ? '#C15F3C' : '#F6F5F2'} stroke="#C15F3C" stroke-width="1.2" />
-          <text x={N[i][0]} y={N[i][1] + 5} text-anchor="middle" font-family="EB Garamond, serif" font-size="15" fill={on ? '#FBFAF8' : '#C15F3C'}>{i}</text>
+          <circle cx={N[i][0]} cy={N[i][1]} r="15" fill={on ? '#A8277F' : '#FCEFFF'} stroke="#A8277F" stroke-width="1.2" />
+          <text x={N[i][0]} y={N[i][1] + 5} text-anchor="middle" font-family="EB Garamond, serif" font-size="15" fill={on ? '#FCFAF9' : '#A8277F'}>{i}</text>
         </g>
       );
     })}

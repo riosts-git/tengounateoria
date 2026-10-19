@@ -9,3 +9,7 @@ contenido/taller/
 
 # La hoja de dibujos se ve solo en local
 public/prueba-embudo.html
+
+# Copia local del canvas (fuente del libro) y respaldos: no se publican
+canvas/
+_respaldo/

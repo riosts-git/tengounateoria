@@ -1,0 +1,91 @@
+/* ============================================================================================
+   LIBRO · ajustes finales de lectura. Se carga al final, así que manda sobre los demás estilos.
+   Para cambiar algo, tocá solo las variables de este bloque.
+   ============================================================================================ */
+html[data-estilo="libro"]{
+  /* Tamaños */
+  --l-texto:18px;            /* cuerpo del capítulo */
+  --l-interlineado:1.6;
+  --l-sub:19px;              /* subtítulos dentro del capítulo */
+  --l-titulo:clamp(30px,3.2vw,40px);  /* título del capítulo */
+  --l-etiqueta:12px;         /* «Capítulo 2» */
+  --l-ancho:36em;            /* ancho máximo de la columna de texto */
+
+  /* Espacios */
+  --l-arriba:44px;           /* aire sobre el título del capítulo */
+  --l-bajo-titulo:32px;      /* aire entre el título y el texto */
+  --l-parrafo:.9em;          /* entre párrafos */
+  --l-sub-antes:2em;         /* antes de un subtítulo */
+  --l-sub-despues:.45em;     /* después de un subtítulo (queda pegado a su texto) */
+  --l-fin:56px;              /* aire antes del cierre del capítulo */
+  --l-abajo:48px;            /* aire al final de la página */
+
+  /* Colores: el violeta solo para momentos especiales */
+  --l-acento:var(--acento);
+  --olive:var(--ink);        /* todo lo que antes usaba el acento por defecto pasa a tinta */
+}
+
+/* --- Página del capítulo ------------------------------------------------------------------- */
+html[data-estilo="libro"] .ensayo{padding-top:var(--l-arriba);padding-bottom:var(--l-abajo)}
+html[data-estilo="libro"] .ensayo > .portada-cap{margin:0 0 var(--l-bajo-titulo);text-align:left;max-width:var(--l-ancho);display:block;min-height:0;padding:0}
+html[data-estilo="libro"] .portada-cap .cap-label{font:400 var(--l-etiqueta)/1.3 var(--f-mono);letter-spacing:.18em;text-transform:uppercase;color:var(--l-acento);margin:0 0 10px}
+html[data-estilo="libro"] .portada-cap h2{font:600 var(--l-titulo)/1.12 var(--f-sans);letter-spacing:-.01em;color:var(--ink);margin:0;max-width:14em}
+html[data-estilo="libro"] .portada-cap .anticipo{font:italic 400 19px/1.5 var(--f-sans);color:var(--soft);margin:14px 0 0}
+/* La sección (Intuición, Emociones…) ya está en el índice: en cada capítulo sobra */
+html[data-estilo="libro"] .ensayo .post-cat{display:none}
+
+/* --- Texto ---------------------------------------------------------------------------------- */
+html[data-estilo="libro"] .ensayo .prose{font-size:var(--l-texto);line-height:var(--l-interlineado);color:var(--ink);max-width:var(--l-ancho)}
+html[data-estilo="libro"] .ensayo .prose p{margin:0 0 var(--l-parrafo)}
+html[data-estilo="libro"] .ensayo .prose strong{color:var(--ink);font-weight:600}
+/* Un solo nivel de subtítulo: tinta, sin viñeta, pegado a su texto */
+html[data-estilo="libro"] .ensayo .prose h2,
+html[data-estilo="libro"] .ensayo .prose h3{font:600 var(--l-sub)/1.3 var(--f-sans);font-style:normal;text-transform:none;letter-spacing:0;color:var(--ink);margin:var(--l-sub-antes) 0 var(--l-sub-despues);padding:0;border:0}
+html[data-estilo="libro"] .ensayo .prose h2::before,html[data-estilo="libro"] .ensayo .prose h3::before,
+html[data-estilo="libro"] .ensayo .prose h2::after,html[data-estilo="libro"] .ensayo .prose h3::after{content:none;display:none}
+html[data-estilo="libro"] .ensayo .prose > :first-child,
+html[data-estilo="libro"] .ensayo .prose > .marca-arbol:first-child + h2,
+html[data-estilo="libro"] .ensayo .prose > .marca-arbol:first-child + h3{margin-top:0}
+/* El tercer nivel se lee como un párrafo con entrada en negrita */
+html[data-estilo="libro"] .ensayo .prose h4{font:600 var(--l-texto)/var(--l-interlineado) var(--f-sans);font-style:normal;color:var(--ink);margin:1.2em 0 .2em}
+/* Enlaces: tinta con subrayado violeta, el violeta como señal */
+html[data-estilo="libro"] .ensayo .prose a{color:inherit;text-decoration:underline;text-decoration-color:var(--l-acento);text-decoration-thickness:1px;text-underline-offset:3px}
+html[data-estilo="libro"] .ensayo .prose a:hover{text-decoration-thickness:2px}
+
+/* --- Cierre del capítulo --------------------------------------------------------------------- */
+html[data-estilo="libro"] .post-fin{margin:var(--l-fin) 0 0}
+html[data-estilo="libro"] .pn{margin-top:28px;padding-top:24px}
+html[data-estilo="libro"] .pn .next::before{color:var(--soft)}
+html[data-estilo="libro"] .pn .next:hover::before{color:var(--l-acento)}
+html[data-estilo="libro"] .pn .next:hover strong{color:var(--ink)}
+html[data-estilo="libro"] .pn strong{font:600 20px/1.25 var(--f-sans)}
+
+/* --- Menú e índice: sin violeta en hover ni en subtítulos ------------------------------------ */
+html[data-estilo="libro"] .riel a:hover,html[data-estilo="libro"] .top-nav a:hover{color:var(--ink);opacity:.7}
+html[data-estilo="libro"] .indice .ind-t,html[data-estilo="libro"] .indice li a span{color:var(--ink)}
+html[data-estilo="libro"] .indice li a[aria-current] span{text-decoration-color:var(--l-acento)}
+
+/* --- Pantallas chicas ------------------------------------------------------------------------- */
+@media (max-width:760px){
+  html[data-estilo="libro"]{--l-arriba:28px;--l-bajo-titulo:24px;--l-fin:40px;--l-abajo:32px;--l-texto:17px}
+}
+
+/* --- Refuerzos de especificidad (otros estilos más viejos ganaban) --------------------------- */
+html[data-estilo="libro"] .ensayo[data-cat]{--olive:var(--ink)}
+html[data-estilo="libro"] article.post.ensayo{padding-top:var(--l-arriba);padding-bottom:var(--l-abajo)}
+/* Título de las páginas sin número de capítulo (observaciones, intro): igual que el de los capítulos */
+html[data-estilo="libro"] .ensayo .head{text-align:left;margin:0 0 var(--l-bajo-titulo);max-width:var(--l-ancho)}
+html[data-estilo="libro"] .ensayo .head h1{font:600 var(--l-titulo)/1.12 var(--f-sans);letter-spacing:-.01em;color:var(--ink);margin:0}
+html[data-estilo="libro"] .ensayo .head .subtitulo{font:italic 400 19px/1.5 var(--f-sans);color:var(--soft);margin:12px 0 0}
+
+/* --- Portadas: las mismas que en el canvas (scratchpad/portadas.css) ------------------------- */
+/* La sección es una línea discreta sobre el capítulo: «SECCIÓN II · EMOCIONES ARQUETÍPICAS» */
+html[data-estilo="libro"] .portada-seccion{background:none;padding:14px 0 0;margin:0 0 36px;border-top:1px solid var(--line);text-align:left;max-width:var(--l-ancho)}
+html[data-estilo="libro"] .portada-seccion .sec-label,html[data-estilo="libro"] .portada-seccion h2{display:inline;font:400 12px/1.4 var(--f-mono);letter-spacing:.16em;text-transform:uppercase;color:var(--soft);margin:0}
+html[data-estilo="libro"] .portada-seccion .sec-label::after{content:" · "}
+html[data-estilo="libro"] .portada-seccion .anticipo{font:italic 400 17px/1.5 var(--f-sans);color:var(--soft);margin:10px 0 0;max-width:30em}
+
+/* --- Anotador (tablas del canvas al margen) --------------------------------------------------- */
+html[data-estilo="libro"] .al-margen .anotador{background:#F1EDE4 repeating-linear-gradient(transparent 0 19px,#d9e4ee 19px 20px);border:1px solid #e8e2c8;border-left:3px double #e8a0a0;border-radius:4px;padding:14px 12px 10px 18px;font:12px/20px var(--f-sans)}
+html[data-estilo="libro"] .al-margen .anotador table{border-collapse:collapse;width:100%}
+html[data-estilo="libro"] .al-margen .anotador th,html[data-estilo="libro"] .al-margen .anotador td{text-align:left;vertical-align:top;padding:0 6px 0 0;font-weight:normal}

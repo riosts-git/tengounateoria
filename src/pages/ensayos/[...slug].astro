@@ -3,6 +3,7 @@ import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import ArbolLineas from '../../components/ArbolLineas.astro';
 import '../../styles/ensayo.css';
+import '../../styles/libro.css';
 import { SITE, HOJAS, u, slugify, tituloHTML, tituloPlano, libroDe } from '../../config';
 import { datos, getPostsByCat } from '../../lib/posts';
 
@@ -73,12 +74,27 @@ const jsonLd = {
   <div class="lectura" data-continua={continua ? '1' : undefined}>
   <aside class="ilus-cap"></aside>
   <article class="post ensayo" data-cat={slugify(d.categoria)} data-href={aqui} data-titulo={tituloPlano(d.title)} data-siguiente={next?.href} data-numero={at + 1}>
-    <header class="head">
+    {d.portada && <section class="portada portada-frase"><p>{d.portada}</p></section>}
+    {d.seccion && (
+      <section class="portada-seccion">
+        {d.seccion.etiqueta && <p class="sec-label">{d.seccion.etiqueta}</p>}
+        <h2>{d.seccion.titulo}</h2>
+        {d.seccion.anticipo && <p class="anticipo">{d.seccion.anticipo}</p>}
+      </section>
+    )}
+    {d.capitulo && (
+      <section class="portada portada-cap">
+        <p class="cap-label">Capítulo {d.capitulo.numero}</p>
+        <h2>{d.capitulo.titulo}</h2>
+        {d.capitulo.anticipo && <p class="anticipo">{d.capitulo.anticipo}</p>}
+      </section>
+    )}
+    {!d.sinTitulo && <header class="head">
       {d.parte && <p class="post-cat"><span class="post-parte">{d.parte}</span></p>}
       {d.hoja && HOJAS[d.hoja] && <p class="post-cat"><a href={u(`hojas/${d.hoja}/`)}>De la hoja «{HOJAS[d.hoja].titulo}»</a></p>}
       <h1 set:html={tituloHTML(d.title)} />
       {d.subtitulo && <p class="subtitulo">{d.subtitulo}</p>}
-    </header>
+    </header>}
     <div class="prose"><Content /></div>
     <!-- Fin del ensayo: un solo renglón con una flecha que despliega las notas y las observaciones (el script lo trae desde el final del texto). Después, el botón para seguir leyendo -->
     <footer class="post-fin">
@@ -89,7 +105,7 @@ const jsonLd = {
         <nav class="pn" aria-label="Seguir leyendo">
           <a class="next" href={next.href}>
             <small>Siguiente</small>
-            <span class="pn-cap">{libro ? `Capítulo ${at + 2}` : 'Siguiente'}</span>
+            {next.capitulo && <span class="pn-cap">Capítulo {next.capitulo.numero}</span>}
             <strong>{tituloPlano(next.title)}</strong>
             <svg class="pn-flecha" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 4v15M5 12l7 7 7-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>

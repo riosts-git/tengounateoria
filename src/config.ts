@@ -15,9 +15,117 @@ export const LIBROS = [
 export const libroDe = (cat: string) => LIBROS.find((l) => l.cat === cat) as { cat: string; corto: string; slug: string; continua?: boolean } | undefined;
 // Una línea que presenta cada parte de un cuaderno (se muestra en la home, bajo el nombre de la parte).
 export const PARTES: Record<string, string> = {
-  'La intuición': 'Por qué escribí esto, la pregunta de fondo y cómo predice la mente: instinto, intuición e intelecto.',
-  'Las emociones': 'Las variables de una emoción, las nueve emociones arquetípicas, su arco y lo que hacemos con ellas.',
-  'El árbol': 'El mapa que resultó de todo esto y sus lecturas: la Cábala, la biología, el héroe, la vida y la creación.',
+  "Intro": "Por qué escribí esto y la pregunta de fondo.",
+  "Intuición": "Cómo predice la mente: instinto, intuición e intelecto.",
+  "El arco": "Las variables de una emoción y su recorrido.",
+  "Emociones arquetípicas": "Las nueve emociones arquetípicas y lo que hacemos con ellas: sentimientos, estados de ánimo, géneros.",
+  "El árbol de arquetipos": "El mapa que resultó de todo esto y sus lecturas: la biología, el héroe, la vida y la creación.",
+};
+// Orden de las partes en el índice: primero el libro, después los grupos de observaciones
+export const ORDEN_PARTES = ["Intro", "Intuición", "El arco", "Emociones arquetípicas", "El árbol de arquetipos",
+  "Observaciones: Intuición", "Observaciones: Emociones arquetípicas", "Observaciones: Árbol de Arquetipos", "Observaciones: Consciencia", "Observaciones: Tarot", "Observaciones: El humor", "Observaciones: Reflexiones personales"];
+// Grupos de observaciones (y capítulos que se leen como observación), en orden de lectura
+export const OBS_GRUPOS: Record<string, string[]> = {
+  "Observaciones: Intuición": [
+    "reinterpretando-a-darwin",
+    "los-sesgos-el-instinto-y-la-intuicion",
+    "existe-la-intuicion-femenina",
+    "genero-y-polaridad",
+    "intuicion-y-terapia",
+    "caperucita-roja-y-la-intuicion",
+    "joy-milne-y-lo-mistico",
+    "intuicion-extraordinaria",
+    "intuicion-y-creatividad",
+    "intuicion-y-meditacion",
+    "prediccion-confianza-y-aprendizaje",
+    "la-atencion",
+    "el-umbral-de-la-atencion",
+    "el-aburrimiento",
+    "quien-saca-la-basura"
+  ],
+  "Observaciones: Emociones arquetípicas": [
+    "lista-de-emociones-arquetipicas",
+    "el-amor-y-el-odio",
+    "la-indiferencia",
+    "objeto-y-sujeto-de-deseo",
+    "enamorarse",
+    "empatia",
+    "adiccion",
+    "ansiedad-y-depresion",
+    "valiente-no-es-quien-no-tiene-miedo",
+    "el-valor-y-la-valentia",
+    "como-leer-una-emocion",
+    "nombrar",
+    "los-cuatro-humores"
+  ],
+  "Observaciones: Árbol de Arquetipos": [
+    "los-nodos",
+    "los-ejes",
+    "los-planos",
+    "el-fucking-nodo-5",
+    "el-verde",
+    "la-mujer-de-vitruvio",
+    "el-trickster",
+    "otras-disciplinas",
+    "axis-mundi",
+    "el-fruto",
+    "la-serpiente",
+    "el-siete",
+    "el-arbol-de-la-vida",
+    "el-arbol-y-el-hermetismo",
+    "el-arbol-y-el-i-ching",
+    "el-arbol-y-el-budismo",
+    "y-jung",
+    "gandalf",
+    "la-pureza-arquetipica",
+    "grafos-arboles-y-redes",
+    "tres-veces-grande",
+    "primavera-verano-otono-y-amarillo",
+    "el-arbol-y-la-sociologia",
+    "las-ondas-del-arco",
+    "bien-y-mal",
+    "no-existe-el-mal",
+    "bendecir-y-maldecir",
+    "la-ignorancia",
+    "el-encuentro",
+    "firmar-la-obra",
+    "el-limite",
+    "los-umbrales-sensibles",
+    "el-flow",
+    "los-umbrales-del-viaje"
+  ],
+  "Observaciones: Consciencia": [
+    "la-consciencia",
+    "la-escala-de-la-consciencia",
+    "sujeto-y-predicado",
+    "psique",
+    "la-consciencia-colectiva",
+    "las-consciencias-atribuidas",
+    "el-anima",
+    "la-intencion",
+    "el-fuego-de-prometeo",
+    "caos-y-cosmos"
+  ],
+  "Observaciones: Tarot": [
+    "los-arquetipos-del-tarot",
+    "la-carta-sin-nombre",
+    "se-muere-dos-veces",
+    "coronados-de-gloria",
+    "nostalgia",
+    "kleos-o-nostos",
+    "alejandro-ante-la-tumba-de-aquiles"
+  ],
+  "Observaciones: El humor": [
+    "el-humor-y-el-aprendizaje",
+    "las-tres-risas"
+  ],
+  "Observaciones: Reflexiones personales": [
+    "menos-que-un-cabalista",
+    "el-tdah-desde-el-arbol",
+    "mis-conclusiones",
+    "acomode-el-mundo-a-la-cabala",
+    "un-modelo-que-explica-todo"
+  ]
 };
 // Hojas: series de micro observaciones que se leen juntas en una sola página (/hojas/<slug>/). Cada micro lleva «hoja: <slug>».
 export const HOJAS: Record<string, { titulo: string; bajada: string }> = {

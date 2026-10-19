@@ -5,7 +5,7 @@ const ensayos = defineCollection({
   // Una carpeta por cuaderno («1 La Intuición/…») y un archivo numerado por ensayo («01-mi-obsesion-por-las-palabras.md»).
   // La dirección del ensayo es el nombre del archivo sin el número; el cuaderno y el orden salen de la carpeta y del número (ver lib/posts.ts).
   // Los archivos sueltos que empiezan con «_» en la raíz (notas de trabajo, como un índice copiado desde Obsidian) no son ensayos: se ignoran.
-  loader: glob({ pattern: ['*/**/*.md', '!**/_*.md', '!_borradores/**', '!.obsidian/**'], base: './contenido/ensayos', generateId: ({ entry }) => entry.split('/').pop()!.replace(/\.md$/, '').replace(/^\d+-/, '') }),
+  loader: glob({ pattern: ['*/**/*.md', '!**/_*.md', '!**/Sin título*.md', '!_borradores/**', '!.obsidian/**'], base: './contenido/ensayos', generateId: ({ entry }) => entry.split('/').pop()!.replace(/\.md$/, '').replace(/^\d+-/, '') }),
   schema: z.object({
     title: z.string(),
     corto: z.string().optional(), // título corto para el menú superior
@@ -16,6 +16,11 @@ const ensayos = defineCollection({
     actualizado: z.coerce.date().optional(), // "Última actualización"
     version: z.coerce.string().optional(), // ej. v1
     parte: z.string().optional(), // parte del cuaderno (subtítulo en la home)
+    sinTitulo: z.boolean().optional(), // no muestra el encabezado (título y parte), como en la Intro
+    portada: z.string().optional(), // frase de apertura, en una página negra antes del capítulo
+    seccion: z.object({ etiqueta: z.string().optional(), titulo: z.string(), anticipo: z.string().optional() }).optional(), // portada de sección (viene del canvas)
+    generado: z.string().optional(), // «canvas»: lo escribe scripts/sincronizar.mjs
+    capitulo: z.object({ numero: z.coerce.string(), titulo: z.string(), anticipo: z.string().optional() }).optional(), // portada del capítulo del libro
     description: z.string(), // SEO / RSS
     tags: z.array(z.string()).default([]),
     draft: z.boolean().default(false), // true = no se publica

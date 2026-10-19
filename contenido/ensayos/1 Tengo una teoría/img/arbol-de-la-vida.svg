@@ -32,7 +32,7 @@
     .sep.umbral-l{stroke:var(--acento);stroke-opacity:.7;stroke-width:1.5;stroke-dasharray:6 5}
     .umbral{fill:var(--acento);font-size:12px;font-style:italic;text-anchor:end;font-family:Inter, system-ui, sans-serif}
     @media (prefers-color-scheme:dark){
-      svg{--acento:#E8877A;--fondo:#1A1919}
+      svg{--acento:#A8277F;--fondo:#1A1919}
       .band{fill:#2A2928;opacity:.8}
       .sep,.guide,.guia-nivel{stroke:#EAE8E3}
       .path{stroke:#4A4845}
