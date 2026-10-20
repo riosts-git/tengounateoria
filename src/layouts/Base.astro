@@ -1,108 +1,78 @@
 ---
 import '../styles/global.css';
-import '../styles/tema.css';
-import '../styles/tema-libro.css';
-import '../styles/libro.css';
-import { SITE, LIBROS, u } from '../config';
-import { entradaDe, getPostsByCat, partesDe, byOrden } from '../lib/posts';
-import { tituloPlano } from '../config';
+import { ENSAYOS, etiqueta } from '../data/ensayos';
+import { getCollection } from 'astro:content';
 
-const { title = SITE.title, description = SITE.description, type = 'website', jsonLd, libro } = Astro.props;
-const aqui = Astro.url.pathname.replace(/\/?$/, '/');
-const full = title === SITE.title ? title : `${title} · ${SITE.title}`;
-const canonical = new URL(Astro.url.pathname, Astro.site).href;
-// El menú superior marca la sección actual: «Sobre mí» o el cuaderno del ensayo que se está leyendo.
-const activo = (href: string, cat?: string) => aqui === href || (!!cat && libro === cat);
-// Cada cuaderno entra por su índice, o por su primer ensayo si se lee de corrido
-const cats = await getPostsByCat();
-const grupos = partesDe(cats.flatMap((c) => c.posts).sort(byOrden));
-const entradas = await Promise.all(LIBROS.map(async (l) => ({ ...l, href: await entradaDe(l), posts: cats.find((c) => c.name === l.cat)?.posts ?? [] })));
+interface Props { title?: string; acc?: string; volver?: boolean; actual?: string }
+const { title, acc, volver = false, actual = '' } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const caps = await getCollection('capitulos');
+const disponibles = (id: string) => caps.filter((c) => c.data.ensayo === id).map((c) => c.data.orden);
+const fullTitle = title ? `${title} · Tengo una teoría` : 'Tengo una teoría';
 ---
 <!doctype html>
-<html lang="es" data-tema="prueba" data-estilo="libro">
-<head>
-  <meta charset="utf-8" />
-  <!-- El estilo «libro» es el diseño del sitio (data-estilo en <html>) -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>{full}</title>
-  <meta name="description" content={description} />
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
-  <link rel="canonical" href={canonical} />
-  <link rel="icon" type="image/svg+xml" href={u('favicon.svg')} />
-  <link rel="alternate" type="application/rss+xml" title={SITE.title} href={u('rss.xml')} />
-  <meta property="og:type" content={type} />
-  <meta property="og:title" content={full} />
-  <meta property="og:description" content={description} />
-  <meta property="og:url" content={canonical} />
-  <meta property="og:site_name" content={SITE.title} />
-  <meta property="og:locale" content="es_ES" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content={full} />
-  <meta name="twitter:description" content={description} />
-  {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400;1,9..40,700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Fira+Mono&family=Reenie+Beanie&family=Special+Elite&display=swap" rel="stylesheet" />
-</head>
-<body>
-  <div class="riel"><button class="riel-menu" type="button" aria-label="Índice" aria-expanded="false"><span></span></button><a href={u('')}>{SITE.title} · ensayos, apuntes y observaciones</a></div>
-  <nav class="indice" aria-label="Índice del libro">
-    <p class="ind-t">{entradas[0]?.corto}</p>
-    {grupos.map((g, k) => (
-      <details class="ind-parte" open={g.posts.some((p) => p.href === aqui)}>
-        <summary>{k + 1}) {g.parte}</summary>
-        <ol>{g.posts.map((p) => <li><a href={p.href} aria-current={aqui === p.href ? 'page' : undefined}><span>{tituloPlano(p.corto ?? p.title)}</span></a></li>)}</ol>
-      </details>
-    ))}
-  </nav>
-  <div class="redondos"><a href={u('')}>Leer</a><a href={SITE.substack} target="_blank" rel="noopener me">Substack</a></div>
-  <header class="top">
-    <div class="top-in">
-      <a href={u('')} class="brand">{SITE.title}</a>
-      <nav class="top-nav" aria-label="Secciones">
-        {entradas.map((l) => (
-          <div class="sub">
-            <a href={l.href} aria-current={activo(u(`cuadernos/${l.slug}/`), l.cat) ? 'page' : undefined}>{l.corto}</a>
-            <button class="sub-abrir" type="button" aria-expanded="false" aria-label={`Capítulos de ${l.corto}`}><svg viewBox="0 0 12 12" width="10" height="10" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-            <ol class="sub-lista" data-c={l.slug}>
-              {l.posts.map((p) => <li><a href={p.href} aria-current={aqui === p.href ? 'page' : undefined}>{tituloPlano(p.corto ?? p.title)}</a></li>)}
-            </ol>
-          </div>
-        ))}
+<html lang="es" style={acc ? `--acc:${acc}` : undefined}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light" />
+    <title>{fullTitle}</title>
+    <link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" />
+  </head>
+  <body>
+    <div class="top">
+      <a class="brand" href={`${base}/`}>TENGO UNA TEORÍA.</a>
+      <nav>
+        {volver && <a class="pill ghost" href={`${base}/`}>Ensayos</a>}
+        <button class="pill" id="ib" aria-expanded="false">Índice</button>
       </nav>
     </div>
-  </header>
-  <main><slot /></main>
-  <!-- Pie de página: invita a suscribirse al Substack; abajo, «Sobre mí» y RSS -->
-  <footer>
-    <div class="footer-inner">
-      <h4>Gracias por leer</h4>
-      <p class="pie-txt">Las observaciones nuevas llegan primero por correo. Suscribite para recibirlas.</p>
-      <a class="boton principal pie-boton" href={SITE.substack} target="_blank" rel="noopener me">
-        <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" fill="currentColor"><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/></svg>
-        Suscribirme en Substack
-      </a>
-      <p class="pie-links"><a href={u('sobre-mi/')}>Sobre mí</a> · <a href={u('rss.xml')}>RSS</a></p>
-    </div>
-  </footer>
-  <script is:inline>
-  // Índice del riel (estilo «libro»): la hamburguesa abre y cierra el índice
-  (function(){var b=document.querySelector(".riel-menu");if(!b)return;function set(v){document.documentElement.classList.toggle("indice-abierto",v);b.setAttribute("aria-expanded",v)}b.addEventListener("click",function(){set(!document.documentElement.classList.contains("indice-abierto"))});document.addEventListener("keydown",function(e){if(e.key==="Escape")set(false)});document.addEventListener("click",function(e){if(!e.target.closest(".indice,.riel-menu"))set(false)})})();
-  </script>
-  <script is:inline>
-  // Submenú de cada cuaderno: se abre al pasar el mouse o con la flechita (en el celular), y muestra el capítulo actual
-  (function(){
-    var subs=[].slice.call(document.querySelectorAll(".top-nav .sub"));
-    function cerrar(excepto){subs.forEach(function(s){if(s!==excepto){s.classList.remove("abierto");s.querySelector(".sub-abrir").setAttribute("aria-expanded","false")}})}
-    function alActual(s){var l=s.querySelector(".sub-lista"),a=l.querySelector("[aria-current]");if(a)l.scrollTop=a.offsetTop-l.clientHeight/2+a.clientHeight/2}
-    subs.forEach(function(s){
-      var b=s.querySelector(".sub-abrir");
-      b.addEventListener("click",function(e){e.stopPropagation();var abre=!s.classList.contains("abierto");cerrar(s);s.classList.toggle("abierto",abre);b.setAttribute("aria-expanded",abre);if(abre)alActual(s)});
-      s.addEventListener("mouseenter",function(){alActual(s)});
-    });
-    document.addEventListener("click",function(e){if(!e.target.closest(".top-nav .sub"))cerrar()});
-    document.addEventListener("keydown",function(e){if(e.key==="Escape")cerrar()});
-  })();
-  </script>
-</body>
+    <div id="prog"></div>
+    <main><slot /></main>
+
+    <nav id="ix" aria-label="Índice">
+      {ENSAYOS.map((e) => {
+        const hay = disponibles(e.id).length > 0;
+        return (
+          <div class={`xg${e.id === actual ? ' open' : ''}`}>
+            <div class="xh">
+              {hay ? (
+                <>
+                  <a class="xs" href={`${base}/${e.id}/`}>{etiqueta(e)}</a>
+                  <button class="tg" aria-label="Capítulos"></button>
+                </>
+              ) : (
+                <span class="xs off">{etiqueta(e)} · por escribir</span>
+              )}
+            </div>
+            <div class="xk">
+              {e.capitulos.map((t, i) =>
+                disponibles(e.id).includes(i + 1) ? <a href={`${base}/${e.id}/#cap-${i}`}>{t}</a> : <span class="soft">{t}</span>
+              )}
+            </div>
+          </div>
+        );
+      })}
+    </nav>
+
+    <script>
+      const ix = document.getElementById('ix');
+      const ib = document.getElementById('ib');
+      document.addEventListener('click', (ev) => {
+        const t = ev.target as HTMLElement;
+        if (t.closest('#ib')) {
+          const on = ix!.classList.toggle('on');
+          ib!.setAttribute('aria-expanded', String(on));
+          return;
+        }
+        const tg = t.closest('.tg');
+        if (tg) { tg.closest('.xg')!.classList.toggle('open'); return; }
+        if (!t.closest('#ix')) ix!.classList.remove('on');
+        else if (t.closest('.xk a,.xs')) ix!.classList.remove('on');
+      });
+    </script>
+  </body>
 </html>

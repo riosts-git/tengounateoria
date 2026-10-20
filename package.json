@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
-    "sincronizar": "node scripts/sincronizar.mjs"
+    "preview": "astro preview"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.19",

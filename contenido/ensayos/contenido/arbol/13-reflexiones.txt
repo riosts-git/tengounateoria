@@ -1,0 +1,44 @@
+Borradores (fuera del libro)
+Graficar el árbol
+Es momento de que haga una confesión. Ustedes están viendo una versión muy masticada, pensada y redibujada de estos ensayos; pero originalmente eran todos bocetos. Y lo máximo que había llegado a dibujar era una lista de llaves, con la tristeza y la alegría sueltas, dibujadas por otro lado. No sabía dónde ponerlas.
+Y luego apareció Tomás
+Tomi es un amigo, ingeniero, al que suelo molestar cada vez que me quedo sin ideas. Y respecto a cómo graficar el modelo, no tenía ninguna. Así que nos juntamos a tomar una cerveza y le mostré mis llaves. Las miró un rato, tomó un trago y dijo:
+—Tenés tres problemas. Primero, necesitás un gráfico que vuelva. Que sea circular.
+—Sí, exacto —confirmé—. Y que se vea la relación entre la ira y el miedo, pero también entre la ira y la motivación.
+—Y a su vez tiene valencias… —siguió, garabateando sobre una servilleta—. Son dos… y dos… y dos… Salvo que…
+Al cabo de varias stouts y varios intentos fallidos, Tomi desistió de ayudarme y yo, de entender. Pero me quedé con la duda y me puse a averiguar qué eran las redes y los árboles de decisión. Y descubrí que cada forma de dibujarlo dejaba ver ciertas características del modelo y escondía otras.
+Primer intento: las bifurcaciones
+Busqué distintas formas de representar la repetición de opuestos y cómo estos generaban distintas emociones. Lo primero fue ordenar mis llaves en bifurcaciones, y así la alegría y la tristeza encontraron un lugar: abajo, después de actuar.
+Después le asigné a cada bifurcación la activación o la inhibición, y me quedó algo como el segundo dibujo.
+Pero así cada camino tenía su propia alegría y su propia tristeza: ocho desenlaces que se repetían. Y lo que yo quería era mostrar cómo esos arcos y desenlaces dialogaban entre sí y se integraban. Fue entonces cuando, casi de manera natural, apareció el árbol.
+La estructura de abajo
+La información no había cambiado, pero la perspectiva era otra. Las bifurcaciones marcaban los pasos; el árbol, en cambio, desnudaba la estructura subyacente: un engranaje de variables interconectadas y senderos cruzados.
+Aquel diseño sintetizaba de golpe lo que a mí me había costado páginas de apuntes desentrañar. Explicaba que la valencia puede ser tan intuitiva como instintiva. Demostraba que la ira y la motivación no son más que la misma expansión en dos arcos opuestos, del mismo modo que el miedo y la desmotivación son la misma contracción. Y abajo, desmarcadas del conflicto, la alegría y la tristeza aparecían solas: emociones que se consuman afuera, cuando el cuerpo las libera y las confronta con la realidad.
+Lo miré detenidamente, cambié el ángulo... y el patrón encajó. Era, de manera extraordinaria, el Árbol de la Vida de la Cábala.
+Una coincidencia que no busqué
+Durante siglos, pensadores, místicos y científicos se desvivieron por encontrar una gramática secreta que descifrara el orden oculto del mundo: la tetraktys de Pitágoras, la proporción áurea, la sucesión de Fibonacci. Yo reconozco esa obsesión. Pero esta vez no la estaba buscando.
+No había partido de la Cábala ni intentaba reproducir su estructura. Había llegado ahí siguiendo solo las necesidades de mi propio modelo: una fuerza que se polariza, oposiciones que se complementan, caminos que se separan y vuelven a unirse.
+Así que volví a dibujar el mío, esta vez con la forma completa del Árbol. Y quedaron dos lugares vacíos.
+Los dos lugares vacíos
+El primero estaba justo debajo de la alegría y la tristeza. En la Cábala se llama Yesod, el fundamento. ¿Qué venía después del cambio de estado, si ya no había más emociones?
+Y entonces me di cuenta de que, como mi modelo había nacido para graficar emociones, no estaba viendo el proceso completo. Le faltaba el aprendizaje. Yo, que llevaba páginas hablando de arcos, no había cerrado el mío: mi dibujo seguía terminando en la alegría y la tristeza, como aquellas llaves.
+Ganar o perder no es el final del recorrido. Después de la alegría o la tristeza viene la integración: comparamos lo que predijimos con lo que obtuvimos, actualizamos la predicción y la guardamos en la memoria. No caemos dos veces en el mismo chiste, ni repetimos un plato que estuvo feo, ni volvemos a confiar en quien nos traicionó.
+El segundo lugar, el último, la Cábala lo llama Maljut: el reino. Yo lo llamé trascendencia: lo que sale de nosotros y pasa al mundo. Lo que los demás vieron de esa emoción, la ley que aprendimos, la huella que dejamos. Y ahí, en el mundo, puede volverse el estímulo de alguien más: el comienzo de un arco nuevo.
+Así quedó. Diez nodos y uno más, la memoria, que no tiene lugar en la secuencia porque está conectada con todos.
+Con esos dos lugares, el dibujo por fin volvía sobre sí mismo, y mi arco se cerraba. Lo que Tomi me había dicho entre cervezas («necesitás un gráfico que vuelva») me lo terminó dando una tradición de ochocientos años.
+El árbol y la biología
+El árbol completo
+Leído de arriba hacia abajo, el árbol tiene siete niveles, uno por pregunta: ¿qué es esto?, ¿me atrae o me repele?, ¿puedo o no puedo?, ¿qué pasa cuando actúo?, ¿qué gané o qué perdí?, ¿qué aprendí?, ¿qué dejo?
+Leído en columnas, tiene tres ejes: el de la activación, el de la inhibición y el centro, donde la polaridad se resuelve.
+Y leído en franjas, cuatro planos, como los actos de una obra: el registro, el encuentro con la realidad, el resultado y la trascendencia.
+Nodo por nodo
+① Intensidad. Una descarga de atención en milésimas de segundo, antes de saber qué la produjo: los ojos se abren, el cuerpo se detiene. Es el instinto.
+② Activación. El cuerpo se abre hacia lo que lo atrae: se acerca, se orienta, se le hace agua la boca.
+③ Inhibición. El cuerpo frena: se retrae, se aparta, frunce el ceño. En la experiencia, el ③ no suele llegar después del ②: lo interrumpe. Vivimos con un deseo bajo, de fondo, que se bloquea cuando aparece un peligro o un problema.
+④ Expansión. El cuerpo cree que puede y se agranda: sube la energía, se acelera el pulso, la postura se abre.
+⑤ Contracción. El cuerpo cree que no puede y se repliega. Entre el ④ y el ⑤ están todas las respuestas ante una amenaza: la lucha, la huida, la parálisis o complacer a quien amenaza.
+⑥ Conflicto. La energía sale del cuerpo y se encuentra con la realidad: un grito, una palabra, un gesto, una conducta.
+⑦ y ⑧ Ganancia y pérdida. El cuerpo registra el resultado: se relaja y se abre, o se vuelve pesado y lento. Ni premio ni castigo: información.
+⑨ Integración. Buena parte de ese trabajo ocurre mientras dormimos, cuando el cerebro decide qué conservar del día.
+⑩ Trascendencia. Lo aprendido se vuelve ley («cuando pasa esto, pasa aquello») y alimenta las predicciones futuras. Es también lo que cambió en los demás: cómo nos perciben después de haber visto esa emoción.
+Ⓧ Memoria. La red de todo lo vivido. Atraviesa cada nodo: el asombro depende de lo que ya conocemos; el deseo y la aversión, de lo que aprendimos a valorar; la proyección, de lo que creemos poder hacer. Y alimenta a las emociones del arco abierto: mientras un arco no se cierra, la mente recorre una y otra vez la primera mitad del árbol, buscando información en la memoria.

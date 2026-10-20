@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>Tengo una teoría</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<style>
+:root{--bg:#efeae6;--paper:#f8f5f2;--ink:#1c1d18;--lime:#F2FDBF;--acc:#F2FDBF;--salmon:#e9b19a;--cream:#f3e7c9;--soft:#6f6a5e;--line:#d9d3cc;
+--sans:'Instrument Sans',system-ui,sans-serif;--hand:'Gloria Hallelujah','Comic Sans MS',cursive;--bar:56px}
+*{box-sizing:border-box}
+html{background:var(--bg);font-size:19px;scroll-behavior:smooth;scroll-padding-top:calc(var(--bar) + 12px)}
+body{margin:0;color:var(--ink);font:400 1rem/1.6 var(--sans);-webkit-font-smoothing:antialiased;padding-top:var(--bar)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--ink);outline-offset:3px;border-radius:6px}
+::selection{background:var(--acc)}
+.hand{font-family:var(--hand);font-weight:400}
+
+/* barra superior */
+.top{position:fixed;inset:0 0 auto;height:var(--bar);z-index:20;background:var(--bg);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 clamp(1rem,3vw,2rem)}
+.top a.brand{font:700 1.15rem/1 var(--sans);letter-spacing:-.02em;text-decoration:none}
+.top nav{display:flex;gap:.5rem;align-items:center}
+.pill{font:600 .78rem/1 var(--sans);letter-spacing:.02em;text-decoration:none;background:var(--acc);border:0;border-radius:32px;padding:.7rem 1.05rem;color:var(--ink);cursor:pointer}
+.pill.ghost{background:none;border:1px solid var(--ink)}
+#prog{position:fixed;top:calc(var(--bar) - 1px);left:0;right:0;height:3px;background:var(--acc);transform-origin:0 50%;transform:scaleX(0);z-index:21}
+
+/* portada */
+.home{max-width:74rem;margin:0 auto;padding:0 clamp(1rem,3vw,2rem)}
+.hero{padding:clamp(3rem,10vh,6rem) 0 3.5rem;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:2rem 3.5rem;align-items:end}
+.hero h1{font:600 clamp(3.4rem,10vw,8rem)/.92 var(--sans);letter-spacing:-.045em;margin:0}
+.hero h1 span{position:relative;display:inline-block}
+.hero h1 svg{position:absolute;left:-2%;bottom:-.12em;width:104%;height:.26em;overflow:visible}
+.hero p{font-size:clamp(1.15rem,2vw,1.45rem);line-height:1.4;margin:0;max-width:30rem}
+.hero .nota{display:block;margin-top:1.4rem;font-size:.95rem;color:var(--soft);transform:rotate(-1.5deg)}
+.shelf{display:grid;gap:1rem;padding-bottom:6rem}
+.book{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:1rem 3.5rem;align-items:end;text-decoration:none;background:var(--tint);border-radius:32px;padding:clamp(1.5rem,4vw,3rem);min-height:15rem;transition:transform .25s}
+.book:hover{transform:translateY(-4px)}
+.book h2{font:600 clamp(2rem,5vw,3.6rem)/1 var(--sans);letter-spacing:-.04em;margin:0}
+.book p{margin:0 0 1rem;font-size:1.1rem;line-height:1.45}
+.book .meta{font:.9rem var(--hand);color:var(--ink)}
+.book.draft{border:1px dashed var(--soft);background:none}
+footer.foot{border-top:1px solid var(--line);padding:2rem 0 3rem;font-size:.85rem;color:var(--soft)}
+
+/* lector a pantalla dividida */
+.reader{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.stage{position:sticky;top:var(--bar);height:calc(100svh - var(--bar));padding:.75rem;display:flex}
+.stage .card{flex:1;background:var(--tint);border-radius:32px;display:flex;flex-direction:column;overflow:hidden;min-height:0}
+.frames{flex:1;position:relative;min-height:0;margin:1.5rem 1.5rem 0}
+.fig{position:absolute;inset:0;display:grid;place-items:center;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .3s ease,visibility 0s linear .3s}
+.fig.on{opacity:1;visibility:visible;transition:opacity .5s ease .3s,visibility 0s linear .3s}
+.fig svg{max-width:100%;max-height:100%;width:auto;height:auto}
+.fig svg text.hand{font-family:var(--hand)}
+.legend{padding:1rem 1.5rem 1.25rem}
+.cap{min-height:2.6em;font:.95rem/1.35 var(--hand);margin:0 0 .9rem}
+.ticks{display:grid;grid-template-columns:repeat(var(--n),1fr);gap:4px}
+.ticks button{height:22px;border:0;background:none;padding:9px 0;cursor:pointer;position:relative}
+.ticks button::before{content:"";position:absolute;left:0;right:0;top:9px;height:4px;border-radius:4px;background:rgba(28,29,24,.18)}
+.ticks button.pass::before{background:rgba(28,29,24,.55)}
+.ticks button.cur::before{background:var(--ink);top:7px;height:8px}
+
+.text{padding:0 clamp(1.5rem,5vw,4.5rem);max-width:44rem}
+.blk{min-height:70svh;padding:12svh 0 8svh}
+.blk.first{padding-top:22svh}
+.blk p{font-size:1.1rem;line-height:1.62;margin:0 0 1.15em}
+.blk h4{font:600 1.55rem/1.15 var(--sans);letter-spacing:-.03em;margin:0 0 1rem}
+.blk em{font-style:italic}.blk strong{font-weight:600;background:linear-gradient(transparent 55%,var(--acc) 55%)}
+.ch{margin:0 0 2.2rem}
+.ch .nota{display:inline-block;background:var(--acc);border-radius:32px;padding:.35rem .9rem;font-size:.8rem;transform:rotate(-1.5deg)}
+.ch h2{font:600 clamp(2.3rem,5vw,3.6rem)/1 var(--sans);letter-spacing:-.04em;margin:1rem 0 0}
+.title-block h1{font:600 clamp(2.8rem,6vw,4.8rem)/.95 var(--sans);letter-spacing:-.045em;margin:0 0 1.2rem}
+.title-block p{font-size:1.3rem;line-height:1.4;margin:0 0 1.5rem}
+.title-block .nota{font-size:.95rem;color:var(--soft)}
+.next{padding:20vh 0 14vh}
+.next h3{font:600 1.6rem/1.1 var(--sans);letter-spacing:-.03em;margin:0 0 1rem}
+.next a{display:block;padding:1rem 0;border-top:1px solid var(--line);text-decoration:none;font:600 1.15rem var(--sans)}
+.next a small{display:block;font:400 .9rem var(--hand);color:var(--soft);margin-top:.2rem}
+
+@media(max-width:860px){
+ html{font-size:18px}
+ .hero,.book{grid-template-columns:1fr}
+ .reader{display:block}
+ .stage{height:44svh;padding:.5rem;z-index:5;background:var(--bg)}
+ .stage .card{border-radius:24px}
+ .frames{margin:.9rem .9rem 0}
+ .legend{padding:.5rem .9rem .8rem}
+ .cap{min-height:0;margin-bottom:.4rem;font-size:.85rem}
+ .blk{min-height:60svh;padding:7svh 0}
+ .blk.first{padding-top:9svh}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.fig,.fig.on,.book{transition:none}}
+/* escenas: el texto se reparte a lo largo de sus figuras */
+.scene{min-height:calc(var(--n)*42svh);display:flex;flex-direction:column;justify-content:space-around;padding:8svh 0}
+.scene.head{min-height:70svh;justify-content:center}
+.scene p{font-size:1.1rem;line-height:1.62;margin:0 0 1.15em}
+.scene h4{font:600 1.55rem/1.15 var(--sans);letter-spacing:-.03em;margin:0 0 1rem}
+.scene sup{font-size:.7em;font-weight:600;padding-left:.1em}
+.soft{color:var(--soft)}
+.fig.cv>div{text-align:center;padding:0 2rem}
+.fig.cv b{display:block;font:600 clamp(1.8rem,3.4vw,3rem)/1.05 var(--sans);letter-spacing:-.04em;margin-top:.8rem}
+.fig.cv .nota{font-size:.95rem}
+.fig svg{width:100%;height:100%}
+/* portada: lista de capítulos */
+.book h2 a{text-decoration:none}
+.book .nota{font-size:.9rem;display:block;margin-bottom:.4rem}
+.book ol{margin:0;padding:0;list-style:none;font-size:.98rem;line-height:1.35}
+.book ol li{padding:.3rem 0;border-top:1px solid rgba(28,29,24,.2)}
+.book ol a{text-decoration:none}.book ol a:hover{text-decoration:underline}
+.book .meta{align-self:end}
+/* índice */
+#ix{position:fixed;right:clamp(1rem,3vw,2rem);top:calc(var(--bar) + 8px);z-index:25;width:min(23rem,calc(100% - 2rem));max-height:75svh;overflow:auto;background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:.6rem;opacity:0;pointer-events:none;transform:translateY(-6px);transition:.2s}
+#ix.on{opacity:1;pointer-events:auto;transform:none}
+#ix .xh{display:flex;align-items:center;border-radius:10px}#ix .xh:hover{background:var(--bg)}
+#ix .xs{flex:1;padding:.6rem .7rem;font:600 .95rem/1.25 var(--sans);text-decoration:none}
+#ix .xs.off{color:var(--soft);font-weight:400}
+#ix .tg{width:2.4rem;height:2.4rem;border:0;background:none;cursor:pointer;display:grid;place-items:center}
+#ix .tg::before{content:"";width:.5rem;height:.5rem;border-right:2px solid var(--ink);border-bottom:2px solid var(--ink);transform:rotate(-45deg);transition:transform .2s}
+#ix .xg.open .tg::before{transform:rotate(45deg)}
+#ix .xk{display:none;padding:0 0 .5rem .7rem}#ix .xg.open .xk{display:block}
+#ix .xk a{display:block;padding:.4rem .7rem;font-size:.88rem;line-height:1.3;text-decoration:none;border-radius:8px}
+#ix .xk a:hover{background:var(--bg)}
+</style>
+</head>
+<body>
+<div class="top">
+  <a class="brand" href="#/">TENGO UNA TEORÍA.</a>
+  <nav id="nav"></nav>
+</div>
+<div id="prog"></div>
+<main id="app"></main>
+
+<script>
+/* ============================================================
+   1) CONTENIDO
+   Cada capítulo puede llevar `doc`: pega el texto tal como sale de tu
+   documento (líneas sueltas = párrafos; una línea corta sin punto final
+   = subtítulo; «🖼 Figura: ruta.svg» = figura). Sin `doc` aparece un borrador.
+   Las figuras se cargan desde la ruta tal cual, relativa a BASE.
+   ============================================================ */
+const BASE='';
+const R=['','I','II','III','IV','V','VI'];
+
+const c=t=>({t});
+const ESSAYS=[
+ {id:'intuicion',n:1,title:'Intuición',tint:'#F2FDBF',acc:'#F2FDBF',ch:[
+  c('Mi obsesión por las palabras'),c('Intuición'),
+  c('De la corazonada a la intuición'),c('¿Cómo saber lo que no sé?'),c('Intuición y sesgo'),c('Reflexiones'),c('Bibliografía y Notas')]},
+ {id:'emociones',n:2,title:'Emociones Arquetípicas',tint:'#EABCB6',acc:'#EABCB6',ch:[
+  c('Qué tema aburrido (este faltaría escribirlo)'),c('¿Qué son las emociones?'),c('El arco'),c('¿Qué son las emociones arquetípicas?'),
+  c('Sentimientos'),c('Estados de ánimo'),c('Un género por emoción'),c('Reflexiones'),c('Bibliografía y Notas')]},
+ {id:'arbol',n:3,title:'Árbol de Arquetipos',tint:'#f3e7c9',acc:'#F3E7C9',ch:[
+  c('El árbol y el Árbol de la Vida de la cábala'),c('El árbol y la manifestación creativa'),c('El árbol y el camino del héroe'),c('El árbol y la vida humana'),
+  c('El árbol y el hermetismo'),c('El árbol y el budismo'),c('Las ruedas'),c('El árbol y el cuerpo'),c('El viaje del pueblo judío visto como mito'),
+  c('Arquetipos'),c('Principales coincidencias'),c('Principales diferencias'),c('Reflexiones'),c('Bibliografía y Notas')]},
+ {id:'colectiva',n:4,title:'Consciencia Colectiva',tint:'#DCD3F0',acc:'#DCD3F0',ch:[c('Consciencia')]},
+ {id:'tarot',n:5,title:'Los Arquetipos del Tarot',tint:'#F4D3E3',acc:'#F4D3E3',ch:[c('Tarot: el mapa de las bifurcaciones'),c('La puesta final: el mapa de las bifurcaciones')]},
+ {id:'afuera',n:6,title:'Cosas que quedaron afuera',tint:'#CFE9DD',acc:'#CFE9DD',ch:[
+  c('Más sobre Intuición'),c('Más sobre Emociones'),c('Más sobre Arquetipos'),c('Humor'),c('Género y Sesgos'),c('Creatividad y Arte'),c('Otros')]}
+];
+const label=e=>`Ensayo ${R[e.n]}${e.title?' · '+e.title:''}`;
+
+/* ============================================================
+   2) MOTOR
+   ============================================================ */
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const app=$('#app'), nav=$('#nav'), prog=$('#prog');
+let onScroll=null, curId='';
+
+const slug=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+function parse(txt,base){
+  const L=txt.trim().split('\n').map(s=>s.trim()).filter(Boolean), sc=[];
+  let cur,run=false,dlg=false;
+  const open=()=>{cur={figs:[],h:[],t:''};sc.push(cur)};
+  open();
+  for(const l of L){
+    const m=l.match(/^🖼 Figura: (.+)$/);
+    if(m){ if(!run&&cur.h.length)open(); run=true; cur.figs.push(m[1]); continue }
+    run=false;
+    const t=l.replace(/\[\^(\d+)\]/g,'<sup>$1</sup>');
+    if(l.length<64&&!/[.?!…»):]$/.test(l.replace(/\[\^\d+\]/g,''))&&l[0]!=='—'){
+      if(cur.h.length)open(); cur.t=cur.t||slug(l); cur.h.push(`<h4>${t}</h4>`); dlg=false }
+    else if(l[0]==='—'&&dlg){cur.h[cur.h.length-1]=cur.h.at(-1).replace('</p>',`<br>${t}</p>`)}
+    else{cur.h.push(`<p>${t}</p>`);dlg=l[0]==='—'}
+  }
+  const used=new Set();
+  return sc.map(s=>{
+    if(!s.figs.length){const b=`${base}_${s.t||'inicio'}`;let n=b,k=2;while(used.has(n))n=`${b}-${k++}`;used.add(n);s.figs=[n+'.svg']}
+    return {figs:s.figs,html:s.h.join('')};
+  });
+}
+const PH=src=>`<svg viewBox="0 0 400 300" role="img" aria-label="Marcador de ilustración"><rect x="6" y="6" width="388" height="288" rx="26" fill="none" stroke="#1c1d18" stroke-width="1.5" stroke-dasharray="6 9"/><text class="hand" x="200" y="146" text-anchor="middle" font-size="22" fill="#1c1d18">aquí va tu svg</text><text x="200" y="176" text-anchor="middle" font-size="11" fill="#6f6a5e" font-family="Instrument Sans,sans-serif">${src.split('/').pop()}</text></svg>`;
+function load(f){
+  if(!f||f.dataset.l||!f.dataset.src)return; f.dataset.l=1;
+  fetch(BASE+f.dataset.src).then(r=>r.ok?r.text():Promise.reject()).then(t=>{if(/<svg/.test(t))f.innerHTML=t}).catch(()=>{});
+}
+const indexHTML=cur=>ESSAYS.map(e=>`<div class="xg${e.id===cur?' open':''}"><div class="xh">${e.ch.length?`<a class="xs" href="#/e/${e.id}">${label(e)}</a><button class="tg" aria-label="Capítulos"></button>`:`<span class="xs off">${label(e)} · por escribir</span>`}</div><div class="xk">${e.ch.map((x,i)=>`<a href="#/e/${e.id}/${i}">${x.t}</a>`).join('')}</div></div>`).join('');
+function cleanup(){ if(onScroll){removeEventListener('scroll',onScroll);onScroll=null} prog.style.transform='scaleX(0)'; $('#ix').classList.remove('on'); }
+function chrome(cur,back){
+  nav.innerHTML=(back?'<a class="pill ghost" href="#/">Ensayos</a>':'')+'<button class="pill" id="ib" aria-expanded="false">Índice</button>';
+  $('#ix').innerHTML=indexHTML(cur);
+}
+
+function home(){
+  cleanup(); curId=''; document.documentElement.style.removeProperty('--acc'); document.title='Tengo una teoría'; chrome('',false);
+  app.innerHTML=`<div class="home">
+   <section class="hero">
+    <h1>Tengo<br>una <span>teoría<svg viewBox="0 0 300 20" preserveAspectRatio="none"><path d="M3 12 C 40 2, 70 18, 110 9 S 190 3, 230 11 S 280 14, 297 6" fill="none" stroke="#F2FDBF" stroke-width="8" stroke-linecap="round"/></svg></span></h1>
+    <div><p>Durante años enloquecí a mis amigos con mi obsesión por las palabras y su significado. Así que se me ocurrió darles un respiro y juntar todas aquí.</p><span class="nota hand">Está pensado para leerse en orden ↓</span></div>
+   </section>
+   <section class="shelf" aria-label="Ensayos">
+    ${ESSAYS.map(e=>`<div class="book${e.ch.length?'':' draft'}" style="--tint:${e.tint}">
+      <div><span class="nota hand">Ensayo ${R[e.n]}</span><h2>${e.ch.length?`<a href="#/e/${e.id}">${e.title}</a>`:(e.title||'Por definir')}</h2></div>
+      ${e.ch.length?`<ol>${e.ch.map((x,i)=>`<li><a href="#/e/${e.id}/${i}">${x.t}</a></li>`).join('')}</ol>`:'<p class="hand meta">por escribir</p>'}</div>`).join('')}
+   </section>
+   <footer class="foot">© Tengo una teoría</footer></div>`;
+  scrollTo(0,0);
+}
+
+async function essay(id,N){
+  const e=ESSAYS.find(x=>x.id===id); if(!e||!e.ch.length) return home();
+  cleanup(); curId=id; document.documentElement.style.setProperty('--acc',e.acc); document.title=label(e)+' · Tengo una teoría'; chrome(id,true);
+  await Promise.all(e.ch.map(async(x,i)=>{if(x.doc==null){try{const r=await fetch(BASE+'contenido/'+e.id+'/'+String(i+1).padStart(2,'0')+'-'+slug(x.t)+'.txt');if(r.ok)x.doc=await r.text()}catch(_){}x.doc=x.doc||''}}));
+  const n=e.ch.length, figs=[], body=[];
+  e.ch.forEach((ch,ci)=>{
+    figs.push(`<figure class="fig cv" data-k="c${ci}"><div><span class="nota hand">capítulo ${ci+1}</span><b>${ch.t}</b></div></figure>`);
+    body.push(`<section class="scene head" data-c="${ci}" data-keys="c${ci}" style="--n:1"><header class="ch" id="cap-${ci}"><span class="nota hand">capítulo ${ci+1}</span><h2>${ch.t}</h2></header></section>`);
+    const sc=ch.doc.trim()?parse(ch.doc,`svg/${e.id}/${slug(ch.t)}`):[{figs:[],html:'<p class="soft">Texto por escribir. Pégalo en el campo <code>doc</code> de este capítulo.</p>'}];
+    sc.forEach((s,si)=>{
+      const ks=s.figs.map((src,fi)=>{const k=`f${ci}-${si}-${fi}`;figs.push(`<figure class="fig" data-k="${k}" data-src="${src}">${PH(src)}</figure>`);return k});
+      body.push(`<section class="scene" data-c="${ci}" data-keys="${ks.join(',')||'c'+ci}" style="--n:${Math.max(1,ks.length)}">${s.html}</section>`);
+    });
+  });
+  const nx=ESSAYS.find(x=>x.n>e.n&&x.ch.length);
+  app.innerHTML=`<div class="reader" style="--tint:${e.tint}">
+   <aside class="stage" aria-label="Ilustraciones"><div class="card">
+     <div class="frames">${figs.join('')}</div>
+     <div class="legend"><p class="cap" id="cap" aria-live="polite"></p>
+      <div class="ticks" style="--n:${n}">${e.ch.map((x,i)=>`<button data-go="${i}" aria-label="Capítulo ${i+1}: ${x.t}" title="${i+1}. ${x.t}"></button>`).join('')}</div></div>
+   </div></aside>
+   <article class="text">
+     <section class="blk title-block" style="min-height:calc(100svh - var(--bar));display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:12svh">
+       <span class="nota hand">Ensayo ${R[e.n]}</span><h1>${e.title}</h1><span class="nota hand">${n} capítulos · seguí bajando</span></section>
+     ${body.join('')}
+     <div class="next">${nx?`<h3>Seguir leyendo</h3><a href="#/e/${nx.id}">${label(nx)}</a>`:''}<a href="#/">Volver a todos los ensayos</a></div>
+   </article></div>`;
+
+  const fe=$$('.fig'), ticks=$$('.ticks button'), capEl=$('#cap'), scenes=$$('.scene');
+  let cur='';
+  const show=(k,c)=>{
+    if(k===cur)return; cur=k;
+    fe.forEach((f,i)=>{const on=f.dataset.k===k;f.classList.toggle('on',on);if(on){load(f);load(fe[i+1])}});
+    capEl.textContent=`${c+1}. ${e.ch[c].t}`;
+    ticks.forEach((t,i)=>{t.classList.toggle('cur',i===c);t.classList.toggle('pass',i<c)});
+  };
+  const tick=()=>{
+    const y=innerHeight*.5;
+    for(const s of scenes){const r=s.getBoundingClientRect();
+      if(r.top<=y&&r.bottom>y){const ks=s.dataset.keys.split(',');show(ks[Math.min(ks.length-1,Math.floor((y-r.top)/r.height*ks.length))],+s.dataset.c);break}}
+    const h=document.documentElement;prog.style.transform=`scaleX(${scrollY/Math.max(1,h.scrollHeight-innerHeight)})`;
+  };
+  let raf=0; onScroll=()=>{cancelAnimationFrame(raf);raf=requestAnimationFrame(tick)};
+  addEventListener('scroll',onScroll,{passive:true});
+  ticks.forEach(t=>t.addEventListener('click',()=>$('#cap-'+t.dataset.go).scrollIntoView({behavior:'smooth',block:'start'})));
+  scrollTo({top:0,behavior:'instant'}); tick();
+  if(N!=null)$('#cap-'+N)?.scrollIntoView({behavior:'instant',block:'start'});
+}
+
+document.body.insertAdjacentHTML('beforeend','<nav id="ix" aria-label="Índice"></nav>');
+document.addEventListener('click',ev=>{
+  const ix=$('#ix');
+  if(ev.target.closest('#ib')){const on=ix.classList.toggle('on');$('#ib').setAttribute('aria-expanded',on);return}
+  const tg=ev.target.closest('.tg'); if(tg){tg.closest('.xg').classList.toggle('open');return}
+  if(!ev.target.closest('#ix'))ix.classList.remove('on'); else if(ev.target.closest('.xk a,.xs'))ix.classList.remove('on');
+});
+function route(){
+  const m=location.hash.match(/^#\/e\/([\w-]+)(?:\/(\d+))?/);
+  if(!m)return home();
+  if(m[1]===curId&&m[2]!=null){$('#cap-'+m[2])?.scrollIntoView({behavior:'smooth',block:'start'});return}
+  essay(m[1],m[2]);
+}
+addEventListener('hashchange',route); route();
+</script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+---
+import Base from '../layouts/Base.astro';
+import { ENSAYOS, ROMANO, etiqueta, slug } from '../data/ensayos';
+import { getCollection } from 'astro:content';
+import { createMarkdownProcessor } from '@astrojs/markdown-remark';
+
+export async function getStaticPaths() {
+  const caps = await getCollection('capitulos');
+  return ENSAYOS.filter((e) => caps.some((c) => c.data.ensayo === e.id)).map((e) => ({ params: { ensayo: e.id }, props: { id: e.id } }));
+}
+
+const { id } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const ensayo = ENSAYOS.find((e) => e.id === id)!;
+const siguiente = ENSAYOS.find((e) => e.n > ensayo.n && e.capitulos.length > 0);
+
+// Dibujos: src/assets/svg/<ensayo>/<capitulo>_<subtitulo>.svg (se incrustan, como en el HTML de trabajo)
+const svgs = import.meta.glob('../assets/svg/**/*.svg', { query: '?raw', import: 'default', eager: true }) as Record<string, string>;
+const svgPorNombre: Record<string, string> = Object.fromEntries(
+  Object.entries(svgs).map(([ruta, s]) => [ruta.split('/').pop()!.replace('.svg', ''), s])
+);
+
+const proc = await createMarkdownProcessor();
+const entradas = (await getCollection('capitulos')).filter((c) => c.data.ensayo === id).sort((a, b) => a.data.orden - b.data.orden);
+
+const notas: string[] = [];
+const capitulos = [];
+for (const entrada of entradas) {
+  let cuerpo = entrada.body ?? '';
+  cuerpo = cuerpo.replace(/^\[\^(\d+)\]:\s*(.*)$/gm, (_m, n, t) => { notas[Number(n) - 1] = t; return ''; });
+  cuerpo = cuerpo.replace(/\[\^(\d+)\]/g, '<sup>$1</sup>');
+  const partes = cuerpo.split(/^## /m);
+  const escenas = [];
+  for (let i = 0; i < partes.length; i++) {
+    const parte = partes[i];
+    if (i === 0 && !parte.trim()) continue;
+    let titulo = '';
+    let md = parte;
+    if (i > 0) {
+      const salto = parte.indexOf('\n');
+      titulo = parte.slice(0, salto).trim();
+      md = parte.slice(salto + 1);
+    }
+    const html = (titulo ? `<h4>${titulo}</h4>` : '') + (await proc.render(md)).code;
+    const clave = `${slug(entrada.data.title)}_${titulo ? slug(titulo) : 'inicio'}`;
+    escenas.push({ html, svg: svgPorNombre[clave] ?? '' });
+  }
+  capitulos.push({ titulo: entrada.data.title, escenas });
+}
+const n = capitulos.length;
+---
+<Base title={etiqueta(ensayo)} acc={ensayo.acc} volver actual={ensayo.id}>
+  <div class="reader" style={`--tint:${ensayo.tint}`}>
+    <aside class="stage" aria-label="Ilustraciones">
+      <div class="card">
+        <div class="frames">
+          {capitulos.map((c, ci) => (
+            <>
+              <figure class="fig cv" data-k={`c${ci}`}>
+                <div><span class="nota hand">capítulo {ci + 1}</span><b>{c.titulo}</b></div>
+              </figure>
+              {c.escenas.map((s, si) => <figure class="fig" data-k={`f${ci}-${si}`} set:html={s.svg} />)}
+            </>
+          ))}
+        </div>
+        <div class="legend">
+          <p class="cap" id="cap" aria-live="polite"></p>
+          <div class="ticks" style={`--n:${n}`}>
+            {capitulos.map((c, i) => <button data-go={i} aria-label={`Capítulo ${i + 1}: ${c.titulo}`} title={`${i + 1}. ${c.titulo}`}></button>)}
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <article class="text">
+      <section class="blk title-block" style="min-height:calc(100svh - var(--bar));display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:12svh">
+        <span class="nota hand">Ensayo {ROMANO[ensayo.n]}</span>
+        <h1>{ensayo.title}</h1>
+        <span class="nota hand">{n} {n === 1 ? 'capítulo' : 'capítulos'} · seguí bajando</span>
+      </section>
+
+      {capitulos.map((c, ci) => (
+        <>
+          <section class="scene head" data-c={ci} data-keys={`c${ci}`} style="--n:1">
+            <header class="ch" id={`cap-${ci}`}>
+              <span class="nota hand">capítulo {ci + 1}</span>
+              <h2>{c.titulo}</h2>
+            </header>
+          </section>
+          {c.escenas.map((s, si) => (
+            <section class="scene" data-c={ci} data-keys={`f${ci}-${si}`} style="--n:1" set:html={s.html} />
+          ))}
+        </>
+      ))}
+
+      {notas.length > 0 && (
+        <section class="scene notas" data-c={n - 1} data-keys={`f${n - 1}-${capitulos[n - 1].escenas.length - 1}`} style="--n:1">
+          <h4>Notas</h4>
+          <ol>{notas.map((t) => <li>{t}</li>)}</ol>
+        </section>
+      )}
+
+      <div class="next">
+        {siguiente && (<><h3>Seguir leyendo</h3><a href={`${base}/${siguiente.id}/`}>{etiqueta(siguiente)}</a></>)}
+        <a href={`${base}/`}>Volver a todos los ensayos</a>
+      </div>
+    </article>
+  </div>
+
+  <script>
+    const figs = [...document.querySelectorAll<HTMLElement>('.fig')];
+    const ticks = [...document.querySelectorAll<HTMLElement>('.ticks button')];
+    const capEl = document.getElementById('cap')!;
+    const scenes = [...document.querySelectorAll<HTMLElement>('.scene')];
+    const prog = document.getElementById('prog')!;
+    let actual = '';
+
+    const mostrar = (k: string, c: number) => {
+      if (k === actual) return;
+      actual = k;
+      figs.forEach((f) => f.classList.toggle('on', f.dataset.k === k));
+      capEl.textContent = ticks[c]?.title ?? '';
+      ticks.forEach((t, i) => { t.classList.toggle('cur', i === c); t.classList.toggle('pass', i < c); });
+    };
+    const tick = () => {
+      const y = innerHeight * 0.5;
+      for (const s of scenes) {
+        const r = s.getBoundingClientRect();
+        if (r.top <= y && r.bottom > y) { mostrar(s.dataset.keys!.split(',')[0], Number(s.dataset.c)); break; }
+      }
+      const h = document.documentElement;
+      prog.style.transform = `scaleX(${scrollY / Math.max(1, h.scrollHeight - innerHeight)})`;
+    };
+    let raf = 0;
+    addEventListener('scroll', () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(tick); }, { passive: true });
+    ticks.forEach((t) => t.addEventListener('click', () => document.getElementById('cap-' + t.dataset.go)?.scrollIntoView({ behavior: 'smooth', block: 'start' })));
+    tick();
+  </script>
+</Base>

@@ -1,110 +1,45 @@
 ---
 import Base from '../layouts/Base.astro';
-import { getPostsByCat, bajada, entradaDe } from '../lib/posts';
-import { SITE, LIBROS, HOJAS, slugify, tituloPlano, u } from '../config';
-import ArbolLineas from '../components/ArbolLineas.astro';
-const cats = await getPostsByCat();
-const libros = await Promise.all(LIBROS.map(async (l) => ({ ...l, href: await entradaDe(l), posts: cats.find((c) => c.name === l.cat)?.posts ?? [] })));
-const obs = cats.find((c) => c.name === 'Observaciones')?.posts ?? [];
-// Las micro observaciones de una misma hoja se muestran como una sola ficha, en el lugar de la primera
-const ideas = obs.flatMap((p, i) => {
-  if (!p.hoja || !HOJAS[p.hoja]) return [{ title: p.title, tags: p.tags, href: p.href, bajada: bajada(p) }];
-  if (obs.findIndex((q) => q.hoja === p.hoja) !== i) return [];
-  const de = obs.filter((q) => q.hoja === p.hoja);
-  return [{ title: HOJAS[p.hoja].titulo, tags: [...new Set(de.flatMap((q) => q.tags))], href: u(`hojas/${p.hoja}/`), bajada: `${de.length === 1 ? '1 nota' : `${de.length} notas`} · ${HOJAS[p.hoja].bajada}` }];
-});
-const jsonLd = { '@context': 'https://schema.org', '@type': 'WebSite', name: SITE.title, description: SITE.description, inLanguage: 'es' };
-const cuantos = (n: number) => (n === 1 ? '1 apunte' : `${n} apuntes`);
-// La pregunta que responde cada cuaderno (se muestra bajo la moleskine)
-const PREGUNTA: Record<string, string> = {
-  'Tengo una teoría': 'Cómo procesamos cada experiencia: de la intuición a las emociones, y de las emociones al árbol.',
-};
+import { ENSAYOS, ROMANO } from '../data/ensayos';
+import { getCollection } from 'astro:content';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const caps = await getCollection('capitulos');
+const hayCapitulo = (id: string, orden: number) => caps.some((c) => c.data.ensayo === id && c.data.orden === orden);
 ---
-<Base jsonLd={jsonLd}>
+<Base>
   <div class="home">
-    <!-- Portada del estilo «libro»: el libro como objeto, con dos citas a los costados (oculta en el estilo normal) -->
-    <section class="portada-libro">
-      <svg class="garabatos izq" viewBox="0 0 300 450" aria-hidden="true"><path d="M298 70 C 262 60, 236 52, 202 62" fill="none" stroke="#A9B1B4" stroke-width="2" stroke-linecap="round"/><path d="M210.5 59.1 L202 62 L209.0 67.6" fill="none" stroke="#A9B1B4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><text x="120" y="72" text-anchor="middle" class="m" font-size="30" fill="#A9B1B4" transform="rotate(-7 120 72)">¿qué es</text><text x="124" y="104" text-anchor="middle" class="m" font-size="34" fill="#A9B1B4" transform="rotate(-5 124 104)">la intuición?</text><path d="M298 236 C 270 250, 252 258, 228 254" fill="none" stroke="#A9B1B4" stroke-width="1.5" stroke-linecap="round"/><path d="M235.5 249.0 L228 254 L236.2 257.6" fill="none" stroke="#A9B1B4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><text x="150" y="250" text-anchor="middle" class="m" font-size="22" fill="#A9B1B4" transform="rotate(4 150 250)">el camino</text><text x="150" y="274" text-anchor="middle" class="m" font-size="22" fill="#A9B1B4" transform="rotate(4 150 274)">del héroe</text><path d="M108 284 q44 5 88 -2" fill="none" stroke="#A9B1B4" stroke-width="1.6" stroke-linecap="round" transform="rotate(4 152 284)"/><path d="M296 352 C 270 372, 246 392, 214 396" fill="none" stroke="#A9B1B4" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="4 4"/><path d="M221.0 390.4 L214 396 L222.5 398.9" fill="none" stroke="#A9B1B4" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="166" cy="400" rx="48" ry="24" fill="none" stroke="#A9B1B4" stroke-width="1.5" transform="rotate(-6 166 400)"/><path d="M208 378 q8 -2 10 6" fill="none" stroke="#A9B1B4" stroke-width="1.5" stroke-linecap="round" transform="rotate(-6 166 400)"/><text x="166" y="408" text-anchor="middle" class="m" font-size="20" fill="#A9B1B4" transform="rotate(-6 166 408)">¿el tarot?</text></svg>
-      <a class="objeto portada-serpiente" href={libros[0].href}><strong class="tit-mano">Tengo una Teoría…</strong></a>
-      <svg class="garabatos der" viewBox="0 0 300 450" aria-hidden="true"><path d="M2 86 C 36 74, 62 70, 94 78" fill="none" stroke="#A9B1B4" stroke-width="2" stroke-linecap="round"/><path d="M85.3 80.1 L94 78 L87.5 71.8" fill="none" stroke="#A9B1B4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><text x="160" y="90" text-anchor="middle" class="m" font-size="32" fill="#A9B1B4" transform="rotate(3 160 90)">emociones</text><path d="M150 104 C 166 124, 164 138, 148 152" fill="none" stroke="#A9B1B4" stroke-width="1.6" stroke-linecap="round"/><path d="M146.6 143.1 L148 152 L154.8 146.1" fill="none" stroke="#A9B1B4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><text x="178" y="176" text-anchor="middle" class="m" font-size="24" fill="#A9B1B4" transform="rotate(-6 178 176)">arquetipos</text><path d="M168 190 C 184 206, 182 220, 168 232" fill="none" stroke="#A9B1B4" stroke-width="1.6" stroke-linecap="round"/><path d="M166.6 223.1 L168 232 L174.8 226.1" fill="none" stroke="#A9B1B4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="176" cy="256" rx="40" ry="24" fill="none" stroke="#A9B1B4" stroke-width="1.5" transform="rotate(4 176 256)"/><path d="M210 234 q8 -2 10 6" fill="none" stroke="#A9B1B4" stroke-width="1.5" stroke-linecap="round" transform="rotate(4 176 256)"/><text x="176" y="266" text-anchor="middle" class="m" font-size="28" fill="#A9B1B4" transform="rotate(2 176 266)">árbol</text><path d="M210 276 C 232 296, 236 312, 224 330" fill="none" stroke="#A9B1B4" stroke-width="1.3" stroke-linecap="round" stroke-dasharray="3 4"/><path d="M221.9 321.3 L224 330 L230.2 323.5" fill="none" stroke="#A9B1B4" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><text x="232" y="354" text-anchor="middle" class="m" font-size="18" fill="#A9B1B4" transform="rotate(-4 232 354)">árbol de la vida</text><path d="M4 402 C 30 412, 52 414, 80 410" fill="none" stroke="#A9B1B4" stroke-width="1.2" stroke-linecap="round"/><path d="M72.5 415.0 L80 410 L71.8 406.4" fill="none" stroke="#A9B1B4" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><text x="96" y="416" text-anchor="start" class="m" font-size="17" fill="#A9B1B4" transform="rotate(0 96 416)">etc.</text></svg>
-      <p class="leer"><a href={libros[0].href}>Empezar a leer</a> · <a href="#observaciones">Leer una observación</a></p>
-    </section>
-    <!-- Portada: a la izquierda el texto, a la derecha la moleskine grande del libro -->
-    <header class="portada">
-      <div class="portada-txt">
-        <h1>Tengo una teoría.</h1>
-        <p>Tantos años investigué y enloquecí a mis amigos con mis teorías sobre la intuición, las emociones y los arquetipos, que decidí darles un respiro y ponerlas todas aquí.</p>
-        <div class="botones">
-          <a class="boton principal" href={libros[0].href}>Empezar a leer</a>
-          <a class="boton" href="#observaciones">Leer una observación</a>
-        </div>
+    <section class="hero">
+      <h1>
+        Tengo<br />una <span>teoría<svg viewBox="0 0 300 20" preserveAspectRatio="none"><path d="M3 12 C 40 2, 70 18, 110 9 S 190 3, 230 11 S 280 14, 297 6" fill="none" stroke="#F2FDBF" stroke-width="8" stroke-linecap="round" /></svg></span>
+      </h1>
+      <div>
+        <p>Durante años enloquecí a mis amigos con mi obsesión por las palabras y su significado. Así que se me ocurrió darles un respiro y juntar todas aquí.</p>
+        <span class="nota hand">Está pensado para leerse en orden ↓</span>
       </div>
-      {libros.map((l) => (
-        <a class="libro-card libro-grande" href={l.href} data-c={slugify(l.cat)}>
-          <div class="cat-thumb" aria-hidden="true">
-            <div class="notebook"><div class="pages"></div><div class="cover"><div class="elastic"></div></div></div>
+    </section>
+    <section class="shelf" aria-label="Ensayos">
+      {ENSAYOS.map((e) => {
+        const hay = e.capitulos.length > 0 && caps.some((c) => c.data.ensayo === e.id);
+        return (
+          <div class={`book${hay ? '' : ' draft'}`} style={`--tint:${e.tint}`}>
+            <div>
+              <span class="nota hand">Ensayo {ROMANO[e.n]}</span>
+              <h2>{hay ? <a href={`${base}/${e.id}/`}>{e.title}</a> : e.title}</h2>
+            </div>
+            {hay ? (
+              <ol>
+                {e.capitulos.map((t, i) => (
+                  <li>{hayCapitulo(e.id, i + 1) ? <a href={`${base}/${e.id}/#cap-${i}`}>{t}</a> : <span class="soft">{t}</span>}</li>
+                ))}
+              </ol>
+            ) : (
+              <p class="hand meta">por escribir</p>
+            )}
           </div>
-          <span class="libro-pregunta">{PREGUNTA[l.cat]}</span>
-          <p>{cuantos(l.posts.length).replace('apunte', 'capítulo')}</p>
-        </a>
-      ))}
-    </header>
-
-    <!-- Debajo: el árbol en un tercio (queda fijo al bajar) y las observaciones en los otros dos, como fichas horizontales -->
-    <section class="abajo">
-      <aside class="abajo-arbol">
-        <svg class="arbolito" id="arbolito" viewBox="0 0 300 480" role="img" aria-label="El Árbol de Arquetipos: diez círculos y una X unidos por veintidós líneas, en tres columnas"></svg>
-        <p class="arbol-pie">El Árbol de Arquetipos</p>
-      </aside>
-      {ideas.length > 0 && (
-        <div class="ideas" id="observaciones">
-          <h2 id="ideas-t">Observaciones</h2>
-          <p class="ideas-bajada">Ideas sueltas que ponen a prueba el modelo con autores y ejemplos. Se pueden leer en cualquier orden.</p>
-          <ul class="fichas" aria-labelledby="ideas-t">
-            {ideas.map((p) => (
-              <li><a class="ficha" href={p.href}>
-                <span class="ficha-txt">
-                  {p.tags.length > 0 && <span class="idea-tags">{p.tags.map((tag) => <span>{tag}</span>)}</span>}
-                  <h3>{tituloPlano(p.title)}</h3>
-                  <span class="ficha-bajada">{p.bajada}</span>
-                </span>
-                <span class="ficha-flecha" aria-hidden="true">→</span>
-              </a></li>
-            ))}
-          </ul>
-        </div>
-      )}
+        );
+      })}
     </section>
-
-    <section class="como-leer" aria-labelledby="como-t">
-      <h2 id="como-t">Cómo leer este sitio</h2>
-      <ol>
-        <li>Si te interesa la idea general, empezá por <a href={libros[0].href}>el libro</a>.</li>
-        <li>Si preferís ver el modelo funcionando, leé una observación y seguí sus enlaces.</li>
-        <li>Cada observación se entiende sola: podés entrar por la que más te llame.</li>
-      </ol>
-    </section>
-
+    <footer class="foot">© Tengo una teoría</footer>
   </div>
-
-<script is:inline>
-(function(){
-var N=[[150,30],[240,100],[60,100],[240,200],[60,200],[150,250],[240,330],[60,330],[150,380],[150,450],[150,150]];
-var E=[[0,1],[0,2],[0,5],[1,2],[1,5],[1,3],[2,5],[2,4],[3,4],[3,5],[3,6],[4,5],[4,7],[5,6],[5,7],[5,8],[6,7],[6,8],[6,9],[7,8],[7,9],[8,9]];
-var NS="http://www.w3.org/2000/svg",svg=document.getElementById("arbolito");if(!svg)return;
-function el(t,a,p){var e=document.createElementNS(NS,t);for(var k in a)e.setAttribute(k,a[k]);(p||svg).appendChild(e);return e}
-var L=E.map(function(e){var a=N[e[0]],b=N[e[1]];return el("line",{"class":"p",x1:a[0],y1:a[1],x2:b[0],y2:b[1],pathLength:1,style:"--d:"+(0.2+Math.min(e[0],e[1])*0.18).toFixed(2)+"s"})});
-var G=N.map(function(n,i){var g=el("g",{"class":i===10?"n d":"n",tabindex:0,style:"--d:"+(0.4+i*0.2).toFixed(2)+"s"});
-var a=el("g",{"class":"a"},g),m=el("g",{"class":"in"},a);el("circle",{"class":"halo",cx:n[0],cy:n[1],r:22},m);el("circle",{"class":"core",cx:n[0],cy:n[1],r:12},m);return g});
-var ALL=false;
-function on(i){if(ALL)return;svg.classList.add("hl");G.forEach(function(g,j){g.classList.toggle("me",j===i);g.classList.remove("on")});G[i].classList.add("on");
-E.forEach(function(e,k){var hit=e[0]===i||e[1]===i;L[k].classList.toggle("on",hit);if(hit){G[e[0]].classList.add("on");G[e[1]].classList.add("on")}})}
-function off(){svg.classList.remove("hl");G.forEach(function(g){g.classList.remove("on","me")});L.forEach(function(l){l.classList.remove("on")})}
-var T;function setAll(){off();ALL=true;svg.classList.add("all");clearTimeout(T);T=setTimeout(function(){ALL=false;svg.classList.remove("all")},2200)}
-G[10].setAttribute("role","button");G[10].setAttribute("aria-label","Encender todo el árbol");
-G[10].addEventListener("click",setAll);
-G[10].addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();setAll()}});
-G.slice(0,10).forEach(function(g,i){g.addEventListener("pointerenter",function(){on(i)});g.addEventListener("pointerdown",function(){on(i)});g.addEventListener("pointerleave",off);g.addEventListener("focus",function(){on(i)});g.addEventListener("blur",off)});
-})();
-</script>
 </Base>

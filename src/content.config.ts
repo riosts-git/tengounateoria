@@ -1,30 +1,15 @@
 import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
-const ensayos = defineCollection({
-  // Una carpeta por cuaderno («1 La Intuición/…») y un archivo numerado por ensayo («01-mi-obsesion-por-las-palabras.md»).
-  // La dirección del ensayo es el nombre del archivo sin el número; el cuaderno y el orden salen de la carpeta y del número (ver lib/posts.ts).
-  // Los archivos sueltos que empiezan con «_» en la raíz (notas de trabajo, como un índice copiado desde Obsidian) no son ensayos: se ignoran.
-  loader: glob({ pattern: ['*/**/*.md', '!**/_*.md', '!**/Sin título*.md', '!_borradores/**', '!.obsidian/**'], base: './contenido/ensayos', generateId: ({ entry }) => entry.split('/').pop()!.replace(/\.md$/, '').replace(/^\d+-/, '') }),
+// Un archivo .md por capítulo: src/content/capitulos/<ensayo>/NN-titulo.md
+// Los subtítulos son «## ...» y cada uno busca su dibujo en src/assets/svg/<ensayo>/<capitulo>_<subtitulo>.svg
+const capitulos = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/capitulos' }),
   schema: z.object({
     title: z.string(),
-    corto: z.string().optional(), // título corto para el menú superior
-    hoja: z.string().optional(), // hoja (serie de micro observaciones) a la que pertenece: ver HOJAS en config.ts
-    tipo: z.enum(['autores', 'reflexión', 'concepto']).optional(), // tipo de observación
-    subtitulo: z.string().optional(), // se muestra bajo el título (home y ensayo)
-    date: z.coerce.date(),
-    actualizado: z.coerce.date().optional(), // "Última actualización"
-    version: z.coerce.string().optional(), // ej. v1
-    parte: z.string().optional(), // parte del cuaderno (subtítulo en la home)
-    sinTitulo: z.boolean().optional(), // no muestra el encabezado (título y parte), como en la Intro
-    portada: z.string().optional(), // frase de apertura, en una página negra antes del capítulo
-    seccion: z.object({ etiqueta: z.string().optional(), titulo: z.string(), anticipo: z.string().optional() }).optional(), // portada de sección (viene del canvas)
-    generado: z.string().optional(), // «canvas»: lo escribe scripts/sincronizar.mjs
-    capitulo: z.object({ numero: z.coerce.string(), titulo: z.string(), anticipo: z.string().optional() }).optional(), // portada del capítulo del libro
-    description: z.string(), // SEO / RSS
-    tags: z.array(z.string()).default([]),
-    draft: z.boolean().default(false), // true = no se publica
+    ensayo: z.string(),
+    orden: z.number(),
   }),
 });
 
-export const collections = { ensayos };
+export const collections = { capitulos };
