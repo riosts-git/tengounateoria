@@ -6,3 +6,6 @@ dist/
 # Obsidian: el taller y la configuración personal no se suben a GitHub
 contenido/taller/
 **/.obsidian/
+
+# Copia del HTML de trabajo: se genera con scripts/copiar-html.mjs
+public/html/
