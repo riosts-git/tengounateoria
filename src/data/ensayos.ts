@@ -7,7 +7,7 @@ export type Ensayo = { id: string; n: number; title: string; tint: string; acc: 
 export const ENSAYOS: Ensayo[] = [
   {
     id: 'intuicion', n: 1, title: 'Intuición', tint: '#F2FDBF', acc: '#F2FDBF',
-    capitulos: ['Mi obsesión por las palabras', 'Intuición', 'De la corazonada a la intuición', '¿Cómo saber lo que no sé?', 'Intuición y sesgo', 'Reflexiones', 'Bibliografía y Notas'],
+    capitulos: ['Mi obsesión por las palabras', 'Intuición', 'De la corazonada a la intuición', '¿Cómo saber lo que no sé?', 'Intuición y sesgo', 'Reflexiones'],
   },
   { id: 'emociones', n: 2, title: 'Emociones Arquetípicas', tint: '#EABCB6', acc: '#EABCB6', capitulos: [] },
   { id: 'arbol', n: 3, title: 'Árbol de Arquetipos', tint: '#f3e7c9', acc: '#F3E7C9', capitulos: [] },

@@ -12,7 +12,9 @@ export async function getStaticPaths() {
 const { id } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const ensayo = ENSAYOS.find((e) => e.id === id)!;
-const siguiente = ENSAYOS.find((e) => e.n > ensayo.n && e.capitulos.length > 0);
+const siguiente = ENSAYOS.find((e) => e.n === ensayo.n + 1);
+const publicados = await getCollection('capitulos');
+const siguientePublicado = !!siguiente && publicados.some((c) => c.data.ensayo === siguiente.id);
 
 // Dibujos: src/assets/svg/<ensayo>/<capitulo>_<subtitulo>.svg (se incrustan, como en el HTML de trabajo)
 const svgs = import.meta.glob('../assets/svg/**/*.svg', { query: '?raw', import: 'default', eager: true }) as Record<string, string>;
@@ -21,6 +23,11 @@ const svgPorNombre: Record<string, string> = Object.fromEntries(
 );
 
 const proc = await createMarkdownProcessor();
+
+// Bibliografía y notas: src/content/bibliografia/<ensayo>.md (no es un capítulo: se abre con un botón al final)
+const bibs = import.meta.glob('../content/bibliografia/*.md', { query: '?raw', import: 'default', eager: true }) as Record<string, string>;
+const bibRaw = Object.entries(bibs).find(([r]) => r.endsWith('/' + id + '.md'))?.[1] ?? '';
+const bibHtml = bibRaw ? (await proc.render(bibRaw.replace(/^---[\s\S]*?---\s*/, ''))).code : '';
 const entradas = (await getCollection('capitulos')).filter((c) => c.data.ensayo === id).sort((a, b) => a.data.orden - b.data.orden);
 
 const notas: string[] = [];
@@ -54,11 +61,12 @@ const n = capitulos.length;
     <aside class="stage" aria-label="Ilustraciones">
       <div class="card">
         <div class="frames">
+          <figure class="fig cv portada on" data-k="p">
+            <div><span class="nota hand">Apuntes {ROMANO[ensayo.n]}</span><b>{ensayo.title}</b><span class="nota hand sub">{n} {n === 1 ? 'capítulo' : 'capítulos'}</span></div>
+          </figure>
           {capitulos.map((c, ci) => (
             <>
-              <figure class="fig cv" data-k={`c${ci}`}>
-                <div><span class="nota hand">capítulo {ci + 1}</span><b>{c.titulo}</b></div>
-              </figure>
+              {ci > 0 && (<figure class="fig cv" data-k={`c${ci}`}><div><span class="nota hand">capítulo {ci + 1}</span><b>{c.titulo}</b></div></figure>)}
               {c.escenas.map((s, si) => <figure class="fig" data-k={`f${ci}-${si}`} set:html={s.svg} />)}
             </>
           ))}
@@ -73,15 +81,10 @@ const n = capitulos.length;
     </aside>
 
     <article class="text">
-      <section class="blk title-block" style="min-height:calc(100svh - var(--bar));display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:12svh">
-        <span class="nota hand">Ensayo {ROMANO[ensayo.n]}</span>
-        <h1>{ensayo.title}</h1>
-        <span class="nota hand">{n} {n === 1 ? 'capítulo' : 'capítulos'} · seguí bajando</span>
-      </section>
 
       {capitulos.map((c, ci) => (
         <>
-          <section class="scene head" data-c={ci} data-keys={`c${ci}`} style="--n:1">
+          <section class="scene head" data-c={ci} data-keys={ci === 0 ? 'p' : `c${ci}`} style="--n:1">
             <header class="ch" id={`cap-${ci}`}>
               <span class="nota hand">capítulo {ci + 1}</span>
               <h2>{c.titulo}</h2>
@@ -93,18 +96,20 @@ const n = capitulos.length;
         </>
       ))}
 
-      {notas.length > 0 && (
-        <section class="scene notas" data-c={n - 1} data-keys={`f${n - 1}-${capitulos[n - 1].escenas.length - 1}`} style="--n:1">
-          <h4>Notas</h4>
-          <ol>{notas.map((t) => <li>{t}</li>)}</ol>
-        </section>
-      )}
-
-      <div class="next">
-        {siguiente && (<><h3>Seguir leyendo</h3><a href={`${base}/${siguiente.id}/`}>{etiqueta(siguiente)}</a></>)}
-        <a href={`${base}/`}>Volver a todos los ensayos</a>
+      <div class="fin">
+        {(notas.length > 0 || bibHtml) && <button type="button" class="vermas" id="verbib">Ver Bibliografía y notas</button>}
+        {siguiente && (siguientePublicado
+          ? <a class="continua" href={`${base}/${siguiente.id}/`}><span>Continúa en el apunte</span><b>{siguiente.title} <i aria-hidden="true">→</i></b></a>
+          : <p class="continua off"><span>Continúa en el apunte</span><b>{siguiente.title} <i aria-hidden="true">→</i></b></p>)}
+        <a class="volver" href={`${base}/`}>Volver a todos los ensayos</a>
       </div>
-    </article>
+
+      <dialog id="biblio" aria-label="Bibliografía y notas">
+        <button type="button" class="cerrar" data-cerrar aria-label="Cerrar">×</button>
+        <h3>Bibliografía y notas</h3>
+        {notas.length > 0 && (<><h4>Notas</h4><ol class="lista-notas">{notas.map((t) => <li set:html={t} />)}</ol></>)}
+        <div class="bib" set:html={bibHtml} />
+      </dialog>    </article>
   </div>
 
   <script>
@@ -123,6 +128,7 @@ const n = capitulos.length;
       ticks.forEach((t, i) => { t.classList.toggle('cur', i === c); t.classList.toggle('pass', i < c); });
     };
     const tick = () => {
+      if (scrollY < innerHeight * 0.35) { mostrar('p', 0); prog.style.transform = 'scaleX(0)'; return; }
       const y = innerHeight * 0.5;
       for (const s of scenes) {
         const r = s.getBoundingClientRect();
@@ -135,5 +141,9 @@ const n = capitulos.length;
     addEventListener('scroll', () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(tick); }, { passive: true });
     ticks.forEach((t) => t.addEventListener('click', () => document.getElementById('cap-' + t.dataset.go)?.scrollIntoView({ behavior: 'smooth', block: 'start' })));
     tick();
+    const dlg = document.getElementById('biblio') as HTMLDialogElement | null;
+    document.getElementById('verbib')?.addEventListener('click', () => dlg?.showModal());
+    dlg?.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
+    dlg?.querySelector('[data-cerrar]')?.addEventListener('click', () => dlg.close());
   </script>
 </Base>

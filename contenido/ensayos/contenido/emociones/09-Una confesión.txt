@@ -1,0 +1,32 @@
+Quizá no se note al leer estas páginas, pero lo que tienen delante es una versión bastante masticada, pensada y redibujada de mis ensayos originales. Al principio, todo eran bocetos. Lo máximo que había conseguido dibujar era una lista de llaves. La alegría y la tristeza aparecían sueltas, en un rincón del papel. No sabía dónde ponerlas.
+### Y entonces apareció Tomás
+Tomi es un amigo ingeniero al que suelo molestar cada vez que me quedo sin ideas. Para graficar el modelo, yo no tenía ninguna. Así que nos juntamos a tomar una cerveza y le mostré mis llaves. Las miró un rato, tomó un trago y dijo:
+—Tenés tres problemas. Primero, necesitás un gráfico que vuelva. Que sea circular.
+—Sí, exacto —confirmé—. Y que se vea la relación entre la ira y el miedo, pero también entre la ira y la motivación.
+—Y a su vez tiene valencias… —siguió, garabateando sobre una servilleta—. Son dos… y dos… y dos… Salvo que…
+Al cabo de varias stouts y unos cuantos intentos fallidos, Tomi dejó de intentar resolverlo y yo dejé de intentar entenderlo. O quizá fue al revés. No estoy segura. Pero la frase inconclusa y los tachones en la servilleta se me quedaron dando vueltas.
+Esa misma noche me puse a investigar qué eran las redes y los árboles de decisión. Descubrí algo que parece obvio una vez que se lo ve: cada forma de representar un modelo destaca ciertas relaciones y esconde otras. Un dibujo no es un recipiente neutral. También es una manera de pensar.
+### Primer intento: las bifurcaciones
+Busqué formas de representar la repetición de opuestos y cómo estos daban lugar a distintas emociones. Lo primero fue ordenar mis llaves en bifurcaciones. Así, la alegría y la tristeza encontraron por fin un lugar: abajo, después de la acción.
+Luego asigné a cada bifurcación una dirección de activación o inhibición. El resultado era un sistema en el que cada camino tenía su propia alegría y su propia tristeza: ocho desenlaces que se repetían en espejo.
+Pero yo no quería un mapa fragmentado. Quería mostrar cómo los arcos se relacionaban entre sí, cómo una misma fuerza podía aparecer en caminos distintos y cómo todas esas trayectorias se integraban en un conjunto. Fue entonces cuando, casi de manera natural, apareció el árbol.
+### La estructura de abajo
+La información no había cambiado, pero la perspectiva era otra. Las bifurcaciones mostraban los pasos; el árbol dejaba ver la estructura subyacente: variables conectadas, caminos que se separaban y relaciones que volvían a encontrarse.
+Aquel diseño sintetizaba de golpe lo que a mí me había costado páginas de apuntes desentrañar. Me permitía representar la activación y la inhibición como direcciones opuestas, pero relacionadas. En ese marco, la ira y la motivación podían leerse como formas distintas de expansión: una orientada a enfrentar lo que rechazamos; la otra, a acercarnos a lo que deseamos. Del mismo modo, el miedo y la desmotivación podían entenderse como formas de contracción: replegarnos ante una amenaza o abandonar algo que creemos fuera de nuestro alcance.
+En la base, separadas de esa primera tensión, aparecían la alegría y la tristeza: las respuestas que llegan cuando la acción se encuentra con la realidad y registramos el resultado. No eran simplemente dos caminos más. Eran el desenlace de lo que habíamos puesto en juego.
+Miré el dibujo detenidamente y cambié el ángulo de la página. Entonces el patrón encajó. La forma se parecía, de manera extraordinaria, al Árbol de la Vida de la Cábala.
+### Una coincidencia que no busqué
+Durante siglos, pensadores, místicos y científicos han buscado formas de representar el orden del mundo: la tetraktys de Pitágoras, la proporción áurea, la sucesión de Fibonacci. Entiendo esa fascinación. Cuando una estructura parece repetirse en lugares distintos, cuesta no preguntarse qué relación puede haber entre ellos.
+Pero yo no había partido de la Cábala ni intentaba reproducir su estructura. Había llegado a aquel dibujo siguiendo las necesidades de mi propio modelo: una fuerza que se polariza, oposiciones que se complementan y caminos que se separan para volver a encontrarse.
+La semejanza no demostraba que ambos sistemas describieran lo mismo. Lo que me ofrecía era una forma visual que podía ayudarme a seguir pensando. Así que volví a dibujar mi mapa, esta vez tomando como referencia la estructura completa del Árbol. Y entonces descubrí que quedaban dos lugares vacíos.
+### Los dos lugares vacíos
+El primero estaba debajo de la alegría y la tristeza. En la Cábala, esa posición corresponde a Yesod, el fundamento. En mi modelo, la pregunta era más sencilla: ¿qué viene después del resultado, cuando la emoción ya se manifestó?
+Entonces advertí que, por haber nacido para representar emociones, mi mapa no mostraba el proceso completo. Le faltaba el aprendizaje. Yo, que llevaba páginas hablando de arcos, no había cerrado el mío: el dibujo seguía terminando en la alegría y la tristeza, como aquellas primeras llaves sueltas.
+Ganar o perder no es el final del recorrido. Después del resultado viene la integración: comparamos lo que esperábamos con lo que ocurrió, revisamos nuestras predicciones y guardamos algo de esa experiencia en la memoria. No siempre aprendemos a la primera, ni dejamos de repetir automáticamente aquello que nos hace daño. Pero la experiencia nos ofrece información para actualizar lo que esperamos del mundo.
+El segundo espacio, el último, corresponde en la Cábala a Maljut, el reino. Yo decidí llamarlo trascendencia: aquello que sale de nosotros y pasa al mundo. Es lo que los demás alcanzan a ver de nuestra emoción, la huella que dejamos, la regla que aprendimos y ponemos en práctica. Lo que hacemos puede convertirse, a su vez, en el estímulo de alguien más: el comienzo de un arco nuevo.
+Así quedó el mapa: diez nodos y un elemento adicional, la memoria, que no ocupa un único lugar en la secuencia porque está conectada con todos.
+Con esos dos espacios, el dibujo por fin volvía sobre sí mismo. El arco se cerraba y, al mismo tiempo, quedaba listo para empezar otra vez. Lo que Tomi me había dicho entre cervezas —«necesitás un gráfico que vuelva»— terminó encontrando una respuesta en una estructura que yo no había ido a buscar.
+La confesión es esta: el árbol no apareció como una revelación completa. Fue una forma que me permitió ver qué faltaba en mi propio razonamiento. Y, una vez que pude verlo, el modelo dejó de ser solo un esquema de emociones y empezó a convertirse en un mapa de la experiencia.
+
+
+

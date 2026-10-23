@@ -1,17 +1,17 @@
-San Agustín se ha convertido en una de las citas más famosas. Y mérito no le falta.
-Pero esta vez lo traigo a colación puesto que hablar de emociones nos deja en una postura similar: si nadie nos lo pregunta, lo sabemos; pero puestos a explicarlo, nos faltan las palabras.
+A estas alturas, yo estaba segura de que mi búsqueda había terminado. Había descubierto que la intuición se comunicaba a través de emociones y decidí entonces buscar alguna lista para saber qué emociones eran esas. Y déjenme decirles que no fue fácil de responder.
 
+Al parecer, los académicos llevan más de cien años sin ponerse de acuerdo en qué son las emociones, cuántas son o cómo medirlas.
 
-A decir verdad, cuando empecé con todo este tema ni siquiera tenía qué eran las emociones o qué las diferenciaba de los sentimientos o los estados de ánimo.
-La palabra misma me resultaba (y aún me resulta) poco seductora. Suena a sensiblería, psicología barata y autoayuda.
+Uno de los principales consensos, por llamarlo de alguna manera, es distinguir entre «emociones básicas o primarias», esas que nacen directamente de la intuición, y las emociones «sociales o secundarias», que son aquellas que requieren de una evaluación cultural o del juicio de los demás, como la culpa o el orgullo.
 
-Pero parece que no. Me animaría a afirmar que las emociones son las grandes desconocida de nuestra vida.
-Y no es poco, considerando que son la fuerza que nos impulsa a cada instante.
-Entender las emociones como una fuerza me permitió encontrar una forma nueva de asimilar y comprender las experiencias.
+Dentro de las emociones básicas, que son las que nos importan por el momento, uno de los representantes más famosos fue Paul Ekman (el mismo científico en el que está inspirada la serie Lie to Me). En la década de 1970, Ekman planteó que existían emociones discretas y universales.¹
 
-* También quisiera aclararle al lector, que aunque estoy haciendo el esfuerzo de poner todo en orden para que sea más fácil de comprender; muchas de las ideas que de aquí se desprenden fueron creciendo y apareciendo con los meses o inclusos años.
-Y si estoy aquí escribiendo esto, es porque realmente y de corazón, hubiera querido que alguien me explique esto cuando era una adolescente.
+Su teoría era la siguiente: si les mostraba a una tribu aislada fotos de expresiones faciales y las reconocían, quería decir que esas emociones eran compartidas por todos los humanos. Así fue que viajó a Papúa Nueva Guinea y presentó su teoría de seis emociones básicas (miedo, ira, alegría, tristeza, asco y sorpresa); las mismas que, con una menos, inspiraron la famosa película Inside Out (Del revés), de la cual fue colaborador.
 
-Pero vayamos por partes...
+A su vez, la computación afectiva y la inteligencia artificial tradujeron estas teorías a la ingeniería. Para meter la fluidez de las emociones en un ordenador, se desarrollaron teorías matemáticas (como el Modelo Circumplejo de James Russell), que en lugar de trazar coordenadas fijas representan cualquier estado afectivo como una coordenada en un mapa bidimensional: la valencia (si la sensación es agradable o desagradable) y la activación (mucha o poca energía fisiológica).²
 
+Por otro lado, en la actualidad, ha cobrado enorme popularidad la idea de Lisa Feldman Barrett y su Teoría de la Emoción Construida. Barrett se opone a la visión de Ekman y sostiene que las emociones no están preprogramadas. Para ella, el cerebro es un órgano predictivo que utiliza las sensaciones físicas, el contexto del momento, las experiencias y la cultura para fabricar emociones en tiempo real. De forma tal que, según la autora, la emoción es algo que construimos nosotros.³
 
+Y si bien toda esta discusión parece disparatada, descubrí, tras mucho tiempo leyendo sobre el tema, algo que me motiva hoy a escribir esto: las emociones, aunque suenen a sensiblería y libros de autoayuda, son la base de nuestra experiencia. Representan nuestra forma de percibir e interactuar con el mundo.
+
+Entender cómo están configuradas, qué son y qué implica tenerlas —¿por qué existen?— es esencial para definir quiénes somos como individuos, colectivo o especie.

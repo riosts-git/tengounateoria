@@ -1,42 +1,42 @@
-Si te piden que menciones una emoción, el truco infalible es nombrar: alegría, tristeza, ira o miedo. Son las emociones básicas que cualquier autor incluye en su lista.
-¿Pero qué pasa con todo lo que queda fuera? En el último siglo, decenas de investigadores han intentado descifrar qué son las emociones y cuántas existen, dando como resultado más teorías que concensos.
-Durante un tiempo, intenté memorizarlas y busqué comprender el significado más allá de la connotación típica que le damos. Buscaba intentar cómo la alegría (la única emoción que parecía positiva de las listas, a veces junto a deseo o sorpresa), bastaba para explicar el sinfin de estados que los humanos experimentamos.
-Así que abandoné las listas inertes, cambié de estrategia y me puse a averiguar cómo se construyen las percepciones.
+Durante un tiempo me mantuve fiel a la lista de Ekman: miedo, ira, alegría, tristeza, asco y sorpresa; e incluso coquetaba con alguna emoción que aparecía en otro modelo: como amor o asombro.
+
+ Intenté memorizarlas y busqué comprender el significado más allá de la connotación típica que le damos. Buscaba entender cómo la alegría (la única emoción que parecía positiva de las listas, a veces junto a deseo o sorpresa) bastaba para explicar el sinfín de estados que los humanos experimentamos. Pero a decir verdad, cuando tenía que elegir entre un trabajo y otro, o decidir qué responderle a alguien… la lista tenía poca utilidad.
+Así que cambié de estrategia. Y como no podía resolver qué eran las emociones, me puse a averiguar cómo es que se construyen.
 Del estímulo a la emoción
-Todo comienza con un estímulo. Y este estímulo puede ser interno-somático (sentir algo), interno-mental (imaginarnos algo) o externo.
-Cualquiera sea su origen, una vez que la atención lo percibe, todo estímulo recorre el mismo circuito: una serie de preguntas —que el cuerpo se hace en milésimas de segundo— destinadas a predecir cómo actuar.
+Aparentemente todo comienza con un estímulo. Y este estímulo puede ser interno-somático (sentir algo, utilizando nuestra interocepción), interno-mental (imaginarnos algo) o externo (utilizando nuestros sentidos).
+Cualquiera sea su origen, una vez que la atención lo percibe, todo estímulo activa una serie de preguntas —que el cuerpo se hace en milésimas de segundo— destinadas a predecir cómo actuar.
 A falta de un nombre mejor, las vamos a llamar variables.
 Para verlas, usemos un ejemplo concreto. Imaginemos entonces que son las once de la noche, estamos en casa y, de pronto, suena el teléfono.
 El estado
-Antes de que suene, estamos tranquilos en el sofá. Ese es el estado: la condición del organismo antes de que aparezca el estímulo y, también, la que queda cuando el movimiento termina.
-Es lo que respondemos cuando alguien nos pregunta «¿cómo estás?». Funciona como una polaridad donde «bien» y «mal» son los extremos; estar neutral es la ausencia total de polaridad.
-(El español, en ese sentido, nos hace la amabilidad de distinguir quiénes somos de cómo estamos. Apela a lo transitorio del estado por encima de la naturaleza, inmanente si se quiere, del ser).
+Antes de que el ring aparezca en escena, estamos tranquilos en el sofá. Ese es el estado: la condición del organismo previa al estímulo (estado basal, podríamos decirle) y, también, la que queda cuando el movimiento termina (estado resultante).
+Es lo que respondemos cuando alguien nos pregunta «¿cómo estás?». Funciona como una polaridad donde «bien» y «mal» son los extremos; estar neutral es la ausencia de esa polaridad.
 La intensidad
 Y entonces… ¡RIIINGGG! Suena el teléfono. La intensidad es la fuerza con la que un estímulo logra hacerse notar.
-A diferencia de las demás variables, no tiene polaridad: es una magnitud, como el volumen. Y depende tanto del estímulo como de quien lo recibe. Si estuviéramos esperando una mala noticia, el mismo timbre nos sonaría el doble de fuerte y si estuviéramos en la ducha no lo escucharíamos.
+A diferencia de las demás variables, es una magnitud sin polaridad, como el volumen. Y depende tanto del estímulo como de quien lo recibe. Si estuviéramos esperando una mala noticia, el mismo timbre nos sonaría el doble de fuerte y si estuviéramos en la ducha no lo escucharíamos.
 Cuando lo único que se resuelve es la intensidad (algo pasó, pero todavía no sabemos qué), aparece el asombro: la emoción que todavía no eligió bando. Los ojos abiertos, las orejas levantadas, el cuerpo respondiendo a algo que llamó su atención.
 La valencia instintiva
-Una llamada a medianoche rara vez trae buenas noticias. Antes de mirar la pantalla, el cuerpo ya se tensó.
+Una llamada a las once de la noche rara vez trae buenas noticias. Antes de mirar la pantalla, el cuerpo ya se tensó.
 Esa es la valencia instintiva: la orientación más automática hacia el estímulo, la que se resuelve antes de pensar. Nos acerca o nos aleja. Su misión principal es alertarnos de lo peligroso y dar el resto por cotidiano.
 Solemos llamarla: deseo, afición, simpatía, afecto, atracción, agrado, gusto cuando nos acerca, y aversión, asco, antipatía, disgusto, desagrado, retracción cuando nos aleja.
 La valencia intuitiva
 Un instante después, miramos la pantalla. La valencia intuitiva es una segunda valoración, que llega cuando la experiencia y el contexto tuvieron tiempo de intervenir. Confirma o corrige a la primera.
-Si a nivel instintivo creímos que la llamada era una mala noticia y al mirar la pantalla aparece el nombre de una amiga, corrige: atracción. Si dice «Banco», confirma: aversión.
-Las dos valencias no siempre se ponen de acuerdo. Buena parte de lo que llamamos ambivalencia es eso: dos valoraciones que tiran para lados distintos. Como cuando nos invitan a una fiesta y primero decimos «¡sí!», y a los cinco minutos pensamos «uf, salir».
+Si a nivel instintivo creímos que la llamada era una mala noticia y al mirar la pantalla aparece el nombre de una amiga, corrige: atracción. Si, en su lugar, en el visor aparece algo terrible, como «Banco», confirma: aversión.
+Las dos valencias no siempre se ponen de acuerdo. Buena parte de lo que llamamos ambivalencia es eso: dos valoraciones que tiran para lados distintos.
 La proyección
 Y entonces llega la pregunta decisiva: ¿puedo hacer algo?
-La proyección es la estimación de nuestra propia capacidad de actuar frente a lo que valoramos. Tiene dos polos: la expansión, cuando nos agrandamos y avanzamos, y la contracción, cuando nos encogemos y retrocedemos.
+La proyección es la estimación de nuestra propia capacidad de actuar frente a lo que valoramos. Tiene dos polos: la expansión, cuando nos agrandamos y avanzamos consumiendo energía, y la contracción, cuando nos encogemos y retrocedemos conservándola.
 Y es una predicción: lo que creemos que seremos capaces de hacer para obtener lo que deseamos o evitar lo que nos amenaza.
 Una llamada positiva
-Atendemos.
+Y ahora veamos qué sucede si atendemos.
 «¡Estoy en la ciudad!», escuchamos del otro lado. Arranca bien.
-Si nos propone cenar mañana y nada nos lo impide, aceptamos felices: queremos verla y podemos. Eso es motivación.
-Pero si se vuelve a ir mañana temprano y esta noche no podemos movernos de casa, queremos verla y no podemos. Eso es desmotivación.
-La desmotivación no es falta de deseo. Es un deseo que se frena porque creemos que no vamos a poder. Que no tendremos los recursos que hacen falta o que disponer de ellos no valdrá la pena. Como querer ir a un concierto y descubrir que la entrada está fuera de nuestro alcance.
+Es nuestra amiga, que ha venido de viaje. Si nos propone cenar mañana y nada nos lo impide, aceptamos felices: queremos verla y podemos. Nos genera motivación.
+Pero si se vuelve a ir mañana temprano y esta noche no podemos movernos de casa, queremos verla y no podemos. Nos desmotiva.
+
+La desmotivación es un deseo que se frena porque creemos que no vamos a poder, que no tendremos los recursos que hacen falta o que disponer de ellos no valdrá la pena. Como querer ir a un concierto y descubrir que la entrada está fuera de nuestro alcance.
 Una llamada negativa
 Ahora imaginemos el caso opuesto. Miramos la pantalla y quien llama a las once de la noche es el banco. Atendemos esperando lo peor.
 «Detectamos un movimiento inusual en su cuenta». Lo que ya pintaba mal acaba de empeorar.
 Si es un cargo que no hicimos, nos indignamos y empezamos a preparar el reclamo: lo queremos evitar y sabemos que podemos. Eso es ira, enojo, rabia, furia.
 Pero si nos vaciaron la cuenta, donde estaban los ahorros de años, lo queremos evitar y no sabemos cómo. Ya no es un inconveniente: sentimos miedo, pánico, terror.
-Dos preguntas
-Con una sola llamada aparecieron las cuatro combinaciones posibles entre la valencia y la proyección. Y lo que las separa podría resumirse en dos preguntas: ¿me atrae o me repele? y ¿valdrá la pena el esfuerzo?
+Las preguntas de la intuición
+Con una sola llamada aparecieron las distintas combinaciones posibles entre la valencia y la proyección. Y lo que las separa podría, por lo pronto, resumirse en dos preguntas: ¿me atrae o me repele? y ¿valdrá la pena el esfuerzo?

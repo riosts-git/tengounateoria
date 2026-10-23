@@ -1,0 +1,89 @@
+---
+title: "Intuición"
+ensayo: "intuicion"
+orden: 2
+---
+
+Barcelona, once de la noche. Ya falta poco para llegar a casa. Estoy a exactamente seis cuadras —sí, llevo años viviendo aquí y sigo contando en cua… ¡WOOOF!
+
+Un ruido me saca de golpe de mis pensamientos. Salto, me doy vuelta y veo dientes apretados, saliva y una silueta que se me tira encima. El corazón se me dispara.
+
+En ese segundo, el golpe seco de una reja de hierro frena el ataque. Respiro.
+
+—¡Ay! ¡Qué susto! —digo en voz alta, como si intentara explicarle al perro mi reacción.
+
+Según el audiolibro, en los años sesenta el neurocientífico Paul MacLean propuso que el cerebro humano estaba formado por tres cerebros superpuestos, como capas que la evolución fue sumando.
+
+La capa reptiliana, la más antigua y encargada de lo básico —respirar, comer, defenderse—, fue la que me hizo saltar cuando el perro ladró, incluso antes de que entendiera qué estaba pasando.
+
+Después entró en juego la límbica, propia de los mamíferos, que procesa las emociones y la memoria: comparó ese ladrido con todo mi historial de perros en calles oscuras y disparó el miedo.
+
+Finalmente, la neocorteza, la capa más nueva y responsable del lenguaje, el razonamiento y la planificación, evaluó la situación, vio la reja, armó una explicación lógica y me dio una orden: *«Hay una barrera, puedes seguir caminando»*.
+
+Hoy en día, la neurociencia considera este modelo una simplificación, ya que el cerebro funciona como una red de conexiones dinámicas mucho más compleja que tres capas apiladas.
+
+Sin embargo, MacLean acertó en algo: distintas regiones del cerebro procesan la información de maneras diferentes y, a menudo, compiten por el control de nuestra conducta. Por eso su modelo sigue sirviendo como metáfora, siempre que no lo tomemos al pie de la letra.
+
+## Tres predicciones
+
+Dividir la experiencia en tres es una vieja costumbre. Platón imaginó el alma como un carro alado (el apetito, el ánimo y la razón). Freud dividió la psique en tres instancias (el ello, el yo y el superyó). Y MacLean, como vimos, dividió el cerebro en tres capas.
+
+El más reciente en sumarse a esta costumbre es el neurocientífico Antonio Damasio. Para él, la consciencia empieza en el cuerpo, que busca mantenerse en equilibrio (la homeostasis), y se arma en tres capas: un cuerpo que se registra a sí mismo, un yo que se da cuenta de lo que le pasa aquí y ahora, y un yo «autobiográfico» que recuerda, planea y narra su propia historia.
+
+Pero como la consciencia es muy difícil de definir, prefiero quedarme con lo que resume la divulgación: los humanos predecimos en tres niveles. Yo los llamo instinto, intuición e intelecto.
+
+## El instinto
+
+El instinto es el nivel de los impulsos. Trabaja en milésimas de segundo, es automático y sucede sin que lo notemos (inconsciente), y su misión es poner los recursos del cuerpo al servicio de la supervivencia. Es lo que MacLean entendía por «cerebro reptiliano».
+
+En mi historia, se activa en el instante en que mi cuerpo recibe el ladrido. El salto, mi cabeza que gira buscando el origen del sonido. Una reacción tan veloz que no podría evitarla ni queriendo. Un impulso que acelera mi corazón, corta mi digestión y prepara al cuerpo para luchar por su vida, si fuese necesario.
+
+## La intuición
+
+La intuición es donde terminamos de percibir y generamos una emoción como respuesta. Reacciona en décimas de segundo, casi siempre sin que lo notemos (es inconsciente, semiconsciente o preconsciente, como quieran llamarla), pero ya compara.
+
+Toma lo que llega, lo contrasta con patrones y experiencias anteriores, y responde, a través de la amígdala, con una emoción. Aunque no genera una historia completa, logra comprender el valor y significado que puede tener un estímulo con base en imágenes, asociaciones y patrones aprendidos: perro grande, en la oscuridad, agresivo: amenaza. Resultado: miedo.
+
+## El intelecto
+
+El intelecto es la parte consciente, deliberada y más lenta. Puede tardar segundos, minutos… o aparecer un día en la ducha, mientras creíamos estar pensando en otra cosa.
+
+Usa el lenguaje, proyecta consecuencias y puede modificar la respuesta inicial. El perro sigue ladrando, pero ahora que sé que hay una reja que le impide el paso, intento recuperar la calma.
+
+El intelecto no borra el miedo. Pero puede reinterpretar la situación y cambiar lo que hago con él: sigo caminando, atenta y todavía asustada, pero caminando. Puedo darle la espalda a la temida bestia porque sé que estoy a salvo. No lo siento aún, pero lo sé.
+
+Incluso puedo cambiar mi interpretación meses más tarde y preguntarme si el perro, en realidad, me estaba pidiendo ayuda, me alertaba de un peligro mayor o quería pasar a la posteridad como ilustración de este ensayo. Cualquier tipo de explicación es plausible, siempre que mi intelecto logre asociar una consecuencia (por ejemplo: el perro ladrando) con la causa (su deseo de alertarme o pasar a la fama).
+
+## Dos velocidades
+
+Al principio imaginaba los tres procesos en fila, como un embudo: primero el instinto, después la intuición y, al final, el intelecto. Pero la evidencia actual invita a pensarlo distinto. Hay dos velocidades que se comunican todo el tiempo: una rápida, que llega directo a la amígdala y genera una emoción, y una lenta, que pasa por el intelecto, reflexiona y después puede intentar actuar sobre la amígdala.
+
+Si lo pensamos en términos del cerebro humano, la neocorteza, encargada de los procesos del intelecto, se ubica arriba, y la amígdala, encargada de las emociones, en el medio. Por eso se habla de un proceso «de abajo hacia arriba» (bottom-up) cuando va del instinto a la amígdala, y «de arriba hacia abajo» (top-down) cuando va del intelecto a la amígdala (en nuestros dibujos, por comodidad, los tres procesos van de arriba hacia abajo: el instinto arriba, la intuición en el medio y el intelecto abajo).
+
+Las dos velocidades tienen sentido. Si un león se acerca para atacarnos (o un perro, en mi caso), reaccionar rápido nos salva la vida. Si el que se aproxima es un vecino o un turista perdido, quizá sea mejor frenar el impulso de salir corriendo o de atacarlo.
+
+La idea de las dos velocidades viene sobre todo del neurocientífico Joseph LeDoux, que estudió el miedo y encontró dos caminos. El corto lleva lo que perciben los sentidos casi directo a la amígdala: es tosco pero rapidísimo, y nos hace saltar ante algo que parece una serpiente antes de saber qué es. El largo pasa por la corteza, que analiza con más calma y confirma la reacción o la desactiva.[^2]
+
+## Socias, no enemigas
+
+De aquí nace una idea muy extendida en la vida cotidiana, en la literatura y, sobre todo, desde la modernidad: que la razón y la emoción son enemigas. Pero quizá sea más útil pensarlas como socias con velocidades distintas.
+
+Un día helado, siete de la mañana. La intuición lo tiene clarísimo: «si me levanto ahora, voy a ser miserable». El intelecto, en cambio, calcula: «si no me levanto, llego tarde, me echan y voy a ser todavía más miserable».
+
+El intelecto tiene razones. Encadena causas y consecuencias, y nos permite elegir lo que conviene aunque lo inmediato sea desagradable. Cuando decimos que «tenemos» que hacer algo, es eso: la razón posterga lo que queremos ahora a cambio de un beneficio mayor.
+
+Queremos comprarnos algo caro, pero decidimos ahorrar para las vacaciones. No queremos hacer horas extras, pero las hacemos por la familia. Sería más fácil mentir, pero no queremos ser ese tipo de persona.
+
+Otra forma de pensarlo es recordar la cara de los niños en el famoso experimento de los malvaviscos. A cada niño le dejaban un dulce sobre la mesa y le decían que, si esperaba sin comérselo hasta que el examinador volviera, recibiría uno extra. El objetivo era medir la relación entre esa espera y su desarrollo posterior en la vida. Sus caritas intentando contenerse ante semejante manjar muestran el doble juego entre intuición e intelecto que los adultos experimentamos todos los días.
+
+## Sabemos, y aun así repetimos
+
+Porque... digamos la verdad: el problema aparece cuando entendemos qué deberíamos hacer, pero los patrones automáticos nos llevan para otro lado. Sabemos qué nos hace mal. Sabemos que no deberíamos comer el dulce antes de que venga el examinador. Y aun así, mordemos. ¡Oh, y vaya que mordemos!
+
+Y en muchos casos el intelecto arma toda una explicación, creíble incluso para nosotros mismos, que justifica lo que acabamos de hacer. «El martes empiezo la dieta» si nos comemos el malvavisco. «Le mentí para no lastimarlo», si queremos sentirnos bien con nosotros mismos. Y llegamos tarde a la oficina, bueno... «¡Qué extraño! No sonó la alarma».[^3]
+
+Después de todo, dormir tiene razones que el despertador no entiende.
+
+[^2]: Joseph LeDoux, El cerebro emocional (Barcelona, Ariel/Planeta, 1999; ed. original de 1996).
+
+[^3]: Es lo que el neurocientífico Michael Gazzaniga llamó el «intérprete». En sus estudios con pacientes de cerebro dividido (personas a las que se les habían desconectado los dos hemisferios para tratar una epilepsia grave), el hemisferio izquierdo, el del lenguaje, inventaba explicaciones para lo que había hecho el derecho. A un paciente le mostraron una pata de gallina a un hemisferio y un paisaje nevado al otro; con cada mano eligió una imagen relacionada, una gallina y una pala. Cuando le preguntaron por qué, explicó sin dudar que la pala servía para limpiar el gallinero. M. S. Gazzaniga, ¿Quién manda aquí? (Who's in Charge?, 2011).

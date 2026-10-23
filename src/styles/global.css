@@ -117,3 +117,31 @@ footer.foot{border-top:1px solid var(--line);padding:2rem 0 3rem;font-size:.85re
 .notas li{margin:0 0 .6em}
 .soft{color:var(--soft)}
 main{display:block}
+
+/* final del ensayo: botón de bibliografía y continuación */
+.fin{padding:18vh 0 14vh;display:flex;flex-direction:column;align-items:flex-start;gap:1.6rem}
+.vermas{font:600 .82rem/1 var(--sans);letter-spacing:.02em;background:none;border:1px solid var(--ink);border-radius:32px;padding:.65rem 1.05rem;color:var(--ink);cursor:pointer}
+.vermas:hover{background:var(--acc)}
+.continua{display:block;text-decoration:none;border-top:1px solid var(--line);padding:1.1rem 0 0;width:100%;margin:0}
+.continua span{display:block;font:400 .95rem var(--hand);color:var(--soft)}
+.continua b{display:block;font:600 1.6rem/1.15 var(--sans);letter-spacing:-.03em;margin-top:.2rem}
+.continua b i{font-style:normal;display:inline-block;transition:transform .2s}
+.continua:hover b i{transform:translateX(.3rem)}
+.continua.off{color:var(--soft)}
+.fin .volver{font:400 .9rem var(--sans);color:var(--soft);text-decoration:none}
+dialog#biblio{border:1px solid var(--line);border-radius:24px;background:var(--paper);color:var(--ink);width:min(40rem,calc(100% - 2rem));max-height:80svh;padding:1.6rem 1.8rem;overflow:auto}
+dialog#biblio::backdrop{background:rgba(28,29,24,.35)}
+dialog#biblio h3{font:600 1.5rem/1.1 var(--sans);letter-spacing:-.03em;margin:0 0 1rem}
+dialog#biblio h4,dialog#biblio h2{font:600 1.05rem var(--sans);margin:1.4rem 0 .5rem}
+dialog#biblio ol,dialog#biblio ul{margin:0;padding-left:1.3em;font-size:.9rem;line-height:1.5;color:var(--soft)}
+dialog#biblio li{margin:0 0 .5em}
+dialog#biblio p{font-size:.9rem;color:var(--soft);margin:0 0 .5rem}
+.cerrar{position:absolute;top:.7rem;right:1rem;border:0;background:none;font-size:1.6rem;line-height:1;cursor:pointer;color:var(--ink)}
+/* portada del ensayo en el panel y encabezado de capítulo más cerca del texto */
+.fig.portada>div{display:flex;flex-direction:column;align-items:center}
+.fig.portada b{font-size:clamp(2.6rem,5.2vw,4.6rem)}
+.fig.portada .sub{color:var(--soft);margin-top:1rem}
+.scene.head{min-height:0;justify-content:flex-start;padding:16svh 0 1svh}
+.scene.head + .scene{padding-top:2svh;justify-content:flex-start}
+/* todas las escenas arrancan arriba: sin hueco entre el texto y lo anterior */
+.scene{justify-content:flex-start;padding:5svh 0}
