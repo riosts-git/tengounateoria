@@ -110,7 +110,7 @@ const n = capitulos.filter((c) => !c.prologo && !c.epilogo).length;
       <dialog id="biblio" aria-label="Bibliografía y notas">
         <button type="button" class="cerrar" data-cerrar aria-label="Cerrar">×</button>
         <h3>Bibliografía y notas</h3>
-        {notas.length > 0 && (<><h4>Notas</h4><ol class="lista-notas">{notas.map((t) => <li set:html={t} />)}</ol></>)}
+        {notas.length > 0 && (<><h4>Notas</h4><ol class="lista-notas">{Array.from(notas, (t, i) => ({ t, n: i + 1 })).filter((x) => x.t).map((x) => <li value={x.n} set:html={x.t} />)}</ol></>)}
         <div class="bib" set:html={bibHtml} />
       </dialog>    </article>
   </div>
