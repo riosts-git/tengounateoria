@@ -84,6 +84,6 @@ En el camino aprendió a distinguir los placeres que generan apego y a enfrentar
 
 La tensión justa de todas las fuerzas es lo que permite cerrar el arco: el protagonista logra la ecuanimidad necesaria para hacer suyos sus aprendizajes.
 
-En el momento en que Odiseo logra tensar su arco nuevamente, alcanza el clímax.[^4] Se genera la anagnórisis, el reconocimiento: Odiseo revela su identidad ante los pretendientes y realiza una acción que prueba que es el verdadero rey de Ítaca. Se termina el suspenso y comienza el desenlace.
+En el momento en que Odiseo logra tensar su arco nuevamente, alcanza el clímax.[^5] Se genera la anagnórisis, el reconocimiento: Odiseo revela su identidad ante los pretendientes y realiza una acción que prueba que es el verdadero rey de Ítaca. Se termina el suspenso y comienza el desenlace.
 
-[^4]: El clímax es el punto de mayor tensión de una historia: el conflicto llega a su máximo y se define el resultado. La anagnórisis (del griego anagnórisis, «reconocimiento») es, para Aristóteles, el paso de la ignorancia al conocimiento: el momento en que un personaje descubre una identidad o una verdad decisiva, y suele coincidir con la peripecia, el giro de la fortuna. Aristóteles, *Poética*, caps. 10 y 11.
+[^5]: El clímax es el punto de mayor tensión de una historia: el conflicto llega a su máximo y se define el resultado. La anagnórisis (del griego anagnórisis, «reconocimiento») es, para Aristóteles, el paso de la ignorancia al conocimiento: el momento en que un personaje descubre una identidad o una verdad decisiva, y suele coincidir con la peripecia, el giro de la fortuna. Aristóteles, *Poética*, caps. 10 y 11. (pendiente de revisión)

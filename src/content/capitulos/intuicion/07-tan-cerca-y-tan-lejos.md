@@ -4,11 +4,11 @@ ensayo: "intuicion"
 orden: 8
 ---
 
-A medida que iba leyendo, me di cuenta de que la pregunta estaba mal planteada. No se trataba de confiar o no en la intuición, sino de separar dos cosas que solemos meter en la misma bolsa: percibirla e interpretarla.
+A medida que iba leyendo, me di cuenta de que la pregunta estaba mal planteada. No se trataba de confiar o no en la intuición, sino de separar dos cosas que solemos meter en la misma bolsa: percibirla e interpretarla.\
 
-Los humanos predecimos en etapas. Eso que llamamos intuir consiste en tener una lectura sensible e inconsciente, que se manifiesta a través de cambios físicos y emociones, sea el estímulo externo, interno o mental. Interpretarla es tarea del intelecto, que busca causas y consecuencias y las pone en palabras. La señal avisa que algo cambió; la interpretación decide qué significa.
+Los humanos predecimos en etapas. Eso que llamamos intuir consiste en tener una lectura sensible e inconsciente, que se manifiesta a través de cambios físicos y emociones, sea el estímulo externo, interno o mental. Interpretarla es tarea del intelecto, que busca causas y consecuencias y las pone en palabras. La señal avisa que algo cambió; la interpretación decide qué significa.&#32;
 
-Eso es, en definitiva, lo que propone el Modelo Arquetípico de Tres Predicciones: que el instinto, la intuición y el intelecto son tres maneras de anticipar lo que viene, cada una con su velocidad y su idioma. El instinto reacciona, la intuición asocia y el intelecto explica. En lo cotidiano las tres etapas se mezclan todo el tiempo, por eso cuando están alineadas la diferencia es sutil, casi imperceptible.
+Eso es, en definitiva, lo que propone el Modelo Arquetípico de Tres Predicciones: que el instinto, la intuición y el intelecto son tres maneras de anticipar lo que viene, cada una con su velocidad y su idioma. El instinto reacciona, la intuición asocia y el intelecto explica. En lo cotidiano las tres etapas se mezclan todo el tiempo, por eso cuando están alineadas la diferencia es sutil, casi imperceptible.&#32;
 
 No son compartimentos estancos sino arquetipos: formas de mirar, más o menos nítidas, que nos ayudan a ordenar lo que nos pasa. Y si, como le pasaba a Platón o Chayanne, sentimos que esas predicciones están desconectadas, lo vivimos como un conflicto interno.
 

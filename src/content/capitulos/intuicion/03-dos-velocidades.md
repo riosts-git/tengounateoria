@@ -12,7 +12,7 @@ Si lo pensamos en términos del cerebro humano, la neocorteza, encargada de los 
 
 Las dos velocidades tienen sentido. Si un león se acerca para atacarnos (o un perro, en mi caso), reaccionar rápido nos salva la vida. Si el que se aproxima es un vecino o un turista perdido, quizá sea mejor frenar el impulso de salir corriendo o de atacarlo.
 
-La idea de las dos velocidades viene sobre todo del neurocientífico Joseph LeDoux, que estudió el miedo y encontró dos caminos. El corto lleva lo que perciben los sentidos casi directo a la amígdala: es tosco pero rapidísimo, y nos hace saltar ante algo que parece una serpiente antes de saber qué es. El largo pasa por la corteza, que analiza con más calma y confirma la reacción o la desactiva.[^2]
+La idea de las dos velocidades viene sobre todo del neurocientífico Joseph LeDoux, que estudió el miedo y encontró dos caminos. El corto lleva lo que perciben los sentidos casi directo a la amígdala: es tosco pero rapidísimo, y nos hace saltar ante algo que parece una serpiente antes de saber qué es. El largo pasa por la corteza, que analiza con más calma y confirma la reacción o la desactiva.[^2]&#32;
 
 ## No todos los desacuerdos son iguales
 
@@ -73,4 +73,5 @@ Y en muchos casos el intelecto arma toda una explicación, creíble incluso para
 Después de todo, dormir tiene razones que el despertador no entiende.
 
 [^2]: Joseph LeDoux, *El cerebro emocional* (Barcelona, Ariel/Planeta, 1999; ed. original de 1996).
+
 [^3]: Es lo que el neurocientífico Michael Gazzaniga llamó el «intérprete». En sus estudios con pacientes de cerebro dividido (personas a las que se les habían desconectado los dos hemisferios para tratar una epilepsia grave), el hemisferio izquierdo, el del lenguaje, inventaba explicaciones para lo que había hecho el derecho. A un paciente le mostraron una pata de gallina a un hemisferio y un paisaje nevado al otro; con cada mano eligió una imagen relacionada, una gallina y una pala. Cuando le preguntaron por qué, explicó sin dudar que la pala servía para limpiar el gallinero. M. S. Gazzaniga, *¿Quién manda aquí?* (*Who's in Charge?*, 2011).

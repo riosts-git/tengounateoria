@@ -24,7 +24,7 @@ Y esto, que parece un dato menor, es muy importante, porque en la literatura aca
 
 ## La palabra que elegimos para nombrar lo que sentimos
 
-Nosotros llamaremos **sentimiento** a la lectura e interpretación que hacemos de esas emociones: la palabra que elegimos para nombrar ese conjunto de marcadores somáticos.
+Nosotros llamaremos **sentimiento** a la lectura e interpretación que hacemos de esas emociones: la palabra que elegimos para ese conjunto de marcadores somáticos.
 
 Nunca sabremos si para ustedes entrar en pánico es igual que para mí, pero socialmente el pánico tiene una característica: es intenso, inmediato y terrorífico; es verse sin salida. Nos habla de un temor instintivo e innegociable, donde todo está en riesgo.
 
@@ -46,13 +46,13 @@ Lo primero que me llamó la atención fue que los sentimientos cambian de nombre
 
 Esto ya nos da una primera idea de cómo se construyen esos estados emocionales: un miedo particular no basta para sesgar nuestro ánimo, pero si gana intensidad o frecuencia, puede ir acumulando respuestas físicas (que modifican nuestro sistema hormonal, nervioso, digestivo…). Además, se van grabando como aprendizajes en la memoria y construyendo hábitos.
 
-## Tres conflictos
+## Sentimientos
 
 Pero hay más… Además de indicar la intensidad y la frecuencia, muchas veces elegimos palabras que determinan quién tiene la responsabilidad de lo sucedido.
 
 Para explicarlo, permítanme un truco que aprendí en un taller de escritura: según quién sea responsable, una historia tiene tres grandes tipos de conflicto.
 
-**Contra uno mismo.** Hay personas que tienden a sentirse responsables de todo lo que les pasa. Cuando algo sale bien, sienten autoconfianza y un orgullo humilde. Cuando sale mal, culpa, arrepentimiento o remordimiento; y, llevado al extremo, perfeccionismo o autojustificación. Y si bien este sesgo es individual, podríamos decir que en la cultura actual, tan individualista y enfocada en el éxito económico, solemos reconocernos más como «perdedores o ganadores» que como «desafortunados o afortunados».[^6]
+**Contra uno mismo.** Hay personas que tienden a sentirse responsables de todo lo que les pasa. Cuando algo sale bien, sienten autoconfianza y un orgullo humilde. Cuando sale mal, culpa, arrepentimiento o remordimiento; y, llevado al extremo, perfeccionismo o autojustificación. Y si bien este sesgo es individual, podríamos decir que en la cultura actual, tan individualista y enfocada en el éxito económico, solemos reconocernos más como «perdedores o ganadores» que como «desafortunados o afortunados».[^8]
 
 **Contra otro.** Otras buscan afuera a quién atribuirle lo que pasó. Si les fue bien, sienten gratitud, confianza, amor o apego. Si les fue mal, resentimiento, desconfianza, traición o sed de venganza.
 
@@ -60,7 +60,7 @@ Para explicarlo, permítanme un truco que aprendí en un taller de escritura: se
 
 Y cabe destacar que las categorías nos afectan tanto en términos positivos como negativos. Podemos sentirnos bendecidos por la suerte, por Dios o por el universo; asumir una postura neutral («lo que sucede conviene»); o ponernos en una posición heroica («Dios le da sus peores batallas a sus mejores guerreros»). Todas representan formas de nombrar la emoción que comienzan a marcar patrones de interpretación que, como todo lo que venimos viendo, cuando se sesgan demasiado afectan nuestra capacidad predictiva.
 
-## Las preguntas que mueven el mundo
+## Más sentimientos
 
 Leyendo a otros autores aparecieron más preguntas que nos hacemos sin darnos cuenta y que moldean nuestro mundo emocional.
 
@@ -72,9 +72,11 @@ La pregunta por el juicio ajeno determinará si nos exponemos con seguridad o no
 
 Finalmente, la pregunta de si tenemos los recursos para afrontarlo marcará la diferencia entre caer en el estrés y el agobio ante un proyecto imprevisto si nos sentimos superados, o asumir el control con motivación si confiamos en nuestras capacidades para sacarlo adelante.
 
-Todas estas, y quizá otras preguntas, nos permiten organizar nuestro mundo emocional y narrarlo a terceros de confianza brindando información sobre nuestro estado presente, pasado y futuro.
+Todas estas preguntas, y quizá otras, nos permiten organizar nuestro mundo emocional y narrarlo a terceros: cómo estamos, cómo estuvimos, qué esperamos, en quién confiamos. Incluso cada lengua tiene sus propios neologismos y particularidades para nombrar lo que sentimos. Pero eso no niega que haya una emoción arquetípica que los ordene.
 
-Dicho de otra forma, cuando decimos «¿qué tal tu vida?», lo que estamos preguntando es… ¿cómo te viene yendo en eso de predecir cómo actuar?
+Por ejemplo, en tagalo existe *kilig*: la sensación de «mariposas en el estómago» al principio de un romance o un coqueteo. Podríamos decir que, debajo, la emoción arquetípica es la motivación (si las cosquillas alcanzan para llevar a nuestro amigo tagalo a la acción), la desmotivación (si nos gusta, pero creemos que es mejor no actuar) o incluso la ansiedad o el miedo, si predecimos un rechazo.
+
+Por eso, autores como Barret valoran conveniente que haya una multiplicidad de formas para nombrar a esas sensaciones. Lo cual es válido. Pero también, creo yo, a veces necesitamos lo opuesto: un modelo que nos permita comprender qué significa la emoción en términos biológicos, previo a ser tamizada por nuestros sesgos intelectuales.
 
 ## Separar la emoción de la interpretación
 
@@ -86,4 +88,4 @@ La emoción informa cómo está respondiendo el organismo; la interpretación pr
 
 Los sentimientos son, entonces, interpretaciones de causa y consecuencia que el intelecto agrega a las emociones. Aprender a leerlas nos permite entender qué nos pasa y cómo estamos interpretando nuestro lugar en el mundo. La emoción llega sola; la interpretación, en cambio, se puede revisar. Ese margen de acción intelectual, donde nuestras emociones se vuelven aprendizajes, es una de las posibilidades conscientes que tenemos de afectar nuestro mundo emocional.
 
-[^6]: Alain de Botton, «A kinder, gentler philosophy of success», charla TED, 2009. Ahí recuerda que a quien le iba mal antes se lo llamaba «desafortunado» y que hoy, en una sociedad que se cree meritocrática, se lo llama «perdedor».
+[^8]: Alain de Botton, «A kinder, gentler philosophy of success», charla TED, 2009. Ahí recuerda que a quien le iba mal antes se lo llamaba «desafortunado» y que hoy, en una sociedad que se cree meritocrática, se lo llama «perdedor». (pendiente de revisión)

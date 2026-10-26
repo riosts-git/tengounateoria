@@ -54,7 +54,7 @@ Durante un tiempo seguí investigando el tema y buscando comprender qué pasaba 
 
 Descubrí entonces que existe una intuición que podríamos llamar «extra-ordinaria», que incluye la capacidad de ciertas personas de percibir sensiblemente (olores, sabores, texturas, imágenes o sonidos) por fuera de la media. Logran, según su nivel de entrenamiento, asociaciones que para el resto de los humanos serían imposibles de inferir.
 
-Existen casos reales de gente capaz de detectar enfermedades mediante el olfato,[^5] pilotos entrenados para reconocer un avión de un vistazo y deportistas que pueden predecir el movimiento del adversario en un instante.[^6]
+Existen casos reales de gente capaz de detectar enfermedades mediante el olfato,[^5] pilotos entrenados para reconocer un avión de un vistazo y deportistas que pueden predecir el movimiento del adversario en un instante.[^6]&#32;
 
 Y no hace falta ir tan lejos. A diario reconocemos en amigos y colegas esa capacidad aguda para reconocer ciertos patrones: personas que son muy buenas para interpretar las emociones ajenas y darles sentido, a las que les basta conocer las reglas de un deporte para jugarlo bien, o que pueden sacar una canción con solo escucharla una vez.
 
@@ -64,11 +64,12 @@ Si bien no llamamos «corazonadas» a esas capacidades, lo que vemos en funciona
 
 Y también existe el otro uso del término. El místico. La capacidad de percibir información e interpretarla por medios no convencionales y complejos de replicar científicamente. Personas que aseguran hablar con espíritus, conectar con el Akasha o recibir visiones, por nombrar algunas. Y si bien no tengo la capacidad de conocer y evaluar cada caso, me resulta llamativo que el mecanismo utilizado pareciera ser el mismo.
 
-Es decir, si uno asume que cierta gente puede acceder por medio de un sexto sentido a información perteneciente a otra consciencia, tiempo y espacio, podríamos creer que el mecanismo por el cual esa información se interpreta se mantiene idéntico.
+Es decir, si uno asume que cierta gente puede acceder por medio de un sexto sentido a información perteneciente a otra consciencia, tiempo y espacio, podríamos creer que el mecanismo por el cual esa información se interpreta se mantiene idéntico.&#32;
 
 Nadie discute que Nostradamus haya puesto por escrito lo que visualizaba. En todo caso, lo que habría que probar es cómo recibió esa información a través del tiempo y el espacio.
 
 «Canalizar», entonces, sería permitir que esa información fluya libremente y se manifieste, en forma de sensaciones, imágenes, palabras, movimientos o incluso mediante escritura automática, intentando que haya la menor interferencia de nuestra parte intelectual, esa que busca encontrar el sentido lógico detrás de cada asociación.
 
-[^5]: D. K. Trivedi y otros, «Discovery of Volatile Biomarkers of Parkinson's Disease from Sebum», *ACS Central Science*, 5(4), 2019. El hallazgo partió de Joy Milne, una enfermera escocesa capaz de oler la enfermedad.
-[^6]: S. M. Aglioti, P. Cesari, M. Romani y C. Urgesi, «Action anticipation and motor resonance in elite basketball players», *Nature Neuroscience*, 11(9), 2008.
+[^5]: D. K. Trivedi y otros, «Discovery of Volatile Biomarkers of Parkinson's Disease from Sebum», *ACS Central Science*, 5(4), 2019. El hallazgo partió de Joy Milne, una enfermera escocesa capaz de oler la enfermedad. (pendiente de revisión)
+
+[^6]: S. M. Aglioti, P. Cesari, M. Romani y C. Urgesi, «Action anticipation and motor resonance in elite basketball players», *Nature Neuroscience*, 11(9), 2008. (pendiente de revisión)

@@ -56,7 +56,7 @@ El aprendizaje que sigue al resultado también tiene sus formas narrativas. La f
 
 Los niños suelen pedir una y otra vez la misma película. La repetición les permite anticipar lo que va a ocurrir y familiarizarse con las reglas del mundo que están aprendiendo a habitar. Los adultos hacemos algo parecido con la ciencia ficción y la fantasía: aceptamos un pacto de lectura según el cual, durante la historia, rigen otras leyes. Una vez que aceptamos ese pacto, queremos descubrir cómo funciona ese mundo y qué consecuencias tienen sus reglas.
 
-## Preguntas encadenadas
+## Arcos dentro de arcos
 
 Las historias encadenan preguntas. El protagonista necesita conseguir algo. Para conseguirlo, tiene que superar un obstáculo. Para superarlo, quizá necesite aprender algo; para tener ese conocimiento, encontrar un maestro. Mientras tanto, el antagonista avanza con su propio plan.
 

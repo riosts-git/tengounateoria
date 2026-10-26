@@ -5,10 +5,18 @@ orden: 9
 epilogo: true
 ---
 
-Al principio, lo único que buscaba era una lista: qué emociones eran esas con las que, según yo, hablaba la intuición. La de Ekman me duró un tiempo, hasta que descubrí que servía de poco. Volví con otra cosa. Traje un **mapa**, con el arco y las fuerzas que lo empujan. Traje un **nombre**, soberanía emocional. Y traje una **forma**, este árbol recostado que dibujé a ciegas y que después resultó tener parientes.
+Al principio, lo único que buscaba era una lista: qué emociones eran esas con las que, según yo, hablaba la intuición. Y encontré un montón de respuestas pero ninguna pensada para entender cómo predecimos y cómo le ponemos nombre a lo que sentimos.&#32;
 
-Lo que no traje es la certeza de que todo esto valga más allá de mi propio caso. Quedan huecos por completar. Y queda una sospecha.
+Este modelo no sirve para leer caras ni para programar máquinas, sino para que cada uno pueda preguntarse qué le pasa, de dónde viene y qué implicaría querer cambiarlo.
 
-Cuando puse mi mapa y el Árbol de la Vida uno al lado del otro, y los contrasté también con otros sistemas, me surgió una duda. ¿Podría ser, acaso, que la pieza que les faltó a autores como Jung para explicar cómo pasamos de sistemas biológicos individuales a tener un inconsciente colectivo compartido —o a Campbell, para explicar por qué los mismos mitos se repetían una y otra vez en cada cultura— fueran las emociones? ¿Que, como fuerzas arquetípicas, fueran ellas las encargadas de dar forma a nuestros arcos afectivos y narrativos, y el molde ordenador detrás de las diferentes cosmovisiones?
+No está tan lejos de los modelos matemáticos —ordena las emociones casi con las mismas variables—, pero en lugar de coordenadas nos devuelve un arco. Lo que nos permite entender las emociones no como estados estáticos, sino como ciclos que se orientan en función de un objetivo.
 
-Por ahora solo puedo formularla como pregunta. Y esa pregunta queda para el próximo libro.
+Al igual que Barret, nuestro modelo asume hay tantas combinaciones afectivas como circunstancias en el mundo y que es maravilloso que podamos encontrar palabras para nombrar todas y cada una. Pero también ofrece una explicación sobre cómo esas sensaciones se ordenan en nuestra pisque gracias a atajos heurísticos y estructuras prototípicas.\
+
+Podríamos decir entonces que incluso si los gestos detrás de las emociones no son discretos ni universales, las fuerzas que los mueven sí lo son. Por eso el miedo, la ira, la alegría o la tristeza de Ekman reaparecen, con otros nombres, en casi todas las listas: no porque la cara los delate, sino porque responden a las mismas preguntas del cuerpo.\
+
+Pero de tanto escribir y dibujar el modelo, intentandolo encontrar la forma adecuada para graficarlo descubrí algo más que me llamó la atención.
+
+El modelo que venía dibujando se parecía mucho al grafo conocido como el Árbol de la Vida de la cábala. Así que me puse a contrastarlo con otras cosmovisiones y me surgió una duda: ¿podría ser, acaso, que la pieza que les faltó a autores como Jung para explicar cómo pasamos de sistemas biológicos individuales a un inconsciente colectivo compartido —o a Campbell, para explicar por qué los mismos mitos se repiten una y otra vez en cada cultura— fueran las emociones?
+
+¿Y que, como fuerzas arquetípicas, no solo se vieran representadas en nuestros arcos afectivos y narrativos, sino que fueran además el molde ordenador detrás de otras cosmovisiones?

@@ -64,24 +64,28 @@ Un estado de ánimo, entonces, es una disposición: hace que ciertas emociones, 
 
 Hay estados en los que el ánimo no se inclina hacia ninguna emoción: se apaga. A veces el arco está ahí, con sus variables orientadas, pero no hay energía para responder. La psicología tiene varios nombres para estos estados y, aunque parezcan sinónimos, intentaré ordenarlos de forma no académica, sin pretensión de consejo médico, solo para dar sentido a estos términos tan similares. Ninguno es un diagnóstico por sí solo: son síntomas o rasgos que pueden aparecer en cuadros distintos, y su ubicación en el esquema es una interpretación de este modelo.
 
-La **apatía** se suele definir como una reducción de la conducta dirigida a metas, del interés y de la respuesta emocional, que no se explica por una alteración de la conciencia ni por un deterioro cognitivo.[^7] La persona siente indiferencia: «nada le llama la atención» ni le genera entusiasmo (ni alegría ni tristeza). Sin embargo, si se le obliga o empuja a hacer una actividad, a menudo puede llegar a ejecutarla y sentir placer una vez que está en marcha. Es decir que el problema está al comienzo del arco: podríamos situarla en el asombro apagado: nada llama la atención, da igual lo que pase.
+La **apatía** se suele definir como una reducción de la conducta dirigida a metas, del interés y de la respuesta emocional, que no se explica por una alteración de la conciencia ni por un deterioro cognitivo.[^9] La persona siente indiferencia: «nada le llama la atención» ni le genera entusiasmo (ni alegría ni tristeza). Sin embargo, si se le obliga o empuja a hacer una actividad, a menudo puede llegar a ejecutarla y sentir placer una vez que está en marcha. Es decir que el problema está al comienzo del arco: podríamos situarla en el asombro apagado: nada llama la atención, da igual lo que pase.
 
-Si entendemos la **anhedonia** como la pérdida o disminución de la capacidad de sentir placer o interés por lo que antes lo producía, podríamos situarla en el deseo apagado: puede afectar tanto al disfrute en el momento como a las ganas de buscarlo de antemano.[^8]
+Si entendemos la **anhedonia** como la pérdida o disminución de la capacidad de sentir placer o interés por lo que antes lo producía, podríamos situarla en el deseo apagado: puede afectar tanto al disfrute en el momento como a las ganas de buscarlo de antemano.[^10]
 
-En la **abulia**, a diferencia de la apatía, a veces la persona sí tiene interés en hacer algo, pero es incapaz de dar el primer paso o de tomar la decisión de arrancar. Hay un bloqueo en la iniciativa propia; cuesta decidir, iniciar o completar acciones simples. Es decir que la abulia representa la imposibilidad de pasar a la expansión por una pérdida o disminución grave de la voluntad, la iniciativa y el impulso para realizar cualquier acción.[^9]
+En la **abulia**, a diferencia de la apatía, a veces la persona sí tiene interés en hacer algo, pero es incapaz de dar el primer paso o de tomar la decisión de arrancar. Hay un bloqueo en la iniciativa propia; cuesta decidir, iniciar o completar acciones simples. Es decir que la abulia representa la imposibilidad de pasar a la expansión por una pérdida o disminución grave de la voluntad, la iniciativa y el impulso para realizar cualquier acción.[^11]
 
-Y, por último, la **astenia**: una sensación persistente de debilidad o fatiga, desproporcionada al esfuerzo, que no mejora con el descanso. Podríamos situarla como una contracción involuntaria por falta de energía: hay deseo y hay ganas, pero el cuerpo no tiene energía para responder. O directamente como un problema que afecta el estado general en el que se recibe cualquier estímulo. Es un síntoma inespecífico, con causas físicas y emocionales.[^10]
+Y, por último, la **astenia**: una sensación persistente de debilidad o fatiga, desproporcionada al esfuerzo, que no mejora con el descanso. Podríamos situarla como una contracción involuntaria por falta de energía: hay deseo y hay ganas, pero el cuerpo no tiene energía para responder. O directamente como un problema que afecta el estado general en el que se recibe cualquier estímulo. Es un síntoma inespecífico, con causas físicas y emocionales.[^12]
 
 ## Sin palabras para lo que sentimos
 
-Hay otra variante, que no tiene tanto que ver con la energía ni con la atención. Hay personas que perciben poco los cambios del cuerpo: el corazón se acelera y no lo notan. Y hay otras que los notan, pero no los asocian con una emoción: «me duele el estómago» en lugar de «estoy nerviosa». A esto se lo llama **alexitimia**: literalmente, no tener palabras para las emociones.[^11] Se presenta en distinto grado y no es un diagnóstico por sí misma. La emoción está; lo que falla es el puente entre el cuerpo y la palabra. Es decir que el problema es interpretativo: la intuición funciona y el cuerpo responde, pero a la persona le cuesta tomar nota de sus cambios internos y vincularlos como una respuesta emocional a una causa.
+Hay otra variante, que no tiene tanto que ver con la energía ni con la atención. Hay personas que perciben poco los cambios del cuerpo: el corazón se acelera y no lo notan. Y hay otras que los notan, pero no los asocian con una emoción: «me duele el estómago» en lugar de «estoy nerviosa». A esto se lo llama **alexitimia**: literalmente, no tener palabras para las emociones.[^13] Se presenta en distinto grado y no es un diagnóstico por sí misma. La emoción está; lo que falla es el puente entre el cuerpo y la palabra. Es decir que el problema es interpretativo: la intuición funciona y el cuerpo responde, pero a la persona le cuesta tomar nota de sus cambios internos y vincularlos como una respuesta emocional a una causa.
 
 Entender esto evita juzgar demasiado rápido. Cuando alguien no reacciona, no necesariamente le falta interés, deseo o voluntad. Puede que el arco esté ahí, pero que la energía no alcance para completarlo o que carezca de ese puente que nos permite pasar de sentir a interpretar esa emoción y ponerla en palabras.
 
 Y hablando de palabras, se me ocurrió que, si las películas y las emociones tenían tanta relación, quizá había también una relación entre las fuerzas arquetípicas y las palabras que elegimos para ordenarlas: los géneros narrativos.
 
-[^7]: Apatía: definición clínica habitual (aplanamiento afectivo, indiferencia, reducción de conductas dirigidas a objetivos). Atribuida a la APA en el borrador.
-[^8]: Anhedonia: DSM-5; subtipos consumatoria y anticipatoria.
-[^9]: Abulia: definición psiquiátrica; entre la apatía y el mutismo acinético.
-[^10]: Astenia: CIE-11.
-[^11]: Alexitimia: Peter Sifneos, 1973; alrededor del 10 % de la población en su forma marcada.
+[^9]: Apatía: definición clínica habitual (aplanamiento afectivo, indiferencia, reducción de conductas dirigidas a objetivos). Atribuida a la APA en el borrador. (pendiente de revisión)
+
+[^10]: Anhedonia: DSM-5; subtipos consumatoria y anticipatoria. (pendiente de revisión)
+
+[^11]: Abulia: definición psiquiátrica; entre la apatía y el mutismo acinético. (pendiente de revisión)
+
+[^12]: Astenia: CIE-11. (pendiente de revisión)
+
+[^13]: Alexitimia: Peter Sifneos, 1973; alrededor del 10 % de la población en su forma marcada. (pendiente de revisión)

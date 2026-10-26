@@ -40,7 +40,7 @@ La **tristeza** nos frena para reconocer que una predicción no salió como espe
 
 ## Por qué arquetípicas
 
-Decir que una emoción es arquetípica es decir que representa una fuerza universal, propia de los seres humanos o, si se quiere, de todo ser que tiene que salir a buscar algo para subsistir y, para eso, diferenciar lo bueno de lo malo.[^13].
+Decir que una emoción es arquetípica es decir que representa una fuerza universal, propia de los seres humanos o, si se quiere, de todo ser que tiene que salir a buscar algo para subsistir y, para eso, diferenciar lo bueno de lo malo.[^6]
 
 Pero verlas como arquetípicas tiene un beneficio extra: reconocer nuestros propios sesgos a la hora de hablar de emociones y cómo, mediante asociaciones culturales, podemos cargarlas de significados que no les son propios.
 
@@ -48,7 +48,7 @@ Entender la fuerza que hay detrás, más allá de la connotación, nos permite, 
 
 ## El molde primero
 
-Pero antes veamos qué es un arquetipo. Viene del griego *arché*, «principio» u «origen», y *týpos*, «marca» o «modelo»: el molde primero, la forma de la que salen las copias. Y si bien el término existe hace muchos años, quien lo popularizó fue Jung, usándolo precisamente para hablar de estas fuerzas psíquicas que aparecían repetidas en las imágenes arquetípicas. Para él, el arquetipo también es una forma que nunca vemos directamente y que solo reconocemos a través de sus imágenes. La diferencia es que para Jung los arquetipos nacen biológicamente y habitan en el inconsciente colectivo, aunque nunca termina de explicar cómo es que llegan ahí exactamente.
+Pero veamos qué es un arquetipo en profundida. Viene del griego *arché*, «principio» u «origen», y *týpos*, «marca» o «modelo»: el molde primero, la forma de la que salen las copias. Y si bien el término existe hace muchos años, quien lo popularizó fue Jung, usándolo precisamente para hablar de estas fuerzas psíquicas que aparecían repetidas en las imágenes arquetípicas. Para él, el arquetipo también es una forma que nunca vemos directamente y que solo reconocemos a través de sus imágenes. La diferencia es que para Jung los arquetipos nacen biológicamente y habitan en el inconsciente colectivo, aunque nunca termina de explicar cómo es que llegan ahí exactamente.
 
 Para nosotros, son las emociones arquetípicas, como sistema, las que originan esas fuerzas, que provienen de nuestra biología más básica, de la homeostasis y de la necesidad de mantenernos con vida. Desde ahí se instalan en la cultura como símbolos, asociaciones y relaciones causales: en el lenguaje, las historias, los mitos y las leyes.
 
@@ -96,7 +96,7 @@ Y me quedé con esas dos palabras: activación e inhibición, sin signo moral.
 
 ## El acelerador y el freno
 
-El cerebro parece estar de acuerdo. Durante años se pensó que repartía las emociones agradables en un hemisferio y las desagradables en el otro. Pero la investigación mostró que la ira activa el mismo lado frontal que la alegría.[^5] Nos resulta desagradable, sí, pero nos empuja hacia el estímulo. Lo que el cerebro separa es avanzar de retroceder, sin importar lo moralmente bueno o malo.
+El cerebro parece estar de acuerdo. Durante años se pensó que repartía las emociones agradables en un hemisferio y las desagradables en el otro. Pero la investigación mostró que la ira activa el mismo lado frontal que la alegría.[^7] Nos resulta desagradable, sí, pero nos empuja hacia el estímulo. Lo que el cerebro separa es avanzar de retroceder, sin importar lo moralmente bueno o malo.
 
 Quizá la forma más fácil de entenderlo sea como un acelerador y un freno. Nadie diría que el acelerador es «bueno» y el freno «malo». Un auto que solo acelera se estrella en la primera esquina; uno que solo frena jamás sale del garaje. Lo que importa es que un mecanismo sensible determine cuándo es momento de avanzar o frenar, y que eso se ejecute.
 
@@ -110,5 +110,6 @@ Pero incluso esa explicación queda sesgada si no reconocemos su contraparte: la
 
 Demasiada activación nos conduciría hacia el exceso y nos dejaría vacíos energéticamente. Demasiada inhibición nos impediría invertir cualquier tipo de energía, cerrándonos a nuevos aprendizajes y experiencias, e incluso comprometiendo nuestra capacidad de obtener nuevos recursos.
 
-[^5]: E. Harmon-Jones y J. J. B. Allen, «Anger and frontal brain activity: EEG asymmetry consistent with approach motivation despite negative affective valence», *Journal of Personality and Social Psychology*, 74(5), 1998.
-[^13]: Si se están preguntando si entonces lo que sienten las bacterias puede considerarse una emoción o una proto-emoción, es una discusión sin duda apasionante, que por el momento prefiero no abordar; así que lo dejo a criterio del lector o de alguien con más conocimiento sobre bacterias
+[^6]: Si se están preguntando si entonces lo que sienten las bacterias puede considerarse una emoción o una protoemoción, es una discusión sin duda apasionante, que por el momento prefiero no abordar; así que lo dejo a criterio del lector o de alguien con más conocimiento sobre bacterias.
+
+[^7]: E. Harmon-Jones y J. J. B. Allen, «Anger and frontal brain activity: EEG asymmetry consistent with approach motivation despite negative affective valence», *Journal of Personality and Social Psychology*, 74(5), 1998.
