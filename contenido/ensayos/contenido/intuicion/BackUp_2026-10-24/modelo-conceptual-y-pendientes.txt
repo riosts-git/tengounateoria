@@ -1,0 +1,46 @@
+MODELO CONCEPTUAL DEL ENSAYO 1 · INTUICIÓN (respaldo del claude-doc «Pack 1», 24/10/2026)
+
+La mente predice todo el tiempo, y la intuición es esa predicción cuando se apoya en la experiencia acumulada y se comunica a través de emociones. El ensayo recorre cómo se forma, cuándo acierta y qué la distingue del sesgo.
+
+Tres procesos que predicen
+- Instinto: milésimas de segundo; inconsciente; pone el cuerpo al servicio de la supervivencia. En la historia del perro: el salto y el corazón que se dispara.
+- Intuición: décimas de segundo; preconsciente; compara con patrones y experiencias, y responde con una emoción a través de la amígdala. En la historia del perro: perro grande, oscuridad, agresivo: miedo.
+- Intelecto: segundos o más; consciente; usa el lenguaje, proyecta consecuencias, reinterpreta la respuesta. En la historia del perro: hay una reja, sigo caminando, todavía asustada.
+El intelecto no borra la emoción: puede cambiar lo que hacemos con ella.
+
+Dos velocidades
+Los tres procesos no forman una fila. Hay una vía rápida, que llega directo a la amígdala y genera una emoción, y una lenta, que pasa por el intelecto y después puede actuar sobre la amígdala. De la parte baja hacia la amígdala el proceso se llama bottom-up; del intelecto hacia la amígdala, top-down. Intuición e intelecto son socios con velocidades distintas.
+
+Cómo se forma una intuición
+El cerebro arma una expectativa constante con lo que ya vivió, y lo que rompe esa expectativa captura la atención. El experimento de Iowa muestra cuatro momentos:
+1. Previo al castigo: se exploran los mazos de forma automática.
+2. Precorazonada: la piel ya reacciona ante los mazos malos, sin que la persona lo sepa.
+3. Corazonada: la persona dice que «siente» cuáles son los buenos, sin saber por qué.
+4. Período conceptual: entiende el juego y puede explicarlo con palabras.
+Las señales del cuerpo son los marcadores somáticos. Los pacientes sin esa señal entendían el juego y seguían eligiendo mal: saber no alcanzaba.
+
+Qué es, entonces, la intuición
+Es el proceso subterráneo anterior a la voz interior: primero señales casi imperceptibles, después corazonadas más claras, al final el intelecto las traduce en palabras. Si hay palabras de por medio, el intelecto ya participó. Instinto e intuición se comunican mediante la emoción, un movimiento interno que se materializa afuera.
+Cuando la corazonada aflora sin llegar a explicarse, puede aparecer como símbolo, sueño o historia. El león del sueño de Borges y Coleridge lo muestra: en la vigilia la realidad antecede a la emoción; en el sueño, el miedo llama a la imagen. Lo que cada símbolo connota depende de las memorias personales y culturales.
+
+Intuición y sesgo
+Son el mismo mecanismo: aprender regularidades y usarlas para anticipar. La diferencia está en qué tan conscientes somos de la señal, y desde dentro todo se siente igual. Según Kahneman y Klein, la intuición es confiable donde hubo práctica y respuestas claras sobre si se acertó, y poco confiable donde no.
+
+Otros usos de la palabra
+La intuición extraordinaria (olfato, anticipación deportiva) y la mística (visiones, canalización) parecen compartir el mismo mecanismo: una señal que se traduce en marcadores somáticos, luego en cambios físicos perceptibles y finalmente en una interpretación intelectual. Canalizar sería permitir que esa información fluya con la menor interferencia del intelecto.
+
+Lo que queda abierto
+Si la intuición se comunica en emociones, ¿qué emociones son? Es la pregunta con la que empieza el ensayo 2.
+
+---
+
+PENDIENTES DE REVISIÓN (lista del «Resumen» del claude-doc)
+- Luhrmann: nota 4 y obra citada.
+- Trivedi y otros (olfato y enfermedades): nota 5 y obra citada.
+- Aglioti y otros (deportistas): nota 6 y obra citada.
+- Jung, El libro rojo: datos de la edición.
+- Damasio, Y el cerebro creó al hombre: confirmar que es la fuente de las tres capas de la consciencia.
+- Bechara y otros: el dato de que tres de diez participantes sanos no llegaron a explicar el juego.
+- Mischel y otros: el experimento de los malvaviscos (y su replicación posterior). Platón (Fedro) y Freud (El yo y el ello): fuentes de las menciones del capítulo 2.
+- Capítulo 6: qué cambios perciben los aviadores y su fuente.
+Notas: seis, correlativas: 1 Bachrach, 2 LeDoux, 3 Gazzaniga, 4 Luhrmann, 5 Trivedi, 6 Aglioti.

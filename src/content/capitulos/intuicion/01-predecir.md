@@ -1,0 +1,103 @@
+---
+title: "Predecir"
+ensayo: "intuicion"
+orden: 2
+---
+
+## Mi obsesión por las palabras
+
+—¿Podés dejar de ser tan inmadura? —me gritó mi mamá. Ese es mi primer recuerdo.
+
+—¿Inmadura? ¿Qué sería ser inmadura? —le pregunté—. ¿O madura, para el caso?
+
+—Tati, no contestes.
+
+—¿Cómo te voy a estar contestando si te estoy preguntando?
+
+—¡A tu cuarto!
+
+Lamentablemente, mamá, que nunca tuvo paciencia para debates filológicos, me mandó a la cama. Esa noche aprendí dos cosas. La primera: que maduro viene del latín maturus, que significa «en su momento oportuno». La segunda: que algunas palabras se instalaban en mi mente y se quedaban ahí por meses o años, como esperando para enseñarme algo. Y si uno les presta suficiente atención, comienzan a unirse con otras palabras e imágenes, creando sistemas cada vez más complejos.
+
+## Mi obsesión favorita
+
+Como su etimología anticipa, la inmadurez fue solo el comienzo. El concepto que se convertiría en la piedra filosofal de mis desvelos apareció varios años más tarde.
+
+Para entonces ya tenía una socia, un estudio de diseño y la cabeza puesta en un cliente que acabábamos de visitar.
+
+—¿Creés que va a aceptar? —pregunté para romper el silencio del viaje.
+
+—No sé. ¿Qué te dice tu intuición?
+
+Miré por la ventanilla buscando un «sí» gigante en los carteles de la avenida o una señal divina que nos prometiera millones. Pero ni los anuncios ni las señoras que barrían la vereda parecían tener información confidencial sobre nuestro porvenir financiero.
+
+—La verdad —le dije—, no tengo la menor idea de qué es la int…
+
+Y volvió a pasar. Los interrogantes se me amontonaban en la boca como turistas queriendo bajar de un avión: ¿cómo le pregunto a mi intuición qué opina? ¿Cómo se conecta uno cuando la necesita? Y si efectivamente apareciera la ansiada señal, ¿cómo saber si es confiable?
+
+El asunto se volvió una fijación y los medios de comunicación no me ayudaban. La palabra estaba en todas partes. Científicos, filósofos y gurús le atribuían su éxito a mi vocablo predilecto. Pero nadie explicaba qué era o cómo sintonizar con ella.
+
+Durante un tiempo me olvidé de todo el asunto.
+
+Hasta que una noche, mientras pelaba unas zanahorias para la cena y escuchaba el audiolibro Ágilmente,[^1] algo cambió.
+
+Entendí entonces que la neurociencia tenía una explicación bastante clara de los procesos biológicos que esconde la intuición. Y vi cómo esas palabras en las que hacía tanto que no pensaba se volvían a encender y a conectar en mi mente.
+
+Suspendí entonces mis planes culinarios, me lavé las manos y busqué el ordenador.
+
+Desde esa noche no he dejado de explorar, aprender y aburrir gente hablando del tema. Y aunque la forma de estos apuntes ha ido cambiando con los años, creo que la verdadera pregunta, esa que motiva mi búsqueda más allá de la etimología o cualquier obsesión puntual, es: ¿entendimos todo mal?
+
+Estos apuntes son mi intento de responderla. Lo que sigue es un modelo propio, armado a lo largo de los años y contado en tres partes, una por libro.
+
+Las tres partes —el Modelo I-I-I, las emociones arquetípicas y el árbol— son modelos arquetípicos, y por eso se expresan como se expresaron siempre los arquetipos: con matrices, símbolos y palabras. No pretenden ser una descripción anatómica exacta de lo que pasa en el cerebro, sino un puente comprensible entre las teorías científicas vigentes, la divulgación, la cultura y los temas que me interesan.
+
+## Tres momentos
+
+Barcelona, once de la noche. Ya falta poco para llegar a casa. Estoy a exactamente seis cuadras —sí, llevo años viviendo aquí y sigo contando en cua… ¡WOOOF!
+
+Un ruido me saca de golpe de mis pensamientos. Salto, me doy vuelta y veo dientes apretados, saliva y una silueta que se me tira encima. El corazón se me dispara.
+
+En ese segundo, el golpe seco de una reja de hierro frena el ataque. Respiro.
+
+—¡Ay! ¡Qué susto! —digo en voz alta, como si intentara explicarle al perro mi reacción.
+
+Según el audiolibro, en los años sesenta el neurocientífico Paul MacLean propuso que el cerebro humano estaba formado por tres cerebros superpuestos, como capas que la evolución fue sumando.
+
+La capa reptiliana, la más antigua y encargada de lo básico —respirar, comer, defenderse—, fue la que me hizo saltar cuando el perro ladró, incluso antes de que entendiera qué estaba pasando.
+
+Después entró en juego la límbica, propia de los mamíferos, que procesa las emociones y la memoria: comparó ese ladrido con todo mi historial de perros en calles oscuras y disparó el miedo.
+
+Finalmente, la neocorteza, la capa más nueva y responsable del lenguaje, el razonamiento y la planificación, evaluó la situación, vio la reja, armó una explicación lógica y me dio una orden: «Hay una barrera, puedes seguir caminando».
+
+Hoy en día, la neurociencia considera este modelo una simplificación, ya que el cerebro funciona como una red de conexiones dinámicas mucho más compleja que tres capas apiladas.
+
+Sin embargo, MacLean acertó en algo: distintas regiones del cerebro procesan la información de maneras diferentes y a velocidades distintas. Por eso su modelo sigue sirviendo como metáfora, siempre que no lo tomemos al pie de la letra.
+
+## El cerebro predice
+
+Escribo de noche, concentrada, y de repente algo cambia. No sé qué. Levanto la cabeza: el ventilador se apagó. Hacía rato que no lo oía, pero ahora el silencio se hizo notar.
+
+Para entender la intuición, primero hay que saber que buena parte de la evidencia científica actual apunta a que el cerebro se adelanta y predice todo el tiempo, y genera una respuesta «emocional» que percibimos como cambios físicos, internos y externos.
+
+Con base en lo que ya vivió, arma una expectativa constante de lo que debería venir: cómo vibra el ventilador, cómo se siente la silla, cómo sigue la escena de la serie que estamos mirando. Mientras el estímulo que llega coincide con lo esperado, no hace falta gastar energía. Por eso, al cabo de unos minutos, dejamos de oír el ventilador.
+
+Pero cuando algo rompe la predicción, salta la alarma y, de repente, oímos el silencio. Eso que no encaja es lo que resalta: lo que captura la atención y exige ser valorado de inmediato para predecir cómo reaccionar ante la nueva situación.
+
+## Aprender para predecir
+
+¿Y con qué predice la intuición? Con lo que aprendimos. Aprender significa que una experiencia modifique nuestra capacidad de reconocer, responder o anticipar algo. Por eso podemos usar una habilidad con total naturalidad sin recordar cuándo la adquirimos, o, por el contrario, repetir un dato una y otra vez sin incorporarlo de verdad.
+
+La intuición conecta con la experiencia acumulada que se usa para predecir, sin necesidad de recuperar conscientemente los datos que la sostienen. Es lo que nos impulsa a aceptar una cita y no otra, a elegir siempre la misma mesa del café o a saber, antes de pisar el probador, que esa prenda no nos va a quedar bien.
+
+Cuando miramos ropa y ojeamos entre las vitrinas, no hacemos un análisis consciente de cada corte, tela y estampado. Buscamos prendas con ciertas características, nos detenemos cuando alguna parece cumplirlas para inspeccionar con mayor detenimiento y, luego, seleccionamos aquellas que consideramos que cumplirán mejor nuestras expectativas.
+
+Y finalmente, en el probador, obtenemos el veredicto final: ¿fue buena nuestra intuición a la hora de seleccionar qué cortes y tonos nos quedan mejor?
+
+Por eso mismo, la intuición también hereda los errores de la experiencia. Si lo que aprendimos estaba sesgado, o si las reglas del entorno cambiaron, va a seguir prediciendo con la misma seguridad de siempre… y se va a equivocar.
+
+## La zona de confort
+
+De ahí que una rutina predecible nos haga sentir seguros y en control: nos volvemos expertos en distinguir hasta el más mínimo detalle de nuestro entorno y eso nos permite anticipar cualquier riesgo y saber cómo actuar. Quienes eligen «salir de la zona de confort», en cambio, estiran su umbral de comodidad y sacrifican parte de esa capacidad de predicción a cambio de nuevas experiencias.
+
+Y esto puede incluir desde entregarse a la más osada aventura hasta llevar al probador un atuendo completamente distinto de lo que solemos utilizar. Un ejemplo que también nos permite ver cuán conservadores podemos ser, incluso cuando el riesgo es prácticamente nulo.
+
+[^1]: Estanislao Bachrach, *Ágilmente* (Buenos Aires, Sudamericana, 2012). Bachrach es doctor en Biología Molecular y divulgador.

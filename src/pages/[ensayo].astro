@@ -52,9 +52,12 @@ for (const entrada of entradas) {
     const clave = `${slug(entrada.data.title)}_${titulo ? slug(titulo) : 'inicio'}`;
     escenas.push({ html, svg: svgPorNombre[clave] ?? '' });
   }
-  capitulos.push({ titulo: entrada.data.title, escenas });
+  capitulos.push({ titulo: entrada.data.title, escenas, prologo: entrada.data.prologo === true, epilogo: entrada.data.epilogo === true });
 }
-const n = capitulos.length;
+// Un capítulo con «prologo: true» es el prólogo: no se numera
+const off = capitulos[0]?.prologo ? 0 : 1;
+const etq = (c: { prologo: boolean; epilogo?: boolean }, i: number) => (c.prologo ? 'prólogo' : c.epilogo ? 'epílogo' : `capítulo ${i + off}`);
+const n = capitulos.filter((c) => !c.prologo && !c.epilogo).length;
 ---
 <Base title={etiqueta(ensayo)} acc={ensayo.acc} volver actual={ensayo.id}>
   <div class="reader" style={`--tint:${ensayo.tint}`}>
@@ -66,15 +69,15 @@ const n = capitulos.length;
           </figure>
           {capitulos.map((c, ci) => (
             <>
-              {ci > 0 && (<figure class="fig cv" data-k={`c${ci}`}><div><span class="nota hand">capítulo {ci + 1}</span><b>{c.titulo}</b></div></figure>)}
+              {ci > 0 && (<figure class="fig cv" data-k={`c${ci}`}><div><span class="nota hand">{etq(c, ci)}</span><b>{c.titulo}</b></div></figure>)}
               {c.escenas.map((s, si) => <figure class="fig" data-k={`f${ci}-${si}`} set:html={s.svg} />)}
             </>
           ))}
         </div>
         <div class="legend">
           <p class="cap" id="cap" aria-live="polite"></p>
-          <div class="ticks" style={`--n:${n}`}>
-            {capitulos.map((c, i) => <button data-go={i} aria-label={`Capítulo ${i + 1}: ${c.titulo}`} title={`${i + 1}. ${c.titulo}`}></button>)}
+          <div class="ticks" style={`--n:${capitulos.length}`}>
+            {capitulos.map((c, i) => <button data-go={i} aria-label={`${etq(c, i)}: ${c.titulo}`} title={c.prologo || c.epilogo ? c.titulo : `${i + off}. ${c.titulo}`}></button>)}
           </div>
         </div>
       </div>
@@ -86,7 +89,7 @@ const n = capitulos.length;
         <>
           <section class="scene head" data-c={ci} data-keys={ci === 0 ? 'p' : `c${ci}`} style="--n:1">
             <header class="ch" id={`cap-${ci}`}>
-              <span class="nota hand">capítulo {ci + 1}</span>
+              <span class="nota hand">{etq(c, ci)}</span>
               <h2>{c.titulo}</h2>
             </header>
           </section>

@@ -9,6 +9,8 @@ const capitulos = defineCollection({
     title: z.string(),
     ensayo: z.string(),
     orden: z.number(),
+    prologo: z.boolean().optional(),
+    epilogo: z.boolean().optional(),
   }),
 });
 
